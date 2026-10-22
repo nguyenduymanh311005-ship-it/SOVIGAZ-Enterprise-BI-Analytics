@@ -1,0 +1,18 @@
+﻿credit_risk_band,churn_risk_band,customer_count,total_debt_vnd,total_overdue_vnd,avg_credit_score
+Critical Exposure (Score >= 70),Low Risk (P < 0.25),3,2180488592.0,1924770069.0,72.1
+Critical Exposure (Score >= 70),Not Evaluated in 2025,16,9656812456.0,8781869619.0,75.5
+High Exposure (50 <= Score < 70),Critical Risk (P >= 0.80),2,561366720.0,62694000.0,58.5
+High Exposure (50 <= Score < 70),High Risk (0.50 <= P < 0.80),2,460343668.0,143567088.0,55.2
+High Exposure (50 <= Score < 70),Low Risk (P < 0.25),10,5021101843.0,3214986943.0,54.4
+High Exposure (50 <= Score < 70),Medium Risk (0.25 <= P < 0.50),3,256365648.0,218457648.0,54.2
+High Exposure (50 <= Score < 70),Not Evaluated in 2025,47,5337062043.0,2290528185.0,58.2
+Low Exposure (Score < 30),Critical Risk (P >= 0.80),4,47252381.0,2190240.0,21.2
+Low Exposure (Score < 30),High Risk (0.50 <= P < 0.80),15,410988934.0,30473052.0,18.8
+Low Exposure (Score < 30),Low Risk (P < 0.25),236,5909598284.0,614274540.0,15.4
+Low Exposure (Score < 30),Medium Risk (0.25 <= P < 0.50),36,275980063.0,10390786.0,14.3
+Low Exposure (Score < 30),Not Evaluated in 2025,67,1208940972.0,41517136.0,18.2
+Moderate Exposure (30 <= Score < 50),Critical Risk (P >= 0.80),6,462842927.0,67386330.0,41.7
+Moderate Exposure (30 <= Score < 50),High Risk (0.50 <= P < 0.80),6,451668929.0,243344625.0,39.9
+Moderate Exposure (30 <= Score < 50),Low Risk (P < 0.25),78,21337689576.0,5098665255.0,38.1
+Moderate Exposure (30 <= Score < 50),Medium Risk (0.25 <= P < 0.50),11,804631363.0,435763490.0,38.9
+Moderate Exposure (30 <= Score < 50),Not Evaluated in 2025,42,2199288236.0,506030401.0,38.9

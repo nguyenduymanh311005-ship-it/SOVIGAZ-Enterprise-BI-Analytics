@@ -1,0 +1,2 @@
+﻿comparison,primary_window,alternative_window,adjusted_rand_index,normalized_mutual_info,finding_verdict
+365-day Lookback (Primary) vs 180-day Lookback Window,365 Days (Annual),180 Days (Semi-Annual),0.4196,0.4904,"Moderate agreement (ARI=0.4196). 187 customers (13.8%) with no purchase in past 180d shift towards lower clusters in the 180d window, demonstrating that 365d is a critical methodological requirement to capture annual B2B procurement cycles."

@@ -1,0 +1,5 @@
+﻿credit_priority,customer_count,total_debt_vnd,total_overdue_vnd,avg_credit_score,debt_share_pct
+Priority 1: Critical Joint Action (Finance & Sales),4,1021710388.0,206261088.0,56.875,1.81
+Priority 2: Credit Terms & Exposure Monitoring,79,22451830582.0,16430612464.0,61.59367088607595,39.68
+Priority 3: Customer Retention & Re-engagement,31,1372753171.0,343394247.0,27.61935483870968,2.43
+Priority 4: Standard Commercial Monitoring,470,31736128494.0,6706641608.0,22.133617021276596,56.09

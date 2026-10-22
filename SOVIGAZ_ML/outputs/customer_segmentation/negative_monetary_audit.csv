@@ -1,0 +1,12 @@
+﻿AccountObjectCode,snapshot_date,monetary_365d_VND,flag_accounting_adjustment,adjustment_revenue_sum,flag_sales_return,return_revenue_sum,top_voucher_type,handling_method
+BHBV6,2023-12-31,-185854598.0,False,0.0,True,-546750000.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền","log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+BDNB7,2024-06-30,-1415315078.0,True,-5526947775.0,False,0.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền","log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+BH1002a,2024-06-30,-662418143.0,True,-893186524.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+CT1003,2024-06-30,-795710662.0,True,-1880749048.0,False,0.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền","log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+BDNB7,2024-12-31,-3139681121.0,True,-3139681121.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+BH1002a,2024-12-31,-888822593.0,True,-888822593.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+CT1003,2024-12-31,-1611266832.0,True,-1611266832.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+CT1003,2025-06-30,-1642178317.0,True,-1642178317.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+BDNB7,2025-06-30,-3073006283.0,True,-3073006283.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+BDNB7,2025-12-31,-3546010176.0,True,-3546010176.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"
+CT1003,2025-12-31,-1917960651.0,True,-1917960651.0,False,0.0,Bán hàng hóa trong nước chưa thu tiền,"log1p(max(0, monetary)) + has_negative_revenue_365d flag = 1"

@@ -1,0 +1,171 @@
+{
+  "Fact_AnalyticsDebit": {
+    "rows": 1788,
+    "unique_customers": 1044,
+    "unique_accounts": [
+      131,
+      136,
+      1361,
+      13613,
+      13614,
+      13615,
+      13617,
+      244,
+      2442,
+      344,
+      13612,
+      13616,
+      13618,
+      13619,
+      1368,
+      1388,
+      2444
+    ],
+    "debt_types": 2,
+    "debt_descriptions": [
+      "Nợ trước hạn 0-30 ngày",
+      "Nợ quá hạn 1-30 ngày",
+      "Nợ trước hạn 31-90 ngày",
+      "Nợ quá hạn 31-90 ngày",
+      "Nợ quá hạn 181-365 ngày",
+      "Nợ quá hạn 91-180 ngày",
+      "Nợ quá hạn 366-730 ngày",
+      "Nợ trước hạn trên 90 ngày",
+      "Nợ quá hạn trên 1095 ngày",
+      "Không có hạn nợ",
+      "Nợ quá hạn 731-1095 ngày"
+    ],
+    "total_amount": 2314063742048.0,
+    "positive_amount": 2314079342052.0,
+    "negative_amount": -15600004.0,
+    "zero_amount": 0
+  },
+  "DM_AccountObjectDebt": {
+    "rows": 1494,
+    "unique_customers": 1162,
+    "unique_receivable_accounts": [
+      344.0,
+      2442.0,
+      131.0,
+      13617.0,
+      13616.0,
+      13614.0,
+      13615.0,
+      1368.0,
+      1388.0,
+      13618.0,
+      13619.0,
+      13613.0
+    ],
+    "total_receiptable_debt": 668607107276.0,
+    "total_paid_amount": 70214015296.0,
+    "total_opening_balance": 668515511446.0,
+    "total_period_amount": 70567608564.0
+  },
+  "overlap": {
+    "debit_in_debt": 734,
+    "debit_only": 310,
+    "debt_only": 428
+  },
+  "debt_descriptions_breakdown": [
+    {
+      "DebtDescription": "Không có hạn nợ",
+      "count": 670,
+      "customers": 479,
+      "total_amount": 2043603467270,
+      "mean_amount": 3050154428.761194,
+      "min_amount": -13600000,
+      "max_amount": 636995131460
+    },
+    {
+      "DebtDescription": "Nợ quá hạn 1-30 ngày",
+      "count": 199,
+      "customers": 197,
+      "total_amount": 15624252016,
+      "mean_amount": 78513829.22613065,
+      "min_amount": 40,
+      "max_amount": 3719393700
+    },
+    {
+      "DebtDescription": "Nợ quá hạn 181-365 ngày",
+      "count": 65,
+      "customers": 51,
+      "total_amount": 59208220821,
+      "mean_amount": 910895704.9384615,
+      "min_amount": 21600,
+      "max_amount": 18443245494
+    },
+    {
+      "DebtDescription": "Nợ quá hạn 31-90 ngày",
+      "count": 112,
+      "customers": 108,
+      "total_amount": 12464817944,
+      "mean_amount": 111293017.35714285,
+      "min_amount": 746,
+      "max_amount": 2555508096
+    },
+    {
+      "DebtDescription": "Nợ quá hạn 366-730 ngày",
+      "count": 48,
+      "customers": 40,
+      "total_amount": 30359467889,
+      "mean_amount": 632488914.3541666,
+      "min_amount": 1,
+      "max_amount": 9106662600
+    },
+    {
+      "DebtDescription": "Nợ quá hạn 731-1095 ngày",
+      "count": 9,
+      "customers": 5,
+      "total_amount": 55771835494,
+      "mean_amount": 6196870610.444445,
+      "min_amount": -4,
+      "max_amount": 18374651371
+    },
+    {
+      "DebtDescription": "Nợ quá hạn 91-180 ngày",
+      "count": 49,
+      "customers": 45,
+      "total_amount": 11596384813,
+      "mean_amount": 236660914.5510204,
+      "min_amount": 400,
+      "max_amount": 3047204624
+    },
+    {
+      "DebtDescription": "Nợ quá hạn trên 1095 ngày",
+      "count": 63,
+      "customers": 59,
+      "total_amount": 47471959480,
+      "mean_amount": 753523166.3492063,
+      "min_amount": 1,
+      "max_amount": 14514847030
+    },
+    {
+      "DebtDescription": "Nợ trước hạn 0-30 ngày",
+      "count": 427,
+      "customers": 419,
+      "total_amount": 23013234980,
+      "mean_amount": 53895163.88758782,
+      "min_amount": 74480,
+      "max_amount": 1266301320
+    },
+    {
+      "DebtDescription": "Nợ trước hạn 31-90 ngày",
+      "count": 135,
+      "customers": 135,
+      "total_amount": 11148228668,
+      "mean_amount": 82579471.61481482,
+      "min_amount": 264000,
+      "max_amount": 861788770
+    },
+    {
+      "DebtDescription": "Nợ trước hạn trên 90 ngày",
+      "count": 11,
+      "customers": 11,
+      "total_amount": 3801872673,
+      "mean_amount": 345624788.45454544,
+      "min_amount": 3321520,
+      "max_amount": 2147844500
+    }
+  ]
+}

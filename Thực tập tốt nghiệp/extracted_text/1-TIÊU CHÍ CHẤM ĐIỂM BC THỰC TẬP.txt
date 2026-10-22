@@ -1,0 +1,5 @@
+TIÊU CHÍ CHẤM ĐIỂM BÁO CÁO THỰC TẬP (4 tín chỉ)
+STT | NỘI DUNG | ĐIỂM TỐI ĐA
+1 | Hình thức  Báo cáo thực tập | 4 điểm Trừ điểm các mức 0,5đ đến 2đ nếu sinh viên mắc các lỗi sau: Không căn chỉnh, font chữ lộn xộn Biểu đồ không chú thích đầy đủ Không đủ độ dài tối thiểu 15 trang (không bao gồm bìa, phụ lục và tài liệu tham khảo) Không có nhận xét của đơn vị kiến tập.  Trừ điểm các mức 1đ đến 2đ điểm nếu sinh viên mắc các lỗi sau: Không có tài liệu tham khảo hoặc KHÔNG tuân theo chuẩn mực quy định của tiêu chuẩn APA 6th
+2 | Kết cấu  Báo cáo thực tập | 1 điểm Trừ điểm các mức 0,5đ; 1,0đ nếu sinh viên mắc các lỗi sau Các mục trong BCTT không logic Không đầy đủ 3 mục như quy định của đề cương đã ban hành.
+3 | Nội dung  Báo cáo thực tập | 5 điểm Trừ điểm các mức 0,5đ; 1đ; 1,5đ nếu sinh viên mắc các lỗi sau: BCTT không thể hiện đặc trưng của ngành kinh tế số. Phần mô tả các nghiệp vụ học tập ở đơn vị thực tập viết sơ sài Câu từ lủng củng, không rõ nghĩa.

@@ -1,0 +1,112 @@
+{
+  "paragraphs": [
+    "CÔNG TY TNHH GIẢI PHÁP PHÂN TÍCH DỮ LIỆU INSIGHT DATA",
+    "TÀI LIỆU GIỚI THIỆU DỰ ÁN SOVIGAZ",
+    "BẢNG THEO DÕI THAY ĐỔI",
+    "(*) A (Add) Thêm mới, M (Modify) - Thay đổi, D (Delete) - Xóa",
+    "I. GIỚI THIỆU CÔNG TY SOVIGAZ",
+    "Công ty Cổ phần Hơi Kỹ nghệ Que Hàn (SOVIGAZ) là doanh nghiệp hàng đầu tại Việt Nam trong lĩnh vực sản xuất và cung cấp khí công nghiệp, khí y tế, que hàn điện và hóa chất. Được thành lập vào năm 1974, SOVIGAZ có tiền thân là sự hợp nhất giữa Phân khu Việt Nam S.O.A.E.O và Công ty Việt Nam Hơi Kỹ nghệ .​",
+    "SOVIGAZ chuyên sản xuất và kinh doanh:",
+    "Khí công nghiệp và khí y tế",
+    "Que hàn điện và hóa chất",
+    "Dịch vụ vận chuyển, lắp đặt hệ thống khí công nghiệp và khí y tế",
+    "Kiểm tra kỹ thuật bồn chứa khí áp lực cao",
+    "II. TỔNG QUAN DỰ ÁN",
+    "1. Tổng quan dự án",
+    "Tên dự án: Hệ thống kho dữ liệu doanh nghiệp Sovigaz",
+    "Hiện trạng: Khách hàng có hệ thống dữ liệu gồm MISA và Excel (gồm các yếu tố như KPI, Sản xuất). Cần kết hợp nhiều nguồn dữ liệu về một kho dữ liệu từ đó chuẩn hóa và sử dụng dữ liệu.",
+    "Yêu cầu: Xây dựng hệ thống kho dữ liệu (Data Warehouse) nhằm chuẩn hóa, lưu trữ, tích hợp và khai thác dữ liệu từ các nguồn khác nhau, đồng thời phục vụ cho các báo cáo phân tích kinh doanh.",
+    "Phạm vi:",
+    "Nguồn dữ liệu: 1 File Excel",
+    "Output: Phát triển 6 báo cáo theo yêu cầu của DeltaMV",
+    "2. Hiện trạng năng lực của khách hàng",
+    "Khách hàng có nhân sự hiểu về DWH nhưng ở mức không sâu, không thể tự thực hiện các tác vụ liên quan đến Database. Có thể thực hiện một số đầu việc nếu có tài liệu tham chiếu.",
+    "Cần hỗ trợ về mặt kĩ thuật từ DE của INDA.",
+    "Phòng kế toán và kế hoạch chưa có thói quen sử dụng PBI trong báo cáo, các báo cáo vẫn cần xuất ra Excel theo format cũ để báo cáo cấp trên.",
+    "3. Nhân sự có quyền quyết định phía Sovigaz",
+    "4. Kiến trúc hệ thống",
+    "Nguồn dữ liệu: Phần mềm kế toán MISA, Excel",
+    "Hệ DBMS: SQL Server",
+    "ETL: SSIS (SQL Server Integration Services)",
+    "Báo cáo: Power BI",
+    "FIle Mapping: https://docs.google.com/spreadsheets/d/161v5roS5SMwjR6krIjF_2i-PgU-_vbw7BT02xsoNQVQ/edit?usp=sharing",
+    "- Diagram Tổng hợp: https://drive.google.com/file/d/1fkFpayRIgD_hLadzsRhQaiZEoEwtQSUM/view?usp=sharing",
+    "5. Quy trình triển khai dự án",
+    "https://docs.google.com/spreadsheets/d/1vlArXRBf6GhfqES-DV3e79Xib_3LaVwe/edit?usp=sharing&ouid=105295962129393099791&rtpof=true&sd=true",
+    "6. Hệ thống báo cáo",
+    "Tổng hợp doanh thu",
+    "Biểu đồ theo thời gian (năm/tháng/ngày)",
+    "So sánh theo các đặc tính như: chi nhánh, nhóm sản phẩm, loại sản phẩm,...",
+    "Chi tiết nguồn doanh thu",
+    "Phân tích theo loại hàng, khách hàng, kênh bán hàng, chi nhánh",
+    "Chi tiết công nợ",
+    "Dòng tiền theo khách hàng, tuổi nợ, loại nợ",
+    "Tổng hợp KPI",
+    "Biểu đồ theo thời gian",
+    "KPI doanh thu theo chi nhánh, nhóm sản phẩm, chỉ tiêu",
+    "Chi tiết KPI",
+    "Chi tiết KPI doanh thu theo chi nhánh, nhóm sản phẩm, theo thời gian,...",
+    "7. Cơ cấu nhân sự dự án Sovigaz",
+    "8. Quy trình thực hiện và nghiệm thu sản phẩm",
+    "Sovigaz cung cấp tài nguyên để INDA triển khai các đầu việc theo kế hoạch.",
+    "Hai bên trao đổi các tiêu chí đánh giá độ chính xác của sản phẩm (Đúng số với số liệu trên MISA, đúng với số liệu năm trên Excel,...)",
+    "Sau khi các báo cáo hoàn thành, INDA bàn giao tài liệu cho Sovigaz bao gồm:",
+    "Các file nhập liệu theo form gốc của Sovigaz: A3. Sản xuất theo tháng, CustomerCategory,...",
+    "Các file nhập liệu được chỉnh sửa để phù hợp với việc nhập liệu và DB được thực hiện bởi INDA: Fact KPI Month, Fact KPI Year, Fact KPI by Product, FactActualProduct,....",
+    "Các file đối soát số liệu thực hiện bởi Sovigaz và INDA",
+    "Các file xuất dữ liệu A3 từ file PBI: 4 file: Sức khỏe tài chính theo chi nhánh, KPI sản phẩm theo tháng, KPI theo chỉ tiêu, Lấy A3.",
+    "Document hướng dẫn trích xuất dữ liệu A3 từ PBI",
+    "9. Kế hoạch triển khai tiếp theo",
+    "Hoàn thiện dự án, khớp số liệu với Sovigaz",
+    "Người thực hiện: Đặng Anh Tùng",
+    "Thời gian: 18/04/2025"
+  ],
+  "tables": [
+    [
+      [
+        "STT",
+        "Tên",
+        "Vị trí",
+        "Nhiệm vụ"
+      ],
+      [
+        "1",
+        "Anh Phước",
+        "PM Sovigaz - Chịu trách nhiệm chính về mặt kỹ thuật",
+        "- Đầu mối trao đổi chính giữa INDA và Sovigaz. - Đặt ra yêu cầu cần INDA thực hiện. Đảm bảo INDA thực hiện báo cáo đúng với mong muốn từ Sovigaz.  - Kiểm tra tiến độ dự án. Đảm bảo INDA thực hiện đúng với thời gian đặt ra. - Quản lí cơ sở dữ liệu Sovigaz. Hỗ trợ INDA về mặt kĩ thuật."
+      ],
+      [
+        "2",
+        "Chị Nghĩa",
+        "Kế toán Sovigaz - Chịu trách nhiệm chính về mặt số liệu.",
+        "- Quản lí các file Excel chứa thông tin doanh nghiệp ngoài hệ thống MISA như: A3, sản xuất, khách hàng,... - Kiểm tra đối chiếu số liệu báo cáo PBI. Đặt ra các rule độ lệch chuẩn cho báo cáo. Có trách nhiệm giải thích và đối chiếu nếu có phát sinh chênh lệch. Chấp nhận độ lệch <10m cho doanh thu. - Trực tiếp sử dụng các tính năng trích xuất dữ liệu từ A3 ra Excel và PBI ra A3."
+      ]
+    ],
+    [
+      [
+        "STT",
+        "Tên",
+        "Số lượng",
+        "Nhiệm vụ/Yêu cầu"
+      ],
+      [
+        "1",
+        "Project Manager",
+        "1",
+        "- Quản lý tiến độ, phạm vi, ngân sách dự án. - Làm việc với các bên liên quan (Sovigaz, đội kỹ thuật) - Phối hợp triển khai các giai đoạn khảo sát, xây dựng, GoLive"
+      ],
+      [
+        "2",
+        "Data Analyst",
+        "1",
+        "- Có nền tảng kiến thức xử lí dữ liệu từ Excel, biết xoay chiều dữ liệu, thiết kế đầu vào dữ liệu;  - Thiết kế báo cáo, dashboard theo yêu cầu: Doanh thu, Công nợ, KPI;  - Kết nối dữ liệu từ DWH; Viết DAX nâng cao (chỉ tiêu KPI, so sánh thời gian, phân tích động);  - Truyền dữ liệu từ Power BI ra Excel"
+      ],
+      [
+        "3",
+        "Data Engineer",
+        "2",
+        ""
+      ]
+    ]
+  ]
+}

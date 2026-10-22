@@ -1,0 +1,2 @@
+﻿comparison,primary_algorithm,alternative_algorithm,adjusted_rand_index,normalized_mutual_info,finding_verdict
+Log1p + RobustScaler (Primary) vs RobustScaler on Raw RFM,"K-Means (K=4, Log1p + RobustScaler)","K-Means (K=4, Raw RFM + RobustScaler)",0.0066,0.0742,"Low agreement (ARI=0.0066) proves that extreme raw monetary values (>46B VND, skewness +22.0) severely distort Euclidean distances without Log1p compression. Log1p is scientifically indispensable."

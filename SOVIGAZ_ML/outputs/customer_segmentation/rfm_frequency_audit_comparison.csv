@@ -1,0 +1,8 @@
+﻿frequency_definition,aggregation_key,example_customer,customer_name,row_count,distinct_refno_count,diff_rows,pct_inflation,finding_verdict
+COUNT(DISTINCT RefNo),RefNo,BDNB2,XÍ NGHIỆP HƠI KỸ NGHỆ BIÊN HÒA - Chi nhánh Công ty Cổ phần Hơi kỹ nghệ Que hàn,1667,703,964,137.1,B2B multi-product invoice causes frequency inflation if row count is used
+COUNT(DISTINCT RefNo),RefNo,VPBV31,Bệnh viện Từ Dũ,930,361,569,157.6,B2B multi-product invoice causes frequency inflation if row count is used
+COUNT(DISTINCT RefNo),RefNo,BDNL117,CÔNG TY TNHH KINH DOANH THỰC PHẨM NĂM SAO,593,78,515,660.3,B2B multi-product invoice causes frequency inflation if row count is used
+COUNT(DISTINCT RefNo),RefNo,BDBV152A,CHI NHÁNH CÔNG TY CỔ PHẦN BỆNH VIỆN ĐA KHOA TÂM ANH TP. HỒ CHÍ MINH,705,235,470,200.0,B2B multi-product invoice causes frequency inflation if row count is used
+COUNT(DISTINCT RefNo),RefNo,NTVXTHUONG,Võ Xuân Thượng (Oxy Thượng),677,267,410,153.6,B2B multi-product invoice causes frequency inflation if row count is used
+COUNT(DISTINCT RefNo),RefNo, LANL517,,1,1,0,0.0,Single-product orders: row count matches distinct invoice count
+COUNT(DISTINCT RefNo),RefNo,1003,CN Công ty CP Hơi kỹ nghệ Que hàn - XÍ NGHIỆP HƠI KỸ NGHỆ CẦN THƠ,8,8,0,0.0,Single-product orders: row count matches distinct invoice count

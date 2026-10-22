@@ -1,0 +1,5 @@
+InventoryItemTypeValue,InventoryItemTypeName,CreatedBy,CreatedDate,ModifiedBy,ModifiedDate,ETL_DATE
+0,"Vật tư hàng hóa","",,"",2017-01-01 00:00:00.000,2025-07-02 00:00:00.000
+1,"Thành phẩm","",,"",2017-01-01 00:00:00.000,2025-07-02 00:00:00.000
+2,"Dịch vụ","",,"",2017-01-01 00:00:00.000,2025-07-02 00:00:00.000
+3,"Chỉ là diễn giải","",,"",2017-01-01 00:00:00.000,2025-07-02 00:00:00.000

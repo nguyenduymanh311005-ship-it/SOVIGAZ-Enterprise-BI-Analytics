@@ -1,0 +1,4 @@
+﻿Window,Median_Frequency,Mean_Frequency,Zero_Freq_Count,Zero_Freq_Pct,Median_Monetary_VND,Mean_Monetary_VND,Monetary_Skewness,Assessment
+90 Days (Quarterly),3.0,10.32,360,26.49,3870000.0,69492210.49,22.3,"Quá ngắn cho B2B; 22.4% khách hàng không có giao dịch trong 90d, gây nhiều điểm 0 giả tạo."
+180 Days (Semi-Annual),7.0,20.04,187,13.76,10368000.0,135464284.49,21.2,13.8% khách hàng không mua trong 180d nhưng vẫn mua trong 365d; thích hợp làm cohort churn nhưng hạn chế cho segmentation.
+365 Days (Annual - Methodological Choice),15.0,37.02,0,0.0,23006700.0,257438179.49,22.0,Lựa chọn phương pháp luận tối ưu nhất cho Customer Segmentation: phản ánh đầy đủ chu kỳ ngân sách và hợp đồng năm của doanh nghiệp B2B.

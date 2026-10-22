@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOVIGAZ Machine Learning Intelligence Platform</title>
+    <!-- Chart.js for Minimalist Scientific Plotting -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --bg-canvas: #FAFAF9;
+            --bg-surface: #FFFFFF;
+            --bg-subtle: #F5F5F4;
+            --border-light: #E7E5E4;
+            --border-subtle: rgba(0, 0, 0, 0.06);
+            --text-primary: #1C1917;
+            --text-secondary: #78716C;
+            --text-muted: #A8A29E;
+            
+            /* Minimalist Muted Pastels */
+            --pastel-red-bg: #FDEBEC;
+            --pastel-red-text: #9F2F2D;
+            --pastel-yellow-bg: #FBF3DB;
+            --pastel-yellow-text: #956400;
+            --pastel-green-bg: #EDF3EC;
+            --pastel-green-text: #346538;
+            --pastel-blue-bg: #E1F3FE;
+            --pastel-blue-text: #1F6C9F;
+            --pastel-purple-bg: #F3EAFD;
+            --pastel-purple-text: #6B3BA6;
+
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+            --font-serif: "Newsreader", "Playfair Display", Georgia, serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .mono {
+            font-family: var(--font-mono);
+            letter-spacing: -0.02em;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 32px 24px 80px 24px;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 1px solid var(--border-light);
+            background: #FFFFFF;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-title {
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-tag {
+            font-size: 10px;
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+            padding: 2px 8px;
+            background: var(--pastel-green-bg);
+            color: var(--pastel-green-text);
+            border-radius: 9999px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav-tab {
+            padding: 8px 14px;
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 6px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.15s ease;
+            font-weight: 500;
+        }
+
+        .nav-tab:hover {
+            background: var(--bg-subtle);
+            color: var(--text-primary);
+        }
+
+        .nav-tab.active {
+            background: #111111;
+            color: #FFFFFF;
+            border-color: #111111;
+        }
+
+        /* Tab Content */
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.25s ease-in-out;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Editorial Section Header */
+        .section-header {
+            margin-bottom: 28px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .section-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+            max-width: 800px;
+        }
+
+        /* Bento Grid */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .col-3 { grid-column: span 3; }
+        .col-4 { grid-column: span 4; }
+        .col-6 { grid-column: span 6; }
+        .col-8 { grid-column: span 8; }
+        .col-12 { grid-column: span 12; }
+
+        @media (max-width: 900px) {
+            .col-3, .col-4, .col-6, .col-8 { grid-column: span 12; }
+        }
+
+        /* Card Surface */
+        .card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            padding: 24px;
+            position: relative;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .card-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            font-family: var(--font-mono);
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .metric-value {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            font-family: var(--font-mono);
+        }
+
+        .metric-sub {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 3px 8px;
+            border-radius: 9999px;
+            font-size: 11px;
+            font-family: var(--font-mono);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .badge-critical { background: var(--pastel-red-bg); color: var(--pastel-red-text); }
+        .badge-high { background: var(--pastel-yellow-bg); color: var(--pastel-yellow-text); }
+        .badge-medium { background: var(--bg-subtle); color: var(--text-secondary); }
+        .badge-low { background: var(--pastel-green-bg); color: var(--pastel-green-text); }
+        .badge-info { background: var(--pastel-blue-bg); color: var(--pastel-blue-text); }
+        .badge-purple { background: var(--pastel-purple-bg); color: var(--pastel-purple-text); }
+
+        /* Tables */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            text-align: left;
+        }
+
+        th {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-light);
+            background: var(--bg-subtle);
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            vertical-align: middle;
+        }
+
+        tr:hover td {
+            background-color: #FAF9F6;
+        }
+
+        /* Buttons & Controls */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            border: 1px solid var(--border-light);
+            background: #FFFFFF;
+            color: var(--text-primary);
+        }
+
+        .btn:hover {
+            background: var(--bg-subtle);
+        }
+
+        .btn-primary {
+            background: #111111;
+            color: #FFFFFF;
+            border-color: #111111;
+        }
+
+        .btn-primary:hover {
+            background: #2E2E2E;
+        }
+
+        .btn-group {
+            display: inline-flex;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .btn-group button {
+            padding: 6px 12px;
+            background: #FFFFFF;
+            border: none;
+            border-right: 1px solid var(--border-light);
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .btn-group button:last-child {
+            border-right: none;
+        }
+
+        .btn-group button.active {
+            background: #111111;
+            color: #FFFFFF;
+        }
+
+        .input-control {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            font-size: 13px;
+            background: #FFFFFF;
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.15s;
+        }
+
+        .input-control:focus {
+            border-color: #111111;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .range-slider {
+            width: 100%;
+            accent-color: #111111;
+        }
+
+        /* Modals */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-card {
+            background: #FFFFFF;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 760px;
+            max-height: 90vh;
+            overflow-y: auto;
+            border: 1px solid var(--border-light);
+            padding: 28px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery-item {
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            overflow: hidden;
+            background: #FFFFFF;
+            cursor: pointer;
+            transition: transform 0.15s, border-color 0.15s;
+        }
+
+        .gallery-item:hover {
+            border-color: #111111;
+            transform: translateY(-2px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--border-light);
+            display: block;
+        }
+
+        .gallery-desc {
+            padding: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-inner">
+            <div class="brand-title">
+                <span>SOVIGAZ ML PLATFORM</span>
+                <span class="brand-tag">AUDITED &amp; PRODUCTION READY</span>
+            </div>
+            <nav class="nav-tabs">
+                <button class="nav-tab active" onclick="switchTab('overview')">Tổng quan</button>
+                <button class="nav-tab" onclick="switchTab('forecasting')">Bài toán 1: Dự báo</button>
+                <button class="nav-tab" onclick="switchTab('churn')">Bài toán 2: Khách hàng &amp; Churn</button>
+                <button class="nav-tab" onclick="switchTab('credit')">Bài toán 3: Công nợ &amp; Tín dụng</button>
+                <button class="nav-tab" onclick="switchTab('priority')">Danh sách Cứu khách</button>
+                <button class="nav-tab" onclick="switchTab('simulator')">Mô phỏng Rủi ro</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ========================================== -->
+        <!-- TAB 1: EXECUTIVE OVERVIEW -->
+        <!-- ========================================== -->
+        <div id="tab-overview" class="tab-pane active">
+            <div class="section-header">
+                <h1 class="section-title">Tổng quan Hệ thống Trí tuệ Nhân tạo SOVIGAZ</h1>
+                <p class="section-desc">Hệ sinh thái Machine Learning triển khai trên 228,581 giao dịch thực tế phục vụ hai trụ cột nghiệp vụ: Dự báo Nhu cầu / Dòng tiền và Giữ chân Khách hàng B2B.</p>
+            </div>
+
+            <!-- Bento Grid Highlights -->
+            <div class="bento-grid">
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Doanh thu Cấp Tháng</span>
+                        <span class="badge badge-low">WAPE 6.05%</span>
+                    </div>
+                    <div class="metric-value">93.95%</div>
+                    <div class="metric-sub">Độ chính xác mô hình <strong>XGBoost</strong> trên tập Test 2026 độc lập</div>
+                </div>
+
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Doanh thu Cấp Tuần</span>
+                        <span class="badge badge-info">CatBoost</span>
+                    </div>
+                    <div class="metric-value">31.8%</div>
+                    <div class="metric-sub">Sai số WAPE cấp tuần (vượt trội so với mốc mùa vụ 41.1%)</div>
+                </div>
+
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Năng lực Phân loại Churn</span>
+                        <span class="badge badge-purple">ROC-AUC 0.887</span>
+                    </div>
+                    <div class="metric-value">0.881</div>
+                    <div class="metric-sub">PR-AUC và F1-Score = 0.814 trên tập Test độc lập 2025</div>
+                </div>
+
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Cảnh báo Khách VIP</span>
+                        <span class="badge badge-critical">100% Correct</span>
+                    </div>
+                    <div class="metric-value">9.29 tỷ</div>
+                    <div class="metric-sub">Doanh thu rủi ro được cảnh báo chuẩn xác (15/15 khách VIP rời bỏ)</div>
+                </div>
+
+                <!-- Side-by-side Task Summary -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <span class="card-label">Bài toán 1: Dự báo Doanh thu &amp; Nhu cầu Khí</span>
+                        <span class="badge badge-info">Time Series</span>
+                    </div>
+                    <p style="margin-bottom: 16px; color: var(--text-secondary);">Dự báo chuỗi thời gian doanh thu toàn công ty và 3 dòng sản phẩm khí lỏng/khí chai chủ lực theo tuần và tháng.</p>
+                    <table style="margin-bottom: 16px;">
+                        <tr>
+                            <th>Mục tiêu</th>
+                            <th>Mô hình tốt nhất</th>
+                            <th>Sai số Test</th>
+                        </tr>
+                        <tr>
+                            <td>Doanh thu Cấp Tháng</td>
+                            <td><strong>XGBoost</strong></td>
+                            <td class="mono">WAPE 6.05%</td>
+                        </tr>
+                        <tr>
+                            <td>Doanh thu Cấp Tuần</td>
+                            <td><strong>CatBoost</strong></td>
+                            <td class="mono">WAPE 31.80%</td>
+                        </tr>
+                        <tr>
+                            <td>Oxy khí chai (OXK6)</td>
+                            <td><strong>Moving Average</strong></td>
+                            <td class="mono">WAPE 26.86%</td>
+                        </tr>
+                        <tr>
+                            <td>Oxy lỏng (OXL-SX)</td>
+                            <td><strong>CatBoost / Seasonal</strong></td>
+                            <td class="mono">WAPE 44.36%</td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-primary" onclick="switchTab('forecasting')">Xem Chi tiết Bài toán 1 &rarr;</button>
+                </div>
+
+                <div class="card col-6">
+                    <div class="card-header">
+                        <span class="card-label">Bài toán 2: Phân khúc Khách hàng &amp; Churn</span>
+                        <span class="badge badge-purple">Classification</span>
+                    </div>
+                    <p style="margin-bottom: 16px; color: var(--text-secondary);">Phân khúc 1,359 khách hàng thành 4 nhóm chiến lược và dự đoán xác suất rời bỏ 90 ngày bằng mô hình CatBoost.</p>
+                    <table style="margin-bottom: 16px;">
+                        <tr>
+                            <th>Hạng mục</th>
+                            <th>Giải pháp kỹ thuật</th>
+                            <th>Chỉ số nghiệm thu</th>
+                        </tr>
+                        <tr>
+                            <td>Phân khúc Khách hàng</td>
+                            <td><strong>K-Means (K=4)</strong></td>
+                            <td class="mono">Stability > 95%</td>
+                        </tr>
+                        <tr>
+                            <td>Dự báo Khách rời bỏ</td>
+                            <td><strong>CatBoostClassifier</strong></td>
+                            <td class="mono">AUC 0.887 / F1 0.814</td>
+                        </tr>
+                        <tr>
+                            <td>Xếp hạng Can thiệp</td>
+                            <td><strong>Priority Score (0-100)</strong></td>
+                            <td class="mono">18 Khách hàng Tier 1</td>
+                        </tr>
+                        <tr>
+                            <td>Giải thích dự báo</td>
+                            <td><strong>Local Signed SHAP</strong></td>
+                            <td class="mono">Top 3 Drivers/KH</td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-primary" onclick="switchTab('churn')">Xem Chi tiết Bài toán 2 &rarr;</button>
+                </div>
+
+                <!-- Pipeline Architecture Banner -->
+                <div class="card col-12">
+                    <div class="card-header">
+                        <span class="card-label">Kiến trúc Luồng Xử lý Dữ liệu Khoa học (Leakage-Free Pipeline)</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; justify-content: space-between; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 200px; padding: 12px; background: var(--bg-subtle); border-radius: 6px;">
+                            <div style="font-weight: 600; font-size: 12px;">1. DATA AUDIT</div>
+                            <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">229,012 dòng thô &rarr; loại 431 dòng trùng &rarr; 228,581 dòng chuẩn. Khóa 100% tính toàn vẹn.</div>
+                        </div>
+                        <div style="flex: 1; min-width: 200px; padding: 12px; background: var(--bg-subtle); border-radius: 6px;">
+                            <div style="font-weight: 600; font-size: 12px;">2. TIME SERIES SPLIT</div>
+                            <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">Train (2023-2024), Val (2025 Walk-Forward 4 Folds), Hold-out Test (2026). Không nhìn trước tương lai.</div>
+                        </div>
+                        <div style="flex: 1; min-width: 200px; padding: 12px; background: var(--bg-subtle); border-radius: 6px;">
+                            <div style="font-weight: 600; font-size: 12px;">3. TEMPORAL RFM &amp; CHURN</div>
+                            <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">5 snapshots cách nhau 6 tháng. Chỉ dùng giao dịch trước thời điểm T. Nhãn 90 ngày chặt chẽ.</div>
+                        </div>
+                        <div style="flex: 1; min-width: 200px; padding: 12px; background: var(--bg-subtle); border-radius: 6px;">
+                            <div style="font-weight: 600; font-size: 12px;">4. PRODUCTION ACTIVATION</div>
+                            <div style="font-size: 11px; color: var(--text-secondary); margin-top: 4px;">Scoring 5,502 quan sát, xuất Power BI dataset, thiết lập ma trận SLA giữ chân khách VIP.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 2: FORECASTING (BÀI TOÁN 1) -->
+        <!-- ========================================== -->
+        <div id="tab-forecasting" class="tab-pane">
+            <div class="section-header">
+                <h1 class="section-title">Bài toán 1: Dự báo Doanh thu &amp; Nhu cầu Sản lượng Khí</h1>
+                <p class="section-desc">Mô hình hóa chuỗi thời gian đa chu kỳ, tích hợp kiểm định ảnh hưởng kỳ nghỉ Tết (Ablation Analysis) và phân tích chẩn đoán phần dư.</p>
+            </div>
+
+            <!-- Series Selector & Chart Card -->
+            <div class="card col-12" style="margin-bottom: 24px;">
+                <div class="card-header">
+                    <div>
+                        <span class="card-label">Biểu đồ Trực quan Kiểm định Thực tế vs Dự báo (Test Set 2026)</span>
+                        <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;" id="chart-subtitle">Đang tải dữ liệu...</div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="active" onclick="loadSeries('Monthly_Revenue', this)">Doanh thu Tháng</button>
+                        <button onclick="loadSeries('Weekly_Revenue', this)">Doanh thu Tuần</button>
+                        <button onclick="loadSeries('OXK6', this)">Oxy Chai (OXK6)</button>
+                        <button onclick="loadSeries('NTL-SX', this)">Nitơ Lỏng (NTL-SX)</button>
+                        <button onclick="loadSeries('OXL-SX', this)">Oxy Lỏng (OXL-SX)</button>
+                    </div>
+                </div>
+
+                <div style="height: 380px; width: 100%; position: relative;">
+                    <canvas id="forecastChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Model Leaderboard & Diagnostics -->
+            <div class="bento-grid">
+                <div class="card col-8">
+                    <div class="card-header">
+                        <span class="card-label">Bảng So sánh Hiệu năng Các Mô hình (Leaderboard)</span>
+                        <span class="badge badge-info">Walk-Forward Validated</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mô hình</th>
+                                    <th>Cấp độ</th>
+                                    <th>WAPE (%)</th>
+                                    <th>sMAPE (%)</th>
+                                    <th>MAE (VND / Lít)</th>
+                                    <th>Thời gian Train</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #FDFDFD; font-weight: 600;">
+                                    <td>XGBoost (Tháng) <span class="badge badge-low">Winner</span></td>
+                                    <td>Tháng</td>
+                                    <td class="mono">6.05%</td>
+                                    <td class="mono">6.67%</td>
+                                    <td class="mono">1,588,350,172</td>
+                                    <td class="mono">0.21s</td>
+                                </tr>
+                                <tr>
+                                    <td>LightGBM (Tháng)</td>
+                                    <td>Tháng</td>
+                                    <td class="mono">9.36%</td>
+                                    <td class="mono">10.01%</td>
+                                    <td class="mono">2,457,471,535</td>
+                                    <td class="mono">0.02s</td>
+                                </tr>
+                                <tr style="background: #FDFDFD; font-weight: 600;">
+                                    <td>CatBoost (Tuần) <span class="badge badge-low">Winner</span></td>
+                                    <td>Tuần</td>
+                                    <td class="mono">31.80%</td>
+                                    <td class="mono">32.77%</td>
+                                    <td class="mono">1,883,543,044</td>
+                                    <td class="mono">0.47s</td>
+                                </tr>
+                                <tr>
+                                    <td>LightGBM (Tuần)</td>
+                                    <td>Tuần</td>
+                                    <td class="mono">37.21%</td>
+                                    <td class="mono">37.03%</td>
+                                    <td class="mono">2,204,135,055</td>
+                                    <td class="mono">1.80s</td>
+                                </tr>
+                                <tr>
+                                    <td>Seasonal Naive (lag 52)</td>
+                                    <td>Tuần</td>
+                                    <td class="mono">35.67%</td>
+                                    <td class="mono">36.74%</td>
+                                    <td class="mono">2,112,454,418</td>
+                                    <td class="mono">0.00s</td>
+                                </tr>
+                                <tr>
+                                    <td>Baseline Naive (lag 1)</td>
+                                    <td>Tuần</td>
+                                    <td class="mono">67.49%</td>
+                                    <td class="mono">58.28%</td>
+                                    <td class="mono">3,997,381,215</td>
+                                    <td class="mono">0.00s</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card col-4">
+                    <div class="card-header">
+                        <span class="card-label">Kết luận Thống kê &amp; Mùa vụ</span>
+                    </div>
+                    <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.6;">
+                        <p style="margin-bottom: 12px;"><strong>Thực nghiệm Tết Ablation:</strong> Biến ngoại sinh ngày Tết giúp XGBoost giảm 3.35 điểm % WAPE trên tập Test. Các mô hình khác đã tự học được mùa vụ qua biến nội sinh <code>lag_52</code>.</p>
+                        <p style="margin-bottom: 12px;"><strong>Độ lệch phần dư:</strong> Mean Error = -1.28 tỷ VND/tuần. Mô hình có xu hướng dự báo cao hơn nhẹ do tốc độ phục hồi sau Tết 2026 của thị trường diễn ra chậm hơn năm 2025.</p>
+                        <p><strong>Khuyến nghị vận hành:</strong> Dùng kết quả tháng của <strong>XGBoost</strong> cho kế hoạch tài chính; dùng kết quả tuần của <strong>CatBoost</strong> để điều phối xe bồn vận tải.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Figures Gallery -->
+            <div class="section-header" style="margin-top: 32px;">
+                <h3 style="font-size: 18px; font-weight: 600;">Biểu đồ Kiểm định Chi tiết (Diagnostic Gallery)</h3>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('/figures/01_actual_vs_forecast_revenue_weekly.png')">
+                    <img src="/figures/01_actual_vs_forecast_revenue_weekly.png" alt="Weekly Forecast">
+                    <div class="gallery-desc">01. Doanh thu tuần: Thực tế vs Dự báo</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('/figures/02_actual_vs_forecast_revenue_monthly.png')">
+                    <img src="/figures/02_actual_vs_forecast_revenue_monthly.png" alt="Monthly Forecast">
+                    <div class="gallery-desc">02. Doanh thu tháng: Thực tế vs Dự báo</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('/figures/06_weekly_revenue_residuals_over_time.png')">
+                    <img src="/figures/06_weekly_revenue_residuals_over_time.png" alt="Residuals">
+                    <div class="gallery-desc">06. Phân bố phần dư theo thời gian</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('/figures/08_monthly_seasonality.png')">
+                    <img src="/figures/08_monthly_seasonality.png" alt="Seasonality">
+                    <div class="gallery-desc">08. Phân tích chu kỳ mùa vụ tháng</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 3: CUSTOMER SEGMENTATION & CHURN (BÀI TOÁN 2) -->
+        <!-- ========================================== -->
+        <div id="tab-churn" class="tab-pane">
+            <div class="section-header">
+                <h1 class="section-title">Bài toán 2: Phân khúc Khách hàng &amp; Dự báo Rời bỏ (B2B Churn)</h1>
+                <p class="section-desc">Hệ thống phân tầng khách hàng bằng K-Means (K=4) kết hợp mô hình phân loại CatBoost cảnh báo xác suất rời bỏ trong 90 ngày tiếp theo.</p>
+            </div>
+
+            <!-- 4 Clusters Profile Bento Cards -->
+            <div class="bento-grid" id="cluster-profiles-container">
+                <!-- Rendered dynamically via JS -->
+            </div>
+
+            <!-- 3D Matrix & Model Diagnostics -->
+            <div class="bento-grid">
+                <div class="card col-12">
+                    <div class="card-header">
+                        <div>
+                            <span class="card-label">Ma trận 3D Thực nghiệm: Phân khúc &times; Rủi ro &times; Giá trị</span>
+                            <div style="font-size: 13px; color: var(--text-secondary); margin-top: 4px;">Chứng minh thực nghiệm: Tỷ lệ Churn thực tế tăng đơn điệu theo Risk Band của mô hình</div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Phân khúc Khách hàng</th>
+                                    <th>Mức độ Rủi ro</th>
+                                    <th>Phân tầng Giá trị</th>
+                                    <th>Số lượng KH</th>
+                                    <th>Xác suất Churn TB</th>
+                                    <th>Tỷ lệ Churn Thực tế</th>
+                                    <th>Doanh thu Rủi ro (VND)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #FDF2F2;">
+                                    <td><strong>Key Industrial Accounts</strong></td>
+                                    <td><span class="badge badge-critical">Critical Risk (P &ge; 0.80)</span></td>
+                                    <td>High Value (&ge; 100M)</td>
+                                    <td class="mono">15</td>
+                                    <td class="mono">89.00%</td>
+                                    <td class="mono" style="font-weight: 700; color: #9F2F2D;">100.0% (15/15)</td>
+                                    <td class="mono">9,292,965,713</td>
+                                </tr>
+                                <tr>
+                                    <td>Key Industrial Accounts</td>
+                                    <td><span class="badge badge-high">High Risk (0.50 &le; P &lt; 0.80)</span></td>
+                                    <td>High Value (&ge; 100M)</td>
+                                    <td class="mono">47</td>
+                                    <td class="mono">61.21%</td>
+                                    <td class="mono">78.7%</td>
+                                    <td class="mono">38,692,671,068</td>
+                                </tr>
+                                <tr>
+                                    <td>Key Industrial Accounts</td>
+                                    <td><span class="badge badge-low">Low Risk (P &lt; 0.25)</span></td>
+                                    <td>High Value (&ge; 100M)</td>
+                                    <td class="mono">232</td>
+                                    <td class="mono">13.42%</td>
+                                    <td class="mono">18.1%</td>
+                                    <td class="mono">289,684,109,122</td>
+                                </tr>
+                                <tr style="background: #FDF2F2;">
+                                    <td><strong>Bulk Gas Buyers</strong></td>
+                                    <td><span class="badge badge-critical">Critical Risk (P &ge; 0.80)</span></td>
+                                    <td>High Value (&ge; 100M)</td>
+                                    <td class="mono">44</td>
+                                    <td class="mono">89.31%</td>
+                                    <td class="mono" style="font-weight: 700; color: #9F2F2D;">97.7% (43/44)</td>
+                                    <td class="mono">10,209,868,930</td>
+                                </tr>
+                                <tr>
+                                    <td>Retail &amp; High-Frequency</td>
+                                    <td><span class="badge badge-high">High Risk (0.50 &le; P &lt; 0.80)</span></td>
+                                    <td>Medium Value (15M-100M)</td>
+                                    <td class="mono">271</td>
+                                    <td class="mono">62.68%</td>
+                                    <td class="mono">77.5%</td>
+                                    <td class="mono">11,641,138,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagnostics Gallery -->
+            <div class="section-header" style="margin-top: 32px;">
+                <h3 style="font-size: 18px; font-weight: 600;">Biểu đồ Kiểm định Churn &amp; SHAP Feature Importance</h3>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('/figures/11_roc_curve.png')">
+                    <img src="/figures/11_roc_curve.png" alt="ROC Curve">
+                    <div class="gallery-desc">11. Đường cong ROC (AUC = 0.887)</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('/figures/12_precision_recall_curve.png')">
+                    <img src="/figures/12_precision_recall_curve.png" alt="PR Curve">
+                    <div class="gallery-desc">12. Đường cong Precision-Recall (AUC = 0.881)</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('/figures/14_calibration_curve.png')">
+                    <img src="/figures/14_calibration_curve.png" alt="Calibration Curve">
+                    <div class="gallery-desc">14. Đường cong Hiệu chuẩn Xác suất (Calibration)</div>
+                </div>
+                <div class="gallery-item" onclick="openModal('/figures/15_shap_summary.png')">
+                    <img src="/figures/15_shap_summary.png" alt="SHAP Summary">
+                    <div class="gallery-desc">15. SHAP Global Feature Importance (Top nhân tố)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 3: BÀI TOÁN 3 — CREDIT RISK & DEBT EXPOSURE -->
+        <!-- ========================================== -->
+        <div id="tab-credit" class="tab-pane">
+            <div class="section-header">
+                <h1 class="section-title">Bài toán 3: Rủi ro Tín dụng &amp; Phân tích Công nợ B2B</h1>
+                <p class="section-desc">Hệ thống phân tầng phơi nhiễm công nợ (Credit Exposure Profiling &amp; Scoring) trên 584 khách hàng thương mại Tài khoản 131, kiểm soát nợ quá hạn và ma trận đối chiếu với Churn lịch sử.</p>
+                <div style="display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap;">
+                    <span class="badge badge-info" style="font-size: 11px; padding: 4px 10px;">Snapshot Công nợ: 31/07/2026 (TK 131 FAST ERP)</span>
+                    <span class="badge badge-purple" style="font-size: 11px; padding: 4px 10px;">Tham chiếu Rời bỏ Lịch sử: 31/12/2025 (CatBoost Locked)</span>
+                    <span class="badge badge-low" style="font-size: 11px; padding: 4px 10px;">Rule-based Exposure Scoring (Không phải PD)</span>
+                </div>
+            </div>
+
+            <!-- Bento Highlights -->
+            <div class="bento-grid">
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Tổng Công nợ Thương mại (TK 131)</span>
+                        <span class="badge badge-info">584 Khách hàng</span>
+                    </div>
+                    <div class="metric-value">56.58 tỷ</div>
+                    <div class="metric-sub">Dư nợ chốt sổ 31/07/2026 (Khớp 100% Sổ cái kế toán FAST)</div>
+                </div>
+
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Công nợ Quá hạn</span>
+                        <span class="badge badge-high">41.86% Tổng nợ</span>
+                    </div>
+                    <div class="metric-value">23.69 tỷ</div>
+                    <div class="metric-sub">Trong đó có <strong>3.67 tỷ VND</strong> quá hạn trên 1 năm (3.38 tỷ quá hạn &gt; 3 năm cần rà soát dự phòng)</div>
+                </div>
+
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Tập trung Nợ (HHI 149.34)</span>
+                        <span class="badge badge-purple">Top 10: 29.39%</span>
+                    </div>
+                    <div class="metric-value">42.81%</div>
+                    <div class="metric-sub">Tỷ trọng công nợ dồn vào <strong>Top 20 khách hàng</strong> (24.22 tỷ VND)</div>
+                </div>
+
+                <div class="card col-3">
+                    <div class="card-header">
+                        <span class="card-label">Rủi ro Nguy cấp (Critical)</span>
+                        <span class="badge badge-critical">19 Khách hàng</span>
+                    </div>
+                    <div class="metric-value">11.84 tỷ</div>
+                    <div class="metric-sub">Dư nợ nhóm Critical Exposure (Tỷ lệ nợ quá hạn TB đạt <strong>90.43%</strong>)</div>
+                </div>
+
+                <!-- Epistemic Decision Gate Box -->
+                <div class="card col-12" style="background: #FAFAF8; border-left: 4px solid #111111;">
+                    <div style="font-weight: 600; font-size: 13px; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
+                        <span>QUYẾT ĐỊNH PHƯƠNG PHÁP LUẬN: KÍCH HOẠT BRANCH B (B2B CREDIT EXPOSURE SCORING)</span>
+                        <span class="badge badge-low">AUDITED STANDARD</span>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-secondary); line-height: 1.5;">
+                        Dữ liệu kế toán hiện chỉ lưu 01 snapshot ngày 31/07/2026, thiếu ngày đến hạn hóa đơn (<code>DueDate</code>) và ngày thực trả (<code>PaymentDate</code>). Tuân thủ nguyên tắc khoa học, hệ thống <strong>tuyệt đối không ép học có giám sát (Supervised ML)</strong> bằng cách tạo nhãn vỡ nợ giả mạo. Thay vào đó, hệ thống vận hành theo <strong>Thang điểm Rủi ro Phơi nhiễm Công nợ (Credit Exposure Risk Score 0–100)</strong> minh bạch. Rủi ro Churn được đối chiếu tham chiếu từ snapshot 31/12/2025 (offset 7 tháng, không phải rủi ro rời bỏ đồng thời tại 31/07/2026).
+                    </div>
+                </div>
+
+                <!-- Crosstabs Bento -->
+                <div class="card col-6">
+                    <div class="card-header">
+                        <span class="card-label">Phân khúc Khách hàng &times; Phơi nhiễm Công nợ</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Phân khúc (K-Means)</th>
+                                    <th>Số KH</th>
+                                    <th>Tổng Dư nợ (VND)</th>
+                                    <th>Tỷ trọng</th>
+                                    <th>Tỷ lệ Quá hạn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Key Industrial Accounts</strong></td>
+                                    <td class="mono">205</td>
+                                    <td class="mono">32,811,926,283</td>
+                                    <td class="mono">58.0%</td>
+                                    <td class="mono">28.9%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Active Regular Buyers</strong></td>
+                                    <td class="mono">155</td>
+                                    <td class="mono">4,182,782,479</td>
+                                    <td class="mono">7.4%</td>
+                                    <td class="mono">55.9%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Slipping / Periodic</strong></td>
+                                    <td class="mono">45</td>
+                                    <td class="mono">846,308,109</td>
+                                    <td class="mono">1.5%</td>
+                                    <td class="mono">35.7%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dormant (Clustered)</strong></td>
+                                    <td class="mono">17</td>
+                                    <td class="mono">478,407,537</td>
+                                    <td class="mono">0.8%</td>
+                                    <td class="mono">22.8%</td>
+                                </tr>
+                                <tr style="background: #FDF2F2;">
+                                    <td><strong>Dormant (Ngừng mua cũ)</strong></td>
+                                    <td class="mono">162</td>
+                                    <td class="mono">18,262,998,227</td>
+                                    <td class="mono" style="font-weight: 700; color: #9F2F2D;">32.3%</td>
+                                    <td class="mono" style="font-weight: 700; color: #9F2F2D;">63.3%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card col-6">
+                    <div class="card-header">
+                        <span class="card-label">Ma trận Hành động Ưu tiên Kép (Finance &times; Sales)</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tầng Ưu tiên (Priority Tier)</th>
+                                    <th>Số KH</th>
+                                    <th>Tổng Nợ (VND)</th>
+                                    <th>Nợ Quá hạn (VND)</th>
+                                    <th>SLA Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #FDF2F2;">
+                                    <td><span class="badge badge-critical">Priority 1: Critical Joint Action</span></td>
+                                    <td class="mono">4</td>
+                                    <td class="mono">1,021,710,388</td>
+                                    <td class="mono">206,261,088</td>
+                                    <td style="font-size: 11px;"><strong>24-48h:</strong> Lãnh đạo Sales + Finance trực tiếp làm việc; ngừng cấp hàng nợ.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-high">Priority 2: Credit Terms Review</span></td>
+                                    <td class="mono">79</td>
+                                    <td class="mono">22,451,830,582</td>
+                                    <td class="mono">16,430,612,464</td>
+                                    <td style="font-size: 11px;"><strong>3-5 ngày:</strong> Kế toán thắt chặt hạn mức; đàm phán lịch trả nợ cũ.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-info">Priority 3: Retention Focus</span></td>
+                                    <td class="mono">31</td>
+                                    <td class="mono">1,372,753,171</td>
+                                    <td class="mono">343,394,247</td>
+                                    <td style="font-size: 11px;"><strong>5-7 ngày:</strong> Sales giữ chân khách hàng; công nợ thấp.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="badge badge-low">Priority 4: Standard Monitoring</span></td>
+                                    <td class="mono">470</td>
+                                    <td class="mono">31,736,128,494</td>
+                                    <td class="mono">6,706,641,608</td>
+                                    <td style="font-size: 11px;">Theo dõi giao dịch bình thường hàng tháng.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credit Customers Search & Table -->
+            <div class="card" style="margin-bottom: 20px; padding: 16px 20px;">
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+                    <div style="flex: 2; min-width: 240px;">
+                        <input type="text" id="credit-search-input" class="input-control" placeholder="Tìm kiếm theo Tên khách hàng hoặc Mã KH (VD: VPBV1234, BỆNH VIỆN...)..." onkeyup="debounceCreditSearch()">
+                    </div>
+                    <div style="flex: 1; min-width: 160px;">
+                        <select id="filter-credit-band" class="input-control" onchange="applyCreditFilters()">
+                            <option value="ALL">Mọi dải rủi ro công nợ</option>
+                            <option value="Critical">Critical Exposure (Score &ge; 70)</option>
+                            <option value="High">High Exposure (50 - 70)</option>
+                            <option value="Moderate">Moderate Exposure (30 - 50)</option>
+                            <option value="Low">Low Exposure (Score &lt; 30)</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; min-width: 160px;">
+                        <select id="filter-credit-priority" class="input-control" onchange="applyCreditFilters()">
+                            <option value="ALL">Mọi tầng ưu tiên</option>
+                            <option value="Priority 1">Priority 1 (Critical Joint Action)</option>
+                            <option value="Priority 2">Priority 2 (Credit Terms Review)</option>
+                            <option value="Priority 3">Priority 3 (Retention Focus)</option>
+                            <option value="Priority 4">Priority 4 (Standard Monitoring)</option>
+                        </select>
+                    </div>
+                    <button class="btn" onclick="resetCreditFilters()">Đặt lại</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Hạng</th>
+                                <th>Mã KH</th>
+                                <th>Tên Khách hàng</th>
+                                <th>CN</th>
+                                <th>Phân khúc</th>
+                                <th>Dư nợ Tổng</th>
+                                <th>Nợ Quá hạn</th>
+                                <th>Tỷ lệ Quá hạn</th>
+                                <th>Điểm Phơi nhiễm (0-100)</th>
+                                <th>Mức độ Rủi ro</th>
+                                <th>Tầng Ưu tiên</th>
+                            </tr>
+                        </thead>
+                        <tbody id="credit-table-body">
+                            <tr><td colspan="11" style="text-align: center; padding: 24px;">Đang tải danh sách công nợ...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border-light);">
+                    <div style="font-size: 12px; color: var(--text-secondary);" id="credit-pagination-info">Hiển thị...</div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn" id="btn-credit-prev" onclick="changeCreditPage(-1)">&larr; Trước</button>
+                        <button class="btn" id="btn-credit-next" onclick="changeCreditPage(1)">Sau &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 4: PRIORITY ACTION LIST -->
+        <!-- ========================================== -->
+        <div id="tab-priority" class="tab-pane">
+            <div class="section-header">
+                <h1 class="section-title">Danh sách Khách hàng Cần Can thiệp Giữ chân (Priority List)</h1>
+                <p class="section-desc">Danh sách 1,174 khách hàng tại kỳ mới nhất (2025-12-31) xếp hạng theo Điểm Ưu Tiên (Priority Score 0-100), tích hợp 3 nguyên nhân dự báo SHAP cho Sales.</p>
+            </div>
+
+            <!-- Filters Bar -->
+            <div class="card" style="margin-bottom: 20px; padding: 16px 20px;">
+                <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+                    <div style="flex: 2; min-width: 240px;">
+                        <input type="text" id="search-input" class="input-control" placeholder="Tìm kiếm theo Tên khách hàng hoặc Mã KH (VD: VPBV32)..." onkeyup="debounceSearch()">
+                    </div>
+                    <div style="flex: 1; min-width: 160px;">
+                        <select id="filter-risk" class="input-control" onchange="applyFilters()">
+                            <option value="ALL">Mọi mức độ rủi ro</option>
+                            <option value="Critical">Critical Risk (P &ge; 0.80)</option>
+                            <option value="High">High Risk (0.50 - 0.80)</option>
+                            <option value="Medium">Medium Risk (0.25 - 0.50)</option>
+                            <option value="Low">Low Risk (P &lt; 0.25)</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; min-width: 160px;">
+                        <select id="filter-segment" class="input-control" onchange="applyFilters()">
+                            <option value="ALL">Mọi phân khúc</option>
+                            <option value="Key Industrial">Key Industrial Accounts</option>
+                            <option value="Bulk">Bulk Gas Buyers</option>
+                            <option value="Retail">Retail &amp; High-Frequency</option>
+                            <option value="Dormant">Dormant Accounts</option>
+                        </select>
+                    </div>
+                    <div style="flex: 1; min-width: 160px;">
+                        <select id="filter-value" class="input-control" onchange="applyFilters()">
+                            <option value="ALL">Mọi phân tầng giá trị</option>
+                            <option value="High Value">High Value (&ge; 100M VND)</option>
+                            <option value="Medium Value">Medium Value (15M-100M)</option>
+                            <option value="Low Value">Low Value (&lt; 15M)</option>
+                        </select>
+                    </div>
+                    <button class="btn" onclick="resetFilters()">Đặt lại</button>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="card">
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Hạng</th>
+                                <th>Mã KH</th>
+                                <th>Tên Khách hàng</th>
+                                <th>CN</th>
+                                <th>Phân khúc</th>
+                                <th>Mức Rủi ro</th>
+                                <th>Xác suất</th>
+                                <th>Doanh thu 12T</th>
+                                <th>Điểm Ưu Tiên</th>
+                                <th>Top 3 Nhân tố SHAP Thúc đẩy Rủi ro</th>
+                            </tr>
+                        </thead>
+                        <tbody id="priority-table-body">
+                            <tr><td colspan="10" style="text-align: center; padding: 24px;">Đang tải danh sách khách hàng...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border-light);">
+                    <div style="font-size: 12px; color: var(--text-secondary);" id="pagination-info">Hiển thị...</div>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn" id="btn-prev" onclick="changePage(-1)">&larr; Trước</button>
+                        <button class="btn" id="btn-next" onclick="changePage(1)">Sau &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 5: LIVE SIMULATOR -->
+        <!-- ========================================== -->
+        <div id="tab-simulator" class="tab-pane">
+            <div class="section-header">
+                <h1 class="section-title">Công cụ Mô phỏng Rủi ro Trực tiếp (Live Churn Simulator)</h1>
+                <p class="section-desc">Cho phép Giám đốc Kinh doanh và chuyên viên nạp trực tiếp chỉ số hành vi để mô hình CatBoost tính toán xác suất rời bỏ và khuyến nghị hành động tức thì.</p>
+            </div>
+
+            <!-- Preset Scenarios -->
+            <div style="margin-bottom: 20px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <span style="font-size: 12px; font-weight: 600; color: var(--text-secondary);">KỊCH BẢN MẪU:</span>
+                <button class="btn" onclick="applyPreset('vip_stable')">Khách VIP Công nghiệp đang ổn định</button>
+                <button class="btn" onclick="applyPreset('vip_at_risk')">Khách VIP có tín hiệu ngưng mua hàng</button>
+                <button class="btn" onclick="applyPreset('retail_slipping')">Đại lý bán lẻ giảm dần đơn hàng</button>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Form Inputs -->
+                <div class="card col-7">
+                    <div class="card-header">
+                        <span class="card-label">Thông số Hành vi Giao dịch</span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Số ngày chưa mua hàng gần nhất (Recency)</span>
+                            <span class="mono" id="val-recency">30 ngày</span>
+                        </div>
+                        <input type="range" id="sim-recency" class="range-slider" min="1" max="250" value="30" oninput="updateSimValue('recency', this.value + ' ngày')">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Tần suất mua hàng trong 12 tháng (Frequency)</span>
+                            <span class="mono" id="val-freq">45 đơn</span>
+                        </div>
+                        <input type="range" id="sim-freq" class="range-slider" min="1" max="200" value="45" oninput="updateSimValue('freq', this.value + ' đơn')">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Doanh thu thuần 12 tháng gần nhất (Monetary)</span>
+                            <span class="mono" id="val-monetary">350,000,000 VND</span>
+                        </div>
+                        <input type="range" id="sim-monetary" class="range-slider" min="5000000" max="1500000000" step="5000000" value="350000000" oninput="updateSimValue('monetary', formatVND(this.value))">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Số ngày có giao dịch trong 90 ngày gần đây</span>
+                            <span class="mono" id="val-active90">12 ngày</span>
+                        </div>
+                        <input type="range" id="sim-active90" class="range-slider" min="0" max="90" value="12" oninput="updateSimValue('active90', this.value + ' ngày')">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Tỷ số đà doanh thu (Momentum: 30 ngày gần đây / 90 ngày)</span>
+                            <span class="mono" id="val-momentum">1.0x</span>
+                        </div>
+                        <input type="range" id="sim-momentum" class="range-slider" min="0.0" max="2.5" step="0.05" value="1.0" oninput="updateSimValue('momentum', this.value + 'x')">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">
+                            <span>Phân khúc Khách hàng</span>
+                        </div>
+                        <select id="sim-segment" class="input-control">
+                            <option value="Key Industrial Accounts">Key Industrial Accounts (Khách công nghiệp lớn)</option>
+                            <option value="Bulk Gas Buyers">Bulk Gas Buyers (Khách mua khí bồn)</option>
+                            <option value="Retail & High-Frequency">Retail &amp; High-Frequency (Khách bán lẻ/đại lý)</option>
+                            <option value="Dormant Accounts">Dormant Accounts (Khách hàng ngủ đông)</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 8px;" onclick="runSimulation()">Tính toán Xác suất &amp; Rủi ro Ngay</button>
+                </div>
+
+                <!-- Simulation Output -->
+                <div class="card col-5" id="sim-result-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div class="card-header">
+                            <span class="card-label">Kết quả Dự đoán Mô hình CatBoost</span>
+                            <span class="badge" id="sim-badge">Đang chờ tính...</span>
+                        </div>
+
+                        <div style="text-align: center; margin: 24px 0;">
+                            <div style="font-size: 13px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.04em;">Xác suất Rời bỏ (Churn Probability)</div>
+                            <div class="metric-value" style="font-size: 48px; margin: 8px 0;" id="sim-prob">0.0%</div>
+                            <div style="font-size: 13px; font-weight: 500;" id="sim-band-label">Chưa có kết quả</div>
+                        </div>
+
+                        <div style="border-top: 1px solid var(--border-light); padding-top: 16px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="color: var(--text-secondary);">Phân tầng Giá trị:</span>
+                                <span class="mono" id="sim-val-tier">-</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="color: var(--text-secondary);">Điểm Ưu Tiên (0-100):</span>
+                                <span class="mono" id="sim-priority-score" style="font-weight: 600;">-</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                                <span style="color: var(--text-secondary);">Mức độ Can thiệp:</span>
+                                <span id="sim-priority-level">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--bg-subtle); padding: 14px; border-radius: 6px; margin-top: 16px;">
+                        <div style="font-size: 11px; font-family: var(--font-mono); text-transform: uppercase; font-weight: 600; color: var(--text-secondary); margin-bottom: 4px;">HÀNH ĐỘNG KHUYẾN NGHỊ (SLA):</div>
+                        <div style="font-size: 12px; font-weight: 500; color: var(--text-primary);" id="sim-action">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal for High-Res Figures -->
+    <div class="modal-overlay" id="image-modal" onclick="closeModal()">
+        <div class="modal-card" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <img id="modal-img" src="" alt="Enlarged Figure" style="width: 100%; border-radius: 6px;">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        let currentChart = null;
+        let priorityPage = 1;
+        let searchTimeout = null;
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
+            
+            document.getElementById('tab-' + tabId).classList.add('active');
+            event.target.classList.add('active');
+
+            if (tabId === 'forecasting' && !currentChart) {
+                loadSeries('Monthly_Revenue');
+            } else if (tabId === 'churn') {
+                loadClusterProfiles();
+            } else if (tabId === 'credit') {
+                loadCreditList();
+            } else if (tabId === 'priority') {
+                loadPriorityList();
+            }
+        }
+
+        // --- FORECASTING CHART ---
+        async function loadSeries(seriesName, btnElement) {
+            if (btnElement) {
+                btnElement.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                btnElement.classList.add('active');
+            }
+
+            try {
+                const res = await fetch(`/api/forecasting/series?forecast_type=${seriesName}`);
+                const data = await res.json();
+                
+                document.getElementById('chart-subtitle').innerText = `Mô hình tối ưu: ${data.model} | Số kỳ kiểm định Test: ${data.dates.length} kỳ`;
+
+                const ctx = document.getElementById('forecastChart').getContext('2d');
+                if (currentChart) currentChart.destroy();
+
+                currentChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.dates,
+                        datasets: [
+                            {
+                                label: 'Thực tế (Actual)',
+                                data: data.actual,
+                                borderColor: '#111111',
+                                backgroundColor: '#111111',
+                                borderWidth: 2,
+                                pointRadius: 3,
+                                pointHoverRadius: 5
+                            },
+                            {
+                                label: `Dự báo (${data.model})`,
+                                data: data.forecast,
+                                borderColor: '#1F6C9F',
+                                backgroundColor: 'rgba(31, 108, 159, 0.1)',
+                                borderWidth: 2,
+                                borderDash: [4, 4],
+                                pointRadius: 3,
+                                pointHoverRadius: 5
+                            },
+                            {
+                                label: 'Khoảng tin cậy (Upper)',
+                                data: data.upper,
+                                borderColor: 'rgba(31, 108, 159, 0.2)',
+                                borderWidth: 1,
+                                pointRadius: 0,
+                                fill: false
+                            },
+                            {
+                                label: 'Khoảng tin cậy (Lower)',
+                                data: data.lower,
+                                borderColor: 'rgba(31, 108, 159, 0.2)',
+                                borderWidth: 1,
+                                pointRadius: 0,
+                                fill: '-1',
+                                backgroundColor: 'rgba(31, 108, 159, 0.05)'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: { intersect: false, mode: 'index' },
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                                labels: { font: { family: '-apple-system, sans-serif', size: 12 }, boxWidth: 12 }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let val = context.parsed.y;
+                                        return `${context.dataset.label}: ${val.toLocaleString('vi-VN')}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: { grid: { display: false }, ticks: { font: { family: 'monospace', size: 11 } } },
+                            y: { grid: { color: '#EAEAEA' }, ticks: { font: { family: 'monospace', size: 11 } } }
+                        }
+                    }
+                });
+            } catch (err) {
+                console.error("Failed to load forecasting series:", err);
+            }
+        }
+
+        // --- CLUSTERS LOADING ---
+        async function loadClusterProfiles() {
+            try {
+                const res = await fetch('/api/segmentation/profiles');
+                const profiles = await res.json();
+                const container = document.getElementById('cluster-profiles-container');
+                container.innerHTML = '';
+
+                profiles.forEach(p => {
+                    const revPct = p.revenue_pct ? p.revenue_pct.toFixed(1) : 0;
+                    const custPct = p.customer_pct ? p.customer_pct.toFixed(1) : 0;
+                    const badgeClass = revPct > 50 ? 'badge-critical' : 'badge-info';
+
+                    const card = `
+                        <div class="card col-3">
+                            <div class="card-header">
+                                <span class="card-label">Cluster ${p.cluster_id}</span>
+                                <span class="badge ${badgeClass}">${revPct}% Doanh thu</span>
+                            </div>
+                            <div style="font-weight: 600; font-size: 15px; margin-bottom: 8px;">${p.business_name}</div>
+                            <div style="font-size: 12px; color: var(--text-secondary); margin-bottom: 16px;">${p.descriptive_name}</div>
+                            <div style="border-top: 1px solid var(--border-light); padding-top: 12px; font-size: 12px;">
+                                <div style="display:flex; justify-content:space-between; margin-bottom: 4px;">
+                                    <span style="color:var(--text-secondary)">Số khách hàng:</span>
+                                    <span class="mono"><strong>${p.customers}</strong> (${custPct}%)</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom: 4px;">
+                                    <span style="color:var(--text-secondary)">Recency trung vị:</span>
+                                    <span class="mono">${p.recency_median_days} ngày</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; margin-bottom: 4px;">
+                                    <span style="color:var(--text-secondary)">Tần suất trung vị:</span>
+                                    <span class="mono">${p.frequency_median_orders} đơn</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between;">
+                                    <span style="color:var(--text-secondary)">Doanh thu/KH:</span>
+                                    <span class="mono">${Math.round(p.revenue_per_customer_VND || 0).toLocaleString('vi-VN')} đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += card;
+                });
+            } catch (err) {
+                console.error("Failed to load cluster profiles:", err);
+            }
+        }
+
+        // --- PRIORITY LIST LOADING ---
+        async function loadPriorityList() {
+            const search = document.getElementById('search-input').value;
+            const risk = document.getElementById('filter-risk').value;
+            const segment = document.getElementById('filter-segment').value;
+            const valueTier = document.getElementById('filter-value').value;
+
+            const url = `/api/churn/priority-customers?page=${priorityPage}&limit=15&search=${encodeURIComponent(search)}&risk_band=${encodeURIComponent(risk)}&customer_segment=${encodeURIComponent(segment)}&value_tier=${encodeURIComponent(valueTier)}`;
+
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+                const tbody = document.getElementById('priority-table-body');
+                tbody.innerHTML = '';
+
+                if (!data.items || data.items.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="10" style="text-align: center; padding: 24px;">Không tìm thấy khách hàng phù hợp điều kiện lọc.</td></tr>';
+                    document.getElementById('pagination-info').innerText = '0 khách hàng';
+                    return;
+                }
+
+                data.items.forEach(c => {
+                    let riskBadge = 'badge-low';
+                    if (c.risk_band && c.risk_band.includes('Critical')) riskBadge = 'badge-critical';
+                    else if (c.risk_band && c.risk_band.includes('High')) riskBadge = 'badge-high';
+                    else if (c.risk_band && c.risk_band.includes('Medium')) riskBadge = 'badge-medium';
+
+                    const probPct = (c.churn_probability * 100).toFixed(1) + '%';
+                    const monetary = Math.round(c.monetary_365d || 0).toLocaleString('vi-VN');
+
+                    const drivers = [c.top_driver_1, c.top_driver_2, c.top_driver_3].filter(Boolean).map(d => `<span style="display:inline-block; font-size:11px; background:var(--bg-subtle); padding:2px 6px; border-radius:4px; margin-right:4px;">${d}</span>`).join('');
+
+                    const row = `
+                        <tr>
+                            <td class="mono"><strong>#${c.rank}</strong></td>
+                            <td class="mono"><code>${c.AccountObjectCode}</code></td>
+                            <td><strong>${c.CustomerName || 'Không tên'}</strong></td>
+                            <td class="mono">${c.BranchCode || '-'}</td>
+                            <td><span class="badge badge-info">${c.customer_segment.split('(')[0]}</span></td>
+                            <td><span class="badge ${riskBadge}">${c.risk_band.split('(')[0]}</span></td>
+                            <td class="mono" style="font-weight:600;">${probPct}</td>
+                            <td class="mono">${monetary} đ</td>
+                            <td class="mono" style="font-weight:700; color:#111111;">${c.priority_score}</td>
+                            <td>${drivers}</td>
+                        </tr>
+                    `;
+                    tbody.innerHTML += row;
+                });
+
+                document.getElementById('pagination-info').innerText = `Trang ${data.page} / ${data.total_pages} (Tổng cộng ${data.total.toLocaleString()} khách hàng)`;
+                document.getElementById('btn-prev').disabled = data.page <= 1;
+                document.getElementById('btn-next').disabled = data.page >= data.total_pages;
+
+            } catch (err) {
+                console.error("Failed to load priority list:", err);
+            }
+        }
+
+        function debounceSearch() {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                priorityPage = 1;
+                loadPriorityList();
+            }, 300);
+        }
+
+        function applyFilters() {
+            priorityPage = 1;
+            loadPriorityList();
+        }
+
+        function resetFilters() {
+            document.getElementById('search-input').value = '';
+            document.getElementById('filter-risk').value = 'ALL';
+            document.getElementById('filter-segment').value = 'ALL';
+            document.getElementById('filter-value').value = 'ALL';
+            priorityPage = 1;
+            loadPriorityList();
+        }
+
+        function changePage(delta) {
+            priorityPage += delta;
+            loadPriorityList();
+        }
+
+        // --- CREDIT RISK TAB JS ---
+        let creditPage = 1;
+        let creditSearchTimeout = null;
+
+        async function loadCreditList() {
+            const search = document.getElementById('credit-search-input').value;
+            const band = document.getElementById('filter-credit-band').value;
+            const priority = document.getElementById('filter-credit-priority').value;
+
+            const url = `/api/credit/customers?page=${creditPage}&limit=15&search=${encodeURIComponent(search)}&credit_band=${encodeURIComponent(band)}&priority=${encodeURIComponent(priority)}`;
+
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+                const tbody = document.getElementById('credit-table-body');
+                tbody.innerHTML = '';
+
+                if (!data.items || data.items.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="11" style="text-align: center; padding: 24px;">Không tìm thấy khách hàng phù hợp điều kiện lọc công nợ.</td></tr>';
+                    document.getElementById('credit-pagination-info').innerText = '0 khách hàng';
+                    return;
+                }
+
+                data.items.forEach(c => {
+                    let riskBadge = 'badge-low';
+                    if (c.credit_risk_band && c.credit_risk_band.includes('Critical')) riskBadge = 'badge-critical';
+                    else if (c.credit_risk_band && c.credit_risk_band.includes('High')) riskBadge = 'badge-high';
+                    else if (c.credit_risk_band && c.credit_risk_band.includes('Moderate')) riskBadge = 'badge-medium';
+
+                    let prioBadge = 'badge-low';
+                    if (c.credit_priority && c.credit_priority.includes('Priority 1')) prioBadge = 'badge-critical';
+                    else if (c.credit_priority && c.credit_priority.includes('Priority 2')) prioBadge = 'badge-high';
+                    else if (c.credit_priority && c.credit_priority.includes('Priority 3')) prioBadge = 'badge-info';
+
+                    const totalDebt = Math.round(c.outstanding_debt || 0).toLocaleString('vi-VN');
+                    const overdueDebt = Math.round(c.overdue_debt || 0).toLocaleString('vi-VN');
+                    const overdueRatio = (c.overdue_ratio * 100).toFixed(1) + '%';
+
+                    const row = `
+                        <tr>
+                            <td class="mono"><strong>#${c.rank}</strong></td>
+                            <td class="mono"><code>${c.AccountObjectCode}</code></td>
+                            <td><strong>${c.CustomerName || 'Không tên'}</strong></td>
+                            <td class="mono">${c.BranchCode || '-'}</td>
+                            <td><span class="badge badge-info">${(c.customer_segment || '').split('(')[0]}</span></td>
+                            <td class="mono" style="font-weight:600;">${totalDebt} đ</td>
+                            <td class="mono" style="color:#9F2F2D;">${overdueDebt} đ</td>
+                            <td class="mono">${overdueRatio}</td>
+                            <td class="mono" style="font-weight:700;">${c.credit_exposure_risk_score !== undefined ? c.credit_exposure_risk_score : c.credit_risk_score}</td>
+                            <td><span class="badge ${riskBadge}">${(c.credit_risk_band || '').split('(')[0]}</span></td>
+                            <td><span class="badge ${prioBadge}">${(c.credit_priority || '').split(':')[0]}</span></td>
+                        </tr>
+                    `;
+                    tbody.innerHTML += row;
+                });
+
+                document.getElementById('credit-pagination-info').innerText = `Trang ${data.page} / ${data.total_pages} (Tổng cộng ${data.total.toLocaleString()} khách hàng)`;
+                document.getElementById('btn-credit-prev').disabled = data.page <= 1;
+                document.getElementById('btn-credit-next').disabled = data.page >= data.total_pages;
+
+            } catch (err) {
+                console.error("Failed to load credit customer list:", err);
+            }
+        }
+
+        function debounceCreditSearch() {
+            clearTimeout(creditSearchTimeout);
+            creditSearchTimeout = setTimeout(() => {
+                creditPage = 1;
+                loadCreditList();
+            }, 300);
+        }
+
+        function applyCreditFilters() {
+            creditPage = 1;
+            loadCreditList();
+        }
+
+        function resetCreditFilters() {
+            document.getElementById('credit-search-input').value = '';
+            document.getElementById('filter-credit-band').value = 'ALL';
+            document.getElementById('filter-credit-priority').value = 'ALL';
+            creditPage = 1;
+            loadCreditList();
+        }
+
+        function changeCreditPage(delta) {
+            creditPage += delta;
+            loadCreditList();
+        }
+
+        // --- SIMULATOR ---
+        function updateSimValue(key, label) {
+            document.getElementById('val-' + key).innerText = label;
+        }
+
+        function formatVND(val) {
+            return Number(val).toLocaleString('vi-VN') + ' VND';
+        }
+
+        function applyPreset(type) {
+            if (type === 'vip_stable') {
+                document.getElementById('sim-recency').value = 4;
+                document.getElementById('sim-freq').value = 110;
+                document.getElementById('sim-monetary').value = 850000000;
+                document.getElementById('sim-active90').value = 45;
+                document.getElementById('sim-momentum').value = 1.1;
+                document.getElementById('sim-segment').value = 'Key Industrial Accounts';
+            } else if (type === 'vip_at_risk') {
+                document.getElementById('sim-recency').value = 105;
+                document.getElementById('sim-freq').value = 25;
+                document.getElementById('sim-monetary').value = 650000000;
+                document.getElementById('sim-active90').value = 1;
+                document.getElementById('sim-momentum').value = 0.05;
+                document.getElementById('sim-segment').value = 'Key Industrial Accounts';
+            } else if (type === 'retail_slipping') {
+                document.getElementById('sim-recency').value = 65;
+                document.getElementById('sim-freq').value = 12;
+                document.getElementById('sim-monetary').value = 35000000;
+                document.getElementById('sim-active90').value = 3;
+                document.getElementById('sim-momentum').value = 0.4;
+                document.getElementById('sim-segment').value = 'Retail & High-Frequency';
+            }
+
+            document.getElementById('val-recency').innerText = document.getElementById('sim-recency').value + ' ngày';
+            document.getElementById('val-freq').innerText = document.getElementById('sim-freq').value + ' đơn';
+            document.getElementById('val-monetary').innerText = formatVND(document.getElementById('sim-monetary').value);
+            document.getElementById('val-active90').innerText = document.getElementById('sim-active90').value + ' ngày';
+            document.getElementById('val-momentum').innerText = document.getElementById('sim-momentum').value + 'x';
+
+            runSimulation();
+        }
+
+        async function runSimulation() {
+            const payload = {
+                recency_days: parseFloat(document.getElementById('sim-recency').value),
+                frequency_365d: parseFloat(document.getElementById('sim-freq').value),
+                monetary_365d: parseFloat(document.getElementById('sim-monetary').value),
+                active_days_90d: parseFloat(document.getElementById('sim-active90').value),
+                revenue_momentum_ratio: parseFloat(document.getElementById('sim-momentum').value),
+                customer_segment: document.getElementById('sim-segment').value
+            };
+
+            try {
+                const res = await fetch('/api/churn/simulate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await res.json();
+
+                document.getElementById('sim-prob').innerText = (result.churn_probability * 100).toFixed(1) + '%';
+                document.getElementById('sim-prob').style.color = result.risk_color;
+
+                const badge = document.getElementById('sim-badge');
+                badge.innerText = result.risk_band.split('(')[0];
+                badge.style.background = result.risk_bg;
+                badge.style.color = result.risk_color;
+
+                document.getElementById('sim-band-label').innerText = result.risk_band;
+                document.getElementById('sim-val-tier').innerText = result.value_tier;
+                document.getElementById('sim-priority-score').innerText = result.priority_score;
+                document.getElementById('sim-priority-level').innerText = result.priority_level;
+                document.getElementById('sim-action').innerText = result.recommended_action;
+
+            } catch (err) {
+                console.error("Simulation failed:", err);
+            }
+        }
+
+        // --- MODAL ---
+        function openModal(imgSrc) {
+            document.getElementById('modal-img').src = imgSrc;
+            document.getElementById('image-modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('image-modal').classList.remove('active');
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            // initial run
+            runSimulation();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1182 @@
+
+--- TRANG 1 ---
+Trang 1 
+ 
+ 
+ĐỀ CƯƠNG HƯỚNG DẪN 
+VIẾT BÁO CÁO THỰC TẬP TỐT NGHIỆP 
+Chuyên ngành: PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ 
+KINH DOANH 
+ 
+ 
+ 
+Mục tiêu của tài liệu 
+Cung cấp một khung thống nhất để sinh viên lựa chọn chủ đề, thu thập và xử lý dữ 
+liệu, xây dựng sản phẩm phân tích, viết báo cáo và chuyển kết quả phân tích thành 
+khuyến nghị có giá trị đối với cơ sở thực tập. 
+ 
+ 
+ 
+ 
+ 
+ 
+Phiên bản đề xuất hoàn chỉnh 
+Dùng cho sinh viên và giảng viên hướng dẫn 
+2026 
+ 
+ 
+
+--- TRANG 2 ---
+Trang 2 
+LỜI NÓI ĐẦU 
+Phiên bản mới tái cấu trúc chi tiết hơn để nhấn mạnh năng lực cốt lõi của sinh viên 
+chuyên ngành: hiểu bài toán kinh doanh, làm việc với dữ liệu, phân tích bằng công cụ phù 
+hợp, đánh giá kết quả và chuyển kết quả phân tích thành quyết định hoặc khuyến nghị 
+quản trị. 
+ 
+Nguyên tắc xuyên suốt 
+Bài toán kinh doanh → Câu hỏi phân tích → Dữ liệu → Phương pháp/công cụ → Kết quả phân 
+tích → Hàm ý/khuyến nghị → Khả năng triển khai. 
+ 
+1. MỤC ĐÍCH VÀ PHẠM VI CỦA BÁO CÁO THỰC TẬP 
+Báo cáo thực tập tốt nghiệp là sản phẩm học thuật - nghề nghiệp phản ánh khả năng 
+vận dụng kiến thức và kỹ năng của sinh viên vào một tình huống dữ liệu cụ thể trong hoạt 
+động kinh tế và kinh doanh. Báo cáo cần đạt đồng thời ba mục tiêu: mô tả đúng bối cảnh 
+nghiệp vụ; phân tích dữ liệu có phương pháp; và đề xuất giải pháp có khả năng hỗ trợ 
+quyết định. 
+➢ Nhận diện được một vấn đề hoặc nhu cầu ra quyết định thực tế tại cơ sở thực tập có 
+liên quan đến dữ liệu. 
+➢ Mô tả được nguồn dữ liệu, cách tổ chức dữ liệu, các chỉ tiêu/KPI và quy trình phân 
+tích hoặc lập báo cáo đang được sử dụng. 
+➢ Thực hiện được các bước xử lý dữ liệu: thu thập/tiếp nhận, làm sạch, biến đổi, phân 
+tích, trực quan hóa hoặc xây dựng mô hình. 
+➢ Sử dụng phù hợp ít nhất một nhóm công cụ phân tích như Excel nâng cao, SQL, 
+Power BI/Tableau, Python/R hoặc công cụ chuyên dụng. 
+➢ Giải thích được kết quả theo ngôn ngữ kinh tế - kinh doanh, không chỉ trình bày kết 
+quả kỹ thuật. 
+➢ Đưa ra khuyến nghị có căn cứ dữ liệu, chỉ rõ đối tượng sử dụng, lợi ích dự kiến, điều 
+kiện triển khai và hạn chế. 
+➢ Tuân thủ yêu cầu về bảo mật, đạo đức dữ liệu, trích dẫn và sử dụng AI có trách 
+nhiệm. 
+
+--- TRANG 3 ---
+Trang 3 
+2. NGUYÊN TẮC LỰA CHỌN VÀ XÁC ĐỊNH ĐỀ TÀI 
+Sinh viên nên lựa chọn đề tài sau khi đã tìm hiểu tối thiểu một quy trình nghiệp vụ tại 
+cơ sở thực tập. Đề tài tốt không được xác định chỉ bằng tên công cụ. Công cụ chỉ là 
+phương tiện; trung tâm của đề tài phải là vấn đề kinh doanh và giá trị mà phân tích dữ liệu 
+có thể tạo ra. 
+2.1. Công thức xác định tên đề tài 
+Công thức gợi ý 
+[Mục tiêu/vấn đề phân tích] + [đối tượng/nghiệp vụ] + [tại cơ sở thực tập] + [phương pháp/công 
+cụ chủ đạo nếu cần]. 
+ 
+Ví dụ chưa phù hợp: “Ứng dụng Power BI tại Công ty X”. Tên này nói công cụ nhưng 
+chưa nói bài toán. Ví dụ phù hợp hơn: “Phân tích doanh thu và xây dựng dashboard giám 
+sát hiệu quả bán hàng tại Công ty X bằng Power BI”. 
+2.2. Năm câu hỏi phải trả lời trước khi chốt đề tài 
+1. Bộ phận hoặc người sử dụng kết quả phân tích là ai? 
+2. Quyết định hoặc vấn đề kinh doanh cụ thể nào cần được hỗ trợ? 
+3. Dữ liệu nào có thể tiếp cận hoặc có thể mô phỏng hợp lý nếu dữ liệu thật bị hạn chế? 
+4. Sinh viên có thể tạo ra sản phẩm gì: dashboard, báo cáo phân tích, mô hình dự báo, 
+phân khúc khách hàng, hệ thống cảnh báo, prototype AI Agent...? 
+5. Kết quả sẽ được đánh giá như thế nào: theo KPI nghiệp vụ, độ chính xác mô hình, mức 
+độ tự động hóa, thời gian tiết kiệm, khả năng phát hiện insight hay khả năng hỗ trợ 
+quyết định? 
+2.3. Tiêu chí loại bỏ chủ đề không phù hợp 
+➢ Chỉ mô tả hoạt động doanh nghiệp hoặc quy trình CNTT nhưng không có bài toán 
+phân tích dữ liệu. 
+➢ Chỉ trình bày lý thuyết về AI/Big Data/Power BI mà không có dữ liệu thực nghiệm. 
+➢ Dữ liệu quá ít, không rõ nguồn hoặc không liên hệ được với một câu hỏi kinh doanh. 
+➢ Mô hình quá phức tạp so với thời gian thực tập nhưng không có khả năng giải thích và 
+kiểm chứng. 
+➢ Đề tài sao chép dashboard/mã nguồn có sẵn mà không thể hiện bước thiết kế, xử lý dữ 
+liệu và phân tích của sinh viên. 
+
+--- TRANG 4 ---
+Trang 4 
+3. KẾT CẤU TỔNG THỂ CỦA BÁO CÁO 
+Phần nội dung chính của báo cáo nên dài khoảng 40–55 trang, không tính phụ lục. 
+Cấu trúc 3 chương được giữ lại nhưng điều chỉnh tỷ trọng để Chương 3 thể hiện rõ nhất 
+phần việc phân tích dữ liệu do sinh viên trực tiếp thực hiện. 
+Thành phần 
+Dung lượng 
+gợi ý 
+Yêu cầu trọng tâm 
+Phần đầu 
+— 
+Bìa, nhận xét/xác nhận theo quy định, mục lục, danh mục 
+bảng/hình, danh mục từ viết tắt (nếu có). 
+Chương 1 
+8–10 trang 
+Bối cảnh cơ sở thực tập, bộ phận nghiệp vụ, hạ tầng dữ 
+liệu và bối cảnh của bài toán được lựa chọn. 
+Chương 2 
+12–15 trang 
+Thực trạng dữ liệu, quy trình phân tích/lập báo cáo, KPI, 
+công cụ, sản phẩm hiện tại; đánh giá khoảng trống và yêu 
+cầu cải tiến. 
+Chương 3 
+18–25 trang 
+Thiết kế và thực hiện giải pháp phân tích dữ liệu; kết quả, 
+đánh giá, khuyến nghị và phương án triển khai. 
+Kết luận 
+2–3 trang 
+Tổng hợp kết quả đạt được, hạn chế, giá trị đối với cơ sở 
+thực tập và hướng phát triển. 
+Tài liệu tham 
+khảo 
+— 
+Liệt kê tài liệu đã sử dụng theo một chuẩn trích dẫn thống 
+nhất. 
+Phụ lục 
+Không tính 
+Data dictionary, hình dashboard, mã lệnh trọng yếu, biểu 
+mẫu, output, minh chứng thực tập, dữ liệu mẫu được phép 
+công bố. 
+ 
+Lưu ý về dung lượng 
+Dung lượng chỉ mang tính định hướng. Giảng viên hướng dẫn có thể điều chỉnh theo đặc điểm đề 
+tài. Tuy nhiên, phần phân tích do sinh viên trực tiếp thực hiện phải chiếm tỷ trọng lớn nhất trong 
+báo cáo. 
+ 
+4. ĐỀ CƯƠNG CHI TIẾT CHƯƠNG 1 
+CHƯƠNG 1. TỔNG QUAN VỀ CƠ SỞ THỰC TẬP VÀ BỐI CẢNH BÀI TOÁN PHÂN 
+TÍCH DỮ LIỆU 
+Chương 1 không nhằm giới thiệu toàn bộ lịch sử doanh nghiệp. Sinh viên chỉ trình 
+bày những thông tin cần thiết để người đọc hiểu môi trường kinh doanh, bộ phận liên 
+quan, hệ thống dữ liệu và lý do hình thành bài toán phân tích. 
+
+--- TRANG 5 ---
+Trang 5 
+1.1. Khái quát về cơ sở thực tập 
+Tên, loại hình tổ chức, quá trình hình thành ở mức tóm lược; sản phẩm/dịch vụ chính; 
+thị trường/khách hàng chính. 
+1.2. Cơ cấu tổ chức và bộ phận thực tập 
+Sơ đồ tổ chức ở mức cần thiết; trình bày sâu bộ phận nơi sinh viên thực tập và các bộ 
+phận liên quan đến dữ liệu. 
+1.3. Tình hình hoạt động kinh doanh và chuyển đổi số 
+Một số chỉ tiêu hoạt động 2–3 năm gần nhất nếu được phép công bố; hệ thống phần 
+mềm, mức độ số hóa, các kênh tạo dữ liệu. 
+1.4. Hạ tầng và tổ chức dữ liệu liên quan 
+Nguồn dữ liệu, hệ thống lưu trữ, luồng dữ liệu, mức độ tập trung/phân tán, quyền truy 
+cập, các phần mềm nghiệp vụ có liên quan. 
+1.5. Bối cảnh nghiệp vụ của đề tài 
+Mô tả quy trình nghiệp vụ mà phân tích dữ liệu sẽ hỗ trợ; đối tượng sử dụng kết quả; 
+vấn đề/nhu cầu ra quyết định. 
+1.6. Xác định bài toán phân tích dữ liệu 
+Phát biểu ngắn gọn bài toán, mục tiêu phân tích, câu hỏi phân tích và sản phẩm dự 
+kiến của báo cáo. 
+Đầu ra bắt buộc của Chương 1 
+Người đọc phải trả lời được: doanh nghiệp đang làm gì, bộ phận nào sử dụng dữ liệu, 
+dữ liệu phát sinh ở đâu, bài toán kinh doanh nào được lựa chọn và vì sao bài toán đó 
+đáng phân tích. 
+ 
+ 
+ 
+
+--- TRANG 6 ---
+Trang 6 
+5. ĐỀ CƯƠNG CHI TIẾT CHƯƠNG 2 
+CHƯƠNG 2. THỰC TRẠNG DỮ LIỆU VÀ QUY TRÌNH PHÂN TÍCH TẠI CƠ SỞ THỰC 
+TẬP 
+Chương 2 là cầu nối giữa thực trạng và giải pháp. Sinh viên phải chứng minh đã hiểu 
+dữ liệu và quy trình hiện tại, thay vì chỉ liệt kê các phần mềm đang được doanh nghiệp sử 
+dụng. 
+2.1. Mô tả nghiệp vụ và câu hỏi quản trị hiện tại 
+Trình bày quy trình ra quyết định, các vai trò tham gia, tần suất lập báo cáo và những 
+câu hỏi mà người quản lý thường cần trả lời. 
+2.2. Hệ thống chỉ tiêu/KPI liên quan 
+Xác định công thức, ý nghĩa và cấp độ phân tích của các KPI. Ví dụ: doanh thu, lợi 
+nhuận, conversion rate, CAC, CLV, churn, vòng quay hàng tồn kho, nợ quá hạn... tùy đề 
+tài. 
+2.3. Nguồn và đặc điểm dữ liệu 
+Mô tả dữ liệu nội bộ/ngoại bộ; đơn vị quan sát; khoảng thời gian; quy mô; định dạng; 
+tần suất cập nhật; khóa định danh; quan hệ giữa các bảng/tệp. 
+2.4. Chất lượng và quản trị dữ liệu 
+Đánh giá thiếu dữ liệu, trùng lặp, sai định dạng, ngoại lệ, không đồng nhất mã, dữ liệu 
+chậm cập nhật, vấn đề bảo mật và quyền truy cập. 
+2.5. Quy trình phân tích hoặc lập báo cáo hiện tại 
+Mô tả từ bước lấy dữ liệu đến xử lý, tổng hợp, trực quan hóa, phát hành báo cáo và sử 
+dụng báo cáo. Khuyến khích vẽ sơ đồ AS-IS. 
+2.6. Công cụ và sản phẩm phân tích hiện tại 
+Excel, ERP/CRM, SQL, Power BI/Tableau, Python/R hoặc phần mềm chuyên dụng; 
+giới thiệu các báo cáo/biểu đồ chính và mục đích sử dụng. 
+2.7. Đánh giá thực trạng 
+Phân tích ưu điểm, hạn chế và nguyên nhân. Nên phân nhóm: dữ liệu, quy trình, công 
+cụ, con người, KPI, mức độ tự động hóa, khả năng hỗ trợ quyết định. 
+2.8. Xác định khoảng trống và yêu cầu cho giải pháp 
+Chốt vấn đề sẽ giải quyết trong Chương 3; đặt ra tiêu chí thành công và các ràng buộc 
+dữ liệu/kỹ thuật/nghiệp vụ. 
+
+--- TRANG 7 ---
+Trang 7 
+Khuyến nghị trình bày 
+Nên có tối thiểu: 01 sơ đồ quy trình AS-IS; 01 bảng mô tả nguồn dữ liệu; 01 bảng KPI; 
+01 bảng đánh giá vấn đề/nguyên nhân/hệ quả; và hình minh họa một số báo cáo hiện 
+tại nếu được phép. 
+ 
+6. ĐỀ CƯƠNG CHI TIẾT CHƯƠNG 3 
+CHƯƠNG 3. THIẾT KẾ VÀ THỰC HIỆN GIẢI PHÁP PHÂN TÍCH DỮ LIỆU 
+Đây là chương trọng tâm, phải thể hiện phần việc do sinh viên trực tiếp thực hiện. Nội 
+dung cụ thể thay đổi theo loại đề tài nhưng nên tuân theo logic từ mục tiêu → dữ liệu → 
+xử lý → phân tích/mô hình → đánh giá → khuyến nghị. 
+3.1. Mục tiêu và phạm vi của giải pháp 
+Nhắc lại vấn đề cần giải quyết, người sử dụng, quyết định được hỗ trợ, phạm vi dữ 
+liệu và tiêu chí đánh giá. 
+3.2. Phương pháp và kiến trúc giải pháp 
+Trình bày quy trình phân tích, công cụ, thuật toán hoặc kiến trúc dashboard; có thể 
+dùng sơ đồ TO-BE. 
+3.3. Mô tả tập dữ liệu sử dụng 
+Nguồn dữ liệu, thời gian, số quan sát, số biến, cấu trúc bảng; phân biệt rõ dữ liệu thật, 
+dữ liệu đã ẩn danh và dữ liệu mô phỏng. 
+3.4. Tiền xử lý và chuẩn bị dữ liệu 
+Làm sạch, xử lý thiếu/trùng, chuẩn hóa mã, tạo biến, kết nối bảng, kiểm tra logic, xử 
+lý ngoại lệ; nêu lý do cho các lựa chọn quan trọng. 
+3.5. Phân tích khám phá và xây dựng chỉ tiêu 
+Thống kê mô tả, phân bố, xu hướng, tương quan, phân nhóm theo thời gian/sản 
+phẩm/khu vực/khách hàng; xác định các insight ban đầu. 
+3.6. Xây dựng sản phẩm phân tích hoặc mô hình 
+Tùy đề tài: dashboard BI, mô hình dự báo, phân khúc khách hàng, mô hình churn, 
+scoring, phát hiện bất thường, phân tích văn bản, prototype AI Agent... 
+
+--- TRANG 8 ---
+Trang 8 
+3.7. Đánh giá kết quả 
+Đánh giá bằng tiêu chí kỹ thuật và/hoặc nghiệp vụ: sai số dự báo, 
+precision/recall/F1/AUC, độ ổn định, mức bao phủ KPI, thời gian tạo báo cáo, khả năng 
+drill-down, tính dễ sử dụng. 
+3.8. Phân tích kết quả theo góc nhìn kinh doanh 
+Giải thích kết quả: điều gì xảy ra, tại sao có thể xảy ra, nhóm/khía cạnh nào đáng chú 
+ý, hệ quả đối với hoạt động quản trị. 
+3.9. Kiến nghị và phương án ứng dụng 
+Đề xuất hành động cụ thể; xác định đơn vị thực hiện, dữ liệu cần duy trì, tần suất cập 
+nhật, nguồn lực và lộ trình triển khai. 
+3.10. Hạn chế và hướng phát triển 
+Nêu trung thực giới hạn của dữ liệu, phương pháp, mô hình và khả năng khái quát; đề 
+xuất bước cải tiến tiếp theo. 
+6.1. Bốn dạng sản phẩm Chương 3 được khuyến khích 
+Dạng sản 
+phẩm 
+Yêu cầu tối thiểu 
+Công cụ gợi ý 
+A. 
+BI/Dashboard 
+Dashboard quản trị + mô hình dữ liệu + 
+KPI + drill-down + insight + hướng dẫn 
+sử dụng. 
+Power BI, Tableau, Looker 
+Studio, Excel/Power Pivot, 
+SQL. 
+B. Phân tích 
+thống kê/kinh 
+tế lượng 
+Báo cáo phân tích mối quan hệ, tác động 
+hoặc so sánh; kiểm định và diễn giải kinh 
+tế. 
+Excel, R, Python, Stata/EViews 
+tùy điều kiện. 
+C. Học máy/dự 
+báo 
+Pipeline dữ liệu + mô hình + đánh giá + 
+giải thích + khuyến nghị sử dụng. 
+Python/R, scikit-learn, 
+XGBoost, công cụ dự báo. 
+D. Tự động 
+hóa/AI ứng 
+dụng 
+Prototype hỗ trợ truy vấn, tổng hợp, cảnh 
+báo, phân tích bằng ngôn ngữ tự nhiên; 
+phải có dữ liệu kiểm thử và tiêu chí đánh 
+giá. 
+Python, SQL, BI, API/LLM/AI 
+Agent phù hợp với phạm vi đề 
+tài. 
+ 
+
+--- TRANG 9 ---
+Trang 9 
+7. YÊU CẦU VỀ DỮ LIỆU, BẢO MẬT VÀ DỮ LIỆU MÔ PHỎNG 
+Dữ liệu là bằng chứng trung tâm của báo cáo. Sinh viên phải mô tả rõ dữ liệu được lấy 
+từ đâu, được phép sử dụng đến mức nào và đã thực hiện những bước bảo vệ dữ liệu gì. 
+Không đưa dữ liệu bí mật, thông tin nhận dạng cá nhân hoặc thông tin kinh doanh nhạy 
+cảm vào báo cáo nếu chưa được phép. 
+7.1. Thứ tự ưu tiên nguồn dữ liệu 
+➢ Dữ liệu thực tế đã được cơ sở thực tập cho phép sử dụng và có thể ẩn danh. 
+➢ Dữ liệu tổng hợp/đã làm mờ được xây dựng từ đặc trưng thực tế của doanh nghiệp. 
+➢ Dữ liệu công khai từ nguồn đáng tin cậy, có trích dẫn. 
+➢ Dữ liệu mô phỏng/synthetic data khi dữ liệu thật không thể cung cấp, nhưng cấu trúc 
+và quy tắc mô phỏng phải phản ánh hợp lý bài toán nghiệp vụ. 
+7.2. Khi sử dụng dữ liệu mô phỏng 
+➢ Phải nói rõ đây là dữ liệu mô phỏng, không được trình bày như dữ liệu thật của doanh 
+nghiệp. 
+➢ Mô tả logic sinh dữ liệu: biến nào có, phạm vi giá trị, phân phối hoặc quan hệ giữa các 
+biến, các ràng buộc nghiệp vụ. 
+➢ Nếu dùng AI để tạo dữ liệu, phải kiểm tra lại tính hợp lý, loại bỏ dữ liệu phi thực tế và 
+lưu prompt/quy trình ở phụ lục nếu cần. 
+➢ Kết luận kinh doanh phải được diễn đạt theo phạm vi mô phỏng, tránh khẳng định trực 
+tiếp rằng doanh nghiệp thực tế chắc chắn có cùng kết quả. 
+8. SỬ DỤNG AI TRONG QUÁ TRÌNH LÀM BÁO CÁO 
+AI có thể được sử dụng như một công cụ hỗ trợ học tập và phân tích, nhưng không 
+thay thế trách nhiệm học thuật của sinh viên. Sinh viên phải hiểu, kiểm tra và chịu trách 
+nhiệm đối với mọi nội dung, mã lệnh, kết quả và kết luận được đưa vào báo cáo. 
+➢ Có thể dùng AI để gợi ý câu hỏi phân tích, hỗ trợ viết mã, giải thích lỗi, tạo dữ liệu 
+mô phỏng, gợi ý cách trực quan hóa hoặc chỉnh sửa diễn đạt. 
+➢ Không sử dụng AI để tạo số liệu giả rồi mô tả là dữ liệu của cơ sở thực tập; không tạo 
+nguồn tài liệu tham khảo không tồn tại. 
+➢ Mọi mã lệnh do AI hỗ trợ phải được chạy kiểm thử; sinh viên phải giải thích được 
+logic của phần mã trọng yếu. 
+➢ Mọi nhận định chuyên môn do AI gợi ý phải được đối chiếu với dữ liệu và tài liệu có 
+căn cứ. 
+
+--- TRANG 10 ---
+Trang 10 
+➢ Khuyến khích có phụ lục/ngắn mục “Công cụ AI đã sử dụng và phạm vi sử dụng” nếu 
+chương trình đào tạo hoặc giảng viên yêu cầu. 
+ 
+9. QUY TRÌNH CHỌN CHỦ ĐỀ CHO SINH VIÊN 
+Sinh viên có thể dùng quy trình 6 bước sau để lựa chọn chủ đề vừa sức và có giá trị 
+ứng dụng. 
+1. Chọn một nghiệp vụ có dữ liệu: bán hàng, khách hàng, marketing, tài chính, kho, 
+vận hành, nhân sự, tín dụng, thương mại điện tử... 
+2. Xác định một quyết định hoặc “nỗi đau” của bộ phận nghiệp vụ: không biết sản 
+phẩm nào giảm doanh thu, dự báo nhu cầu kém, báo cáo chậm, khách hàng rời bỏ, 
+tồn kho cao... 
+3. Kiểm tra khả năng có dữ liệu: các trường dữ liệu cần thiết, thời gian, số lượng bản 
+ghi, mức độ bảo mật. 
+4. Chuyển vấn đề thành 2–5 câu hỏi phân tích có thể trả lời bằng dữ liệu. 
+5. Chọn phương pháp vừa đủ: dashboard/EDA trước; chỉ dùng mô hình thống kê/ML 
+nếu thật sự cần cho câu hỏi. 
+6. Xác định sản phẩm cuối và tiêu chí đánh giá trước khi chốt tên đề tài. 
+Quy tắc “vừa sức nhưng có sản phẩm” 
+Đề tài tốt ở mức sinh viên không nhất thiết phải dùng mô hình phức tạp. Một 
+dashboard được thiết kế đúng KPI, dữ liệu sạch, có drill-down, phát hiện insight và 
+khuyến nghị cụ thể có thể tốt hơn một mô hình AI phức tạp nhưng không gắn với 
+quyết định kinh doanh. 
+ 
+10. CÁC HƯỚNG GỢI Ý CHỦ ĐỀ BÁO CÁO THỰC TẬP 
+Danh mục dưới đây là các hướng gợi ý. Khi áp dụng, sinh viên cần thay “Công ty 
+X/Đơn vị X” bằng cơ sở thực tập và điều chỉnh phạm vi theo dữ liệu thực tế. Mức độ 
+được ký hiệu: Cơ bản (CB), Trung bình (TB), Khá (K). 
+10.1. Bán hàng và quản trị doanh thu 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Phân tích doanh thu và xây 
+Doanh thu, tăng trưởng, cơ 
+Power BI/Tableau 
+CB–TB 
+
+--- TRANG 11 ---
+Trang 11 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+dựng dashboard giám sát hiệu 
+quả bán hàng tại Công ty X 
+cấu sản phẩm/kênh/khu vực; 
+phát hiện điểm tăng/giảm. 
++ SQL/Excel 
+2 
+Phân tích hiệu quả bán hàng 
+theo sản phẩm, khu vực và 
+nhân viên 
+So sánh KPI, đóng góp doanh 
+thu/lợi nhuận, Pareto 80/20. 
+Power 
+BI/Excel/Python 
+CB–TB 
+3 
+Phân tích giỏ hàng và hành vi 
+mua kết hợp sản phẩm 
+Sản phẩm thường mua cùng; 
+gợi ý combo/cross-sell. 
+Python/SQL, 
+association rules 
+TB–K 
+4 
+Dự báo doanh thu ngắn hạn 
+phục vụ lập kế hoạch kinh 
+doanh 
+Dự báo tuần/tháng, xu 
+hướng/mùa vụ, sai số dự báo. 
+Python/R/Excel 
+Forecast 
+TB–K 
+5 
+Phân tích mức độ hoàn thành 
+kế hoạch bán hàng và cảnh 
+báo sớm 
+Actual vs target, variance, 
+cảnh báo đơn vị/sản phẩm có 
+nguy cơ hụt kế hoạch. 
+Power BI + 
+DAX/SQL 
+TB 
+6 
+Phân tích lợi nhuận và biên 
+lợi nhuận theo nhóm sản 
+phẩm/khách hàng 
+Doanh thu không đồng nghĩa 
+hiệu quả; xác định nhóm lợi 
+nhuận cao/thấp. 
+Power BI/Python 
+TB 
+ 
+10.2. Khách hàng và CRM 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương pháp/công 
+cụ 
+Mức 
+1 
+Phân khúc khách hàng bằng 
+RFM phục vụ chăm sóc và 
+marketing 
+Recency–Frequency–
+Monetary; nhóm VIP, tiềm 
+năng, ngủ quên. 
+Python/Power BI 
+TB 
+2 
+Phân khúc khách hàng bằng 
+K-means và xây dựng chân 
+dung nhóm 
+Cluster + mô tả đặc trưng + 
+chiến lược cho từng nhóm. 
+Python 
+TB–K 
+3 
+Phân tích tỷ lệ khách hàng 
+quay lại và giá trị vòng đời 
+khách hàng 
+Retention, cohort, CLV; gợi 
+ý chăm sóc. 
+SQL/Python/Power 
+BI 
+TB–K 
+4 
+Phân tích nguyên nhân khách 
+hàng rời bỏ dịch vụ 
+Churn rate, dấu hiệu hành vi 
+trước churn, nhóm nguy cơ. 
+Power BI/Python 
+TB 
+5 
+Xây dựng mô hình dự báo khả 
+năng khách hàng rời bỏ 
+Classification + 
+precision/recall/AUC + giải 
+thích biến. 
+Python 
+K 
+6 
+Phân tích mức độ hài lòng 
+khách hàng từ dữ liệu khảo sát 
+NPS/CSAT, driver analysis, 
+phân nhóm vấn đề. 
+Excel/SPSS/Python/
+Power BI 
+CB–TB 
+ 
+
+--- TRANG 12 ---
+Trang 12 
+10.3. Marketing và truyền thông số 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Phân tích hiệu quả chiến dịch 
+marketing đa kênh 
+Reach, CTR, conversion, 
+CAC, ROAS; so sánh 
+kênh/campaign. 
+Power 
+BI/Excel/SQL 
+CB–
+TB 
+2 
+Phân tích phễu chuyển đổi 
+khách hàng từ marketing đến 
+mua hàng 
+Impression→click→lead→or
+der; tìm điểm rơi. 
+SQL/Power BI 
+TB 
+3 
+Đánh giá hiệu quả chi phí 
+quảng cáo và phân bổ ngân 
+sách 
+ROAS/CPA theo kênh, gợi ý 
+tái phân bổ ngân sách. 
+Excel/Power 
+BI/Python 
+TB 
+4 
+Phân tích nội dung và cảm xúc 
+phản hồi khách hàng trên 
+mạng xã hội 
+Sentiment/topic, xu hướng 
+phản hồi. 
+Python/NLP 
+TB–K 
+5 
+Phân tích A/B test cho một 
+chiến dịch hoặc giao diện số 
+So sánh conversion, kiểm 
+định khác biệt, kết luận kinh 
+doanh. 
+Python/R/Excel 
+TB–K 
+ 
+10.4. Thương mại điện tử 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Xây dựng dashboard theo dõi 
+hiệu quả kinh doanh thương 
+mại điện tử 
+GMV, orders, conversion, 
+AOV, refund, channel, 
+seller/product. 
+Power BI/Tableau 
+TB 
+2 
+Phân tích hành vi khách hàng 
+theo hành trình trên 
+website/app 
+Session, funnel, drop-off, 
+thời điểm và thiết bị. 
+SQL/Python/BI 
+TB–K 
+3 
+Phân tích tỷ lệ hủy/hoàn đơn 
+và các yếu tố liên quan 
+Theo sản phẩm, khu vực, 
+phương thức thanh toán, giao 
+vận. 
+Power BI/Python 
+TB 
+4 
+Xây dựng hệ thống gợi ý sản 
+phẩm ở mức prototype 
+Collaborative/content-based 
+tùy dữ liệu. 
+Python 
+K 
+5 
+Phân tích hiệu quả chương 
+trình khuyến mại trên sàn/kênh 
+online 
+Lift doanh số, margin, nhóm 
+khách hàng phản hồi tốt. 
+Python/Power BI 
+TB–K 
+ 
+
+--- TRANG 13 ---
+Trang 13 
+10.5. Tài chính - kế toán - đầu tư 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Xây dựng dashboard phân tích 
+doanh thu, chi phí và lợi nhuận 
+P&L management dashboard, 
+variance, cơ cấu chi phí. 
+Power BI/Excel 
+CB–
+TB 
+2 
+Phân tích dòng tiền và cảnh 
+báo các giai đoạn thiếu hụt 
+tiền mặt 
+Cash inflow/outflow, 
+forecast, scenario. 
+Excel/Python/Pow
+er BI 
+TB 
+3 
+Phân tích công nợ phải thu và 
+rủi ro chậm thanh toán 
+Aging, DSO, nhóm khách 
+hàng nợ quá hạn. 
+Power BI/Python 
+TB 
+4 
+Phân tích dữ liệu giá cổ phiếu 
+và rủi ro danh mục ở mức ứng 
+dụng 
+Return, volatility, drawdown, 
+correlation. 
+Python/R/Excel 
+TB–K 
+5 
+Dự báo một chỉ tiêu tài chính 
+ngắn hạn phục vụ quản trị 
+Forecast doanh thu/chi 
+phí/cash flow với đánh giá 
+sai số. 
+Python/R 
+TB–K 
+ 
+10.6. Ngân hàng, tín dụng và FinTech 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Phân tích hồ sơ tín dụng và 
+xây dựng dashboard danh mục 
+khách hàng vay 
+Dư nợ, nhóm nợ, ngành, khu 
+vực, tuổi nợ. 
+Power BI/SQL 
+TB 
+2 
+Phân tích các yếu tố liên quan 
+đến khả năng chậm trả 
+EDA + logistic/decision tree 
+ở mức phù hợp. 
+Python/R 
+TB–K 
+3 
+Xây dựng mô hình chấm điểm 
+tín dụng thử nghiệm trên dữ 
+liệu mô phỏng/công khai 
+Credit scoring, AUC, 
+confusion matrix, 
+explainability. 
+Python 
+K 
+4 
+Phát hiện giao dịch bất thường 
+ở mức prototype 
+Rule-based/anomaly 
+detection; đánh giá cảnh báo. Python/SQL 
+K 
+ 
+10.7. Kho, chuỗi cung ứng và vận hành 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Phân tích tồn kho và xây dựng 
+dashboard kiểm soát hàng tồn 
+Inventory level, aging, 
+turnover, stockout/overstock. Power BI/Excel 
+CB–
+TB 
+
+--- TRANG 14 ---
+Trang 14 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+2 
+Phân loại hàng hóa theo 
+ABC/XYZ phục vụ chính sách 
+tồn kho 
+Giá trị tiêu thụ + biến động 
+nhu cầu. 
+Excel/Python 
+TB 
+3 
+Dự báo nhu cầu sản phẩm 
+phục vụ kế hoạch tồn kho 
+Time series/ML, đánh giá 
+MAE/MAPE. 
+Python/R 
+TB–K 
+4 
+Phân tích hiệu quả giao hàng 
+và tỷ lệ giao đúng hạn 
+Lead time, on-time rate, theo 
+đơn vị/khu vực/đối tác. 
+Power BI/SQL 
+TB 
+5 
+Phân tích nguyên nhân chậm 
+giao hàng và đề xuất cải thiện 
+Root cause theo tuyến, thời 
+điểm, sản phẩm, nhà vận 
+chuyển. 
+Python/Power BI 
+TB 
+ 
+10.8. Nhân sự và năng suất lao động 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Xây dựng dashboard nhân sự 
+phục vụ quản trị nguồn nhân 
+lực 
+Headcount, turnover, 
+absenteeism, cơ cấu, tuyển 
+dụng. 
+Power BI/Excel 
+CB–
+TB 
+2 
+Phân tích biến động nhân sự 
+và các yếu tố liên quan đến 
+nghỉ việc 
+Turnover, tenure, phòng ban, 
+lương, hiệu suất. 
+Python/Power BI 
+TB 
+3 
+Phân tích hiệu quả tuyển dụng 
+theo nguồn và vị trí 
+Time-to-hire, cost-per-hire, 
+offer acceptance. 
+Power BI/Excel 
+TB 
+4 
+Phân tích năng suất lao động 
+và các yếu tố liên quan 
+Output/employee, time, bộ 
+phận, ca làm việc. 
+Excel/Python/Pow
+er BI 
+TB 
+ 
+10.9. Dịch vụ và chất lượng vận hành 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+Phân tích ticket/yêu cầu hỗ trợ 
+khách hàng và thời gian xử lý 
+SLA, backlog, resolution 
+time, nhóm lỗi. 
+Power BI/Python 
+TB 
+2 
+Phân tích chất lượng dịch vụ 
+từ phản hồi khách hàng 
+Complaint themes, CSAT, 
+sentiment, root causes. 
+Power 
+BI/Python/NLP 
+TB 
+3 
+Xây dựng dashboard giám sát 
+KPI vận hành của một bộ phận 
+nghiệp vụ 
+SLA, productivity, errors, 
+turnaround time. 
+Power BI/Tableau 
+CB–
+TB 
+
+--- TRANG 15 ---
+Trang 15 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+4 
+Phát hiện bất thường trong dữ 
+liệu vận hành 
+Control chart/anomaly 
+detection tùy bài toán. 
+Python/Excel 
+TB–K 
+ 
+10.10. Hướng mới: tự động hóa, AI và AI Agent 
+STT 
+Tên/hướng đề tài gợi ý 
+Câu hỏi/sản phẩm chính 
+Phương 
+pháp/công cụ 
+Mức 
+1 
+AI Agent hỗ trợ truy vấn và 
+phân tích dữ liệu bán hàng 
+bằng ngôn ngữ tự nhiên 
+Người dùng hỏi bằng tiếng 
+Việt → truy vấn dữ liệu → 
+trả lời/biểu đồ; đánh giá độ 
+đúng. 
+Python/SQL/LLM/
+Agent 
+K 
+2 
+Trợ lý AI hỗ trợ giải thích 
+dashboard và KPI kinh doanh 
+Tóm tắt insight từ dashboard, 
+trả lời câu hỏi về KPI. 
+BI + LLM/API 
+TB–K 
+3 
+Tự động hóa quy trình tạo báo 
+cáo định kỳ từ dữ liệu bán 
+hàng 
+ETL → KPI → 
+file/dashboard → tóm tắt; đo 
+thời gian tiết kiệm. 
+Python/Power 
+Query/BI 
+TB 
+4 
+Ứng dụng AI để phân loại 
+phản hồi khách hàng và ưu 
+tiên xử lý 
+Text classification/topic + 
+workflow. 
+Python/LLM/NLP 
+TB–K 
+5 
+Hệ thống cảnh báo sớm KPI 
+bất thường kết hợp sinh bản 
+tóm tắt 
+Rule/anomaly + natural-
+language summary. 
+Python/BI/AI 
+TB–K 
+6 
+Đánh giá chất lượng dữ liệu và 
+gợi ý làm sạch bằng AI ở mức 
+prototype 
+Phát hiện thiếu, sai định 
+dạng, trùng, bất thường; đề 
+xuất sửa. 
+Python/AI 
+TB–K 
+ 
+11. GỢI Ý LỰA CHỌN CHỦ ĐỀ THEO MỨC ĐỘ DỮ LIỆU CÓ THỂ TIẾP 
+CẬN 
+Điều kiện dữ liệu 
+Hướng đề tài phù hợp 
+Lưu ý 
+Chỉ có dữ liệu Excel/CSV 
+nghiệp vụ cơ bản 
+Dashboard KPI, phân tích doanh 
+thu/chi phí, RFM, tồn kho, hiệu quả 
+marketing. 
+Ưu tiên BI + thống kê mô tả; 
+không ép dùng ML. 
+Có nhiều bảng dữ liệu và khóa 
+liên kết 
+Mô hình dữ liệu, funnel, cohort, 
+customer 360, phân tích theo nhiều 
+chiều. 
+SQL + BI; chú trọng data 
+model và data quality. 
+Có dữ liệu lịch sử theo thời 
+Dự báo nhu cầu/doanh thu, 
+Time series; bắt buộc có 
+
+--- TRANG 16 ---
+Trang 16 
+Điều kiện dữ liệu 
+Hướng đề tài phù hợp 
+Lưu ý 
+gian đủ dài 
+seasonality, cảnh báo lệch kế hoạch. backtest/sai số. 
+Có nhãn kết quả rõ (churn, 
+default, response...) 
+Mô hình phân loại và scoring. 
+Train/test, baseline, metrics, 
+explainability. 
+Không được dùng dữ liệu thật 
+Dữ liệu mô phỏng bám cấu trúc 
+nghiệp vụ; dashboard/prototype/mô 
+hình minh họa. 
+Phải công khai logic mô 
+phỏng và giới hạn kết luận. 
+Dữ liệu văn bản/ticket/review 
+Phân loại chủ đề, sentiment, tóm 
+tắt, tìm kiếm/ngôn ngữ tự nhiên. 
+NLP/LLM, cần bộ mẫu kiểm 
+thử và đánh giá. 
+Doanh nghiệp có nhu cầu tự 
+động hóa báo cáo 
+ETL, refresh, dashboard, cảnh báo, 
+AI summary. 
+Đánh giá thời gian tiết kiệm 
+và độ đúng của output. 
+ 
+12. MẪU ĐỀ CƯƠNG CHI TIẾT CHO MỘT SỐ ĐỀ TÀI ĐIỂN HÌNH 
+12.1. Phân tích doanh thu và xây dựng dashboard bán hàng bằng Power BI 
+• Chương 1: giới thiệu bộ phận kinh doanh, các kênh bán, hệ thống dữ liệu bán hàng, các 
+quyết định quản trị cần hỗ trợ. 
+• Chương 2: KPI đang theo dõi; nguồn dữ liệu đơn hàng/sản phẩm/khách hàng; quy trình 
+lập báo cáo hiện tại; hạn chế về thời gian, mức độ chi tiết, drill-down hoặc tính nhất quán. 
+• Chương 3: thiết kế data model; làm sạch; xây KPI; dashboard Overview/Sản phẩm/Khu 
+vực/Khách hàng; phân tích insight; đánh giá khả năng sử dụng; đề xuất quy trình refresh 
+và quyền truy cập. 
+12.2. Phân khúc khách hàng bằng RFM và K-means 
+• Chương 1: bối cảnh CRM và nhu cầu cá nhân hóa chăm sóc khách hàng. 
+• Chương 2: dữ liệu giao dịch, cách doanh nghiệp đang phân loại khách hàng, hạn chế 
+của cách phân loại hiện tại. 
+• Chương 3: tạo RFM; phân tích phân bố; chuẩn hóa; lựa chọn số cụm; mô tả chân dung 
+cụm; so sánh với phân nhóm hiện tại; đề xuất chiến lược cho từng nhóm. 
+12.3. Dự báo nhu cầu sản phẩm phục vụ quản trị tồn kho 
+• Chương 1: quy trình bán hàng - kho - lập kế hoạch và vấn đề stockout/overstock. 
+• Chương 2: dữ liệu lịch sử, cách dự báo hiện tại, yếu tố mùa vụ/khuyến mại, KPI tồn 
+kho. 
+• Chương 3: chuẩn bị chuỗi thời gian; baseline; một hoặc vài mô hình; backtest; 
+MAE/MAPE; dự báo; chuyển kết quả thành đề xuất reorder/planning và nêu rủi ro. 
+
+--- TRANG 17 ---
+Trang 17 
+12.4. Phân tích hiệu quả chiến dịch marketing đa kênh 
+• Chương 1: kênh marketing, mục tiêu chiến dịch và hành trình khách hàng. 
+• Chương 2: dữ liệu chi phí, impression, click, lead, order; quy trình tổng hợp báo cáo 
+hiện tại; vấn đề attribution/khác biệt định nghĩa KPI. 
+• Chương 3: chuẩn hóa dữ liệu; xây funnel; tính CTR/CVR/CPA/ROAS; so sánh 
+kênh/campaign; phân tích nhóm tốt/xấu; đề xuất phân bổ ngân sách. 
+12.5. AI Agent hỗ trợ phân tích dữ liệu bán hàng bằng ngôn ngữ tự nhiên 
+• Chương 1: nhu cầu truy cập dữ liệu của người quản lý không chuyên SQL/BI; phạm vi 
+dữ liệu bán hàng. 
+• Chương 2: quy trình hiện tại khi người dùng cần một số liệu/báo cáo; cấu trúc dữ liệu; 
+các lỗi/rủi ro trong truy vấn và bảo mật. 
+• Chương 3: kiến trúc Agent; bộ câu hỏi kiểm thử; cơ chế sinh truy vấn/đọc dữ liệu; kiểm 
+soát schema/quyền; đánh giá độ chính xác câu trả lời, lỗi hallucination, thời gian phản 
+hồi; đề xuất phạm vi sử dụng an toàn. 
+13. YÊU CẦU VỀ BẢNG, HÌNH, BIỂU ĐỒ VÀ SẢN PHẨM MINH CHỨNG 
+• Mọi bảng/hình quan trọng phải có số thứ tự, tên và nguồn dữ liệu. Hình chụp dashboard 
+phải đủ rõ để đọc được KPI và nhãn. 
+• Biểu đồ phải phù hợp với câu hỏi: xu hướng dùng line; so sánh dùng bar; cơ cấu chỉ 
+dùng pie/donut khi số nhóm ít; quan hệ dùng scatter; phân bố dùng histogram/boxplot khi 
+cần. 
+• Không chèn hàng loạt ảnh màn hình chỉ để tăng số trang. Mỗi hình phải được dẫn giải: 
+cho thấy điều gì, insight nào, ý nghĩa gì đối với kinh doanh. 
+• Nếu dùng mô hình dữ liệu/ML, cần có ít nhất một bảng mô tả biến, sơ đồ pipeline hoặc 
+mô hình dữ liệu và bảng đánh giá kết quả. 
+• Phụ lục nên chứa phần quá chi tiết: data dictionary đầy đủ, mã nguồn dài, hình 
+dashboard kích thước lớn, truy vấn SQL, prompt AI quan trọng, bộ test. 
+14. QUY CÁCH TRÌNH BÀY GỢI Ý 
+Nội dung 
+Khuyến nghị 
+Khổ giấy 
+A4; in một mặt hoặc theo quy định của cơ sở đào tạo. 
+Lề 
+Trái 3,0 cm; phải 2,0 cm; trên 2,0 cm; dưới 2,0 cm (có thể điều chỉnh theo 
+quy định chính thức). 
+Phông chữ 
+Times New Roman, cỡ 13 cho nội dung chính. 
+Giãn dòng 
+Khoảng 1,25–1,5; thống nhất toàn báo cáo. 
+
+--- TRANG 18 ---
+Trang 18 
+Nội dung 
+Khuyến nghị 
+Đánh số mục 
+Tối đa 3–4 cấp; tránh chia mục quá nhỏ chỉ có một đoạn văn. 
+Đánh số bảng/hình 
+Theo chương, ví dụ Bảng 2.1, Hình 3.4. 
+Trích dẫn 
+Dùng một chuẩn thống nhất theo quy định của chương trình/giảng viên. 
+Tên biến/mã lệnh 
+Trình bày nhất quán; phần mã dài đưa vào phụ lục. 
+Độ dài 
+Khoảng 40–55 trang nội dung chính; phụ lục không tính vào dung lượng 
+này. 
+ 
+15. TIÊU CHÍ ĐÁNH GIÁ GỢI Ý 
+Nhóm tiêu chí 
+Điểm 
+Mô tả 
+1. Xác định bài toán và mục tiêu 
+10 
+Bài toán cụ thể, có người sử dụng, câu hỏi 
+phân tích và sản phẩm rõ. 
+2. Hiểu bối cảnh và quy trình nghiệp vụ 
+10 
+Mô tả đúng quy trình, KPI, vai trò, điểm 
+nghẽn. 
+3. Dữ liệu và chất lượng dữ liệu 
+15 
+Nguồn rõ, data dictionary, xử lý dữ liệu hợp 
+lý, bảo mật. 
+4. Phương pháp/công cụ phân tích 
+15 
+Lựa chọn phù hợp, thực hiện đúng, có khả 
+năng giải thích. 
+5. Sản phẩm và kết quả phân tích 
+20 
+Dashboard/mô hình/báo cáo hoạt động, có 
+insight, trực quan rõ. 
+6. Đánh giá và kiểm chứng 
+10 
+Có tiêu chí đánh giá kỹ thuật/nghiệp vụ; nêu 
+hạn chế. 
+7. Khuyến nghị và giá trị ứng dụng 
+10 
+Khuyến nghị cụ thể, bám kết quả, có khả năng 
+triển khai. 
+8. Hình thức, diễn đạt, trích dẫn và minh 
+chứng 
+10 
+Trình bày chuẩn, logic, nguồn rõ, phụ 
+lục/minh chứng đầy đủ. 
+ 
+Không cộng điểm cho “độ phức tạp” tự thân 
+Mô hình hoặc công cụ phức tạp không đương nhiên được đánh giá cao. Điểm trọng 
+tâm nằm ở mức độ phù hợp với bài toán, chất lượng dữ liệu, tính đúng của phân tích, 
+khả năng giải thích và giá trị ứng dụng. 
+ 
+
+--- TRANG 19 ---
+Trang 19 
+16. CHECKLIST TRƯỚC KHI NỘP BÁO CÁO 
+1. Tên đề tài nêu rõ vấn đề/đối tượng phân tích, không chỉ nêu công cụ. 
+2. Chương 1 đã chốt được bài toán, câu hỏi phân tích và người sử dụng kết quả. 
+3. Chương 2 có nguồn dữ liệu, KPI, quy trình AS-IS và đánh giá khoảng trống. 
+4. Chương 3 thể hiện rõ các bước do sinh viên thực hiện, không chỉ là ảnh chụp phần 
+mềm. 
+5. Mọi số liệu quan trọng đều có nguồn/giải thích; dữ liệu mô phỏng được ghi rõ. 
+6. Có data dictionary hoặc mô tả đủ các biến chính. 
+7. Có đánh giá chất lượng dữ liệu và cách xử lý dữ liệu thiếu/sai/trùng/outlier nếu có. 
+8. Các biểu đồ/dashboard trả lời câu hỏi cụ thể và có đoạn phân tích insight. 
+9. Nếu dùng ML/dự báo, đã có baseline hoặc train/test/backtest và metric phù hợp. 
+10. Khuyến nghị kinh doanh xuất phát từ kết quả phân tích, không phải khuyến nghị 
+chung chung. 
+11. Đã nêu hạn chế của dữ liệu/phương pháp và phạm vi áp dụng. 
+12. Thông tin nhạy cảm đã được ẩn danh hoặc loại bỏ theo yêu cầu của cơ sở thực tập. 
+13. Không có tài liệu tham khảo giả; mọi nguồn đều có thể kiểm tra. 
+14. Nội dung/mã do AI hỗ trợ đã được kiểm chứng và sinh viên giải thích được. 
+15. Mục lục, bảng/hình, số trang, heading, font, lề và giãn dòng đã được kiểm tra thống 
+nhất. 
+PHỤ LỤC A. MẪU PHIẾU CHỐT ĐỀ TÀI 
+Nội dung 
+Thông tin sinh viên đề xuất 
+1. Cơ sở thực tập 
+................................................................................................................ 
+2. Bộ phận/nghiệp vụ 
+................................................................................................................ 
+3. Vấn đề kinh doanh 
+................................................................................................................ 
+4. Người sử dụng kết quả 
+................................................................................................................ 
+5. Câu hỏi phân tích chính 
+................................................................................................................ 
+6. Dữ liệu dự kiến 
+................................................................................................................ 
+7. Sản phẩm dự kiến 
+................................................................................................................ 
+8. Phương pháp/công cụ 
+................................................................................................................ 
+9. Tiêu chí đánh giá 
+................................................................................................................ 
+10. Tên đề tài dự kiến 
+................................................................................................................ 
+
+--- TRANG 20 ---
+Trang 20 
+ 
+PHỤ LỤC B. MẪU DATA DICTIONARY TỐI THIỂU 
+Tên biến 
+Ý nghĩa 
+Kiểu 
+Nguồn 
+Quy tắc chất 
+lượng 
+Ghi chú 
+order_id 
+Mã đơn hàng 
+Chuỗi 
+Dữ liệu bán 
+hàng 
+Không trùng 
+Khóa chính 
+order_date 
+Ngày đặt hàng 
+Date 
+Dữ liệu bán 
+hàng 
+Không rỗng 
+Dùng phân tích 
+thời gian 
+customer_id 
+Mã khách hàng 
+Chuỗi 
+CRM 
+Có thể lặp 
+Ẩn danh khi báo 
+cáo 
+revenue 
+Doanh thu 
+Số 
+Dữ liệu bán 
+hàng 
+≥ 0 
+Đơn vị: VNĐ 
+ 
+Sinh viên thay các dòng ví dụ bằng các biến thực tế trong đề tài. Với bộ dữ liệu lớn, có 
+thể đưa data dictionary đầy đủ vào phụ lục và chỉ trình bày các biến chính trong Chương 
+3. 
+PHỤ LỤC C. MẪU BẢNG LIÊN KẾT CÂU HỎI - DỮ LIỆU - PHÂN TÍCH - 
+QUYẾT ĐỊNH 
+Câu hỏi kinh 
+doanh 
+Dữ liệu cần 
+Phân tích 
+Sản phẩm 
+Quyết định hỗ trợ 
+Sản phẩm nào đang 
+giảm doanh thu? 
+Đơn hàng, sản 
+phẩm, thời gian 
+Trend + 
+YoY/MoM + 
+contribution 
+Line/bar + 
+decomposition 
+Rà soát giá, khuyến 
+mại, tồn kho 
+Nhóm khách hàng 
+nào có nguy cơ rời 
+bỏ? 
+Giao dịch, tương 
+tác, khiếu nại 
+Churn 
+indicators/model 
+Score + feature 
+importance 
+Ưu tiên chăm 
+sóc/retention 
+campaign 
+ 
+ 

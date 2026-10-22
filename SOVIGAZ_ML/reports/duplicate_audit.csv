@@ -1,0 +1,347 @@
+﻿RefNo,RefDate,PostedDate,AccountObjectCode,InventoryItemCode_New,InventoryItemName,Revenue,SaleAmount,UnitPrice,MainQuantity,MainConvertRate,RefTypeName,duplicate_occurrences,rows_to_remove
+000000215,2023-01-09,2023-01-09,NTGIONGGS,NT5NTL2,Nitơ lỏng,382800.0,29.0,12000.0,29.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+000001514,2023-03-06,2023-03-06,NTTHUONGHA,NT4017,Ty van chai,16500.0,1.0,15000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+00000158..,2026-01-05,2026-01-05,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,839160.0,111.0,7000.0,111.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+00000158..,2026-01-05,2026-01-05,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,907200.0,120.0,7000.0,120.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+000002249,2023-03-31,2023-03-31,NTNGHISON,KTCNT,Dịch vụ Kiểm tra chai,269500.0,7.0,35000.0,7.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+000003699,2023-05-26,2023-05-26,NTNGHISON,KTCNT,Dịch vụ Kiểm tra chai,154000.0,4.0,35000.0,4.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+000004664,2023-06-30,2023-06-30,NTNGUKIM,KTCNT,Dịch vụ Kiểm tra chai,77000.0,1.0,70000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+00000759.,2026-01-13,2026-01-13,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,929880.0,123.0,7000.0,123.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00001621.,2026-01-30,2026-01-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,756000.0,100.0,7000.0,100.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00001663.,2026-01-31,2026-01-31,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,960120.0,127.0,7000.0,127.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00001664.,2026-01-31,2026-01-31,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,839160.0,111.0,7000.0,111.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00001922,2026-02-05,2026-02-05,BDNL265,OXL-SX,Oxy lỏng,1286928.0,360.0,3310.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002191.,2026-02-12,2026-02-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,990360.0,131.0,7000.0,131.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002211.,2026-02-12,2026-02-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,756000.0,100.0,7000.0,100.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002211.,2026-02-12,2026-02-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,808920.0,107.0,7000.0,107.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002211.,2026-02-12,2026-02-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,945000.0,125.0,7000.0,125.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002528.,2026-02-26,2026-02-26,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,748440.0,99.0,7000.0,99.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002530.,2026-02-26,2026-02-26,BDNL503,NTL-SX,Nitơ lỏng,13348476.0,5580.0,2215.0,5580.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002968.,2026-03-07,2026-03-07,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,703080.0,93.0,7000.0,93.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002968.,2026-03-07,2026-03-07,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,831600.0,110.0,7000.0,110.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00002968.,2026-03-07,2026-03-07,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,854280.0,113.0,7000.0,113.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00003340,2026-03-14,2026-03-14,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,929880.0,123.0,7000.0,123.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00003340,2026-03-14,2026-03-14,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,1013040.0,134.0,7000.0,134.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00003374,2026-03-16,2026-03-16,BDNL265,OXL-SX,Oxy lỏng,1286928.0,360.0,3310.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00003417.,2026-03-17,2026-03-17,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,922320.0,122.0,7000.0,122.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00003813.,2026-03-24,2026-03-24,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,945000.0,125.0,7000.0,125.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00004591.,2026-04-08,2026-04-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,642600.0,85.0,7000.0,85.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00004591.,2026-04-08,2026-04-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,861840.0,114.0,7000.0,114.0,1.0,Bán hàng hóa trong nước chưa thu tiền,4,3
+00004591.,2026-04-08,2026-04-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,892080.0,118.0,7000.0,118.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00004591.,2026-04-08,2026-04-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,967680.0,128.0,7000.0,128.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00005117.,2026-04-18,2026-04-18,BDNL265,OXL-SX,Oxy lỏng,1215432.0,340.0,3310.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00005363.,2026-04-23,2026-04-23,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,854280.0,113.0,7000.0,113.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00005364.,2026-04-23,2026-04-23,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,808920.0,107.0,7000.0,107.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00005836.,2026-05-05,2026-05-05,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,748440.0,99.0,7000.0,99.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00006069.,2026-05-09,2026-05-09,BDNL588,CO2L,CO2 lỏng,918000.0,100.0,8500.0,100.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00006195.,2026-05-13,2026-05-13,BDNL265,NTL-SX,Nitơ lỏng,857952.0,240.0,3310.0,240.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00006235.,2026-05-13,2026-05-13,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,793800.0,105.0,7000.0,105.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00006497.,2026-05-19,2026-05-19,BDNL265,NTL-SX,Nitơ lỏng,2502360.0,700.0,3310.0,700.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00007070.,2026-05-30,2026-05-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,680400.0,90.0,7000.0,90.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00007070.,2026-05-30,2026-05-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,952560.0,126.0,7000.0,126.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00007070.,2026-05-30,2026-05-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,997920.0,132.0,7000.0,132.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00007099.,2026-05-30,2026-05-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,824040.0,109.0,7000.0,109.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00007099.,2026-05-30,2026-05-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,967680.0,128.0,7000.0,128.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00007833,2025-09-10,2025-09-10,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,854280.0,113.0,7000.0,113.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00007834,2025-09-10,2025-09-10,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,960120.0,127.0,7000.0,127.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00008201.,2025-09-20,2025-09-20,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,854280.0,113.0,7000.0,113.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00008376.,2025-09-25,2025-09-25,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,846720.0,112.0,7000.0,112.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00008376.,2025-09-25,2025-09-25,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,869400.0,115.0,7000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00008513.,2025-09-29,2025-09-29,BDNL265,OXL-SX,Oxy lỏng,1215432.0,340.0,3310.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00008530.,2025-09-30,2025-09-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,740880.0,98.0,7000.0,98.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+00008923,2025-10-10,2025-10-10,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,801360.0,106.0,7000.0,106.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00008923,2025-10-10,2025-10-10,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,869400.0,115.0,7000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00009725,2025-10-31,2025-10-31,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,816480.0,108.0,7000.0,108.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+0000974,2024-02-01,2024-02-01,NTKL,CO2K5,Khí CO2,151200.0,2.0,70000.0,10.0,5.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00009816,2025-11-01,2025-11-01,BDNB2,OXL-SX,Oxy lỏng,19293120.0,8120.0,2200.0,8120.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00010319..,2025-11-15,2025-11-15,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,1005480.0,133.0,7000.0,133.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011254..,2025-12-09,2025-12-09,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,960120.0,127.0,7000.0,127.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+00011254..,2025-12-09,2025-12-09,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,1013040.0,134.0,7000.0,134.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011530.,2025-12-16,2025-12-16,BDNB2,OXL-SX,Oxy lỏng,17915040.0,7540.0,2200.0,7540.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011530.,2025-12-16,2025-12-16,BDNB2,OXL-SX,Oxy lỏng,18485280.0,7780.0,2200.0,7780.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011530.,2025-12-16,2025-12-16,BDNB2,OXL-SX,Oxy lỏng,19055520.0,8020.0,2200.0,8020.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011601.,2025-12-17,2025-12-17,BDNL265,OXL-SX,Oxy lỏng,1215432.0,340.0,3310.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011673.,2025-12-19,2025-12-19,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,710640.0,94.0,7000.0,94.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011673.,2025-12-19,2025-12-19,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,997920.0,132.0,7000.0,132.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00011674.,2025-12-19,2025-12-19,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,665280.0,88.0,7000.0,88.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00012116..,2025-12-30,2025-12-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,801360.0,106.0,7000.0,106.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00012116..,2025-12-30,2025-12-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,884520.0,117.0,7000.0,117.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00012116..,2025-12-30,2025-12-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,914760.0,121.0,7000.0,121.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00012116..,2025-12-30,2025-12-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,952560.0,126.0,7000.0,126.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+00012116..,2025-12-30,2025-12-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,1005480.0,133.0,7000.0,133.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+0002483,2023-12-18,2023-12-18,VPBV29,OXK0.5,Oxy khí (Chai nhỏ),648000.0,20.0,30000.0,10.0,0.5,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+0002484,2023-12-18,2023-12-18,VPBV22,OXK0.5,Oxy khí (Chai nhỏ),540000.0,20.0,25000.0,10.0,0.5,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+0002485,2023-12-18,2023-12-18,VPBV31,OXK6,Oxy khí,270000.0,5.0,50000.0,30.0,6.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+0004652,2024-06-25,2024-06-25,NTKL,CO2K5,Khí CO2,75600.0,1.0,70000.0,3.0,3.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+0007231,2024-09-25,2024-09-25,NTGIONGGS,NTL1,Nitơ lỏng,414720.0,32.0,12000.0,32.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+03708,2025-05-07,2025-05-07,NTNUOCKHOANG,NTL1,Nitơ lỏng,1568160.0,121.0,12000.0,121.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+04258,2025-05-22,2025-05-22,NTNUOCKHOANG,NTL1,Nitơ lỏng,1516320.0,117.0,12000.0,117.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+05685,2025-07-01,2025-07-01,NTNUOCKHOANG,NTL1,Nitơ lỏng,1503360.0,116.0,12000.0,116.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+06911,2025-08-02,2025-08-02,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+07770,2025-08-25,2025-08-25,NTNUOCKHOANG,NTL1,Nitơ lỏng,1581120.0,122.0,12000.0,122.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+08014,2025-09-01,2025-09-01,NTGIONGGS,NTL1,Nitơ lỏng,349920.0,27.0,12000.0,27.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+08142,2025-09-05,2025-09-05,NTGIONGGS,NTL1,Nitơ lỏng,453600.0,35.0,12000.0,35.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+08243,2025-09-09,2025-09-09,NTNUOCKHOANG,NTL1,Nitơ lỏng,1425600.0,110.0,12000.0,110.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+08887,2025-09-26,2025-09-26,NTGIONGGS,NTL1,Nitơ lỏng,375840.0,29.0,12000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+09694,2025-10-16,2025-10-16,NTNUOCKHOANG,NTL1,Nitơ lỏng,1503360.0,116.0,12000.0,116.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+09754,2025-10-17,2025-10-17,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+10188,2025-10-27,2025-10-27,NTGIONGGS,NTL1,Nitơ lỏng,375840.0,29.0,12000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+1047,2026-01-21,2026-01-21,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+11502,2025-11-28,2025-11-28,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+11603,2025-11-30,2025-11-30,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+11625,2025-12-01,2025-12-01,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+12390,2025-12-16,2025-12-16,NTGIONGGS,NTL1,Nitơ lỏng,375840.0,29.0,12000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+12574,2025-12-20,2025-12-20,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+12881,2025-12-26,2025-12-26,NTGIONGGS,NTL1,Nitơ lỏng,466560.0,36.0,12000.0,36.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+1588,2026-01-31,2026-01-31,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+160,2026-01-05,2026-01-05,NTTNHHTNHIEM,NTL1,Nitơ lỏng,1019520.0,118.0,8000.0,118.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+1739,2026-02-04,2026-02-04,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+1883,2026-02-06,2026-02-06,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+2116,2026-02-11,2026-02-11,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+2188,2026-02-13,2026-02-13,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+2317,2026-02-23,2026-02-23,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+2526,2026-02-28,2026-02-28,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+26072357,2023-01-31,2023-01-31,HPBVKAN,HPCO2K25,CO2,0.0,0.0,200000.0,0.0,25.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+26072372,2023-02-27,2023-02-27,HPMUNGMH,HPOXK6,Oxy khí (Chai lớn),0.0,0.0,200000.0,0.0,6.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+26072810,2023-12-29,2023-12-29,HPXNNHATRANG,TVC,Thuê vỏ chai,3300000.0,2.0,1500000.0,2.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+26072811,2023-12-29,2023-12-29,HP1007,TVC,Thuê vỏ chai,11000000.0,4.0,2500000.0,4.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+2725,2026-03-04,2026-03-04,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+2802,2026-03-06,2026-03-06,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+3014,2026-03-10,2026-03-10,NTNUOCKHOANG,NTL1,Nitơ lỏng,1552500.0,115.0,12500.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+3050,2026-03-11,2026-03-11,NTGIONGGS2,NTL1,Nitơ lỏng,438480.0,29.0,14000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+3471,2026-03-19,2026-03-19,NTGIONGGS2,NTL1,Nitơ lỏng,438480.0,29.0,14000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+3708,2026-03-24,2026-03-24,NTNUOCKHOANG,NTL1,Nitơ lỏng,1552500.0,115.0,12500.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+4053,2026-03-30,2026-03-30,NTGIONGGS2,NTL1,Nitơ lỏng,438480.0,29.0,14000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+4122,2026-03-31,2026-03-31,NTGIONGGS2,NTL1,Nitơ lỏng,438480.0,29.0,14000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+4340,2026-04-04,2026-04-04,NTNUOCKHOANG,NTL1,Nitơ lỏng,1552500.0,115.0,12500.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+485,2026-01-10,2026-01-10,NTTNHHTNHIEM,NTL1,Nitơ lỏng,1019520.0,118.0,8000.0,118.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+507,2026-01-11,2026-01-11,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+5245,2026-04-22,2026-04-22,NTNUOCKHOANG,NTL1,Nitơ lỏng,1552500.0,115.0,12500.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+5275,2026-04-22,2026-04-22,NTGIONGGS2,NTL1,Nitơ lỏng,438480.0,29.0,14000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+5349,2026-04-23,2026-04-23,NTGIONGGS2,NTL1,Nitơ lỏng,438480.0,29.0,14000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,4,3
+550,2026-01-12,2026-01-12,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+6339,2026-05-14,2026-05-14,NTNUOCKHOANG,NTL1,Nitơ lỏng,1552500.0,115.0,12500.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+680,2026-01-14,2026-01-14,NTGIONGGS,NTL1,Nitơ lỏng,375840.0,29.0,12000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+6829,2026-05-25,2026-05-25,NTNUOCKHOANG,NTL1,Nitơ lỏng,1552500.0,115.0,12500.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+845,2026-01-17,2026-01-17,NTNUOCKHOANG,NTL1,Nitơ lỏng,1490400.0,115.0,12000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+902,2026-01-19,2026-01-19,NTTNHHTNHIEM,NTL1,Nitơ lỏng,1019520.0,118.0,8000.0,118.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+974,2026-01-20,2026-01-20,NTGIONGGS2,NTL1,Nitơ lỏng,375840.0,29.0,12000.0,29.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000042.,2023-01-04,2023-01-04,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000044.,2023-01-04,2023-01-04,BDNB3,VC2,Vận Chuyển,8360000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000062..,2024-01-03,2024-01-03,BDNL265,OXL-SX,Oxy lỏng,1138320.0,340.0,3100.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000070..,2024-01-04,2024-01-04,BDNL265,OXL-SX,Oxy lỏng,1138320.0,340.0,3100.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000148..,2023-01-07,2023-01-07,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000175..,2023-01-09,2023-01-09,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000178..,2023-01-09,2023-01-09,BDNL265,OXLLE,Oxygene lỏng,1295800.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000194...,2024-01-09,2024-01-09,BDNL265,OXL-SX,Oxy lỏng,1138320.0,340.0,3100.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000238..,2024-01-11,2024-01-11,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000307...,2023-01-16,2023-01-16,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00000334...,2023-01-16,2023-01-16,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00000350,2024-01-15,2024-01-15,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000362....,2025-01-13,2025-01-13,BDNB2,OXL-SX,Oxy lỏng,18343800.0,7900.0,2150.0,7900.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+BD00000381...,2023-01-18,2023-01-18,BDNB3,VC2,Vận Chuyển,8360000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000393...,2023-01-30,2023-01-30,BDNB2,VC2,Vận Chuyển,1210000.0,1.0,1100000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000396...,2023-01-30,2023-01-30,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",5,4
+BD00000397...,2023-01-30,2023-01-30,BDNB5,VC2,Vận Chuyển,2970000.0,1.0,2700000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000515...,2023-01-30,2023-01-30,BDNB3,VC2,Vận Chuyển,8360000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000543...,2023-01-31,2023-01-31,BDNL265,OXLLE,Oxygene lỏng,1227600.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000566.,2025-01-20,2025-01-20,BDNB2,OXL-SX,Oxy lỏng,22616280.0,9740.0,2150.0,9740.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000730.,2023-02-08,2023-02-08,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000865...,2023-02-13,2023-02-13,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000925....,2023-02-14,2023-02-14,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00000930......,2025-02-10,2025-02-10,BDNL265,OXL-SX,Oxy lỏng,1263600.0,360.0,3250.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000941......,2025-02-10,2025-02-10,BDNB2,OXL-SX,Oxy lỏng,18436680.0,7940.0,2150.0,7940.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00000941......,2025-02-10,2025-02-10,BDNB2,OXL-SX,Oxy lỏng,18947520.0,8160.0,2150.0,8160.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001112...,2023-02-21,2023-02-21,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00001115....,2025-02-14,2025-02-14,BDNB2,OXL-SX,Oxy lỏng,18529560.0,7980.0,2150.0,7980.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001154.,2024-02-19,2024-02-19,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+BD00001181.,2024-02-20,2024-02-20,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001198...,2023-02-24,2023-02-24,BDNL265,OXLLE,Oxygene lỏng,1295800.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001203...,2023-02-24,2023-02-24,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001247,2024-02-22,2024-02-22,BDNL146,NTL-SX,Nitơ lỏng,1762560.0,680.0,2400.0,680.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001267.,2023-02-27,2023-02-27,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",4,3
+BD00001272..,2024-02-23,2024-02-23,BDNL146,NTL-SX,Nitơ lỏng,1710720.0,660.0,2400.0,660.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001326..,2024-02-26,2024-02-26,BDNL265,OXL-SX,Oxy lỏng,1339200.0,400.0,3100.0,400.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001388......,2025-02-24,2025-02-24,BDNB2,OXL-SX,Oxy lỏng,16904160.0,7280.0,2150.0,7280.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001397....,2023-03-03,2023-03-03,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001399.,2024-02-28,2024-02-28,BDNL265,OXL-SX,Oxy lỏng,1138320.0,340.0,3100.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001450.,2023-03-06,2023-03-06,BDNL265,OXLLE,Oxygene lỏng,1295800.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001453.,2023-03-06,2023-03-06,BDNB2,VC2,Vận Chuyển,880000.0,1.0,800000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001455.,2023-03-06,2023-03-06,BDNB3,VC2,Vận Chuyển,8360000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001499.,2023-03-07,2023-03-07,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001508...,2024-03-02,2024-03-02,BDNL146,NTL-SX,Nitơ lỏng,1607040.0,620.0,2400.0,620.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001559......,2025-02-28,2025-02-28,BDNB2,OXL-SX,Oxy lỏng,16486200.0,7100.0,2150.0,7100.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001563.,2023-03-09,2023-03-09,BDNB2,VC2,Vận Chuyển,880000.0,1.0,800000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001586.,2023-03-10,2023-03-10,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00001643....,2025-03-03,2025-03-03,BDNB2,OXL-SX,Oxy lỏng,17693640.0,7620.0,2150.0,7620.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001644.,2023-03-13,2023-03-13,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001698...,2025-03-05,2025-03-05,BDBV169,OXK6,Oxy khí,232200.0,5.0,43000.0,30.0,6.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001707...,2025-03-05,2025-03-05,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,831600.0,110.0,7000.0,110.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00001747..,2023-03-16,2023-03-16,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001828.....,2023-03-20,2023-03-20,BDNB5,VC2,Vận Chuyển,2970000.0,1.0,2700000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001868.....,2023-03-21,2023-03-21,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001911,2023-03-22,2023-03-22,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00001953....,2025-03-12,2025-03-12,BDNL265,OXL-SX,Oxy lỏng,1263600.0,360.0,3250.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002027.,2023-03-27,2023-03-27,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002073.,2023-03-28,2023-03-28,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002125.,2023-03-30,2023-03-30,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002174,2024-03-26,2024-03-26,BDNL265,OXL-SX,Oxy lỏng,1138320.0,340.0,3100.0,340.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002194....,2024-03-27,2024-03-27,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002230.,2023-04-04,2023-04-04,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00002261,2024-03-29,2024-03-29,BDNL265,OXL-SX,Oxy lỏng,502200.0,150.0,3100.0,150.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002274,2024-03-29,2024-03-29,BDNL146,NTL-SX,Nitơ lỏng,1658880.0,640.0,2400.0,640.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002291.,2023-04-05,2023-04-05,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002296,2024-03-30,2024-03-30,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002334.....,2025-03-24,2025-03-24,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,839160.0,111.0,7000.0,111.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002334.....,2025-03-24,2025-03-24,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,914760.0,121.0,7000.0,121.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002392,2023-04-11,2023-04-11,BDNL265,OXLLE,Oxygene lỏng,1227600.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002394,2023-04-11,2023-04-11,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",4,3
+BD00002427....,2024-04-03,2024-04-03,BDBV169,OXK6,Oxy khí,232200.0,5.0,43000.0,30.0,6.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002439......,2025-03-27,2025-03-27,BDNB2,OXL-SX,Oxy lỏng,18250920.0,7860.0,2150.0,7860.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002506.,2023-04-14,2023-04-14,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002539..,2023-04-15,2023-04-15,BDNL265,OXLLE,Oxygene lỏng,1227600.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002751.,2024-04-16,2024-04-16,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002800.....,2023-04-26,2023-04-26,BDNL265,OXLLE,Oxygene lỏng,1227600.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00002805..,2025-04-08,2025-04-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,771120.0,102.0,7000.0,102.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002805..,2025-04-08,2025-04-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,793800.0,105.0,7000.0,105.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002932.....,2023-05-03,2023-05-03,BDNB2,VC2,Vận Chuyển,1683000.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00002945....,2025-04-12,2025-04-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,627480.0,83.0,7000.0,83.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00002945....,2025-04-12,2025-04-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,899640.0,119.0,7000.0,119.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003004....,2025-04-14,2025-04-14,BDNB2,OXL-SX,Oxy lỏng,18761760.0,8080.0,2150.0,8080.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003260,2024-05-06,2024-05-06,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003283.,2024-05-06,2024-05-06,BDBV71,CO2L,CO2 lỏng,120960.0,8.0,14000.0,8.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003443...,2025-04-28,2025-04-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,808920.0,107.0,7000.0,107.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003604,2023-05-27,2023-05-27,BDNL265,OXLLE,Oxygene lỏng,1295800.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00003635,2023-05-29,2023-05-29,BDNL265,OXLLE,Oxygene lỏng,1159400.0,340.0,3100.0,340.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00003712...,2025-05-08,2025-05-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,740880.0,98.0,7000.0,98.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003712...,2025-05-08,2025-05-08,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,975240.0,129.0,7000.0,129.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003748..,2024-05-22,2024-05-22,BDNL265,NTL-SX,Nitơ lỏng,803520.0,240.0,3100.0,240.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00003850.,2023-06-05,2023-06-05,BDNB5,VC2,Vận Chuyển,2750000.0,1.0,2500000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00003928.....,2025-05-15,2025-05-15,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,967680.0,128.0,7000.0,128.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00004047.,2023-06-13,2023-06-13,BDNB2,VC2,Vận Chuyển,1210000.0,1.0,1100000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00004210.....,2025-05-23,2025-05-23,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,703080.0,93.0,7000.0,93.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+BD00004342.,2023-06-24,2023-06-24,BDNL265,OXLLE,Oxygene lỏng,1227600.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00004501..,2025-05-31,2025-05-31,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,869400.0,115.0,7000.0,115.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00004501..,2025-05-31,2025-05-31,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,892080.0,118.0,7000.0,118.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00004708....,2025-06-07,2025-06-07,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,771120.0,102.0,7000.0,102.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00004708....,2025-06-07,2025-06-07,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,907200.0,120.0,7000.0,120.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00004708....,2025-06-07,2025-06-07,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,975240.0,129.0,7000.0,129.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00004800..,2024-06-28,2024-06-28,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+BD00004947 .,2024-07-03,2024-07-03,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005029....,2025-06-17,2025-06-17,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,982800.0,130.0,7000.0,130.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005199..,2023-07-26,2023-07-26,BDNL265,OXLLE,Oxygene lỏng,1339200.0,400.0,3100.0,400.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00005404.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,589680.0,78.0,7000.0,78.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005404.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,597240.0,79.0,7000.0,79.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005404.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,725760.0,96.0,7000.0,96.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005404.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,733320.0,97.0,7000.0,97.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005404.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,748440.0,99.0,7000.0,99.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+BD00005404.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,982800.0,130.0,7000.0,130.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005405.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,650160.0,86.0,7000.0,86.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005405.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,687960.0,91.0,7000.0,91.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005405.....,2025-06-28,2025-06-28,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,801360.0,106.0,7000.0,106.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005542...,2023-08-08,2023-08-08,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00005633....,2024-07-26,2024-07-26,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005808.,2025-07-10,2025-07-10,BDNB2,OXL-SX,Oxy lỏng,18532800.0,7800.0,2200.0,7800.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00005904.,2023-08-21,2023-08-21,BDNB2,VC,Vận Chuyển,1576800.0,1.0,1460000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00006146...,2024-08-10,2024-08-10,BDBV169,OXK6,Oxy khí,232200.0,5.0,43000.0,30.0,6.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006164,2025-07-21,2025-07-21,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,771120.0,102.0,7000.0,102.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006200...,2024-08-13,2024-08-13,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006217.,2023-08-31,2023-08-31,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00006277.,2023-09-04,2023-09-04,BDNB2,VC,Vận Chuyển,1652400.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00006462.,2023-09-11,2023-09-11,BDNB2,VC,Vận Chuyển,1576800.0,1.0,1460000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00006575...,2024-08-24,2024-08-24,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006656.,2023-09-18,2023-09-18,BDNB2,VC,Vận Chuyển,1188000.0,1.0,1100000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00006866.,2023-09-25,2023-09-25,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00006893.,2025-08-12,2025-08-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,703080.0,93.0,7000.0,93.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006893.,2025-08-12,2025-08-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,839160.0,111.0,7000.0,111.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006893.,2025-08-12,2025-08-12,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,899640.0,119.0,7000.0,119.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006896...,2024-09-05,2024-09-05,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006896...,2024-09-05,2024-09-05,BDNL265,OXL-SX,Oxy lỏng,1339200.0,400.0,3100.0,400.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00006957.,2023-09-28,2023-09-28,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007068..,2024-09-11,2024-09-11,BDNL265,OXL-SX,Oxy lỏng,1372680.0,410.0,3100.0,410.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007202.,2025-08-21,2025-08-21,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,861840.0,114.0,7000.0,114.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007204,2023-10-06,2023-10-06,BDNL457,BDXBHD,Xoá bỏ hoá đơn,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007265...,2024-09-18,2024-09-18,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007345,2023-10-12,2023-10-12,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007439,2023-10-14,2023-10-14,BDNL457,BDXBHD,Xoá bỏ hoá đơn,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007484,2023-10-16,2023-10-16,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007531...,2024-09-27,2024-09-27,BDNL265,NTL-SX,Nitơ lỏng,1104840.0,330.0,3100.0,330.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007541.,2025-08-30,2025-08-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,861840.0,114.0,7000.0,114.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007541.,2025-08-30,2025-08-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,899640.0,119.0,7000.0,119.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007541.,2025-08-30,2025-08-30,BDNL117,NTL-XL45,Nitơ lỏng tẹc XL45,945000.0,125.0,7000.0,125.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007601.,2024-09-30,2024-09-30,BDBV169,OXK6,Oxy khí,232200.0,5.0,43000.0,30.0,6.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007636,2023-10-21,2023-10-21,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007636..,2025-09-03,2025-09-03,BDNB2,OXL-SX,Oxy lỏng,18010080.0,7580.0,2200.0,7580.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007698..,2024-10-02,2024-10-02,BDNL265,OXL-SX,Oxy lỏng,1372680.0,410.0,3100.0,410.0,1.0,Bán hàng hóa trong nước chưa thu tiền,3,2
+BD00007745,2023-10-25,2023-10-25,BDNL265,NTL-SX,Nitơ lỏng,870480.0,260.0,3100.0,260.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007758..,2024-10-04,2024-10-04,BDNL265,NTL-SX,Nitơ lỏng,970920.0,290.0,3100.0,290.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00007864,2023-10-30,2023-10-30,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00007887,2023-10-30,2023-10-30,BDNB2,VC,Vận Chuyển,1576800.0,1.0,1460000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00008154.,2023-11-07,2023-11-07,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00008520,2023-11-20,2023-11-20,BDNB2,VC,Vận Chuyển,1652400.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00008541,2023-11-21,2023-11-21,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00008579,2023-11-22,2023-11-22,BDNL350,BDNXQUATANG,Quà biếu tặng ( không thu tiền),4039200.0,44.0,85000.0,44.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00008615,2023-11-23,2023-11-23,BDNB2,VC,Vận Chuyển,864000.0,1.0,800000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00008676,2023-11-25,2023-11-25,BDNB2,VC,Vận Chuyển,1652400.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00008735..,2024-11-05,2024-11-05,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00008762,2023-11-28,2023-11-28,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00008884,2023-12-02,2023-12-02,BDNB2,VC,Vận Chuyển,1188000.0,1.0,1100000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00008953..,2024-11-12,2024-11-12,BDNL265,OXL-SX,Oxy lỏng,1372680.0,410.0,3100.0,410.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00009049,2023-12-08,2023-12-08,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",4,3
+BD00009189,2023-12-12,2023-12-12,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009189,2023-12-12,2023-12-12,BDNL265,OXL-SX,Oxy lỏng,1272240.0,380.0,3100.0,380.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009278,2023-12-15,2023-12-15,BDNL265,OXL-SX,Oxy lỏng,1339200.0,400.0,3100.0,400.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009447...,2024-11-28,2024-11-28,BDNL265,OXL-SX,Oxy lỏng,1205280.0,360.0,3100.0,360.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BD00009502.,2023-12-22,2023-12-22,BDNL265,OXL-SX,Oxy lỏng,1138320.0,340.0,3100.0,340.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009506.,2023-12-22,2023-12-22,BDNB2,VC,Vận Chuyển,75600.0,1.0,70000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009515.,2023-12-22,2023-12-22,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BD00009560..,2023-12-25,2023-12-25,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009561..,2023-12-25,2023-12-25,BDNB2,VC,Vận Chuyển,1404000.0,1.0,1300000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009561..,2023-12-25,2023-12-25,BDNB2,VC,Vận Chuyển,1782000.0,1.0,1650000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009562..,2023-12-25,2023-12-25,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",4,3
+BD00009563..,2023-12-25,2023-12-25,BDNB4,VC,Vận Chuyển,18360000.0,1.0,17000000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009591..,2023-12-25,2023-12-25,BDNB2,VC,Vận Chuyển,1652400.0,1.0,1530000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009593..,2023-12-25,2023-12-25,BDNB3,VC,Vận Chuyển,8208000.0,1.0,7600000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009677,2023-12-27,2023-12-27,BDNB2,OXL-SX,Oxy lỏng,18715320.0,8060.0,2150.0,8060.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BD00009825...,2024-12-09,2024-12-09,BDNB5,OXL-SX,Oxy lỏng,18993960.0,8180.0,2150.0,8180.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH23/00060,2023-01-30,2023-01-30,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",3,2
+BH23/00063,2023-01-31,2023-01-31,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BH23/00166,2023-02-27,2023-02-27,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",5,4
+BH23/00168,2023-02-28,2023-02-28,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",5,4
+BH23/00205,2023-03-13,2023-03-13,LACK13,LAN4840C,Que hàn N48 4ly,13948000.0,500.0,25360.0,500.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BH23/00233,2023-03-24,2023-03-24,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",6,5
+BH23/00348,2023-04-26,2023-04-26,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",8,7
+BH23/00436,2023-05-26,2023-05-26,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",7,6
+BH23/00528,2023-06-27,2023-06-27,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",8,7
+BH23/00564,2023-06-30,2023-06-30,LANL24,LAN4840C,Que hàn N48 4ly,5816800.0,200.0,26440.0,200.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BH23/00619,2023-07-26,2023-07-26,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",7,6
+BH23/00731,2023-08-28,2023-08-28,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",7,6
+BH23/00836,2023-09-27,2023-09-27,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",7,6
+BH23/00927,2023-10-26,2023-10-26,LABV21,LAHD,HĐ: 15/PVI-KH/HĐNT-2019 ngày 02/01/2019,0.0,0.0,0.0,0.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",7,6
+BH24/00071,2024-01-30,2024-01-30,LACN649,QHN48-4,Que hàn N48 - Ø 4 mm,14542000.0,500.0,26440.0,500.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/00399,2024-05-21,2024-05-21,LAXD13,QHN48-4,Que hàn N48 - Ø 4 mm,30998000.0,1000.0,28180.0,1000.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/00600,2024-07-19,2024-07-19,LAKH00030,QHN48-4,Que hàn N48 - Ø 4 mm,5816800.0,200.0,26440.0,200.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/00705,2024-08-21,2024-08-21,LAXD13,QHN48-4,Que hàn N48 - Ø 4 mm,30998000.0,1000.0,28180.0,1000.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/00732,2024-08-29,2024-08-29,LACN649,QHN48-4,Que hàn N48 - Ø 4 mm,17450400.0,600.0,26440.0,600.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/00932,2024-10-29,2024-10-29,LACN649,QHN48-4,Que hàn N48 - Ø 4 mm,8580000.0,300.0,26000.0,300.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/00989,2024-11-06,2024-11-06,LACN501,QHN48-4,Que hàn N48 - Ø 4 mm,1559778.0,60.0,23633.0,60.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/01164,2024-12-26,2024-12-26,LADT25,QHN48-4,Que hàn N48 - Ø 4 mm,13447500.0,500.0,24450.0,500.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH24/01177,2024-12-28,2024-12-28,LACN81,QHN48-4,Que hàn N48 - Ø 4 mm,528000.0,20.0,24000.0,20.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/001640,2025-07-23,2025-07-23,LAXD1,QHN48-4,Que hàn N48 - Ø 4 mm,5711040.0,200.0,26440.0,200.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/001774,2025-08-05,2025-08-05,LAXD1,QHN48-4,Que hàn N48 - Ø 4 mm,5711040.0,200.0,26440.0,200.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/00222,2025-03-07,2025-03-07,LACK13,QHN48-4,Que hàn N48 - Ø 4 mm,19527200.0,700.0,25360.0,700.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/002298,2025-09-25,2025-09-25,LACN649,QHN48-4,Que hàn N48 - Ø 4 mm,2808000.0,100.0,26000.0,100.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/002710,2025-10-31,2025-10-31,LACK13,QHN48-4,Que hàn N48 - Ø 4 mm,19527200.0,700.0,25829.63,700.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/002800,2025-11-08,2025-11-08,LACN549,QHN48-4,Que hàn N48 - Ø 4 mm,2738880.0,100.0,25360.0,100.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/003142,2025-12-09,2025-12-09,LANL56,QHN48-4,Que hàn N48 - Ø 4 mm,16524000.0,600.0,25500.0,600.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/003177,2025-12-11,2025-12-11,LACN59,QHN48-4,Que hàn N48 - Ø 4 mm,2700000.0,100.0,25000.0,100.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/00584,2025-04-09,2025-04-09,LAXD1,QHN48-4,Que hàn N48 - Ø 4 mm,5816800.0,200.0,26440.0,200.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/00616,2025-04-12,2025-04-12,LACN649,QHN48-4,Que hàn N48 - Ø 4 mm,14300000.0,500.0,26000.0,500.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH25/00875,2025-05-10,2025-05-10,LACN43,QHN48-4,Que hàn N48 - Ø 4 mm,2112000.0,80.0,24000.0,80.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH26/000225,2026-01-19,2026-01-19,LA-MINHTAM,QHN48-4,Que hàn N48 - Ø 4 mm,1354320.0,60.0,20900.0,60.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH26/001671,2026-05-22,2026-05-22,LADT11,QHN48-4,Que hàn N48 - Ø 4 mm,5799600.0,200.0,26850.0,200.0,1.0,Bán hàng hóa trong nước chưa thu tiền,2,1
+BH31.05.11760,2023-10-31,2023-10-31,BHCK188,KTC,Kiểm tra chai,648000.0,20.0,30000.0,20.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+BTL00007,2023-12-14,2023-12-14,LABV21,CO2K25,Khí CO2,-3800520.0,0.0,9720.0,0.0,1.0,Hàng bán bị trả lại - Giảm trừ công nợ,2,1
+BTL2300002,2023-02-28,2023-02-28,BHBV28,BH5OXL1,"Khí Oxy lỏng 99,3-99,7%",-784961280.0,0.0,4542.6,0.0,1.0,Hàng bán bị trả lại - Giảm trừ công nợ,2,1
+CT002150719,2023-01-09,2023-01-09,CTTHTHANH,CTDVKTC,Kiểm tra chai,44000.0,1.0,40000.0,1.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1
+CT002156324.,2023-10-12,2023-10-12,CTMHNGOC,SCC,Sửa chữa chai,66000.0,4.0,15000.0,4.0,1.0,"Bán hàng hóa, dịch vụ trong nước chưa thu tiền",2,1

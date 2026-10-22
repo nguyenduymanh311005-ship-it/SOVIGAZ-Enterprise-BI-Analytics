@@ -1,0 +1,2354 @@
+[
+  {
+    "file": "Dim_Date.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Data raw\\Dim_Date.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth"
+    ],
+    "all_cols": [
+      "DateKey",
+      "Date",
+      "Day",
+      "Month",
+      "Year",
+      "Quarter",
+      "Week",
+      "DayOfWeek",
+      "MonthName",
+      "YearMonth",
+      "IsWeekend"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Month.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Data raw\\Dim_Month.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth",
+      "StartDate"
+    ],
+    "all_cols": [
+      "MonthKey",
+      "Year",
+      "Month",
+      "MonthName",
+      "Quarter",
+      "YearMonth",
+      "StartDate",
+      "EndDate",
+      "IsCurrent",
+      "MonthVietnamese"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_ParentStock.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Data raw\\Dim_ParentStock.csv",
+    "matched_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "all_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Stock.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Data raw\\Dim_Stock.csv",
+    "matched_cols": [
+      "ParentStockCode"
+    ],
+    "all_cols": [
+      "StockID",
+      "BranchID",
+      "StockCode",
+      "StockName",
+      "Description",
+      "InventoryAccount",
+      "ETL_DATE",
+      "ParentStockCode"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Year.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Data raw\\Dim_Year.csv",
+    "matched_cols": [
+      "YearText"
+    ],
+    "all_cols": [
+      "YearText",
+      "Value"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_KPI_By_Product.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Data raw\\Fact_KPI_By_Product.csv",
+    "matched_cols": [
+      "Year"
+    ],
+    "all_cols": [
+      "RevenueCode",
+      "StockCode",
+      "CategoryName",
+      "ProductName",
+      "ProductCategoryName",
+      "ProductQuantityDVT",
+      "ProductQuantityDVC",
+      "ProductQuantityDVT1",
+      "SaleQuantityDVC",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_KPI_Year.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Data raw\\Fact_KPI_Year.csv",
+    "matched_cols": [
+      "Parent_Stock",
+      "Year"
+    ],
+    "all_cols": [
+      "Parent_Stock",
+      "Production",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Customer.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Dim_Customer.csv",
+    "matched_cols": [
+      "WardOrCommune"
+    ],
+    "all_cols": [
+      "CustomerID",
+      "CustomerName",
+      "AccountObjectCode",
+      "Address",
+      "CompanyTaxCode",
+      "Tel",
+      "Mobile",
+      "Fax",
+      "EmailAddress",
+      "Website",
+      "AccountObjectGroupListName",
+      "Country",
+      "ProvinceOrCity",
+      "District",
+      "WardOrCommune",
+      "BranchID",
+      "ETL_DATE",
+      "Excel_Customer_Category",
+      "StockCode"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Date.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Dim_Date.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth"
+    ],
+    "all_cols": [
+      "DateKey",
+      "Date",
+      "Day",
+      "Month",
+      "Year",
+      "Quarter",
+      "Week",
+      "DayOfWeek",
+      "MonthName",
+      "YearMonth",
+      "IsWeekend"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Month.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Dim_Month.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth",
+      "StartDate"
+    ],
+    "all_cols": [
+      "MonthKey",
+      "Year",
+      "Month",
+      "MonthName",
+      "Quarter",
+      "YearMonth",
+      "StartDate",
+      "EndDate",
+      "IsCurrent",
+      "MonthVietnamese"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_ParentStock.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Dim_ParentStock.csv",
+    "matched_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "all_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Products.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Dim_Products.csv",
+    "matched_cols": [
+      "BarCode",
+      "GuarantyPeriod",
+      "TACareerGroupID"
+    ],
+    "all_cols": [
+      "InventoryItemID",
+      "BranchID",
+      "BarCode",
+      "InventoryItemCode",
+      "InventoryItemName",
+      "InventoryItemType",
+      "InventoryItemCategoryList",
+      "InventoryItemCategoryCode",
+      "Description",
+      "UnitID",
+      "GuarantyPeriod",
+      "MinimumStock",
+      "InventoryItemSource",
+      "DefaultStockID",
+      "InventoryAccount",
+      "COGSAccount",
+      "SaleAccount",
+      "PurchaseDiscountRate",
+      "UnitPrice",
+      "SalePrice1",
+      "SalePrice2",
+      "SalePrice3",
+      "FixedSalePrice",
+      "IsUnitPriceAfterTax",
+      "TaxRate",
+      "ImportTaxRate",
+      "ExportTaxRate",
+      "InventoryCategorySpecialTaxID",
+      "IsSystem",
+      "Inactive",
+      "IsSaleDiscount",
+      "DiscountType",
+      "IsFollowSerialNumber",
+      "CostMethod",
+      "CreatedDate",
+      "CreatedBy",
+      "ModifiedDate",
+      "ModifiedBy",
+      "InventoryItemCategoryName",
+      "Specificity",
+      "PurchaseDescription",
+      "SaleDescription",
+      "TACareerGroupID",
+      "FixedUnitPrice",
+      "FrontEndFormula",
+      "BackEndFormula",
+      "BaseOnFormula",
+      "IsDeleted",
+      "ServerRowVersion",
+      "UploadState",
+      "IsCRM",
+      "NotAllowSyncToCRM",
+      "InventoryItemCategoryIDList",
+      "DiscountAccount",
+      "SaleOffAccount",
+      "ReturnAccount",
+      "ReplaceInventoryItemID",
+      "ReplaceInventoryItemName",
+      "ProcessAccount",
+      "Excel_Product_Name",
+      "Excel_Category_Name",
+      "ETL_DATE",
+      "InventoryItemCode_New"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Stock.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Dim_Stock.csv",
+    "matched_cols": [
+      "ParentStockCode"
+    ],
+    "all_cols": [
+      "StockID",
+      "BranchID",
+      "StockCode",
+      "StockName",
+      "Description",
+      "InventoryAccount",
+      "ETL_DATE",
+      "ParentStockCode"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Year.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Dim_Year.csv",
+    "matched_cols": [
+      "YearText"
+    ],
+    "all_cols": [
+      "YearText",
+      "Value"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "DM_AccountObjectDebt.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\DM_AccountObjectDebt.csv",
+    "matched_cols": [
+      "ReceiptableDebtAmount",
+      "PaidAmount",
+      "ReceivableAccountCode",
+      "OpeningBalance"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "AccountObjectName",
+      "ReceiptableDebtAmount",
+      "PaidAmount",
+      "ETL_DATE",
+      "ReceivableAccountCode",
+      "OpeningBalance",
+      "PeriodAmount"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "DM_RevenueBySaleLedger.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\DM_RevenueBySaleLedger.csv",
+    "matched_cols": [
+      "IsInvoiceExported",
+      "IsOutwardExported"
+    ],
+    "all_cols": [
+      "AccountObjectID",
+      "AccountObjectNameDI",
+      "InventoryItemCode",
+      "InventoryItemName",
+      "Revenue",
+      "SaleAmount",
+      "RefDate",
+      "UnitPrice",
+      "ReceiptAmount",
+      "VATAmount",
+      "RefNo",
+      "InvNo",
+      "PostedDate",
+      "JournalMemo",
+      "RefTypeName",
+      "IsInvoiceExported",
+      "IsOutwardExported",
+      "RefNoFinance",
+      "RefNoManagement",
+      "DiscountAmount",
+      "BranchID",
+      "AccountObjectCode",
+      "MainUnitPrice",
+      "MainConvertRate",
+      "MainQuantity",
+      "ETL_DATE",
+      "DB",
+      "UnitID",
+      "InventoryItemCode_New"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_AnalyticsDebit.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Fact_AnalyticsDebit.csv",
+    "matched_cols": [
+      "DebtType",
+      "DebtDescription"
+    ],
+    "all_cols": [
+      "DebtType",
+      "Amount",
+      "DebtDescription",
+      "ETL_DATE",
+      "Account",
+      "AccountObjectCode"
+    ],
+    "row_count": 1788,
+    "date_range": {
+      "ETL_DATE": [
+        "2026-08-02 12:45:46.630",
+        "2026-08-02 12:45:46.630"
+      ]
+    }
+  },
+  {
+    "file": "Fact_KPI_By_Product.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Fact_KPI_By_Product.csv",
+    "matched_cols": [
+      "Year"
+    ],
+    "all_cols": [
+      "RevenueCode",
+      "StockCode",
+      "CategoryName",
+      "ProductName",
+      "ProductCategoryName",
+      "ProductQuantityDVT",
+      "ProductQuantityDVC",
+      "ProductQuantityDVT1",
+      "SaleQuantityDVC",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_KPI_Year.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart\\Fact_KPI_Year.csv",
+    "matched_cols": [
+      "Parent_Stock",
+      "Year"
+    ],
+    "all_cols": [
+      "Parent_Stock",
+      "Production",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Customer.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Dim_Customer.csv",
+    "matched_cols": [
+      "WardOrCommune"
+    ],
+    "all_cols": [
+      "CustomerID",
+      "CustomerName",
+      "AccountObjectCode",
+      "Address",
+      "CompanyTaxCode",
+      "Tel",
+      "Mobile",
+      "Fax",
+      "EmailAddress",
+      "Website",
+      "AccountObjectGroupListName",
+      "Country",
+      "ProvinceOrCity",
+      "District",
+      "WardOrCommune",
+      "BranchID",
+      "ETL_DATE",
+      "Excel_Customer_Category",
+      "StockCode"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Date.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Dim_Date.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth"
+    ],
+    "all_cols": [
+      "DateKey",
+      "Date",
+      "Day",
+      "Month",
+      "Year",
+      "Quarter",
+      "Week",
+      "DayOfWeek",
+      "MonthName",
+      "YearMonth",
+      "IsWeekend"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Month.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Dim_Month.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth",
+      "StartDate"
+    ],
+    "all_cols": [
+      "MonthKey",
+      "Year",
+      "Month",
+      "MonthName",
+      "Quarter",
+      "YearMonth",
+      "StartDate",
+      "EndDate",
+      "IsCurrent",
+      "MonthVietnamese"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_ParentStock.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Dim_ParentStock.csv",
+    "matched_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "all_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Products.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Dim_Products.csv",
+    "matched_cols": [
+      "BarCode",
+      "GuarantyPeriod",
+      "TACareerGroupID"
+    ],
+    "all_cols": [
+      "InventoryItemID",
+      "BranchID",
+      "BarCode",
+      "InventoryItemCode",
+      "InventoryItemName",
+      "InventoryItemType",
+      "InventoryItemCategoryList",
+      "InventoryItemCategoryCode",
+      "Description",
+      "UnitID",
+      "GuarantyPeriod",
+      "MinimumStock",
+      "InventoryItemSource",
+      "DefaultStockID",
+      "InventoryAccount",
+      "COGSAccount",
+      "SaleAccount",
+      "PurchaseDiscountRate",
+      "UnitPrice",
+      "SalePrice1",
+      "SalePrice2",
+      "SalePrice3",
+      "FixedSalePrice",
+      "IsUnitPriceAfterTax",
+      "TaxRate",
+      "ImportTaxRate",
+      "ExportTaxRate",
+      "InventoryCategorySpecialTaxID",
+      "IsSystem",
+      "Inactive",
+      "IsSaleDiscount",
+      "DiscountType",
+      "IsFollowSerialNumber",
+      "CostMethod",
+      "CreatedDate",
+      "CreatedBy",
+      "ModifiedDate",
+      "ModifiedBy",
+      "InventoryItemCategoryName",
+      "Specificity",
+      "PurchaseDescription",
+      "SaleDescription",
+      "TACareerGroupID",
+      "FixedUnitPrice",
+      "FrontEndFormula",
+      "BackEndFormula",
+      "BaseOnFormula",
+      "IsDeleted",
+      "ServerRowVersion",
+      "UploadState",
+      "IsCRM",
+      "NotAllowSyncToCRM",
+      "InventoryItemCategoryIDList",
+      "DiscountAccount",
+      "SaleOffAccount",
+      "ReturnAccount",
+      "ReplaceInventoryItemID",
+      "ReplaceInventoryItemName",
+      "ProcessAccount",
+      "Excel_Product_Name",
+      "Excel_Category_Name",
+      "ETL_DATE",
+      "InventoryItemCode_New"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Stock.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Dim_Stock.csv",
+    "matched_cols": [
+      "ParentStockCode"
+    ],
+    "all_cols": [
+      "StockID",
+      "BranchID",
+      "StockCode",
+      "StockName",
+      "Description",
+      "InventoryAccount",
+      "ETL_DATE",
+      "ParentStockCode"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Year.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Dim_Year.csv",
+    "matched_cols": [
+      "YearText"
+    ],
+    "all_cols": [
+      "YearText",
+      "Value"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "DM_AccountObjectDebt.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\DM_AccountObjectDebt.csv",
+    "matched_cols": [
+      "ReceiptableDebtAmount",
+      "PaidAmount",
+      "ReceivableAccountCode",
+      "OpeningBalance"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "AccountObjectName",
+      "ReceiptableDebtAmount",
+      "PaidAmount",
+      "ETL_DATE",
+      "ReceivableAccountCode",
+      "OpeningBalance",
+      "PeriodAmount"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "DM_RevenueBySaleLedger.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\DM_RevenueBySaleLedger.csv",
+    "matched_cols": [
+      "IsInvoiceExported",
+      "IsOutwardExported"
+    ],
+    "all_cols": [
+      "AccountObjectID",
+      "AccountObjectNameDI",
+      "InventoryItemCode",
+      "InventoryItemName",
+      "Revenue",
+      "SaleAmount",
+      "RefDate",
+      "UnitPrice",
+      "ReceiptAmount",
+      "VATAmount",
+      "RefNo",
+      "InvNo",
+      "PostedDate",
+      "JournalMemo",
+      "RefTypeName",
+      "IsInvoiceExported",
+      "IsOutwardExported",
+      "RefNoFinance",
+      "RefNoManagement",
+      "DiscountAmount",
+      "BranchID",
+      "AccountObjectCode",
+      "MainUnitPrice",
+      "MainConvertRate",
+      "MainQuantity",
+      "ETL_DATE",
+      "DB",
+      "UnitID",
+      "InventoryItemCode_New"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_AnalyticsDebit.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Fact_AnalyticsDebit.csv",
+    "matched_cols": [
+      "DebtType",
+      "DebtDescription"
+    ],
+    "all_cols": [
+      "DebtType",
+      "Amount",
+      "DebtDescription",
+      "ETL_DATE",
+      "Account",
+      "AccountObjectCode"
+    ],
+    "row_count": 1788,
+    "date_range": {
+      "ETL_DATE": [
+        "2026-08-02 12:45:46.630",
+        "2026-08-02 12:45:46.630"
+      ]
+    }
+  },
+  {
+    "file": "Fact_KPI_By_Product.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Fact_KPI_By_Product.csv",
+    "matched_cols": [
+      "Year"
+    ],
+    "all_cols": [
+      "RevenueCode",
+      "StockCode",
+      "CategoryName",
+      "ProductName",
+      "ProductCategoryName",
+      "ProductQuantityDVT",
+      "ProductQuantityDVC",
+      "ProductQuantityDVT1",
+      "SaleQuantityDVC",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_KPI_Year.csv",
+    "relpath": "Project Sovigaz\\1. Giới thiệu và khảo sát dự án\\Nguồn dữ liệu\\Datamart-20260918T064758Z-1-001\\Datamart\\Fact_KPI_Year.csv",
+    "matched_cols": [
+      "Parent_Stock",
+      "Year"
+    ],
+    "all_cols": [
+      "Parent_Stock",
+      "Production",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Customer.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Dim_Customer.csv",
+    "matched_cols": [
+      "WardOrCommune"
+    ],
+    "all_cols": [
+      "CustomerID",
+      "CustomerName",
+      "AccountObjectCode",
+      "Address",
+      "CompanyTaxCode",
+      "Tel",
+      "Mobile",
+      "Fax",
+      "EmailAddress",
+      "Website",
+      "AccountObjectGroupListName",
+      "Country",
+      "ProvinceOrCity",
+      "District",
+      "WardOrCommune",
+      "BranchID",
+      "ETL_DATE",
+      "Excel_Customer_Category",
+      "StockCode"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Date.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Dim_Date.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth"
+    ],
+    "all_cols": [
+      "DateKey",
+      "Date",
+      "Day",
+      "Month",
+      "Year",
+      "Quarter",
+      "Week",
+      "DayOfWeek",
+      "MonthName",
+      "YearMonth",
+      "IsWeekend"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Month.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Dim_Month.csv",
+    "matched_cols": [
+      "Year",
+      "Quarter",
+      "YearMonth",
+      "StartDate"
+    ],
+    "all_cols": [
+      "MonthKey",
+      "Year",
+      "Month",
+      "MonthName",
+      "Quarter",
+      "YearMonth",
+      "StartDate",
+      "EndDate",
+      "IsCurrent",
+      "MonthVietnamese"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_ParentStock.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Dim_ParentStock.csv",
+    "matched_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "all_cols": [
+      "ParentStockCode",
+      "ParentStockName"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Products.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Dim_Products.csv",
+    "matched_cols": [
+      "BarCode",
+      "GuarantyPeriod",
+      "TACareerGroupID"
+    ],
+    "all_cols": [
+      "InventoryItemID",
+      "BranchID",
+      "BarCode",
+      "InventoryItemCode",
+      "InventoryItemName",
+      "InventoryItemType",
+      "InventoryItemCategoryList",
+      "InventoryItemCategoryCode",
+      "Description",
+      "UnitID",
+      "GuarantyPeriod",
+      "MinimumStock",
+      "InventoryItemSource",
+      "DefaultStockID",
+      "InventoryAccount",
+      "COGSAccount",
+      "SaleAccount",
+      "PurchaseDiscountRate",
+      "UnitPrice",
+      "SalePrice1",
+      "SalePrice2",
+      "SalePrice3",
+      "FixedSalePrice",
+      "IsUnitPriceAfterTax",
+      "TaxRate",
+      "ImportTaxRate",
+      "ExportTaxRate",
+      "InventoryCategorySpecialTaxID",
+      "IsSystem",
+      "Inactive",
+      "IsSaleDiscount",
+      "DiscountType",
+      "IsFollowSerialNumber",
+      "CostMethod",
+      "CreatedDate",
+      "CreatedBy",
+      "ModifiedDate",
+      "ModifiedBy",
+      "InventoryItemCategoryName",
+      "Specificity",
+      "PurchaseDescription",
+      "SaleDescription",
+      "TACareerGroupID",
+      "FixedUnitPrice",
+      "FrontEndFormula",
+      "BackEndFormula",
+      "BaseOnFormula",
+      "IsDeleted",
+      "ServerRowVersion",
+      "UploadState",
+      "IsCRM",
+      "NotAllowSyncToCRM",
+      "InventoryItemCategoryIDList",
+      "DiscountAccount",
+      "SaleOffAccount",
+      "ReturnAccount",
+      "ReplaceInventoryItemID",
+      "ReplaceInventoryItemName",
+      "ProcessAccount",
+      "Excel_Product_Name",
+      "Excel_Category_Name",
+      "ETL_DATE",
+      "InventoryItemCode_New"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Stock.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Dim_Stock.csv",
+    "matched_cols": [
+      "ParentStockCode"
+    ],
+    "all_cols": [
+      "StockID",
+      "BranchID",
+      "StockCode",
+      "StockName",
+      "Description",
+      "InventoryAccount",
+      "ETL_DATE",
+      "ParentStockCode"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Dim_Year.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Dim_Year.csv",
+    "matched_cols": [
+      "YearText"
+    ],
+    "all_cols": [
+      "YearText",
+      "Value"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "DM_AccountObjectDebt.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\DM_AccountObjectDebt.csv",
+    "matched_cols": [
+      "ReceiptableDebtAmount",
+      "PaidAmount",
+      "ReceivableAccountCode",
+      "OpeningBalance"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "AccountObjectName",
+      "ReceiptableDebtAmount",
+      "PaidAmount",
+      "ETL_DATE",
+      "ReceivableAccountCode",
+      "OpeningBalance",
+      "PeriodAmount"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "DM_RevenueBySaleLedger.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\DM_RevenueBySaleLedger.csv",
+    "matched_cols": [
+      "IsInvoiceExported",
+      "IsOutwardExported"
+    ],
+    "all_cols": [
+      "AccountObjectID",
+      "AccountObjectNameDI",
+      "InventoryItemCode",
+      "InventoryItemName",
+      "Revenue",
+      "SaleAmount",
+      "RefDate",
+      "UnitPrice",
+      "ReceiptAmount",
+      "VATAmount",
+      "RefNo",
+      "InvNo",
+      "PostedDate",
+      "JournalMemo",
+      "RefTypeName",
+      "IsInvoiceExported",
+      "IsOutwardExported",
+      "RefNoFinance",
+      "RefNoManagement",
+      "DiscountAmount",
+      "BranchID",
+      "AccountObjectCode",
+      "MainUnitPrice",
+      "MainConvertRate",
+      "MainQuantity",
+      "ETL_DATE",
+      "DB",
+      "UnitID",
+      "InventoryItemCode_New"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_AnalyticsDebit.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Fact_AnalyticsDebit.csv",
+    "matched_cols": [
+      "DebtType",
+      "DebtDescription"
+    ],
+    "all_cols": [
+      "DebtType",
+      "Amount",
+      "DebtDescription",
+      "ETL_DATE",
+      "Account",
+      "AccountObjectCode"
+    ],
+    "row_count": 1788,
+    "date_range": {
+      "ETL_DATE": [
+        "2026-08-02 12:45:46.630",
+        "2026-08-02 12:45:46.630"
+      ]
+    }
+  },
+  {
+    "file": "Fact_KPI_By_Product.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Fact_KPI_By_Product.csv",
+    "matched_cols": [
+      "Year"
+    ],
+    "all_cols": [
+      "RevenueCode",
+      "StockCode",
+      "CategoryName",
+      "ProductName",
+      "ProductCategoryName",
+      "ProductQuantityDVT",
+      "ProductQuantityDVC",
+      "ProductQuantityDVT1",
+      "SaleQuantityDVC",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "Fact_KPI_Year.csv",
+    "relpath": "Project Sovigaz\\3. Phát triển ETL dữ liệu\\Data ETL\\Fact_KPI_Year.csv",
+    "matched_cols": [
+      "Parent_Stock",
+      "Year"
+    ],
+    "all_cols": [
+      "Parent_Stock",
+      "Production",
+      "Amount",
+      "Year",
+      "ETL_DATE"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "feature_lineage.csv",
+    "relpath": "SOVIGAZ_ML\\feature_lineage.csv",
+    "matched_cols": [
+      "allowed_for_credit_risk"
+    ],
+    "all_cols": [
+      "feature_name",
+      "dataset",
+      "source_table",
+      "source_column",
+      "aggregation",
+      "observation_time",
+      "prediction_time",
+      "allowed_for_forecasting",
+      "allowed_for_churn",
+      "allowed_for_credit_risk",
+      "leakage_status",
+      "reason"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_dataset.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\churn_dataset.parquet",
+    "matched_cols": [
+      "monetary",
+      "churn_target_90d",
+      "snapshot_date"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "last_order_date",
+      "first_order_date",
+      "frequency",
+      "monetary",
+      "total_quantity",
+      "product_diversity",
+      "order_count",
+      "recency",
+      "observation_date",
+      "avg_order_value",
+      "avg_item_value",
+      "active_months",
+      "purchase_interval_mean",
+      "purchase_interval_std",
+      "rev_last_90d",
+      "rev_prior_90d",
+      "revenue_trend_ratio",
+      "churn_target_90d",
+      "snapshot_date"
+    ],
+    "row_count": 5502,
+    "date_range": {
+      "last_order_date": [
+        "2023-07-04 00:00:00",
+        "2025-12-31 00:00:00"
+      ],
+      "first_order_date": [
+        "2023-07-04 00:00:00",
+        "2025-12-31 00:00:00"
+      ],
+      "observation_date": [
+        "2023-12-31 00:00:00",
+        "2025-12-31 00:00:00"
+      ],
+      "snapshot_date": [
+        "2023-12-31 00:00:00",
+        "2025-12-31 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "customer_credit_snapshot_20260731.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\customer_credit_snapshot_20260731.parquet",
+    "matched_cols": [
+      "total_overdue_amount",
+      "total_receivable_debt",
+      "overdue_ratio",
+      "is_overdue_any",
+      "is_overdue_gt_30d",
+      "is_overdue_gt_90d",
+      "credit_sales_ratio",
+      "snapshot_date"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "Không có hạn nợ",
+      "Nợ quá hạn 1-30 ngày",
+      "Nợ quá hạn 181-365 ngày",
+      "Nợ quá hạn 31-90 ngày",
+      "Nợ quá hạn 366-730 ngày",
+      "Nợ quá hạn 731-1095 ngày",
+      "Nợ quá hạn 91-180 ngày",
+      "Nợ quá hạn trên 1095 ngày",
+      "Nợ trước hạn 0-30 ngày",
+      "Nợ trước hạn 31-90 ngày",
+      "Nợ trước hạn trên 90 ngày",
+      "total_overdue_amount",
+      "total_current_amount",
+      "total_receivable_debt",
+      "overdue_ratio",
+      "is_overdue_any",
+      "is_overdue_gt_30d",
+      "is_overdue_gt_90d",
+      "historical_total_revenue",
+      "historical_order_count",
+      "historical_first_purchase",
+      "historical_last_purchase",
+      "credit_sales_ratio",
+      "snapshot_date"
+    ],
+    "row_count": 584,
+    "date_range": {
+      "snapshot_date": [
+        "2026-07-31 00:00:00",
+        "2026-07-31 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "customer_master.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\customer_master.parquet",
+    "matched_cols": [],
+    "all_cols": [
+      "CustomerCode",
+      "CustomerName",
+      "BranchCode",
+      "Region",
+      "Country",
+      "FirstPurchaseDate",
+      "LastPurchaseDate",
+      "TotalTransactions",
+      "TotalOrders",
+      "LifetimeRevenue",
+      "LifetimeQuantity",
+      "ActiveMonths"
+    ],
+    "row_count": 6040,
+    "date_range": {
+      "FirstPurchaseDate": [
+        "2023-01-02 00:00:00",
+        "2026-06-05 00:00:00"
+      ],
+      "LastPurchaseDate": [
+        "2023-01-03 00:00:00",
+        "2026-06-16 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "processed_sales.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\processed_sales.parquet",
+    "matched_cols": [],
+    "all_cols": [
+      "RefNo",
+      "RefDate",
+      "PostedDate",
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "InventoryItemCode_New",
+      "InventoryItemName",
+      "InventoryItemCategoryName",
+      "Excel_Category_Name",
+      "Revenue",
+      "SaleAmount",
+      "UnitPrice",
+      "MainQuantity",
+      "MainConvertRate",
+      "RefTypeName",
+      "flag_sales_return",
+      "flag_accounting_adjustment",
+      "flag_invalid_unit_price",
+      "flag_zero_revenue"
+    ],
+    "row_count": 228581,
+    "date_range": {
+      "RefDate": [
+        "2023-01-02 00:00:00",
+        "2026-06-16 00:00:00"
+      ],
+      "PostedDate": [
+        "2023-01-02 00:00:00",
+        "2026-06-16 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "rfm_features.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\rfm_features.parquet",
+    "matched_cols": [
+      "monetary"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "last_order_date",
+      "first_order_date",
+      "frequency",
+      "monetary",
+      "total_quantity",
+      "product_diversity",
+      "order_count",
+      "recency",
+      "observation_date",
+      "avg_order_value",
+      "avg_item_value",
+      "active_months",
+      "purchase_interval_mean",
+      "purchase_interval_std"
+    ],
+    "row_count": 2204,
+    "date_range": {
+      "last_order_date": [
+        "2023-01-03 00:00:00",
+        "2026-06-16 00:00:00"
+      ],
+      "first_order_date": [
+        "2023-01-02 00:00:00",
+        "2026-06-05 00:00:00"
+      ],
+      "observation_date": [
+        "2026-06-16 00:00:00",
+        "2026-06-16 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "sales_daily.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\sales_daily.parquet",
+    "matched_cols": [],
+    "all_cols": [
+      "RefDate",
+      "InventoryItemCode_New",
+      "BranchCode",
+      "Revenue",
+      "Quantity",
+      "TransactionCount",
+      "CustomerCount"
+    ],
+    "row_count": 56937,
+    "date_range": {
+      "RefDate": [
+        "2023-01-02 00:00:00",
+        "2026-06-16 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "sales_monthly.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\sales_monthly.parquet",
+    "matched_cols": [],
+    "all_cols": [
+      "Date",
+      "InventoryItemCode_New",
+      "BranchCode",
+      "Revenue",
+      "Quantity",
+      "TransactionCount",
+      "CustomerCount"
+    ],
+    "row_count": 5922,
+    "date_range": {
+      "Date": [
+        "2023-01-01 00:00:00",
+        "2026-06-01 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "sales_weekly.parquet",
+    "relpath": "SOVIGAZ_ML\\data\\processed\\sales_weekly.parquet",
+    "matched_cols": [],
+    "all_cols": [
+      "Date",
+      "InventoryItemCode_New",
+      "BranchCode",
+      "Revenue",
+      "Quantity",
+      "TransactionCount",
+      "CustomerCount"
+    ],
+    "row_count": 17658,
+    "date_range": {
+      "Date": [
+        "2023-01-02 00:00:00",
+        "2026-06-15 00:00:00"
+      ]
+    }
+  },
+  {
+    "file": "churn_calibration.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_calibration.csv",
+    "matched_cols": [
+      "model_variant"
+    ],
+    "all_cols": [
+      "model_variant",
+      "val_brier_score",
+      "test_brier_score",
+      "calibration_status"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_features.parquet",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_features.parquet",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_30d",
+      "monetary_90d",
+      "monetary_180d",
+      "monetary_365d",
+      "churn_target_60d",
+      "churn_target_90d",
+      "churn_target_120d"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "observation_date",
+      "recency_days",
+      "frequency_30d",
+      "frequency_90d",
+      "frequency_180d",
+      "frequency_365d",
+      "monetary_30d",
+      "monetary_90d",
+      "monetary_180d",
+      "monetary_365d",
+      "purchase_count_30d",
+      "purchase_count_90d",
+      "purchase_count_180d",
+      "purchase_count_365d",
+      "active_days_90d",
+      "active_days_180d",
+      "active_days_365d",
+      "distinct_products_90d",
+      "distinct_products_180d",
+      "distinct_products_365d",
+      "quantity_90d",
+      "quantity_180d",
+      "quantity_365d",
+      "avg_order_value_90d",
+      "avg_order_value_365d",
+      "mean_interpurchase_days",
+      "median_interpurchase_days",
+      "std_interpurchase_days",
+      "last_interpurchase_days",
+      "revenue_change_30_vs_90",
+      "revenue_change_90_vs_180",
+      "frequency_change_90_vs_180",
+      "revenue_momentum_ratio",
+      "has_negative_revenue_365d",
+      "has_negative_revenue_90d",
+      "churn_target_60d",
+      "churn_target_90d",
+      "churn_target_120d",
+      "temporal_cluster_id"
+    ],
+    "row_count": 5502,
+    "date_range": {
+      "snapshot_date": [
+        "2023-12-31",
+        "2025-12-31"
+      ],
+      "observation_date": [
+        "2023-12-31",
+        "2025-12-31"
+      ]
+    }
+  },
+  {
+    "file": "churn_feature_importance.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_feature_importance.csv",
+    "matched_cols": [
+      "mean_abs_shap"
+    ],
+    "all_cols": [
+      "feature",
+      "mean_abs_shap",
+      "relative_importance_pct",
+      "rank"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_label_boundary_audit.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_label_boundary_audit.csv",
+    "matched_cols": [
+      "snapshot_T",
+      "churn_target_90d",
+      "boundary_verdict"
+    ],
+    "all_cols": [
+      "case_category",
+      "AccountObjectCode",
+      "snapshot_T",
+      "last_purchase_before_T",
+      "first_purchase_after_T",
+      "days_after_T",
+      "churn_target_90d",
+      "boundary_verdict"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_predictions.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_predictions.csv",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_365d"
+    ],
+    "all_cols": [
+      "customer_code",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "actual_churn",
+      "churn_probability",
+      "predicted_churn",
+      "threshold",
+      "model",
+      "risk_band",
+      "recency_days",
+      "frequency_365d",
+      "monetary_365d"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_priority_customers.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_priority_customers.csv",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_365d"
+    ],
+    "all_cols": [
+      "rank",
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "priority_level",
+      "priority_score",
+      "churn_probability",
+      "predicted_churn",
+      "actual_churn",
+      "risk_band",
+      "customer_segment",
+      "value_tier",
+      "monetary_365d",
+      "recommended_action",
+      "action_rationale",
+      "top_driver_1",
+      "top_driver_2",
+      "top_driver_3",
+      "recency_days",
+      "frequency_365d",
+      "active_days_90d",
+      "revenue_change_30_vs_90",
+      "revenue_momentum_ratio"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_risk_scored.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_risk_scored.csv",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_365d",
+      "monetary_30d",
+      "monetary_90d",
+      "monetary_180d"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "churn_probability",
+      "predicted_churn",
+      "actual_churn",
+      "risk_band",
+      "customer_segment",
+      "cluster_id",
+      "value_tier",
+      "monetary_365d",
+      "priority_level",
+      "priority_score",
+      "priority_score_risk_dom",
+      "priority_score_val_dom",
+      "recommended_action",
+      "action_rationale",
+      "recency_days",
+      "frequency_365d",
+      "frequency_90d",
+      "frequency_180d",
+      "monetary_30d",
+      "monetary_90d",
+      "monetary_180d",
+      "active_days_90d",
+      "active_days_180d",
+      "active_days_365d",
+      "distinct_products_90d",
+      "distinct_products_180d",
+      "distinct_products_365d",
+      "quantity_90d",
+      "quantity_180d",
+      "quantity_365d",
+      "avg_order_value_90d",
+      "avg_order_value_365d",
+      "revenue_change_30_vs_90",
+      "revenue_change_90_vs_180",
+      "frequency_change_90_vs_180",
+      "revenue_momentum_ratio",
+      "has_negative_revenue_365d"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_risk_temporal_summary.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_risk_temporal_summary.csv",
+    "matched_cols": [
+      "snapshot_date"
+    ],
+    "all_cols": [
+      "snapshot_date",
+      "total_customers",
+      "critical_risk_count",
+      "critical_risk_pct",
+      "high_risk_count",
+      "high_risk_pct",
+      "medium_risk_count",
+      "medium_risk_pct",
+      "low_risk_count",
+      "low_risk_pct",
+      "predicted_churn_count",
+      "predicted_churn_rate_pct",
+      "observed_churn_rate_pct",
+      "mean_churn_probability",
+      "total_revenue_365d_VND",
+      "high_critical_risk_revenue_VND",
+      "revenue_at_risk_pct",
+      "key_accounts_at_risk_count",
+      "tier1_immediate_count",
+      "tier2_high_priority_count"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_sensitivity_analysis.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_sensitivity_analysis.csv",
+    "matched_cols": [
+      "Snapshot_Date"
+    ],
+    "all_cols": [
+      "Snapshot_Date",
+      "Prediction_Horizon_Days",
+      "Total_Customers",
+      "Churn_Count_Y1",
+      "Retained_Count_Y0",
+      "Churn_Rate_%"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_temporal_performance.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_temporal_performance.csv",
+    "matched_cols": [
+      "snapshot_date"
+    ],
+    "all_cols": [
+      "snapshot_date",
+      "sample_size",
+      "churn_rate",
+      "pr_auc",
+      "roc_auc",
+      "brier_score",
+      "f1_score",
+      "recall",
+      "precision"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_thresholds.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\churn\\churn_thresholds.csv",
+    "matched_cols": [
+      "balanced_accuracy"
+    ],
+    "all_cols": [
+      "threshold",
+      "precision",
+      "recall",
+      "f1_score",
+      "balanced_accuracy",
+      "specificity",
+      "true_positive",
+      "false_positive",
+      "true_negative",
+      "false_negative"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "cluster_assignments.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\cluster_assignments.csv",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_365d",
+      "robust_log_monetary_365d"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "cluster_id",
+      "descriptive_segment",
+      "business_segment",
+      "distance_to_centroid",
+      "recency_days",
+      "frequency_365d",
+      "monetary_365d",
+      "quantity_365d",
+      "active_months_365d",
+      "avg_order_value_365d",
+      "interpurchase_mean_days",
+      "robust_log_recency",
+      "robust_log_frequency_365d",
+      "robust_log_monetary_365d",
+      "has_negative_revenue_365d"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "cluster_profiles.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\cluster_profiles.csv",
+    "matched_cols": [
+      "monetary_median_VND",
+      "monetary_mean_VND",
+      "monetary_p25_VND",
+      "monetary_p75_VND"
+    ],
+    "all_cols": [
+      "cluster_id",
+      "descriptive_name",
+      "business_name",
+      "customers",
+      "customer_pct",
+      "revenue_VND",
+      "revenue_pct",
+      "revenue_per_customer_VND",
+      "recency_median_days",
+      "recency_mean_days",
+      "recency_p25_days",
+      "recency_p75_days",
+      "frequency_median_orders",
+      "frequency_mean_orders",
+      "frequency_p25_orders",
+      "frequency_p75_orders",
+      "monetary_median_VND",
+      "monetary_mean_VND",
+      "monetary_p25_VND",
+      "monetary_p75_VND",
+      "interpurchase_mean_days",
+      "active_months_median"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "cluster_stability.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\cluster_stability.csv",
+    "matched_cols": [
+      "covariance_type",
+      "mean_ari",
+      "std_ari",
+      "min_ari",
+      "max_ari"
+    ],
+    "all_cols": [
+      "algorithm",
+      "K",
+      "covariance_type",
+      "mean_ari",
+      "std_ari",
+      "min_ari",
+      "max_ari",
+      "mean_nmi",
+      "stability_verdict"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "gmm_metrics.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\gmm_metrics.csv",
+    "matched_cols": [
+      "covariance_type",
+      "calinski_harabasz_score"
+    ],
+    "all_cols": [
+      "algorithm",
+      "K",
+      "covariance_type",
+      "n_init",
+      "aic",
+      "bic",
+      "silhouette_score",
+      "calinski_harabasz_score",
+      "davies_bouldin_score",
+      "cluster_sizes",
+      "min_cluster_size",
+      "min_cluster_pct",
+      "max_cluster_size",
+      "max_cluster_pct"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "kmeans_metrics.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\kmeans_metrics.csv",
+    "matched_cols": [
+      "calinski_harabasz_score"
+    ],
+    "all_cols": [
+      "algorithm",
+      "K",
+      "n_init",
+      "inertia",
+      "silhouette_score",
+      "calinski_harabasz_score",
+      "davies_bouldin_score",
+      "cluster_sizes",
+      "min_cluster_size",
+      "min_cluster_pct",
+      "max_cluster_size",
+      "max_cluster_pct"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "negative_monetary_audit.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\negative_monetary_audit.csv",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_365d_VND"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "snapshot_date",
+      "monetary_365d_VND",
+      "flag_accounting_adjustment",
+      "adjustment_revenue_sum",
+      "flag_sales_return",
+      "return_revenue_sum",
+      "top_voucher_type",
+      "handling_method"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "rfm_frequency_audit_comparison.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\rfm_frequency_audit_comparison.csv",
+    "matched_cols": [],
+    "all_cols": [
+      "frequency_definition",
+      "aggregation_key",
+      "example_customer",
+      "customer_name",
+      "row_count",
+      "distinct_refno_count",
+      "diff_rows",
+      "pct_inflation",
+      "finding_verdict"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "rfm_primary_summary_stats.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\rfm_primary_summary_stats.csv",
+    "matched_cols": [],
+    "all_cols": [
+      "Feature",
+      "Skewness",
+      "Min",
+      "P25",
+      "Median",
+      "Mean",
+      "P75",
+      "P95",
+      "P99",
+      "Max"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "rfm_segmentation_primary.parquet",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\rfm_segmentation_primary.parquet",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_365d",
+      "monetary_180d",
+      "monetary_90d",
+      "log_monetary_365d",
+      "log_monetary_180d",
+      "log_monetary_90d",
+      "robust_log_monetary_365d",
+      "std_log_monetary_365d"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "observation_date",
+      "recency_days",
+      "frequency_365d",
+      "monetary_365d",
+      "order_count_365d",
+      "quantity_365d",
+      "active_months_365d",
+      "avg_order_value_365d",
+      "frequency_180d",
+      "monetary_180d",
+      "frequency_90d",
+      "monetary_90d",
+      "interpurchase_mean_days",
+      "interpurchase_std_days",
+      "revenue_last_90d",
+      "revenue_prior_90d",
+      "revenue_momentum_ratio",
+      "has_negative_revenue_365d",
+      "log_recency",
+      "log_frequency_365d",
+      "log_monetary_365d",
+      "log_frequency_180d",
+      "log_monetary_180d",
+      "log_frequency_90d",
+      "log_monetary_90d",
+      "robust_log_recency",
+      "robust_log_frequency_365d",
+      "robust_log_monetary_365d",
+      "std_log_recency",
+      "std_log_frequency_365d",
+      "std_log_monetary_365d"
+    ],
+    "row_count": 1359,
+    "date_range": {
+      "snapshot_date": [
+        "2025-12-31",
+        "2025-12-31"
+      ],
+      "observation_date": [
+        "2025-12-31",
+        "2025-12-31"
+      ]
+    }
+  },
+  {
+    "file": "rfm_snapshot.parquet",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\rfm_snapshot.parquet",
+    "matched_cols": [
+      "snapshot_date",
+      "monetary_90d",
+      "monetary_180d",
+      "monetary_365d",
+      "churn_target_60d",
+      "churn_target_90d",
+      "churn_target_120d",
+      "log_monetary_365d",
+      "log_monetary_180d",
+      "log_monetary_90d",
+      "robust_log_monetary_365d",
+      "std_log_monetary_365d"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "observation_date",
+      "recency_days",
+      "frequency_90d",
+      "monetary_90d",
+      "frequency_180d",
+      "monetary_180d",
+      "order_count_180d",
+      "frequency_365d",
+      "monetary_365d",
+      "order_count_365d",
+      "quantity_365d",
+      "active_months_365d",
+      "avg_order_value_365d",
+      "interpurchase_mean_days",
+      "interpurchase_std_days",
+      "revenue_last_90d",
+      "revenue_prior_90d",
+      "revenue_momentum_ratio",
+      "churn_target_60d",
+      "churn_target_90d",
+      "churn_target_120d",
+      "log_recency",
+      "has_negative_revenue_365d",
+      "log_frequency_365d",
+      "log_monetary_365d",
+      "log_frequency_180d",
+      "log_monetary_180d",
+      "log_frequency_90d",
+      "log_monetary_90d",
+      "robust_log_recency",
+      "robust_log_frequency_365d",
+      "robust_log_monetary_365d",
+      "std_log_recency",
+      "std_log_frequency_365d",
+      "std_log_monetary_365d"
+    ],
+    "row_count": 5502,
+    "date_range": {
+      "snapshot_date": [
+        "2023-12-31",
+        "2025-12-31"
+      ],
+      "observation_date": [
+        "2023-12-31",
+        "2025-12-31"
+      ]
+    }
+  },
+  {
+    "file": "rfm_summary_stats.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\rfm_summary_stats.csv",
+    "matched_cols": [],
+    "all_cols": [
+      "Feature",
+      "Skewness",
+      "Min",
+      "P25",
+      "Median",
+      "Mean",
+      "P75",
+      "P95",
+      "P99",
+      "Max"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "rfm_window_comparison.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\rfm_window_comparison.csv",
+    "matched_cols": [
+      "Median_Monetary_VND",
+      "Mean_Monetary_VND",
+      "Monetary_Skewness"
+    ],
+    "all_cols": [
+      "Window",
+      "Median_Frequency",
+      "Mean_Frequency",
+      "Zero_Freq_Count",
+      "Zero_Freq_Pct",
+      "Median_Monetary_VND",
+      "Mean_Monetary_VND",
+      "Monetary_Skewness",
+      "Assessment"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "rfm_window_robustness.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\rfm_window_robustness.csv",
+    "matched_cols": [
+      "comparison",
+      "primary_window"
+    ],
+    "all_cols": [
+      "comparison",
+      "primary_window",
+      "alternative_window",
+      "adjusted_rand_index",
+      "normalized_mutual_info",
+      "finding_verdict"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "transformation_robustness.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\customer_segmentation\\transformation_robustness.csv",
+    "matched_cols": [
+      "comparison",
+      "primary_algorithm"
+    ],
+    "all_cols": [
+      "comparison",
+      "primary_algorithm",
+      "alternative_algorithm",
+      "adjusted_rand_index",
+      "normalized_mutual_info",
+      "finding_verdict"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "monthly_revenue_forecast.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\forecasting\\monthly_revenue_forecast.csv",
+    "matched_cols": [
+      "Target"
+    ],
+    "all_cols": [
+      "Date",
+      "Product",
+      "Target",
+      "Actual",
+      "Forecast",
+      "Residual",
+      "Model",
+      "Dataset",
+      "Period_Type"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "product_demand_forecast.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\forecasting\\product_demand_forecast.csv",
+    "matched_cols": [
+      "Target"
+    ],
+    "all_cols": [
+      "Date",
+      "Product",
+      "Target",
+      "Actual",
+      "Forecast",
+      "Residual",
+      "Model",
+      "Dataset",
+      "Period_Type"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "weekly_revenue_forecast.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\forecasting\\weekly_revenue_forecast.csv",
+    "matched_cols": [
+      "Target"
+    ],
+    "all_cols": [
+      "Date",
+      "Product",
+      "Target",
+      "Actual",
+      "Forecast",
+      "Residual",
+      "Model",
+      "Dataset",
+      "Period_Type"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_customer_risk.csv",
+    "relpath": "SOVIGAZ_ML\\outputs\\powerbi\\churn_customer_risk.csv",
+    "matched_cols": [
+      "snapshot_date",
+      "year",
+      "quarter",
+      "half_year",
+      "monetary_365d"
+    ],
+    "all_cols": [
+      "AccountObjectCode",
+      "CustomerName",
+      "BranchCode",
+      "snapshot_date",
+      "year",
+      "quarter",
+      "half_year",
+      "churn_probability",
+      "predicted_churn",
+      "actual_churn",
+      "risk_band",
+      "customer_segment",
+      "cluster_id",
+      "value_tier",
+      "monetary_365d",
+      "recency_days",
+      "frequency_365d",
+      "priority_score",
+      "priority_level",
+      "recommended_action",
+      "action_rationale",
+      "top_driver_1",
+      "top_driver_2",
+      "top_driver_3"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_feature_inventory_4C1.csv",
+    "relpath": "SOVIGAZ_ML\\reports\\churn_feature_inventory_4C1.csv",
+    "matched_cols": [
+      "is_target"
+    ],
+    "all_cols": [
+      "feature_name",
+      "dtype",
+      "feature_category",
+      "is_identifier",
+      "is_timestamp",
+      "is_target",
+      "is_model_input",
+      "is_prediction_output",
+      "is_derived_business_field",
+      "uses_future_data",
+      "max_source_event_date_rule",
+      "source_columns",
+      "transformation",
+      "missing_rate",
+      "notes"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_priority_sensitivity_4D.csv",
+    "relpath": "SOVIGAZ_ML\\reports\\churn_priority_sensitivity_4D.csv",
+    "matched_cols": [
+      "comparison",
+      "spearman_rank_correlation",
+      "top_10_overlap_pct",
+      "top_20_overlap_pct",
+      "top_50_overlap_pct",
+      "top_100_overlap_pct"
+    ],
+    "all_cols": [
+      "comparison",
+      "spearman_rank_correlation",
+      "top_10_overlap_pct",
+      "top_20_overlap_pct",
+      "top_50_overlap_pct",
+      "top_100_overlap_pct"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_probability_calibration_4D.csv",
+    "relpath": "SOVIGAZ_ML\\reports\\churn_probability_calibration_4D.csv",
+    "matched_cols": [
+      "bin_share_pct",
+      "calibration_gap",
+      "absolute_gap"
+    ],
+    "all_cols": [
+      "probability_bin",
+      "customer_count",
+      "bin_share_pct",
+      "mean_predicted_probability",
+      "observed_churn_rate",
+      "calibration_gap",
+      "absolute_gap",
+      "assessment"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "churn_test_metrics_ci_4C1.csv",
+    "relpath": "SOVIGAZ_ML\\reports\\churn_test_metrics_ci_4C1.csv",
+    "matched_cols": [
+      "bootstrap_method",
+      "n_bootstrap"
+    ],
+    "all_cols": [
+      "metric",
+      "point_estimate",
+      "ci_lower_95",
+      "ci_upper_95",
+      "bootstrap_method",
+      "n_bootstrap",
+      "random_seed",
+      "sampling_unit",
+      "valid_replicates",
+      "notes"
+    ],
+    "row_count": null,
+    "date_range": null
+  },
+  {
+    "file": "feature_lineage.csv",
+    "relpath": "SOVIGAZ_ML\\reports\\feature_lineage.csv",
+    "matched_cols": [
+      "allowed_for_credit_risk"
+    ],
+    "all_cols": [
+      "feature_name",
+      "dataset",
+      "source_table",
+      "source_column",
+      "aggregation",
+      "observation_time",
+      "prediction_time",
+      "allowed_for_forecasting",
+      "allowed_for_churn",
+      "allowed_for_credit_risk",
+      "leakage_status",
+      "reason"
+    ],
+    "row_count": null,
+    "date_range": null
+  }
+]

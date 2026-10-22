@@ -1,0 +1,943 @@
+
+--- TRANG 1 ---
+ 
+ 
+TÀI LIỆU HƯỚNG DẪN 
+THỰC TẬP TỐT NGHIỆP VÀ VIẾT 
+BÁO CÁO THỰC TẬP TỐT NGHIỆP 
+CHUYÊN NGÀNH 
+PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ & KINH DOANH 
+Đối tượng áp 
+dụng 
+Sinh viên năm cuối chuyên ngành Phân tích dữ liệu 
+trong Kinh tế và Kinh doanh 
+Mục tiêu 
+Tổ chức thực tập, lựa chọn đề tài, thực hiện phân tích 
+dữ liệu và hoàn thiện báo cáo tốt nghiệp có tính ứng 
+dụng 
+Định hướng 
+Business problem → Data → Analytics/Model → 
+Insight → Recommendation → Evidence 
+Phiên bản 
+Đề xuất cập nhật năm 2026 
+ 
+ 
+
+--- TRANG 2 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 2 
+LỜI NÓI ĐẦU 
+Tài liệu này được xây dựng nhằm giúp sinh viên chuyển quá trình thực tập từ “đi tìm 
+hiểu doanh nghiệp” thành một trải nghiệm nghề nghiệp có cấu trúc, trong đó sinh viên 
+phải xác định được một vấn đề kinh tế hoặc kinh doanh thực tế, hiểu cách dữ liệu được 
+tạo ra và sử dụng, tiến hành phân tích bằng công cụ phù hợp, đánh giá kết quả và đề xuất 
+giải pháp có khả năng ứng dụng. 
+Tài liệu tham chiếu nhấn mạnh ba yêu cầu cốt lõi: vận dụng kiến thức chuyên ngành 
+vào doanh nghiệp; tìm hiểu quy trình nghiệp vụ, báo cáo và cách tổ chức dữ liệu; sau đó 
+thực hiện phân tích dữ liệu để đề xuất giải pháp. Phiên bản này giữ nguyên tinh thần đó 
+nhưng bổ sung chuẩn đầu ra, quy trình phân tích, tiêu chuẩn dữ liệu, yêu cầu minh chứng, 
+tiêu chí chấm, quy định sử dụng AI và các biểu mẫu thực hành. 
+Nguyên tắc xuyên suốt 
+Báo cáo tốt nghiệp của sinh viên Phân tích dữ liệu không nên dừng ở việc mô tả doanh nghiệp 
+hoặc “chạy một mô hình”. Giá trị của báo cáo nằm ở chuỗi lập luận có thể kiểm chứng: bài toán 
+đúng → dữ liệu phù hợp → phương pháp hợp lý → kết quả đáng tin cậy → khuyến nghị có giá trị 
+cho quyết định kinh doanh. 
+ 
+MỤC LỤC NỘI DUNG 
+1. Mục đích và chuẩn đầu ra .............................................................................................3 
+2. Yêu cầu chung đối với thực tập và báo cáo ..................................................................4 
+3. Lựa chọn đơn vị và vị trí thực tập.................................................................................4 
+4. Lựa chọn và xác định đề tài ..........................................................................................5 
+5. Các nhóm đề tài khuyến nghị .......................................................................................6 
+6. Yêu cầu về dữ liệu ........................................................................................................7 
+7. Quy trình thực hiện đề tài phân tích dữ liệu .................................................................9 
+8. Cấu trúc báo cáo thực tập tốt nghiệp ............................................................................9 
+9. Yêu cầu phương pháp và công cụ ...............................................................................11 
+10. Sản phẩm và minh chứng bắt buộc ...........................................................................12 
+11. Sử dụng AI có trách nhiệm .......................................................................................13 
+12. Tiến độ thực hiện 7 tuần ...........................................................................................14 
+13. Quy cách trình bày báo cáo.......................................................................................14 
+14. Tiêu chí đánh giá.......................................................................................................15 
+15. Các lỗi thường gặp ....................................................................................................16 
+16. Checklist trước khi nộp.............................................................................................17 
+Phụ lục A-E............................................................................................................... 17-19 
+ 
+ 
+
+--- TRANG 3 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 3 
+1. MỤC ĐÍCH VÀ CHUẨN ĐẦU RA 
+1.1. Mục đích 
+• Vận dụng kiến thức về kinh tế, kinh doanh, thống kê, phân tích dữ liệu, trực quan hóa 
+và công nghệ số vào một bối cảnh thực tế tại doanh nghiệp hoặc tổ chức. 
+• Hiểu cách một quy trình nghiệp vụ tạo ra dữ liệu, dữ liệu được lưu trữ như thế nào, ai sử 
+dụng dữ liệu và dữ liệu hỗ trợ quyết định ra sao. 
+• Phát hiện một vấn đề có ý nghĩa thực tiễn, chuyển vấn đề đó thành câu hỏi phân tích 
+hoặc bài toán dữ liệu có phạm vi phù hợp. 
+• Thực hiện đầy đủ một quy trình phân tích dữ liệu: thu thập/tiếp nhận dữ liệu, mô tả, làm 
+sạch, khám phá, phân tích hoặc mô hình hóa, đánh giá và diễn giải kết quả. 
+• Tạo ra ít nhất một sản phẩm có thể sử dụng: báo cáo phân tích, dashboard, bộ chỉ số, mô 
+hình dự báo/phân loại, phân khúc khách hàng, hệ thống cảnh báo hoặc quy trình phân tích 
+cải tiến. 
+• Rèn luyện năng lực làm việc chuyên nghiệp: trao đổi với đơn vị thực tập, quản lý tiến 
+độ, lưu vết dữ liệu và mã nguồn, trình bày kết quả và bảo vệ quan điểm bằng bằng chứng. 
+1.2. Chuẩn đầu ra tối thiểu 
+Nhóm năng lực 
+Sinh viên cần chứng minh được 
+Hiểu nghiệp vụ 
+Mô tả đúng quy trình, mục tiêu, các bên liên quan, chỉ số/KPI và điểm 
+nghẽn của vấn đề được chọn. 
+Hiểu dữ liệu 
+Xác định nguồn dữ liệu, đơn vị quan sát, biến/thuộc tính, chất lượng dữ 
+liệu, phạm vi thời gian và các hạn chế. 
+Phân tích 
+Lựa chọn kỹ thuật phù hợp với câu hỏi; thực hiện có thể tái lập; giải 
+thích được vì sao dùng phương pháp đó. 
+Diễn giải 
+Chuyển kết quả kỹ thuật thành insight kinh doanh; phân biệt mô tả, 
+tương quan, dự báo và quan hệ nhân quả. 
+Ứng dụng 
+Đề xuất hành động/giải pháp cụ thể, nêu điều kiện triển khai, chi phí 
+hoặc rủi ro chính và cách đo hiệu quả. 
+Đạo đức dữ liệu 
+Bảo mật dữ liệu, không làm lộ thông tin cá nhân/kinh doanh; khai báo 
+rõ dữ liệu mô phỏng và việc sử dụng AI. 
+ 
+
+--- TRANG 4 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 4 
+2. YÊU CẦU CHUNG ĐỐI VỚI THỰC TẬP VÀ BÁO CÁO 
+Báo cáo cần thể hiện một quá trình thực tập thực chất, có sự gắn kết giữa công việc tại 
+đơn vị thực tập và nội dung chuyên môn của ngành. Sinh viên không nhất thiết phải làm 
+một mô hình học máy phức tạp; điều quan trọng là bài toán có giá trị, dữ liệu đủ tin cậy, 
+phương pháp phù hợp và kết quả được diễn giải đúng. 
+• Có một bài toán/nhu cầu quản trị cụ thể; tránh đề tài quá rộng như “Phân tích hoạt động 
+kinh doanh của Công ty X”. 
+• Có dữ liệu hoặc bằng chứng dữ liệu đủ để thực hiện phân tích. Nếu dữ liệu thật bị hạn 
+chế, có thể sử dụng dữ liệu ẩn danh, dữ liệu mở hoặc dữ liệu mô phỏng nhưng phải mô tả 
+rõ cách tạo và giới hạn của nó. 
+• Có sản phẩm phân tích nhìn thấy được, ví dụ: bảng phân tích, dashboard, notebook, mô 
+hình, bộ KPI, báo cáo tự động hoặc prototype. 
+• Có đánh giá kết quả bằng tiêu chí phù hợp: độ chính xác, sai số, độ ổn định, khả năng 
+giải thích, thời gian xử lý, mức cải thiện quy trình hoặc giá trị kinh doanh. 
+• Có đề xuất ứng dụng, không chỉ liệt kê kết quả phân tích. 
+• Có minh chứng quá trình làm việc và tài liệu tham khảo đáng tin cậy. 
+Không bắt buộc “AI/ML” cho mọi đề tài 
+Một dashboard tốt giúp doanh nghiệp phát hiện vấn đề, một phân tích cohort đúng hoặc một quy 
+trình tự động hóa báo cáo có thể có giá trị thực tế cao hơn một mô hình học máy phức tạp nhưng 
+không gắn với quyết định kinh doanh. 
+ 
+3. LỰA CHỌN ĐƠN VỊ VÀ VỊ TRÍ THỰC TẬP 
+3.1. Đơn vị phù hợp 
+Có thể thực tập tại doanh nghiệp, ngân hàng, cơ quan nhà nước, tổ chức nghiên cứu, 
+sàn thương mại điện tử, công ty công nghệ, công ty tư vấn hoặc đơn vị có hoạt động tạo 
+lập và sử dụng dữ liệu. Nên ưu tiên nơi có nghiệp vụ bán hàng, marketing, khách hàng, tài 
+chính, vận hành, logistics hoặc bộ phận phân tích dữ liệu. 
+3.2. Tiêu chí lựa chọn 
+Tiêu chí 
+Câu hỏi kiểm tra trước khi nhận thực tập 
+Khả năng tiếp cận 
+nghiệp vụ 
+Sinh viên có được quan sát một quy trình cụ thể và trao đổi với người 
+làm nghiệp vụ không? 
+Khả năng tiếp cận dữ 
+liệu 
+Có dữ liệu mẫu, báo cáo, dashboard hoặc ít nhất là cấu trúc dữ 
+liệu/biểu mẫu để nghiên cứu không? 
+
+--- TRANG 5 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 5 
+Tiêu chí 
+Câu hỏi kiểm tra trước khi nhận thực tập 
+Mức độ phù hợp 
+chuyên ngành 
+Công việc có liên quan đến đo lường, phân tích, báo cáo, dự báo, tối 
+ưu hoặc hỗ trợ quyết định không? 
+Tính khả thi 
+Có thể hoàn thành một bài toán nhỏ nhưng trọn vẹn trong thời gian 
+thực tập không? 
+Bảo mật 
+Đơn vị có cho phép sử dụng dữ liệu ẩn danh/tổng hợp hoặc mô tả dữ 
+liệu trong báo cáo học thuật không? 
+ 
+3.3. Vị trí thực tập gợi ý 
+• Business/Data Analyst Intern 
+• Phân tích bán hàng/Kinh doanh 
+• Marketing Analytics/CRM 
+• Customer Insights 
+• Tài chính - Kế toán quản trị 
+• Risk/Credit Analytics 
+• Supply Chain/Logistics Analytics 
+• E-commerce Analytics 
+• BI/Reporting 
+• Data Operations/Data Quality 
+• Phân tích dữ liệu tại cơ quan quản lý nhà nước hoặc đơn vị sự nghiệp 
+4. LỰA CHỌN VÀ XÁC ĐỊNH ĐỀ TÀI 
+4.1. Quy trình chọn đề tài 
+1. Quan sát công việc thực tế và xác định một quyết định/quy trình cần dữ liệu hỗ trợ. 
+2. Thu thập các mẫu báo cáo, KPI, biểu mẫu hoặc dashboard đang được sử dụng. 
+3. Làm rõ nguồn dữ liệu, cách dữ liệu được ghi nhận, tần suất cập nhật và chất lượng dữ 
+liệu. 
+4. Xác định “khoảng trống”: chậm, thủ công, thiếu chỉ số, thiếu dự báo, khó phát hiện bất 
+thường, chưa phân nhóm khách hàng, chưa đo hiệu quả… 
+5. Chuyển khoảng trống thành câu hỏi phân tích có thể trả lời bằng dữ liệu. 
+6. Trao đổi với giảng viên hướng dẫn để chốt phạm vi, dữ liệu, phương pháp và sản phẩm 
+đầu ra. 
+
+--- TRANG 6 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 6 
+4.2. Công thức đặt tên đề tài 
+Công thức khuyến nghị 
+[Hành động phân tích/giải pháp] + [đối tượng/nghiệp vụ] + [mục tiêu kinh doanh] + [phạm vi đơn 
+vị hoặc dữ liệu]. Ví dụ: “Phân tích hành vi mua hàng và phân khúc khách hàng nhằm hỗ trợ thiết 
+kế chương trình chăm sóc khách hàng tại Công ty X”. 
+ 
+4.3. Sáu câu hỏi phải trả lời trước khi chốt đề tài 
+□ Doanh nghiệp đang cần ra quyết định gì? 
+□ Đơn vị phân tích là gì (khách hàng, đơn hàng, sản phẩm, chi nhánh, giao dịch…)? 
+□ Biến mục tiêu/KPI nào phản ánh vấn đề? 
+□ Dữ liệu nào thực sự có thể có được? 
+□ Phương pháp nào đủ để trả lời câu hỏi, không thừa và không thiếu? 
+□ Sản phẩm cuối cùng ai sẽ dùng và dùng để làm gì? 
+4.4. Những đề tài nên tránh 
+• Chỉ giới thiệu doanh nghiệp và mô tả số liệu vài năm mà không có câu hỏi phân tích. 
+• Chọn mô hình học máy trước rồi mới đi tìm vấn đề để “gắn” vào. 
+• Đề tài quá rộng, có nhiều mục tiêu không liên quan và không thể hoàn thành trong thời 
+gian thực tập. 
+• Dùng dữ liệu tải trên mạng nhưng không giải thích được nguồn, cấu trúc, tính phù hợp 
+với bối cảnh. 
+• Đề tài có tên rất “AI” nhưng sản phẩm cuối không giải quyết nhu cầu thực tế nào. 
+5. CÁC NHÓM ĐỀ TÀI KHUYẾN NGHỊ 
+Nhóm 
+Ví dụ hướng đề tài 
+Bán hàng/kinh doanh 
+Phân tích doanh thu - lợi nhuận; hiệu quả kênh bán; giỏ hàng; dự báo 
+doanh số; phát hiện sản phẩm/chi nhánh bất thường. 
+Marketing 
+Phân tích hiệu quả chiến dịch; attribution ở mức phù hợp; funnel; 
+CAC/ROAS; phân nhóm khách hàng; dự báo phản hồi chiến dịch. 
+Khách hàng/CRM 
+RFM; churn; CLV; cohort; phân khúc; next-best-action; phân tích 
+phản hồi/NPS. 
+Thương mại điện tử 
+Conversion funnel; hành vi clickstream; sản phẩm; giỏ hàng bỏ dở; gợi 
+ý sản phẩm ở mức prototype; chất lượng đơn hàng. 
+Tài chính - ngân hàng Dòng tiền; khả năng thanh toán; scoring tín dụng; cảnh báo nợ quá 
+hạn; phân tích rủi ro; phát hiện giao dịch bất thường. 
+
+--- TRANG 7 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 7 
+Nhóm 
+Ví dụ hướng đề tài 
+Vận hành/logistics 
+Lead time; tồn kho; SLA; năng suất; dự báo nhu cầu; tối ưu tồn kho; 
+phân tích nguyên nhân chậm giao. 
+Nhân sự 
+Biến động nhân sự; tuyển dụng; hiệu suất; đào tạo; phân tích khảo sát 
+nhân viên (tuân thủ bảo mật). 
+BI và tự động hóa báo 
+cáo 
+Thiết kế hệ KPI; data mart nhỏ; dashboard Power BI/Tableau; tự động 
+hóa pipeline báo cáo; kiểm soát chất lượng dữ liệu. 
+AI/ML ứng dụng 
+Dự báo, phân loại, phân cụm, phát hiện bất thường, NLP phản hồi 
+khách hàng; chỉ sử dụng khi có dữ liệu và mục tiêu đánh giá phù hợp. 
+AI Agent/GenAI 
+Trợ lý hỏi - đáp trên dữ liệu doanh nghiệp, tạo báo cáo bằng ngôn ngữ 
+tự nhiên, agent hỗ trợ phân tích; cần có cơ chế kiểm chứng và giới hạn 
+dữ liệu. 
+ 
+5.1. Một số tên đề tài mẫu 
+• Phân tích dữ liệu bán hàng và xây dựng dashboard giám sát hiệu quả kinh doanh tại 
+Công ty X. 
+• Phân tích RFM và phân khúc khách hàng phục vụ chương trình chăm sóc khách hàng 
+tại Doanh nghiệp X. 
+• Dự báo doanh số theo tuần và đề xuất phương án quản trị tồn kho cho nhóm sản phẩm 
+Y. 
+• Phân tích phễu chuyển đổi khách hàng từ quảng cáo đến mua hàng trên kênh thương 
+mại điện tử. 
+• Phân tích nguyên nhân đơn hàng giao chậm và xây dựng bộ chỉ số giám sát SLA giao 
+hàng. 
+• Xây dựng mô hình cảnh báo khách hàng có nguy cơ rời bỏ dịch vụ trên dữ liệu giao 
+dịch. 
+• Xây dựng quy trình kiểm tra chất lượng dữ liệu bán hàng trước khi lập báo cáo quản trị. 
+• Ứng dụng AI Agent hỗ trợ truy vấn và phân tích dữ liệu bán hàng bằng ngôn ngữ tự 
+nhiên. 
+6. YÊU CẦU VỀ DỮ LIỆU 
+6.1. Dữ liệu được chấp nhận 
+• Dữ liệu thật của đơn vị thực tập đã được cho phép sử dụng và ẩn danh khi cần. 
+• Dữ liệu tổng hợp/trích xuất từ hệ thống nội bộ, báo cáo quản trị hoặc biểu mẫu nghiệp 
+vụ. 
+
+--- TRANG 8 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 8 
+• Dữ liệu mở từ cơ quan nhà nước, tổ chức quốc tế hoặc nền tảng công khai có nguồn rõ 
+ràng. 
+• Dữ liệu mô phỏng/synthetic data được tạo bằng quy tắc thống kê, mã nguồn hoặc AI, 
+khi dữ liệu thật không thể công bố; phải khai báo rõ. 
+6.2. Hồ sơ mô tả dữ liệu tối thiểu 
+Nội dung 
+Yêu cầu 
+Nguồn dữ liệu 
+Hệ thống/đơn vị tạo dữ liệu; người cung cấp; đường dẫn nếu là dữ liệu 
+mở. 
+Thời gian 
+Khoảng thời gian thu thập, ngày trích xuất, tần suất cập nhật. 
+Đơn vị quan sát 
+Một dòng dữ liệu đại diện cho cái gì? Ví dụ: đơn hàng, khách hàng, 
+phiên truy cập. 
+Quy mô 
+Số dòng, số biến, dung lượng, số bảng nếu có nhiều nguồn. 
+Từ điển dữ liệu 
+Tên biến, kiểu dữ liệu, ý nghĩa, đơn vị đo, giá trị hợp lệ. 
+Chất lượng 
+Thiếu dữ liệu, trùng lặp, ngoại lệ, sai định dạng, sai logic, bias hoặc 
+vấn đề đo lường. 
+Bảo mật 
+Biến nhạy cảm; cách ẩn danh; quy định hạn chế chia sẻ. 
+ 
+6.3. Khi sử dụng dữ liệu mô phỏng bằng AI 
+Dữ liệu mô phỏng được phép dùng để minh họa quy trình, kiểm thử dashboard hoặc 
+chứng minh khả năng hoạt động của một phương pháp khi dữ liệu thật không thể tiếp cận. 
+Tuy nhiên, không được trình bày dữ liệu mô phỏng như dữ liệu thực tế của doanh nghiệp. 
+• Nêu rõ biến nào được mô phỏng và dựa trên giả định nào. 
+• Công bố prompt/quy tắc hoặc mã tạo dữ liệu trong phụ lục ở mức có thể tái lập. 
+• Kiểm tra phân phối, miền giá trị, quan hệ logic và tỷ lệ lỗi/bất thường để dữ liệu hợp lý. 
+• Không dùng kết quả trên dữ liệu mô phỏng để khẳng định trực tiếp hiệu quả kinh doanh 
+thực tế; chỉ xem là minh họa hoặc proof-of-concept. 
+7. QUY TRÌNH THỰC HIỆN ĐỀ TÀI PHÂN TÍCH DỮ LIỆU 
+Khuyến nghị sinh viên sử dụng một quy trình gần với CRISP-DM nhưng được điều 
+chỉnh cho bối cảnh thực tập kinh tế và kinh doanh. Mỗi bước phải để lại “dấu vết” trong 
+báo cáo hoặc phụ lục. 
+ 
+ 
+
+--- TRANG 9 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 9 
+ 
+Bước 
+Nội dung chính 
+Minh chứng cần có 
+1. Business 
+Understanding 
+Mục tiêu, người sử dụng kết quả, quyết 
+định cần hỗ trợ, KPI, phạm vi. 
+Problem statement + KPI tree 
+hoặc sơ đồ quy trình. 
+2. Data 
+Understanding 
+Nguồn, cấu trúc, quy mô, từ điển biến, 
+chất lượng ban đầu. 
+Data dictionary + thống kê mô 
+tả. 
+3. Data 
+Preparation 
+Làm sạch, tích hợp, xử lý thiếu/ngoại lệ, 
+tạo biến. 
+Quy tắc tiền xử lý + log/code. 
+4. EDA/Diagnosis Xu hướng, phân phối, phân nhóm, tương 
+quan, bất thường, nguyên nhân khả dĩ. 
+Biểu đồ, bảng, insight có giải 
+thích. 
+5. 
+Modeling/Analyti
+cs 
+Kỹ thuật thống kê, BI hoặc ML phù hợp. 
+Mô hình/thuật toán + tham số 
++ lý do lựa chọn. 
+6. Evaluation 
+Đánh giá kỹ thuật và giá trị kinh doanh; 
+benchmark/baseline. 
+Metric + so sánh + kiểm tra 
+robustness. 
+7. Communication Dashboard, báo cáo, story, cảnh báo, 
+prototype. 
+Sản phẩm trực quan/ứng dụng. 
+8. 
+Recommendation 
+Khuyến nghị hành động, ưu tiên, điều 
+kiện áp dụng, rủi ro. 
+Kế hoạch ứng dụng và cách đo 
+hiệu quả. 
+ 
+Kiểm tra logic 
+Mỗi biểu đồ, bảng hoặc mô hình phải trả lời một câu hỏi. Nếu một kết quả không giúp trả lời câu 
+hỏi nghiên cứu, không giúp kiểm tra giả định và cũng không dẫn đến quyết định nào, sinh viên 
+cần cân nhắc loại bỏ. 
+ 
+8. CẤU TRÚC BÁO CÁO THỰC TẬP TỐT NGHIỆP 
+Khung dưới đây kế thừa cấu trúc 3 chương của tài liệu tham chiếu nhưng làm rõ nội 
+dung bắt buộc và hàm lượng phân tích. Dung lượng 40-60 trang nội dung chính là hợp lý 
+đối với báo cáo thực tập tốt nghiệp, không tính phụ lục; giảng viên có thể điều chỉnh theo 
+quy định của cơ sở đào tạo. 
+8.1. Phần đầu báo cáo 
+• Bìa chính, bìa phụ. 
+• Lời cam đoan; lời cảm ơn (nếu quy định). 
+
+--- TRANG 10 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 10 
+• Nhận xét/xác nhận của đơn vị thực tập và giảng viên hướng dẫn (nếu có mẫu). 
+• Mục lục; danh mục từ viết tắt; danh mục bảng; danh mục hình. 
+• Tóm tắt báo cáo 250-400 từ: vấn đề, dữ liệu, phương pháp, kết quả chính, đề xuất. 
+8.2. Chương 1 - Tổng quan đơn vị thực tập và bối cảnh bài toán (khoảng 7-10 
+trang) 
+• 1.1. Thông tin khái quát về doanh nghiệp/tổ chức: lĩnh vực, sản phẩm/dịch vụ, thị 
+trường, quy mô; chỉ đưa thông tin liên quan đến đề tài. 
+• 1.2. Cơ cấu tổ chức và vị trí/bộ phận thực tập: chức năng, nhiệm vụ, vai trò của sinh 
+viên. 
+• 1.3. Quy trình nghiệp vụ liên quan đến đề tài: mô tả bằng sơ đồ hoặc flowchart; chỉ rõ 
+các điểm phát sinh dữ liệu. 
+• 1.4. Hệ thống thông tin và hiện trạng sử dụng dữ liệu: phần mềm, nguồn dữ liệu, báo 
+cáo/dashboard, tần suất, người sử dụng. 
+• 1.5. Xác định vấn đề phân tích: bối cảnh, “điểm đau”, tác động, đối tượng sử dụng kết 
+quả và mục tiêu cụ thể. 
+Điểm cần tránh ở Chương 1 
+Không biến Chương 1 thành bài giới thiệu lịch sử doanh nghiệp dài 15-20 trang. Thông tin doanh 
+nghiệp chỉ có giá trị khi giúp người đọc hiểu bài toán, dữ liệu và bối cảnh ra quyết định. 
+ 
+8.3. Chương 2 - Cơ sở phân tích, hiện trạng và thiết kế nghiên cứu (khoảng 12-18 
+trang) 
+• 2.1. Cơ sở lý thuyết/khái niệm liên quan trực tiếp đến bài toán; ưu tiên tài liệu học thuật, 
+chuẩn ngành và nguồn chính thống. 
+• 2.2. Tổng quan các phương pháp có thể sử dụng và lý do chọn phương pháp của đề tài; 
+không trình bày lý thuyết dư thừa. 
+• 2.3. Hiện trạng quy trình phân tích/báo cáo tại đơn vị: dữ liệu đầu vào, các bước xử lý, 
+công cụ, sản phẩm đầu ra, người sử dụng. 
+• 2.4. Đánh giá hiện trạng: ưu điểm, hạn chế, lỗi dữ liệu, độ trễ, thủ công, thiếu KPI, thiếu 
+dự báo hoặc khó khai thác insight. 
+• 2.5. Thiết kế phân tích: câu hỏi nghiên cứu/câu hỏi kinh doanh, phạm vi, biến/KPI, 
+nguồn dữ liệu, sơ đồ dữ liệu, phương pháp, tiêu chí đánh giá. 
+• 2.6. Kế hoạch xử lý dữ liệu và yêu cầu bảo mật/ẩn danh. 
+8.4. Chương 3 - Thực hiện phân tích, kết quả và đề xuất ứng dụng (khoảng 20-25 
+trang) 
+• 3.1. Giới thiệu bộ dữ liệu sử dụng: nguồn, thời gian, quy mô, biến, giới hạn. 
+
+--- TRANG 11 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 11 
+• 3.2. Tiền xử lý dữ liệu: làm sạch, tích hợp, xử lý thiếu/trùng/ngoại lệ, biến đổi và tạo 
+biến; ghi rõ nguyên tắc. 
+• 3.3. Phân tích khám phá (EDA) và insight ban đầu: chỉ chọn kết quả có liên quan trực 
+tiếp đến câu hỏi. 
+• 3.4. Phân tích/mô hình hóa chính: mô tả quy trình, thuật toán, tham số, cách chia dữ 
+liệu, baseline nếu có. 
+• 3.5. Đánh giá kết quả: metric kỹ thuật và/hoặc chỉ tiêu kinh doanh; so sánh phương án; 
+kiểm tra độ tin cậy. 
+• 3.6. Trực quan hóa và sản phẩm: dashboard/báo cáo/prototype; thiết kế theo người dùng 
+mục tiêu. 
+• 3.7. Diễn giải kết quả và đề xuất ứng dụng tại đơn vị: hành động cụ thể, thứ tự ưu tiên, 
+điều kiện triển khai. 
+• 3.8. Hạn chế và hướng phát triển: dữ liệu, phương pháp, phạm vi, khả năng triển khai 
+thực tế. 
+8.5. Kết luận, tài liệu tham khảo và phụ lục 
+• Kết luận: trả lời ngắn gọn mục tiêu đã đặt ra, kết quả chính, giá trị ứng dụng; không đưa 
+kết quả mới. 
+• Tài liệu tham khảo: thống nhất một chuẩn trích dẫn; ưu tiên APA 7 hoặc chuẩn chính 
+thức của cơ sở đào tạo. 
+• Phụ lục: từ điển dữ liệu, bảng chi tiết, code quan trọng, prompt tạo dữ liệu mô phỏng, 
+ảnh dashboard, biên bản/xác nhận cần thiết, nhật ký sử dụng AI. 
+9. YÊU CẦU VỀ PHƯƠNG PHÁP VÀ CÔNG CỤ 
+9.1. Nguyên tắc chọn phương pháp 
+• Bắt đầu từ câu hỏi kinh doanh, không bắt đầu từ công cụ. 
+• Ưu tiên phương pháp đơn giản, giải thích được và đủ tốt trước khi dùng mô hình phức 
+tạp. 
+• Luôn có baseline hoặc mốc so sánh khi đánh giá mô hình dự báo/phân loại. 
+• Không dùng metric duy nhất nếu metric đó không phản ánh chi phí sai lầm trong thực 
+tế. 
+• Tách rõ phân tích mô tả, chẩn đoán, dự báo và khuyến nghị; không suy diễn quan hệ 
+nhân quả từ tương quan đơn thuần. 
+ 
+ 
+
+--- TRANG 12 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 12 
+9.2. Công cụ có thể sử dụng 
+Nhóm công cụ 
+Ví dụ 
+Yêu cầu khi đưa vào báo cáo 
+Bảng tính 
+Excel, Google Sheets 
+Nêu công thức/Power Query/Pivot chính; 
+tránh xử lý thủ công khó tái lập. 
+SQL/Cơ sở dữ liệu 
+MySQL, PostgreSQL, SQL 
+Server, BigQuery 
+Mô tả bảng và logic truy vấn; lưu script 
+truy vấn chính. 
+Lập trình phân tích Python, R 
+Lưu notebook/script; seed nếu dùng ngẫu 
+nhiên; ghi phiên bản thư viện khi cần. 
+BI/Trực quan hóa 
+Power BI, Tableau, Looker 
+Studio 
+Giải thích đối tượng sử dụng, KPI, tương 
+tác và nguyên tắc thiết kế dashboard. 
+ML/AI 
+scikit-learn, XGBoost, 
+TensorFlow, LLM/Agent 
+framework 
+Phải có tiêu chí đánh giá, baseline, kiểm 
+soát rò rỉ dữ liệu và giải thích giới hạn. 
+Quản lý mã/dữ liệu Git, GitHub/GitLab, DVC 
+hoặc thư mục phiên bản hóa 
+Khuyến khích khi đề tài có nhiều script, 
+mô hình hoặc pipeline. 
+ 
+9.3. Một số tiêu chí đánh giá kỹ thuật tham khảo 
+• Hồi quy/dự báo: MAE, RMSE, MAPE/SMAPE (cẩn trọng khi mẫu có giá trị gần 0), R²; 
+so với naive/baseline. 
+• Phân loại: precision, recall, F1, ROC-AUC/PR-AUC; confusion matrix; chọn threshold 
+theo chi phí kinh doanh. 
+• Phân cụm: silhouette/DB index kết hợp khả năng diễn giải và tính ổn định; không chỉ 
+dựa vào một chỉ số. 
+• Dashboard/BI: tính đúng của KPI, thời gian làm mới, tính nhất quán dữ liệu, khả năng 
+đọc và hỗ trợ quyết định. 
+• Quy trình tự động hóa: thời gian xử lý, tỷ lệ lỗi, mức giảm thao tác thủ công, khả năng 
+giám sát và khôi phục. 
+10. SẢN PHẨM VÀ MINH CHỨNG BẮT BUỘC 
+Ngoài file báo cáo, sinh viên nên chuẩn bị một “gói minh chứng” để giảng viên có thể 
+kiểm tra tính thực chất và khả năng tái lập của công việc. 
+ 
+ 
+
+--- TRANG 13 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 13 
+ 
+Hạng mục 
+Tối thiểu nên có 
+Dữ liệu 
+File dữ liệu mẫu/ẩn danh hoặc mô tả cấu trúc; từ điển dữ liệu. 
+Mã nguồn/logic xử lý Notebook/script/SQL hoặc mô tả Power Query; không bắt buộc công 
+khai dữ liệu mật. 
+Kết quả phân tích 
+Bảng/biểu đồ chính có tiêu đề, đơn vị đo, nguồn và diễn giải. 
+Sản phẩm ứng dụng 
+Dashboard, prototype, báo cáo tự động, scoring file, cảnh báo hoặc mô 
+hình. 
+Tài liệu quy trình 
+Sơ đồ nghiệp vụ và/hoặc sơ đồ luồng dữ liệu. 
+Minh chứng thực tập Nhật ký, xác nhận, ảnh chụp hệ thống/báo cáo đã được phép sử dụng. 
+Khai báo AI 
+Bảng công cụ AI đã dùng, mục đích, phần nào có kiểm chứng và người 
+chịu trách nhiệm cuối cùng. 
+ 
+11. SỬ DỤNG AI CÓ TRÁCH NHIỆM TRONG BÁO CÁO 
+Sinh viên được khuyến khích sử dụng AI như một công cụ hỗ trợ học tập và tăng năng 
+suất, nhưng mọi nội dung học thuật, dữ liệu, kết quả và kết luận trong báo cáo phải do 
+sinh viên kiểm chứng và chịu trách nhiệm. 
+11.1. Có thể sử dụng AI để 
+• Gợi ý câu hỏi phân tích và cấu trúc kế hoạch làm việc. 
+• Giải thích mã, hỗ trợ viết/kiểm tra code, tạo dữ liệu thử hoặc test case. 
+• Hỗ trợ làm sạch văn bản, tạo nhãn sơ bộ, tóm tắt tài liệu do sinh viên cung cấp. 
+• Gợi ý cách trình bày dashboard, biểu đồ và diễn giải kết quả. 
+• Tạo dữ liệu mô phỏng khi có lý do hợp lệ và khai báo đầy đủ. 
+11.2. Không được 
+• Bịa thông tin doanh nghiệp, số liệu, phỏng vấn, quy trình hoặc kết quả phân tích. 
+• Tạo tài liệu tham khảo/citation giả hoặc dẫn nguồn mà sinh viên chưa đọc/kiểm tra. 
+• Đưa dữ liệu mật, dữ liệu cá nhân hoặc bí mật kinh doanh lên dịch vụ AI công cộng khi 
+chưa được phép. 
+• Sao chép nguyên văn nội dung AI tạo ra thành phần lớn của báo cáo mà không kiểm 
+chứng, chỉnh sửa và chịu trách nhiệm. 
+• Dùng AI để tạo kết quả phân tích rồi không thể giải thích cách làm, giả định, metric 
+hoặc hạn chế. 
+
+--- TRANG 14 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 14 
+11.3. Mẫu khai báo sử dụng AI 
+Công cụ 
+Mục đích sử dụng 
+Phạm vi nội dung 
+Cách kiểm chứng 
+ChatGPT/Claude
+/Gemini/... 
+Ví dụ: gợi ý code làm 
+sạch dữ liệu 
+Mục 3.2, không dùng 
+dữ liệu mật 
+Chạy lại code; đối chiếu 
+thống kê trước-sau; kiểm 
+tra thủ công mẫu. 
+Công cụ tạo dữ 
+liệu 
+Sinh dữ liệu mô phỏng 
+đơn hàng 
+Phụ lục A 
+Đối chiếu miền giá trị, 
+phân phối, logic nghiệp 
+vụ; công bố prompt/quy 
+tắc. 
+ 
+12. TIẾN ĐỘ THỰC HIỆN 7 TUẦN 
+Tài liệu tham chiếu đề xuất hai tuần đầu tìm hiểu thực tế, tuần 3 chốt đề tài, tuần 6 
+nộp bản cho giảng viên và tuần 7 hoàn chỉnh. Khung dưới đây giữ các mốc đó nhưng bổ 
+sung sản phẩm đầu ra cho từng tuần. 
+Thời gian 
+Nhiệm vụ trọng tâm 
+Sản phẩm cần đạt 
+Tuần 1 
+Làm quen đơn vị, vị trí thực tập, quy trình 
+nghiệp vụ; lập nhật ký vấn đề và dữ liệu. 
+Sơ đồ quy trình sơ bộ + danh sách 
+KPI/báo cáo đang dùng. 
+Tuần 2 
+Thu thập mẫu báo cáo, mô tả nguồn dữ 
+liệu, trao đổi với người dùng nghiệp vụ. 
+Problem list + data inventory + 2-3 
+phương án đề tài. 
+Tuần 3 
+Chốt đề tài với GVHD; xác định câu hỏi, 
+phạm vi, dữ liệu, phương pháp, sản phẩm. 
+Đề cương 2-4 trang + kế hoạch phân 
+tích. 
+Tuần 4 
+Làm sạch dữ liệu, EDA, hoàn thiện Chương 
+1 và phần chính Chương 2. 
+Dataset phân tích v1 + data dictionary + 
+Chương 1-2 bản nháp. 
+Tuần 5 
+Phân tích/mô hình hóa, 
+dashboard/prototype; đánh giá và diễn giải. 
+Kết quả v1 + sản phẩm phân tích + 
+Chương 3 bản nháp. 
+Tuần 6 
+Hoàn thiện bản đầy đủ, tự kiểm tra số liệu, 
+trích dẫn, hình bảng; nộp GVHD. 
+Bản báo cáo hoàn chỉnh lần 1 + gói minh 
+chứng. 
+Tuần 7 
+Sửa theo góp ý; chuẩn hóa hình thức; kiểm 
+tra đạo văn/AI theo quy định; chuẩn bị trình 
+bày. 
+Bản cuối + slide/phiếu tóm tắt nếu được 
+yêu cầu. 
+ 
+
+--- TRANG 15 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 15 
+13. QUY CÁCH TRÌNH BÀY BÁO CÁO 
+Các thông số dưới đây là đề xuất tham khảo khi cơ sở đào tạo chưa có mẫu bắt buộc 
+riêng. Nếu Khoa/Học viện ban hành quy định chính thức, sinh viên phải ưu tiên quy định 
+đó. 
+Nội dung 
+Đề xuất trình bày 
+Khổ giấy 
+A4, in một mặt hoặc hai mặt theo quy định. 
+Lề trang 
+Trái 3,0-3,5 cm; phải 2,0 cm; trên 2,0-2,5 cm; dưới 2,0-2,5 cm. 
+Phông chữ 
+Times New Roman; cỡ 13 cho nội dung chính. 
+Giãn dòng 
+1,3-1,5; đoạn sau 3-6 pt; thụt đầu dòng khoảng 0,7-1,0 cm. 
+Tiêu đề 
+Đánh số tối đa 3-4 cấp; thống nhất toàn văn; không để tiêu đề cuối trang mà 
+nội dung sang trang sau. 
+Bảng/hình 
+Đánh số theo chương hoặc toàn văn; có tên; ghi nguồn; hình phải đọc được 
+khi in. 
+Số liệu 
+Thống nhất số chữ số thập phân, đơn vị tiền tệ, phần trăm và khoảng thời 
+gian. 
+Trích dẫn 
+Ưu tiên APA 7; trích dẫn trong bài phải có trong danh mục và ngược lại. 
+Mã nguồn dài 
+Đưa vào phụ lục hoặc kho mã; trong thân bài chỉ trích đoạn cần giải thích. 
+Dung lượng 
+Khoảng 40-60 trang nội dung chính là mức tham khảo hợp lý cho báo cáo 
+thực tập; chất lượng quan trọng hơn số trang. 
+ 
+13.1. Quy tắc trình bày bảng và hình 
+• Mỗi bảng/hình phải được nhắc đến và diễn giải trong nội dung trước hoặc ngay sau vị 
+trí xuất hiện. 
+• Không đưa ảnh chụp màn hình Excel/Power BI có chữ quá nhỏ; ưu tiên xuất hình chất 
+lượng cao hoặc tái tạo bảng. 
+• Biểu đồ phải ghi rõ trục, đơn vị đo, thời gian và chú giải; tránh 3D khi không cần thiết. 
+• Không dùng quá nhiều màu; màu phải có ý nghĩa và nhất quán. 
+• Không “kể lại” toàn bộ con số trong biểu đồ; tập trung vào mẫu hình, chênh lệch và ý 
+nghĩa kinh doanh. 
+ 
+ 
+
+--- TRANG 16 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 16 
+14. TIÊU CHÍ ĐÁNH GIÁ ĐỀ XUẤT 
+Tiêu chí 
+Điểm 
+Mô tả mức đạt tốt 
+1. Xác định bài toán và mục 
+tiêu 
+10 
+Vấn đề rõ, có ý nghĩa; phạm vi hợp lý; mục tiêu đo 
+được. 
+2. Hiểu nghiệp vụ và hiện 
+trạng 
+10 
+Mô tả đúng quy trình, KPI, báo cáo, điểm nghẽn; có 
+minh chứng. 
+3. Dữ liệu và chất lượng dữ 
+liệu 
+15 
+Nguồn rõ; mô tả đầy đủ; xử lý hợp lý; bảo mật tốt. 
+4. Phương pháp phân tích 
+15 
+Chọn đúng phương pháp; có lý do; thực hiện đúng; có 
+baseline khi cần. 
+5. Kết quả và đánh giá 
+15 
+Kết quả đáng tin cậy; metric phù hợp; không suy diễn 
+quá mức. 
+6. Insight và giá trị kinh 
+doanh 
+15 
+Diễn giải rõ; gắn kết với câu hỏi; chỉ ra tác động/ưu 
+tiên. 
+7. Sản phẩm ứng dụng 
+8 
+Dashboard/mô hình/prototype/báo cáo có khả năng sử 
+dụng. 
+8. Đề xuất và khả năng triển 
+khai 
+5 
+Khuyến nghị cụ thể, có điều kiện, rủi ro và cách đo 
+hiệu quả. 
+9. Hình thức, trích dẫn, học 
+thuật 
+4 
+Trình bày chuẩn; nguồn tin cậy; trích dẫn đầy đủ. 
+10. Tính độc lập và chuyên 
+nghiệp 
+3 
+Giải thích được công việc; khai báo AI; tiến độ và minh 
+chứng tốt. 
+ 
+Gợi ý xếp loại: 90-100 điểm: xuất sắc; 80-89: tốt; 65-79: khá/đạt tốt; 50-64: đạt tối 
+thiểu; dưới 50: chưa đạt. Việc quy đổi cuối cùng cần theo quy chế của cơ sở đào tạo. 
+15. CÁC LỖI THƯỜNG GẶP VÀ CÁCH KHẮC PHỤC 
+Lỗi 
+Cách khắc phục 
+Đề tài quá rộng 
+Thu hẹp theo một nghiệp vụ, một nhóm khách hàng/sản phẩm 
+hoặc một quyết định cụ thể. 
+Chương 1 quá dài 
+Giữ lại thông tin liên quan đến bài toán; chuyển lịch sử/tổ 
+chức chi tiết sang phụ lục nếu cần. 
+Cơ sở lý thuyết “chép giáo 
+trình” 
+Chỉ trình bày khái niệm và phương pháp thực sự dùng; kết nối 
+từng phần với thiết kế phân tích. 
+
+--- TRANG 17 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 17 
+Lỗi 
+Cách khắc phục 
+EDA quá nhiều biểu đồ 
+Mỗi biểu đồ phải trả lời câu hỏi; nhóm insight theo chủ đề 
+thay vì liệt kê. 
+Mô hình tốt nhưng không có 
+baseline 
+So với quy tắc hiện tại, trung bình lịch sử, mô hình đơn giản 
+hoặc cách làm đang dùng. 
+Chỉ báo metric kỹ thuật 
+Giải thích metric ảnh hưởng gì đến quyết định/chi phí/rủi ro 
+kinh doanh. 
+Rò rỉ dữ liệu 
+Tách train/test đúng thời gian/đối tượng; không dùng thông tin 
+tương lai khi dự báo. 
+Đề xuất chung chung 
+Chuyển thành hành động: ai làm, làm gì, ưu tiên nào, điều kiện 
+nào, đo bằng KPI gì. 
+AI tạo nội dung khó kiểm 
+chứng 
+Giữ nhật ký prompt; kiểm tra bằng nguồn chính thức; chỉ dùng 
+phần sinh viên giải thích được. 
+Thiếu minh chứng 
+Lưu code, ảnh dashboard, data dictionary, mẫu báo cáo và 
+nhật ký thực tập ngay từ tuần đầu. 
+ 
+16. CHECKLIST TRƯỚC KHI NỘP 
+☐ Bài toán và mục tiêu có thể tóm tắt trong 3-5 câu. 
+☐ Câu hỏi phân tích, dữ liệu, phương pháp và kết luận nhất quán với nhau. 
+☐ Mọi số liệu quan trọng đều truy ngược được về bảng/biểu hoặc code. 
+☐ Dữ liệu đã được mô tả nguồn, thời gian, đơn vị quan sát và giới hạn. 
+☐ Có từ điển dữ liệu và giải thích các biến chính. 
+☐ Có mô tả rõ cách xử lý thiếu, trùng, ngoại lệ và biến đổi dữ liệu. 
+☐ Các biểu đồ có tiêu đề, đơn vị, nguồn; không có chữ nhỏ khó đọc. 
+☐ Các mô hình có baseline, metric, cách chia dữ liệu và diễn giải giới hạn. 
+☐ Insight được chuyển thành khuyến nghị cụ thể, không chỉ “doanh nghiệp nên chú 
+trọng”. 
+☐ Không chứa dữ liệu cá nhân/bí mật kinh doanh không được phép công bố. 
+☐ Tất cả nguồn trích dẫn trong bài có trong danh mục tài liệu tham khảo và ngược lại. 
+☐ Đã kiểm tra chính tả, căn lề, mục lục, đánh số bảng/hình và ngắt trang giữa các 
+chương. 
+☐ Đã khai báo việc sử dụng AI và dữ liệu mô phỏng (nếu có). 
+
+--- TRANG 18 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 18 
+☐ Đã chuẩn bị file minh chứng: code/SQL, dashboard, dữ liệu mẫu/ẩn danh, phụ lục cần 
+thiết. 
+☐ Có thể tự giải thích toàn bộ quy trình trong 10-15 phút mà không cần đọc báo cáo. 
+PHỤ LỤC A. PHIẾU CHỐT ĐỀ TÀI 
+Nội dung 
+Sinh viên điền 
+Tên đề tài dự kiến 
+ 
+Đơn vị và bộ phận thực tập 
+ 
+Vấn đề kinh doanh cần giải quyết  
+Người sử dụng kết quả 
+ 
+Câu hỏi phân tích chính 
+ 
+Nguồn dữ liệu dự kiến 
+ 
+Đơn vị quan sát và thời gian dữ 
+liệu 
+ 
+Phương pháp/công cụ dự kiến 
+ 
+Sản phẩm cuối cùng 
+ 
+Metric/tiêu chí đánh giá 
+ 
+Rủi ro hoặc giới hạn dữ liệu 
+ 
+ 
+PHỤ LỤC B. MẪU TỪ ĐIỂN DỮ LIỆU 
+Tên biến 
+Kiểu 
+Ý nghĩa 
+Đơn vị/miền giá trị 
+Thiếu? 
+Ghi chú 
+order_id 
+Text 
+Mã đơn hàng 
+Duy nhất 
+Không 
+ 
+order_date 
+Date 
+Ngày đặt hàng 
+dd/mm/yyyy 
+Không 
+ 
+revenue 
+Numeric 
+Doanh thu đơn hàng 
+VND, >=0 
+Có 
+Kiểm tra giá 
+trị âm/hoàn trả 
+... 
+... 
+... 
+... 
+... 
+... 
+ 
+ 
+ 
+
+--- TRANG 19 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 19 
+PHỤ LỤC C. MẪU NHẬT KÝ PHÂN TÍCH 
+Ngày 
+Công việc 
+Dữ liệu/phiên bản 
+Kết quả 
+Vấn đề cần xử lý 
+tiếp 
+__/__/____ 
+ 
+ 
+ 
+ 
+__/__/____ 
+ 
+ 
+ 
+ 
+__/__/____ 
+ 
+ 
+ 
+ 
+__/__/____ 
+ 
+ 
+ 
+ 
+ 
+PHỤ LỤC D. MẪU KHAI BÁO SỬ DỤNG AI 
+Tôi xác nhận đã sử dụng các công cụ AI dưới đây với vai trò hỗ trợ. Tôi đã kiểm tra lại 
+nội dung, mã nguồn, dữ liệu và kết quả trước khi đưa vào báo cáo; tôi chịu trách nhiệm 
+cuối cùng về tính chính xác và trung thực học thuật của báo cáo. 
+Công cụ AI 
+Mục đích 
+Phần báo cáo liên 
+quan 
+Dữ liệu đưa vào 
+AI 
+Cách kiểm chứng 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PHỤ LỤC E. ĐỊNH HƯỚNG PHÁT TRIỂN BÁO CÁO THỰC TẬP THÀNH 
+KHÓA LUẬN TỐT NGHIỆP 
+Khi một đề tài thực tập có dữ liệu đủ tốt và câu hỏi có giá trị nghiên cứu, có thể phát 
+triển thành khóa luận bằng cách tăng hàm lượng học thuật và kiểm định. Khóa luận cần 
+làm rõ khoảng trống nghiên cứu, cơ sở lý thuyết/khung khái niệm, câu hỏi hoặc giả thuyết 
+nghiên cứu, phương pháp chọn mẫu hoặc thiết kế thực nghiệm/quan sát, kiểm định độ bền 
+của kết quả và thảo luận trong tương quan với nghiên cứu trước. 
+Báo cáo thực tập 
+Khi phát triển thành khóa luận 
+Trọng tâm: giải quyết bài toán tại 
+đơn vị 
+Trọng tâm: tạo ra kết luận có giá trị học thuật và/hoặc 
+bằng chứng có khả năng khái quát hơn. 
+Có thể dùng dữ liệu một đơn vị để 
+cải tiến quy trình 
+Cần giải thích khả năng suy rộng, thiết kế mẫu và hạn chế 
+ngoại suy. 
+
+--- TRANG 20 ---
+HƯỚNG DẪN THỰC TẬP TỐT NGHIỆP - PHÂN TÍCH DỮ LIỆU LỚN TRONG KINH TẾ VÀ KINH DOANH 
+Trang 20 
+Báo cáo thực tập 
+Khi phát triển thành khóa luận 
+Cơ sở lý thuyết ở mức đủ dùng 
+Cần tổng quan nghiên cứu có hệ thống hơn và chỉ ra 
+khoảng trống. 
+Đánh giá sản phẩm/metric thực 
+tiễn 
+Bổ sung kiểm định, robustness/sensitivity, so sánh mô 
+hình hoặc kiểm tra giả thuyết khi phù hợp. 
+ 

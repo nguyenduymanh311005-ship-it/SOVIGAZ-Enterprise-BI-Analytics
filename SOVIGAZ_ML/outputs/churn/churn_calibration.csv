@@ -1,0 +1,3 @@
+﻿model_variant,val_brier_score,test_brier_score,calibration_status
+Best Model (Raw Probabilities),0.1327,0.1587,Well-Calibrated
+Best Model (Platt Calibrated),0.1069,0.1792,Calibrated on Val

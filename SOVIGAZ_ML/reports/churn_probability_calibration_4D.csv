@@ -1,0 +1,11 @@
+﻿probability_bin,customer_count,bin_share_pct,mean_predicted_probability,observed_churn_rate,calibration_gap,absolute_gap,assessment
+"[0.0, 0.1)",299,25.47,0.0667,0.1271,0.0604,0.0604,Under-estimation (+6.0%)
+"[0.1, 0.2)",257,21.89,0.14,0.1907,0.0507,0.0507,Under-estimation (+5.1%)
+"[0.2, 0.3)",94,8.01,0.2436,0.234,-0.0095,0.0095,Well-Calibrated (Gap <= 5%)
+"[0.3, 0.4)",57,4.86,0.3527,0.3333,-0.0194,0.0194,Well-Calibrated (Gap <= 5%)
+"[0.4, 0.5)",55,4.68,0.451,0.3091,-0.1419,0.1419,Over-estimation (-14.2%)
+"[0.5, 0.6)",36,3.07,0.548,0.4722,-0.0758,0.0758,Over-estimation (-7.6%)
+"[0.6, 0.7)",69,5.88,0.6487,0.6377,-0.011,0.011,Well-Calibrated (Gap <= 5%)
+"[0.7, 0.8)",74,6.3,0.754,0.6081,-0.1459,0.1459,Over-estimation (-14.6%)
+"[0.8, 0.9)",117,9.97,0.8552,0.8547,-0.0005,0.0005,Well-Calibrated (Gap <= 5%)
+"[0.9, 1.0]",116,9.88,0.9278,0.8966,-0.0313,0.0313,Well-Calibrated (Gap <= 5%)

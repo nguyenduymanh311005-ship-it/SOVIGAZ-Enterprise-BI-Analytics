@@ -1,0 +1,300 @@
+{
+    "Weekly_Revenue": [
+        {
+            "Model": "Baseline_Naive",
+            "MAE": 3997381215.13,
+            "RMSE": 5274721293.4,
+            "WAPE": 0.6749,
+            "sMAPE": 58.28,
+            "Training_Time_s": 0.001
+        },
+        {
+            "Model": "Baseline_Seasonal_Naive",
+            "MAE": 2112454417.96,
+            "RMSE": 3918652202.06,
+            "WAPE": 0.3567,
+            "sMAPE": 36.74,
+            "Training_Time_s": 0.001
+        },
+        {
+            "Model": "Baseline_Moving_Average",
+            "MAE": 2823997832.16,
+            "RMSE": 3454720031.71,
+            "WAPE": 0.4768,
+            "sMAPE": 45.7,
+            "Training_Time_s": 0.001
+        },
+        {
+            "Model": "LightGBM",
+            "MAE": 2204135055.45,
+            "RMSE": 2554814035.28,
+            "WAPE": 0.3721,
+            "sMAPE": 37.03,
+            "Training_Time_s": 1.795
+        },
+        {
+            "Model": "XGBoost",
+            "MAE": 2122364648.22,
+            "RMSE": 2548822700.26,
+            "WAPE": 0.3583,
+            "sMAPE": 35.4,
+            "Training_Time_s": 0.218
+        },
+        {
+            "Model": "CatBoost",
+            "MAE": 1883543043.73,
+            "RMSE": 2360803712.77,
+            "WAPE": 0.318,
+            "sMAPE": 32.77,
+            "Training_Time_s": 0.471
+        },
+        {
+            "Model": "SARIMAX",
+            "MAE": 3006026495.78,
+            "RMSE": 3273843554.88,
+            "WAPE": 0.5075,
+            "sMAPE": 48.96,
+            "Training_Time_s": 0.285
+        }
+    ],
+    "Monthly_Revenue": [
+        {
+            "Model": "Baseline_Naive",
+            "MAE": 5701284487.2,
+            "RMSE": 6981790262.72,
+            "WAPE": 0.2171,
+            "sMAPE": 22.23,
+            "Training_Time_s": 0.001
+        },
+        {
+            "Model": "Baseline_Seasonal_Naive",
+            "MAE": 2950779219.8,
+            "RMSE": 3813148374.37,
+            "WAPE": 0.1124,
+            "sMAPE": 12.08,
+            "Training_Time_s": 0.001
+        },
+        {
+            "Model": "Baseline_Moving_Average",
+            "MAE": 4623309658.92,
+            "RMSE": 5994821396.77,
+            "WAPE": 0.176,
+            "sMAPE": 17.56,
+            "Training_Time_s": 0.001
+        },
+        {
+            "Model": "LightGBM",
+            "MAE": 2457471534.8,
+            "RMSE": 4296996523.76,
+            "WAPE": 0.0936,
+            "sMAPE": 10.01,
+            "Training_Time_s": 0.016
+        },
+        {
+            "Model": "XGBoost",
+            "MAE": 1588350306.0,
+            "RMSE": 2128708805.65,
+            "WAPE": 0.0605,
+            "sMAPE": 6.67,
+            "Training_Time_s": 0.21
+        },
+        {
+            "Model": "CatBoost",
+            "MAE": 2103535970.41,
+            "RMSE": 3269812842.73,
+            "WAPE": 0.0801,
+            "sMAPE": 8.74,
+            "Training_Time_s": 0.213
+        },
+        {
+            "Model": "SARIMAX",
+            "MAE": 9660264167.31,
+            "RMSE": 9808594599.8,
+            "WAPE": 0.3678,
+            "sMAPE": 31.94,
+            "Training_Time_s": 0.241
+        }
+    ],
+    "Product_Demand": [
+        {
+            "Model": "Baseline_Naive",
+            "MAE": 783362.04,
+            "RMSE": 1059709.37,
+            "WAPE": 0.9594,
+            "sMAPE": 71.5,
+            "Training_Time_s": 0.001,
+            "Product": "OXL-SX",
+            "Product_Name": "Oxy l\u1ecfng"
+        },
+        {
+            "Model": "Baseline_Seasonal_Naive",
+            "MAE": 362223.26,
+            "RMSE": 635009.5,
+            "WAPE": 0.4436,
+            "sMAPE": 42.16,
+            "Training_Time_s": 0.001,
+            "Product": "OXL-SX",
+            "Product_Name": "Oxy l\u1ecfng"
+        },
+        {
+            "Model": "Baseline_Moving_Average",
+            "MAE": 567396.36,
+            "RMSE": 670342.65,
+            "WAPE": 0.6949,
+            "sMAPE": 65.04,
+            "Training_Time_s": 0.001,
+            "Product": "OXL-SX",
+            "Product_Name": "Oxy l\u1ecfng"
+        },
+        {
+            "Model": "LightGBM",
+            "MAE": 649991.9,
+            "RMSE": 758092.14,
+            "WAPE": 0.796,
+            "sMAPE": 67.84,
+            "Training_Time_s": 0.041,
+            "Product": "OXL-SX",
+            "Product_Name": "Oxy l\u1ecfng"
+        },
+        {
+            "Model": "XGBoost",
+            "MAE": 429190.83,
+            "RMSE": 514720.34,
+            "WAPE": 0.5256,
+            "sMAPE": 53.28,
+            "Training_Time_s": 0.247,
+            "Product": "OXL-SX",
+            "Product_Name": "Oxy l\u1ecfng"
+        },
+        {
+            "Model": "CatBoost",
+            "MAE": 444477.79,
+            "RMSE": 484256.42,
+            "WAPE": 0.5443,
+            "sMAPE": 56.1,
+            "Training_Time_s": 0.255,
+            "Product": "OXL-SX",
+            "Product_Name": "Oxy l\u1ecfng"
+        },
+        {
+            "Model": "Baseline_Naive",
+            "MAE": 279158.68,
+            "RMSE": 385955.96,
+            "WAPE": 1.1121,
+            "sMAPE": 81.65,
+            "Training_Time_s": 0.001,
+            "Product": "NTL-SX",
+            "Product_Name": "Nit\u01a1 l\u1ecfng"
+        },
+        {
+            "Model": "Baseline_Seasonal_Naive",
+            "MAE": 206491.14,
+            "RMSE": 314706.01,
+            "WAPE": 0.8226,
+            "sMAPE": 99.68,
+            "Training_Time_s": 0.001,
+            "Product": "NTL-SX",
+            "Product_Name": "Nit\u01a1 l\u1ecfng"
+        },
+        {
+            "Model": "Baseline_Moving_Average",
+            "MAE": 188897.1,
+            "RMSE": 243274.76,
+            "WAPE": 0.7525,
+            "sMAPE": 70.38,
+            "Training_Time_s": 0.001,
+            "Product": "NTL-SX",
+            "Product_Name": "Nit\u01a1 l\u1ecfng"
+        },
+        {
+            "Model": "LightGBM",
+            "MAE": 134422.42,
+            "RMSE": 158273.69,
+            "WAPE": 0.5355,
+            "sMAPE": 65.03,
+            "Training_Time_s": 0.042,
+            "Product": "NTL-SX",
+            "Product_Name": "Nit\u01a1 l\u1ecfng"
+        },
+        {
+            "Model": "XGBoost",
+            "MAE": 205602.59,
+            "RMSE": 272196.57,
+            "WAPE": 0.8191,
+            "sMAPE": 65.79,
+            "Training_Time_s": 0.22,
+            "Product": "NTL-SX",
+            "Product_Name": "Nit\u01a1 l\u1ecfng"
+        },
+        {
+            "Model": "CatBoost",
+            "MAE": 159383.08,
+            "RMSE": 193406.03,
+            "WAPE": 0.635,
+            "sMAPE": 64.61,
+            "Training_Time_s": 0.233,
+            "Product": "NTL-SX",
+            "Product_Name": "Nit\u01a1 l\u1ecfng"
+        },
+        {
+            "Model": "Baseline_Naive",
+            "MAE": 16429.51,
+            "RMSE": 23830.77,
+            "WAPE": 0.2831,
+            "sMAPE": 33.96,
+            "Training_Time_s": 0.001,
+            "Product": "OXK6",
+            "Product_Name": "Oxy kh\u00ed"
+        },
+        {
+            "Model": "Baseline_Seasonal_Naive",
+            "MAE": 29060.41,
+            "RMSE": 40685.48,
+            "WAPE": 0.5007,
+            "sMAPE": 49.1,
+            "Training_Time_s": 0.001,
+            "Product": "OXK6",
+            "Product_Name": "Oxy kh\u00ed"
+        },
+        {
+            "Model": "Baseline_Moving_Average",
+            "MAE": 15588.23,
+            "RMSE": 20706.21,
+            "WAPE": 0.2686,
+            "sMAPE": 30.27,
+            "Training_Time_s": 0.001,
+            "Product": "OXK6",
+            "Product_Name": "Oxy kh\u00ed"
+        },
+        {
+            "Model": "LightGBM",
+            "MAE": 32994.77,
+            "RMSE": 38087.13,
+            "WAPE": 0.5685,
+            "sMAPE": 48.56,
+            "Training_Time_s": 0.04,
+            "Product": "OXK6",
+            "Product_Name": "Oxy kh\u00ed"
+        },
+        {
+            "Model": "XGBoost",
+            "MAE": 34819.93,
+            "RMSE": 39869.51,
+            "WAPE": 0.6,
+            "sMAPE": 50.58,
+            "Training_Time_s": 0.219,
+            "Product": "OXK6",
+            "Product_Name": "Oxy kh\u00ed"
+        },
+        {
+            "Model": "CatBoost",
+            "MAE": 33454.08,
+            "RMSE": 39026.0,
+            "WAPE": 0.5764,
+            "sMAPE": 48.68,
+            "Training_Time_s": 0.26,
+            "Product": "OXK6",
+            "Product_Name": "Oxy kh\u00ed"
+        }
+    ]
+}

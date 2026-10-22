@@ -1,0 +1,44 @@
+BÁO CÁO TỔNG KẾT CHI TIẾT DỰ ÁN SOVIGAZ
+Người thực hiện: Nguyễn Duy Mạnh
+1. Mục lục các phần trình bày
+Phần 1: Các vị trí chính trong mảng Data (Vai trò và sự phối hợp).
+Phần 2: Các bước thực hiện dự án Sovigaz (Chi tiết định nghĩa, thực thi và thách thức).
+Phần 3: Tổng kết quá trình thực tập và bài học kinh nghiệm.
+2. Các vị trí chính trong mảng Data
+Cơ cấu nhân sự trong một dự án dữ liệu thường được phân chia thành các mắt xích chuyên biệt, phối hợp chặt chẽ để đảm bảo luồng dữ liệu thông suốt từ đầu vào đến đầu ra.
+Business Analyst (BA): Đi sâu vào việc trao đổi với các bên liên quan để nắm bắt nhu cầu kinh doanh. BA làm nhiệm vụ chuyển đổi từ ngôn ngữ kinh doanh sang ngôn ngữ kỹ thuật thông qua tài liệu BRD.
+Data Engineer (DE): Xây dựng luồng xử lý dữ liệu, làm sạch và chuẩn hóa dữ liệu từ hệ thống Oracle để đổ vào kho dữ liệu Data Mart nhằm tối ưu hóa truy vấn, đảm bảo tính sẵn sàng của dữ liệu.
+Data Analyst (DA): Làm việc trực tiếp với Data Mart, phân tách dữ liệu thành các bảng Fact và bảng Dimension. Sử dụng các hàm phân tích như DAX để tính toán các chỉ số phức tạp và thiết kế giao diện cho báo cáo trên Power BI.
+Tester (Kiểm thử viên): Xây dựng bộ kịch bản kiểm thử chi tiết (SIT, UAT), truy vấn dữ liệu gốc từ cơ sở dữ liệu để đối chiếu với số liệu hiển thị trên báo cáo, đảm bảo logic nghiệp vụ không bị sai lệch trước khi bàn giao.
+3. Các bước thực hiện dự án Sovigaz
+3.1. Đọc hiểu tài liệu dự án
+- Hiểu là gì: Nắm bắt quy mô, lĩnh vực hoạt động của doanh nghiệp Sovigaz. Phân tích ngữ cảnh kinh doanh để hiểu tại sao doanh nghiệp cần hệ thống báo cáo này và kết quả đầu ra thực sự họ mong đợi là gì.
+- Thực hiện: Đọc tài liệu đặc tả hệ thống, khám phá cấu trúc dữ liệu thô từ Oracle. Tìm hiểu quy trình làm việc chuẩn của toàn bộ dự án từ khâu thu thập yêu cầu đến khâu nghiệm thu.
+- Khó khăn: Gặp rào cản với các thuật ngữ chuyên ngành và luồng quy trình phức tạp. Sự bỡ ngỡ ban đầu khi tiếp cận với các công việc mang tính hệ thống cao như lập tài liệu BRD hay các chuẩn mực kiểm thử SIT, UAT thực tế.
+3.2. Xây dựng Data Dictionary
+- Hiểu là gì: Là quá trình định nghĩa toàn bộ siêu dữ liệu, đóng vai trò như cuốn từ điển chuẩn hóa giúp toàn bộ nhóm dự án có chung một cách hiểu về từng trường dữ liệu, tránh sự mơ hồ.
+- Thực hiện: Quét qua toàn bộ các file trong Data Mart, ghi chép lại tên trường, kiểu dữ liệu, ý nghĩa nghiệp vụ, logic tính toán, và mối quan hệ giữa các trường vào bảng Excel.
+- Khó khăn: Số lượng trường dữ liệu vô cùng đồ sộ, nhiều trường có tên viết tắt hoặc định dạng phức tạp. Giải pháp vượt qua là ứng dụng mạnh mẽ AI (điển hình là công cụ Antigravity) để tự động hóa trích xuất và giải nghĩa, giúp rút ngắn hàng giờ làm việc thủ công.
+3.3. Xây dựng BRD
+- Hiểu là gì: Tài liệu BRD là bản thiết kế logic của toàn bộ báo cáo, quy định rõ báo cáo sẽ có những trang nào, mỗi trang cần những biểu đồ gì, chiều phân tích và chỉ số đo lường ra sao.
+- Thực hiện: Dựa vào Data Dictionary, đối chiếu với nhu cầu của người dùng để hoàn thiện biểu mẫu BRD. Xác định rõ công thức toán học và logic nghiệp vụ cho từng chỉ số.
+- Khó khăn: Dữ liệu lớn đi kèm với logic tính toán các chỉ tiêu rất phức tạp. Việc dịch từ các yêu cầu kinh doanh trừu tượng sang các logic cụ thể, đo lường được là một thách thức lớn đòi hỏi tư duy phân tích sâu.
+3.4. Xây dựng Data Model
+- Hiểu là gì: Tổ chức lại dữ liệu thành các bảng trung tâm chứa giao dịch và các bảng chứa thông tin mô tả theo mô hình Star Schema để Power BI có thể xử lý tối ưu nhất.
+- Thực hiện: Thiết lập các mối quan hệ một-nhiều, một-một, phân luồng bộ lọc chéo giữa các bảng trong Power BI.
+- Khó khăn: Việc nối bảng thường xuyên gặp các lỗi đa trị (n-n) hoặc tạo ra các mối quan hệ rất phức tạp. Bắt buộc phải rà soát kỹ lưỡng luồng chạy của dữ liệu để tránh dữ liệu bị nhân bản hoặc tính toán sai lệch.
+3.5. Xây dựng báo cáo
+- Hiểu là gì: Hiện thực hóa tài liệu BRD thành một sản phẩm báo cáo trực quan, sinh động và có tính tương tác cao.
+- Thực hiện: Kéo thả các biểu đồ, định dạng giao diện cho chuyên nghiệp. Viết các hàm DAX để tạo các chỉ số động.
+- Khó khăn: Số lượng thẻ thông tin và biểu đồ quá nhiều, dễ gây rối mắt nếu bố cục không khoa học. Thêm vào đó, việc kết hợp các hàm DAX để xử lý logic phức tạp đôi khi làm giảm tốc độ tải của báo cáo.
+3.6. Kiểm thử báo cáo
+- Hiểu là gì: Xác minh và xác nhận báo cáo hoạt động đúng như thiết kế trong BRD, và số liệu hiển thị phải khớp tuyệt đối với cơ sở dữ liệu nguồn.
+- Thực hiện: Viết các kịch bản kiểm thử, duyệt qua từng trường hợp cụ thể. Thực hiện việc kiểm tra chéo, chụp ảnh màn hình làm bằng chứng và ghi chú lỗi vào tệp theo dõi.
+- Khó khăn: Do số lượng chỉ tiêu cần kiểm tra cực lớn, một sai số nhỏ cũng bắt buộc người kiểm thử phải dò ngược lại từ hàm DAX, qua Data Model rồi về Data Dictionary để tìm nguyên nhân gốc rễ. Đòi hỏi tính kiên nhẫn và cẩn thận cực kỳ cao.
+3.7. Hoàn thành và đưa ra kết luận
+- Hiểu là gì: Đóng gói dự án sau khi vượt qua các bài kiểm tra chất lượng.
+- Thực hiện: Sửa chữa các lỗi sau quá trình UAT, tối ưu hóa lại báo cáo lần cuối. Bàn giao toàn bộ tài liệu (Data Dictionary, BRD, Data Model, kịch bản kiểm thử) và tệp báo cáo hoàn chỉnh. Rút ra các bài học đúc kết.
+4. Tổng kết quá trình thực tập
+- Về kiến thức chuyên môn: Nắm vững toàn bộ vòng đời của một dự án Business Intelligence chuẩn mực: từ khâu phân tích nghiệp vụ, lập tài liệu, mô hình hóa đến trực quan hóa và kiểm thử. Hiểu sâu sắc sự cần thiết của việc xây dựng tài liệu lưu trữ trong việc phối hợp nhóm.
+- Về xử lý dữ liệu: Rèn luyện thành công tư duy phân tích dữ liệu quy mô doanh nghiệp. Tăng cường khả năng xử lý, mô hình hóa những tập dữ liệu lớn, phức tạp và đôi khi thiếu tính đồng nhất.
+- Về công nghệ & Ứng dụng AI: Nâng cao tư duy công nghệ qua việc làm chủ Power BI, DAX. Đặc biệt, việc tận dụng hiệu quả các trợ lý AI (như Antigravity) để xử lý dữ liệu tĩnh, tạo Data Dictionary đã giúp tối ưu hóa năng suất gấp nhiều lần so với phương pháp thủ công truyền thống.

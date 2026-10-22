@@ -1,0 +1,14 @@
+﻿feature_name,source_table,source_columns,observation_window,available_at,aggregation,future_data_used,leakage_risk,status
+recency_days,processed_sales,RefDate,"(-inf, T]",T,T - max(RefDate),No,None,PASS
+frequency_90d,processed_sales,RefNo,"[T-90d, T]",T,nunique(RefNo),No,None,PASS
+monetary_90d,processed_sales,Revenue,"[T-90d, T]",T,sum(Revenue),No,None,PASS
+frequency_180d,processed_sales,RefNo,"[T-180d, T]",T,nunique(RefNo),No,None,PASS
+monetary_180d,processed_sales,Revenue,"[T-180d, T]",T,sum(Revenue),No,None,PASS
+frequency_365d,processed_sales,RefNo,"[T-365d, T]",T,nunique(RefNo),No,None,PASS
+monetary_365d,processed_sales,Revenue,"[T-365d, T]",T,sum(Revenue),No,None,PASS
+quantity_365d,processed_sales,MainQuantity,"[T-365d, T]",T,sum(MainQuantity),No,None,PASS
+order_count_365d,processed_sales,RefNo,"[T-365d, T]",T,nunique(RefNo),No,None,PASS
+active_months_365d,processed_sales,RefDate,"[T-365d, T]",T,nunique(YearMonth),No,None,PASS
+interpurchase_mean_days,processed_sales,RefDate,"[T-365d, T]",T,mean(RefDate_diff),No,None,PASS
+revenue_momentum_ratio,processed_sales,Revenue,"[T-180d, T]",T,rev_last_90d / rev_180d,No,None,PASS
+churn_target_90d,processed_sales,RefDate,"(T, T+90d]",T+90d (Label ONLY),1 if count==0 else 0,Target Label ONLY,Isolated in Target,PASS

@@ -1,0 +1,12 @@
+{
+    "Weekly_Revenue_Best_Model": "CatBoost",
+    "Monthly_Revenue_Best_Model": "XGBoost",
+    "Split": {
+        "Train": "2023 - 2024",
+        "Validation": "2025",
+        "Test_Weekly": "2026-01-05 to 2026-06-08 (23 complete weeks)",
+        "Test_Monthly": "2026-01 to 2026-05 (5 complete months)"
+    },
+    "Exogenous_Holiday": "T\u1ebft Nguy\u00ean \u0110\u00e1n (is_tet_holiday, weeks_to_tet, weeks_after_tet)",
+    "Random_State": 42
+}

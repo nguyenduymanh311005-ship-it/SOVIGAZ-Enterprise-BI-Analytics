@@ -1,0 +1,984 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="sovigaz-field-erd" name="Sovigaz ERD - Field relationships">
+    <mxGraphModel dx="8488" dy="2256" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4400" pageHeight="3200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Dim_Customer" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="448" width="380" x="2400" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Customer_background" connectable="0" parent="Dim_Customer" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="448" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Customer_header" connectable="0" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_Customer&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_0_CustomerID" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CustomerID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_1_CustomerName" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CustomerName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_2_AccountObjectCode" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_3_Address" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Address&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_4_CompanyTaxCode" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CompanyTaxCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_5_Tel" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Tel&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_6_Mobile" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Mobile&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_7_Fax" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Fax&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_8_EmailAddress" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;EmailAddress&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_9_Website" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Website&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_10_AccountObjectGroupListName" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectGroupListName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_11_Country" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Country&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_12_ProvinceOrCity" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ProvinceOrCity&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_13_District" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;District&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_14_WardOrCommune" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;WardOrCommune&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_15_BranchID" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;BranchID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_16_ETL_DATE" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_17_Excel_Customer_Category" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Excel_Customer_Category&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Customer_18_StockCode" parent="Dim_Customer" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;StockCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Date" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="272" width="380" x="960" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Date_background" connectable="0" parent="Dim_Date" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="272" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Date_header" connectable="0" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_Date&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_0_DateKey" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;DateKey&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_1_Date" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;Date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_2_Day" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Day&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_3_Month" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Month&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_4_Year" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Year&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_5_Quarter" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Quarter&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_6_Week" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Week&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_7_DayOfWeek" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;DayOfWeek&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_8_MonthName" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;MonthName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_9_YearMonth" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;YearMonth&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Date_10_IsWeekend" parent="Dim_Date" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsWeekend&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Month" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="272" width="380" x="480" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Month_background" connectable="0" parent="Dim_Month" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="272" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Month_header" connectable="0" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_Month&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_0_MonthKey" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;MonthKey&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_1_Year" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Year&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_2_Month" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Month&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_3_MonthName" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;MonthName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_4_Quarter" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;Quarter&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_5_YearMonth" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;YearMonth&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_6_StartDate" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;StartDate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_7_EndDate" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;EndDate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_8_IsCurrent" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsCurrent&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_9_MonthVietnamese" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;MonthVietnamese&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Month_10_T_n_th_ng" parent="Dim_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Tên tháng&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Year" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="74" width="380" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Year_background" connectable="0" parent="Dim_Year" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="74" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Year_header" connectable="0" parent="Dim_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_Year&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Year_0_YearText" parent="Dim_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;YearText&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Year_1_Value" parent="Dim_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Value&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Stock" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="206" width="380" x="1920" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Stock_background" connectable="0" parent="Dim_Stock" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="206" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Stock_header" connectable="0" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_Stock&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_0_StockID" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;StockID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_1_BranchID" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;BranchID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_2_StockCode" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;StockCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_3_StockName" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;StockName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_4_Description" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Description&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_5_InventoryAccount" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_6_ETL_DATE" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Stock_7_ParentStockCode" parent="Dim_Stock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ParentStockCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ParentStock" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="74" width="380" x="1440" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ParentStock_background" connectable="0" parent="Dim_ParentStock" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="74" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ParentStock_header" connectable="0" parent="Dim_ParentStock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_ParentStock&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ParentStock_0_ParentStockCode" parent="Dim_ParentStock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ParentStockCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ParentStock_1_ParentStockName" parent="Dim_ParentStock" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ParentStockName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Products" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="1416" width="380" x="3840" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Products_background" connectable="0" parent="Dim_Products" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="1416" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_Products_header" connectable="0" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_Products&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_0_InventoryItemID" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_1_BranchID" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;BranchID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_2_BarCode" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;BarCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_3_InventoryItemCode" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_4_InventoryItemName" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_5_InventoryItemType" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemType&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_6_InventoryItemCategoryList" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCategoryList&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_7_InventoryItemCategoryCode" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCategoryCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_8_Description" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Description&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_9_UnitID" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;UnitID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_10_GuarantyPeriod" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;GuarantyPeriod&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_11_MinimumStock" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;MinimumStock&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_12_InventoryItemSource" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemSource&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_13_DefaultStockID" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;DefaultStockID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_14_InventoryAccount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_15_COGSAccount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;COGSAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_16_SaleAccount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;SaleAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_17_PurchaseDiscountRate" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;PurchaseDiscountRate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_18_UnitPrice" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;UnitPrice&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_19_SalePrice1" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;SalePrice1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_20_SalePrice2" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;SalePrice2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_21_SalePrice3" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;SalePrice3&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_22_FixedSalePrice" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;FixedSalePrice&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_23_IsUnitPriceAfterTax" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsUnitPriceAfterTax&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_24_TaxRate" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;TaxRate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_25_ImportTaxRate" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ImportTaxRate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_26_ExportTaxRate" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ExportTaxRate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_27_InventoryCategorySpecialTaxID" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryCategorySpecialTaxID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_28_IsSystem" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsSystem&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_29_Inactive" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;Inactive&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="668" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_30_IsSaleDiscount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsSaleDiscount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_31_DiscountType" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;DiscountType&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="712" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_32_IsFollowSerialNumber" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsFollowSerialNumber&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="734" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_33_CostMethod" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CostMethod&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="756" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_34_CreatedDate" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;CreatedDate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_35_CreatedBy" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CreatedBy&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_36_ModifiedDate" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ModifiedDate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="822" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_37_ModifiedBy" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ModifiedBy&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="844" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_38_InventoryItemCategoryName" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCategoryName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="866" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_39_Specificity" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Specificity&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="888" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_40_PurchaseDescription" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;PurchaseDescription&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_41_SaleDescription" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;SaleDescription&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="932" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_42_TACareerGroupID" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;TACareerGroupID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="954" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_43_FixedUnitPrice" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;FixedUnitPrice&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="976" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_44_FrontEndFormula" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;FrontEndFormula&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="998" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_45_BackEndFormula" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;BackEndFormula&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_46_BaseOnFormula" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;BaseOnFormula&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1042" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_47_IsDeleted" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsDeleted&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1064" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_48_ServerRowVersion" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ServerRowVersion&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1086" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_49_UploadState" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;UploadState&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1108" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_50_IsCRM" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsCRM&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_51_NotAllowSyncToCRM" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;NotAllowSyncToCRM&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1152" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_52_InventoryItemCategoryIDList" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCategoryIDList&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1174" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_53_DiscountAccount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;DiscountAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1196" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_54_SaleOffAccount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;SaleOffAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1218" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_55_ReturnAccount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ReturnAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_56_ReplaceInventoryItemID" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ReplaceInventoryItemID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1262" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_57_ReplaceInventoryItemName" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ReplaceInventoryItemName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1284" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_58_ProcessAccount" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ProcessAccount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1306" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_59_Excel_Product_Name" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Excel_Product_Name&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1328" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_60_Excel_Category_Name" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Excel_Category_Name&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_61_ETL_DATE" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1372" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_Products_62_InventoryItemCode_New" parent="Dim_Products" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCode_New&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="1394" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ProductCategories" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="140" width="380" x="3360" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ProductCategories_background" connectable="0" parent="Dim_ProductCategories" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="140" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ProductCategories_header" connectable="0" parent="Dim_ProductCategories" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_ProductCategories&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ProductCategories_0_Indicator" parent="Dim_ProductCategories" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Indicator&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ProductCategories_1_CategoryName" parent="Dim_ProductCategories" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;PK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CategoryName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ProductCategories_2_Name" parent="Dim_ProductCategories" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Name&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ProductCategories_3_Group" parent="Dim_ProductCategories" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Group&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ProductCategories_4_ETL_DATE" parent="Dim_ProductCategories" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ProductsCategory_by_Tung" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="52" width="380" x="2880" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ProductsCategory_by_Tung_background" connectable="0" parent="Dim_ProductsCategory_by_Tung" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="52" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Dim_ProductsCategory_by_Tung_header" connectable="0" parent="Dim_ProductsCategory_by_Tung" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Dim_ProductsCategory_by_Tung&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Dim_ProductsCategory_by_Tung_0_Group" parent="Dim_ProductsCategory_by_Tung" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Group&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DM_AccountObjectDebt" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="206" width="380" x="2160" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="DM_AccountObjectDebt_background" connectable="0" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="206" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="DM_AccountObjectDebt_header" connectable="0" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;DM_AccountObjectDebt&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_0_AccountObjectCode" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_1_AccountObjectName" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_2_ReceiptableDebtAmount" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ReceiptableDebtAmount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_3_PaidAmount" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;PaidAmount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_4_ETL_DATE" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_5_ReceivableAccountCode" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ReceivableAccountCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_6_OpeningBalance" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;OpeningBalance&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_AccountObjectDebt_7_PeriodAmount" parent="DM_AccountObjectDebt" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;PeriodAmount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="DM_RevenueBySaleLedger" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="668" width="380" x="3360" y="1900" as="geometry" />
+        </mxCell>
+        <mxCell id="DM_RevenueBySaleLedger_background" connectable="0" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="668" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="DM_RevenueBySaleLedger_header" connectable="0" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;DM_RevenueBySaleLedger&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_0_AccountObjectID" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_1_AccountObjectNameDI" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectNameDI&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_2_InventoryItemCode" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_3_InventoryItemName" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_4_Revenue" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Revenue&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_5_SaleAmount" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;SaleAmount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_6_RefDate" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;RefDate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_7_UnitPrice" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;UnitPrice&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_8_ReceiptAmount" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ReceiptAmount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_9_VATAmount" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;VATAmount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_10_RefNo" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;RefNo&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_11_InvNo" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InvNo&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_12_PostedDate" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;PostedDate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_13_JournalMemo" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;JournalMemo&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="316" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_14_RefTypeName" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;RefTypeName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="338" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_15_IsInvoiceExported" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BOOLEAN&amp;nbsp;&amp;nbsp;IsInvoiceExported&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_16_IsOutwardExported" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;BIGINT&amp;nbsp;&amp;nbsp;IsOutwardExported&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_17_RefNoFinance" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;RefNoFinance&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="404" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_18_RefNoManagement" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;RefNoManagement&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_19_DiscountAmount" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;DiscountAmount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="448" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_20_BranchID" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;BranchID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_21_AccountObjectCode" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="492" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_22_MainUnitPrice" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;MainUnitPrice&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="514" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_23_MainConvertRate" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;MainConvertRate&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="536" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_24_MainQuantity" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;MainQuantity&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="558" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_25_ETL_DATE" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_26_DB" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;DB&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_27_UnitID" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;UnitID&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="field_DM_RevenueBySaleLedger_28_InventoryItemCode_New" parent="DM_RevenueBySaleLedger" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemCode_New&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_ActualProduction" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="228" width="380" x="1440" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_ActualProduction_background" connectable="0" parent="Fact_ActualProduction" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="228" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_ActualProduction_header" connectable="0" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Fact_ActualProduction&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_0_CategoryName" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CategoryName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_1_ProductName" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ProductName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_2_ProductQuantity" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductQuantity&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_3_PurchaseQuantity" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;PurchaseQuantity&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_4_ProductQuantityDVC" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductQuantityDVC&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_5_ProductValue" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductValue&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_6_Date" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;Date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_7_FactoryCode" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;FactoryCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_ActualProduction_8_ETL_DATE" parent="Fact_ActualProduction" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_AnalyticsDebit" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="162" width="380" x="2640" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_AnalyticsDebit_background" connectable="0" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="162" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_AnalyticsDebit_header" connectable="0" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Fact_AnalyticsDebit&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_AnalyticsDebit_0_DebtType" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;DebtType&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_AnalyticsDebit_1_Amount" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Amount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_AnalyticsDebit_2_DebtDescription" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;DebtDescription&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_AnalyticsDebit_3_ETL_DATE" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_AnalyticsDebit_4_Account" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Account&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_AnalyticsDebit_5_AccountObjectCode" parent="Fact_AnalyticsDebit" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;AccountObjectCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_By_Product" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="294" width="380" x="480" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_By_Product_background" connectable="0" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="294" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_By_Product_header" connectable="0" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Fact_KPI_By_Product&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_0_RevenueCode" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;RevenueCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_1_StockCode" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;StockCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_2_CategoryName" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;CategoryName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_3_ProductName" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ProductName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_4_ProductCategoryName" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;ProductCategoryName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_5_ProductQuantityDVT" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductQuantityDVT&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_6_ProductQuantityDVC" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductQuantityDVC&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_7_ProductQuantityDVT1" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductQuantityDVT1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_8_SaleQuantityDVC" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;SaleQuantityDVC&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_9_Amount" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Amount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_10_Year" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Year&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_By_Product_11_ETL_DATE" parent="Fact_KPI_By_Product" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_Year" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="140" width="380" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_Year_background" connectable="0" parent="Fact_KPI_Year" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="140" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_Year_header" connectable="0" parent="Fact_KPI_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Fact_KPI_Year&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Year_0_Parent_Stock" parent="Fact_KPI_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Parent_Stock&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Year_1_Production" parent="Fact_KPI_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Production&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Year_2_Amount" parent="Fact_KPI_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Amount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Year_3_Year" parent="Fact_KPI_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Year&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Year_4_ETL_DATE" parent="Fact_KPI_Year" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_Month" connectable="0" parent="1" style="group;html=1;" value="" vertex="1">
+          <mxGeometry height="316" width="380" x="960" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_Month_background" connectable="0" parent="Fact_KPI_Month" style="shape=rectangle;html=1;rounded=0;shadow=0;strokeColor=#6c8ebf;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="316" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Fact_KPI_Month_header" connectable="0" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=6;fontSize=12;" value="&lt;b&gt;Fact_KPI_Month&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="380" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_0_Indicator" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;Indicator&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_1_StockCode" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;StockCode&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_2_InventoryCodePlan" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryCodePlan&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_3_InventoryItemName" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemName&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_4_InventoryItemGroup" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;VARCHAR&amp;nbsp;&amp;nbsp;InventoryItemGroup&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="118" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_5_ProductionValue" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductionValue&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_6_ProductUnit" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductUnit&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="162" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_7_ProductUnitDVC" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;ProductUnitDVC&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="184" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_8_QuantityDVT" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;QuantityDVT&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_9_QuantityDVC" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;QuantityDVC&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_10_Amount" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DECIMAL&amp;nbsp;&amp;nbsp;Amount&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_11_Date" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;FK&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;Date&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="field_Fact_KPI_Month_12_ETL_DATE" parent="Fact_KPI_Month" style="shape=rectangle;html=1;whiteSpace=wrap;rounded=0;strokeColor=#d0d0d0;fillColor=#ffffff;align=left;verticalAlign=middle;spacing=0;fontSize=12;" value="&lt;table border=&quot;0&quot; cellpadding=&quot;3&quot; cellspacing=&quot;0&quot; style=&quot;width:100%;font-size:12px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width:38px;&quot;&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;&lt;td&gt;DATETIME&amp;nbsp;&amp;nbsp;ETL_DATE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="22" width="380" y="294" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="field_Dim_Stock_2_StockCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.200;entryX=1;entryY=0.500;" target="field_Fact_ActualProduction_7_FactoryCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1889" y="378.4" />
+              <mxPoint x="1889" y="850" />
+              <mxPoint x="1851" y="850" />
+              <mxPoint x="1851" y="1895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="field_Dim_Stock_2_StockCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.400;entryX=1;entryY=0.500;" target="field_Fact_KPI_Month_1_StockCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1880" y="382.8" />
+              <mxPoint x="1880" y="888" />
+              <mxPoint x="1371" y="888" />
+              <mxPoint x="1371" y="1763" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="field_Dim_Stock_2_StockCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.600;entryX=1;entryY=0.500;" target="field_Fact_KPI_By_Product_1_StockCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1871" y="387.2" />
+              <mxPoint x="1871" y="926" />
+              <mxPoint x="891" y="926" />
+              <mxPoint x="891" y="1763" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="field_Dim_ParentStock_0_ParentStockCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.333;entryX=0;entryY=0.500;strokeColor=#b46504;" target="field_Dim_Stock_7_ParentStockCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1851" y="337.33" />
+              <mxPoint x="1851" y="250" />
+              <mxPoint x="1889" y="250" />
+              <mxPoint x="1889" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="field_Dim_ParentStock_0_ParentStockCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.667;entryX=1;entryY=0.500;" target="field_Fact_KPI_Year_0_Parent_Stock" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="344.67" />
+              <mxPoint x="1400" y="964" />
+              <mxPoint x="411" y="964" />
+              <mxPoint x="411" y="1741" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="field_Dim_Customer_2_AccountObjectCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.250;entryX=0;entryY=0.500;" target="field_DM_RevenueBySaleLedger_21_AccountObjectCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2811" y="379.5" />
+              <mxPoint x="2811" y="1002" />
+              <mxPoint x="3329" y="1002" />
+              <mxPoint x="3329" y="2403" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="field_Dim_Month_5_YearMonth" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.500;entryX=0;entryY=0.500;" target="field_Dim_Date_9_YearMonth" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="891" y="451" />
+              <mxPoint x="891" y="222" />
+              <mxPoint x="929" y="222" />
+              <mxPoint x="929" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="field_Dim_Date_1_Date" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.250;entryX=0;entryY=0.500;" target="field_DM_RevenueBySaleLedger_12_PostedDate" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1371" y="357.5" />
+              <mxPoint x="1371" y="1040" />
+              <mxPoint x="3329" y="1040" />
+              <mxPoint x="3329" y="2205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="field_Dim_Date_1_Date" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.500;entryX=0;entryY=0.500;" target="field_Fact_ActualProduction_6_Date" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1380" y="363" />
+              <mxPoint x="1380" y="1078" />
+              <mxPoint x="1409" y="1078" />
+              <mxPoint x="1409" y="1873" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="field_Dim_Date_1_Date" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.750;entryX=0;entryY=0.500;" target="field_Fact_KPI_Month_11_Date" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1389" y="368.5" />
+              <mxPoint x="1389" y="1116" />
+              <mxPoint x="929" y="1116" />
+              <mxPoint x="929" y="1983" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="field_Dim_ProductCategories_1_CategoryName" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.200;entryX=1;entryY=0.500;" target="field_Fact_ActualProduction_0_CategoryName" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3329" y="356.4" />
+              <mxPoint x="3329" y="1154" />
+              <mxPoint x="1851" y="1154" />
+              <mxPoint x="1851" y="1741" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="field_Dim_ProductCategories_1_CategoryName" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.400;entryX=1;entryY=0.500;" target="field_Fact_KPI_By_Product_2_CategoryName" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3320" y="360.8" />
+              <mxPoint x="3320" y="1192" />
+              <mxPoint x="891" y="1192" />
+              <mxPoint x="891" y="1785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="field_Dim_ProductCategories_1_CategoryName" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.600;entryX=0;entryY=0.500;" target="field_Dim_Products_60_Excel_Category_Name" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3789" y="365.2" />
+              <mxPoint x="3789" y="194" />
+              <mxPoint x="3809" y="194" />
+              <mxPoint x="3809" y="1661" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="field_Dim_ProductCategories_1_CategoryName" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.800;entryX=1;entryY=0.500;" target="field_Fact_KPI_Month_2_InventoryCodePlan" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3302" y="369.6" />
+              <mxPoint x="3302" y="1230" />
+              <mxPoint x="1371" y="1230" />
+              <mxPoint x="1371" y="1785" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="field_Dim_Year_1_Value" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.200;entryX=0;entryY=0.500;dashed=1;dashPattern=8 8;strokeColor=#999999;" target="field_Dim_Month_1_Year" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="411" y="356.4" />
+              <mxPoint x="411" y="166" />
+              <mxPoint x="449" y="166" />
+              <mxPoint x="449" y="363" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="field_Dim_Year_1_Value" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.400;entryX=0;entryY=0.500;" target="field_Fact_KPI_Year_3_Year" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="360.8" />
+              <mxPoint x="420" y="1268" />
+              <mxPoint x="-31" y="1268" />
+              <mxPoint x="-31" y="1807" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="field_Dim_Year_1_Value" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.600;entryX=0;entryY=0.500;strokeColor=#b46504;" target="field_Dim_Date_4_Year" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="429" y="365.2" />
+              <mxPoint x="429" y="138" />
+              <mxPoint x="929" y="138" />
+              <mxPoint x="929" y="429" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="field_Dim_Year_1_Value" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.800;entryX=0;entryY=0.500;" target="field_Fact_KPI_By_Product_10_Year" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="438" y="369.6" />
+              <mxPoint x="438" y="1306" />
+              <mxPoint x="449" y="1306" />
+              <mxPoint x="449" y="1961" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="field_Dim_Products_62_InventoryItemCode_New" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.500;entryX=1;entryY=0.500;" target="field_DM_RevenueBySaleLedger_28_InventoryItemCode_New" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4322" y="1705" />
+              <mxPoint x="4322" y="2557" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="field_Dim_Stock_2_StockCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.800;entryX=0;entryY=0.500;" target="field_Dim_Customer_18_StockCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2358" y="391.6" />
+              <mxPoint x="2358" y="110" />
+              <mxPoint x="2369" y="110" />
+              <mxPoint x="2369" y="737" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="field_Dim_Customer_2_AccountObjectCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=0;exitY=0.500;entryX=1;entryY=0.500;" target="field_DM_AccountObjectDebt_0_AccountObjectCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2360" y="385" />
+              <mxPoint x="2360" y="1344" />
+              <mxPoint x="2571" y="1344" />
+              <mxPoint x="2571" y="1741" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="field_Dim_Customer_2_AccountObjectCode" style="html=1;strokeWidth=1.2;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=18;curved=0;exitX=1;exitY=0.750;entryX=0;entryY=0.500;" target="field_Fact_AnalyticsDebit_5_AccountObjectCode" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2829" y="390.5" />
+              <mxPoint x="2829" y="1382" />
+              <mxPoint x="2609" y="1382" />
+              <mxPoint x="2609" y="1851" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

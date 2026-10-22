@@ -1,0 +1,5 @@
+﻿case_category,AccountObjectCode,snapshot_T,last_purchase_before_T,first_purchase_after_T,days_after_T,churn_target_90d,boundary_verdict
+Boundary Exactly Day 90 (T+90),CTTHTHANH,2024-12-31,2024-09-30,2025-03-31,90.0,0,"RETAINED (0): Giao dịch ngày T+90 tính thuộc cửa sổ dự đoán [T+1, T+90]"
+Boundary Exactly Day 91 (T+91),CTBV001,2024-12-31,2024-12-20,2025-04-01,91.0,1,"CHURN (1): Giao dịch phát sinh sau T+90, trong 90 ngày sau T có 0 giao dịch"
+Immediate Repurchase (T+1 to T+5),BDBV78,2024-12-31,2024-12-24,2025-01-02,2.0,0,RETAINED (0): Mua hàng ngay sau snapshot
+Definitive Churn (Never Repurchased),BDNL17,2024-12-31,2024-10-23,,,1,CHURN (1): Không có bất kỳ giao dịch nào sau snapshot T

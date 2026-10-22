@@ -1,0 +1,18 @@
+﻿customer_segment,credit_risk_band,customer_count,total_debt_vnd,avg_debt_vnd,total_overdue_vnd,avg_overdue_ratio,avg_credit_score
+Active Regular Buyers (Operational Flow),Critical Exposure (Score >= 70),1,770375443.0,770375443.0,729018920.0,0.9463,74.2
+Active Regular Buyers (Operational Flow),High Exposure (50 <= Score < 70),5,1046514817.0,209302963.0,645134489.0,0.6211,55.5
+Active Regular Buyers (Operational Flow),Low Exposure (Score < 30),128,1251912785.0,9780569.0,233361981.0,0.1719,13.9
+Active Regular Buyers (Operational Flow),Moderate Exposure (30 <= Score < 50),21,1113979434.0,53046640.0,729731841.0,0.7033,39.4
+Dormant / Low-Engagement Accounts (Triage / Reactivation),Low Exposure (Score < 30),13,67605340.0,5200411.0,4920240.0,0.0935,17.2
+Dormant / Low-Engagement Accounts (Triage / Reactivation),Moderate Exposure (30 <= Score < 50),4,410802197.0,102700549.0,11860800.0,0.6632,39.0
+Dormant / Non-Clustered,Critical Exposure (Score >= 70),16,9656812456.0,603550778.0,8781869619.0,0.9584,75.5
+Dormant / Non-Clustered,High Exposure (50 <= Score < 70),43,5251263723.0,122122412.0,2229723225.0,0.9497,58.5
+Dormant / Non-Clustered,Low Exposure (Score < 30),62,1178961812.0,19015513.0,40637136.0,0.1055,18.4
+Dormant / Non-Clustered,Moderate Exposure (30 <= Score < 50),41,2175960236.0,53072201.0,506030401.0,0.5962,39.0
+Key Industrial Accounts (Bulk & Contract Buyers),Critical Exposure (Score >= 70),2,1410113149.0,705056574.0,1195751149.0,0.8673,71.0
+Key Industrial Accounts (Bulk & Contract Buyers),High Exposure (50 <= Score < 70),9,5063638182.0,562626465.0,2862460310.0,0.6424,53.8
+Key Industrial Accounts (Bulk & Contract Buyers),Low Exposure (Score < 30),123,4887384777.0,39734836.0,389358945.0,0.114,17.1
+Key Industrial Accounts (Bulk & Contract Buyers),Moderate Exposure (30 <= Score < 50),71,21450790175.0,302123805.0,5024590270.0,0.3798,38.0
+Slipping / Periodic Buyers (Retention Focus),High Exposure (50 <= Score < 70),7,274823200.0,39260457.0,192915840.0,0.8617,55.9
+Slipping / Periodic Buyers (Retention Focus),Low Exposure (Score < 30),32,466895920.0,14590498.0,30567452.0,0.0702,15.3
+Slipping / Periodic Buyers (Retention Focus),Moderate Exposure (30 <= Score < 50),6,104588989.0,17431498.0,78976789.0,0.7862,39.8

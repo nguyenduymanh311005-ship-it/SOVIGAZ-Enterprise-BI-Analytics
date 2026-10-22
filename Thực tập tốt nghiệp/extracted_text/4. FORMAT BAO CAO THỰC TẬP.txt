@@ -1,0 +1,82 @@
+QUY ĐỊNH VỀ CÁCH TRÌNH BÀY BÁO CÁO THỰC TẬP 
+1. Khổ giấy
+Khổ giấy: A4 (210 x 297 mm) 
+Căn lề: trái - left: 3,0 cm; phải - right: 2,5cm; trên - top: 2,5cm; dưới - bottom: 2,5cm.
+Đánh số trang ở dưới, giữa. Trang số 1 bắt đầu sau phần Mục lục. 
+Không sử dụng Header/Footer để ghi tên sinh viên, đề tài……
+2. Quy định về font chữ, trình bày nội dung
+Kiểu chữ - font: Times New Roman, font size: 14 hoặc 13 
+Giãn cách dòng: 1,5 lines.
+Căn lề 2 bên (Lỗi này sinh viên thường hay gặp)
+Tên đề mục cấp 1: Chữ thường, đậm, đứng 
+(Ví dụ: 1. Quan niệm về….). 
+Tên đề mục cấp 2: Chữ thường, đậm, nghiêng 
+(Ví dụ: 4.1. Nhóm giải pháp…..).
+Chú ý về viết tắt: Hạn chế viết tắt, chỉ viết tắt những từ dùng nhiều trong báo cáo/khóa luận. Nếu dùng nhiều cần có danh mục từ viết tắt xếp theo thứ tự ABC.
+3. Thứ tự sắp xếp báo cáo Thực tập
+	Báo cáo thực tập nộp để chấm điểm được đóng bìa mềm xanh, thứ tự như sau:
+	- Bìa xanh  Bìa lót  Lời cảm ơn  Mục lục  Danh mục hình, bảng, từ viết tắt trong báo cáo Mở đầu  Nội dung  Tài liệu tham khảo  Phụ lục  Nhận xét của đơn vị thực tập.
+4. Trình bày tài liệu tham khảo
+Trích dẫn theo số thứ tự tài liệu trong Danh mục tài liệu tham khảo hoặc theo chuẩn APA phiên bản lần thứ 6.  
+4.1. Sách/ báo cáo (bản in):
+Họ, Tên viết tắt. Tên đệm viết tắt. (Năm). Tiêu đề sách. Nơi xuất bản (thành phố/Quốc gia): Nhà xuất bản.
+Họ, Tên viết tắt., & Họ, Tên viết tắt. (Năm). Tiêu đề chương sách. Tiêu đề sách (pp.trang xx-xxx). Nơi xuất bản.
+Lưu ý: Chữ cái đầu tiên của từ đầu tiên của tiêu đề chính, phụ đề và tất cả các danh từ riêng được viết hoa.
+Ví dụ:
++ Trường hợp có Một tác giả
+Freeman, E., R. (1984). Strategic management: a stakeholder approach. Boston, MA: Pitman.
+Nguyễn, V., T. (2003). Quản trị tài chính doanh nghiệp. Hà Nội, Việt Nam: NXB Thống Kê.
++ Trường hợp có Nhiều tác giả
+Hair, J. F., Black, W., C., Babin, B. J., & Anderson, R. E. (2010). Multivariate data analysis. Upper Saddle River, NJ: Prentice-Hall.
++ Trường hợp Tác giả ẩn danh
+Dorland’s illustrated medical dictionary (31st ed.). (2007). Philadelphia, PA: Saunders.
++ Trường hợp Tác giả là tổ chức, cơ quan
+American Psychiatric Association (2004). Diagnostic and statistical manual of mental disorders (4th ed.). Washington, DC: Author.
+4.2. Sách/ báo cáo/bài viết (bản online):
+Họ, Tên viết tắt. Tên đệm viết tắt. (Năm). Tiêu đề chương sách. Tiêu đề sách (pp. xx-xx). doi:…....
+Họ, Tên viết tắt. Tên đệm viết tắt. (Năm). Tiêu đề. Truy cập từ trang web: http://…
+Ví dụ:
++ Lance, L. & Cantor, A. (2011). Nonproduction benefits of education: Crime, health, and good citizenship. In Handbook of the economics of education (Vol. 4, pp.183-282). doi:10.1016/B978-0-444-53444-6.00002-X
++ Martin, J. L. (2011). The explanation of social action. Retrieved from http://ebookcentral.proquest.com
++ Công ty TNHH Mai Ngọc (2024). Báo cáo tài chính năm 2023. Truy cập từ trang web: https://maingoccompany.vn
++ Hoàng Vui (2024). SWOT là gì? Cách phân tích mô hình ma trận SWOT chi tiết từ A-Z. Truy cập từ trang web: https://vietnix.vn
++ 1Office (2023). Quy trình phân tích khách hàng đúng chuẩn, hiệu quả. Truy cập từ trang web: https://1office.vn/phan-tich-khach-hang
+ 4.3. Tạp chí (bản in)
+Họ, Tên viết tắt., & Họ, Tên viết tắt. (Năm). Tiêu đề bài báo. Tên tạp chí, Volume (Issue), trang xxx-xxx. doi:10……
+Ví dụ:
++ Trường hợp có Một tác giả
+Williams, J. H. (2008). Employee engagement: Improving participation in safety. Professional Safety, 53(12), 40-45. doi:10.1016/j.procs.2019.09.252.
++ Trường hợp có Hai đến bảy tác giả
+Keller, T. E., Cusick, G. R., & Courtney, M. E. (2007). Approaching the transition to adulthood: Distinctive profiles of adolescents aging out of the child welfare system. Social Services Review, 81, 453- 484.
+Mathews, J., Berrett, D., & Brillman, D. (2005, May 16). Other winning equations. Newsweek, 145(20), 58-59.
++ Trường hợp có Tám tác giả trở lên
+Wolchik, S. A., West, S. G., Sandler, I. N.,... Griffin, W. A. (2000). An experimental evaluation of theory-based mother and mother-child programs for children of divorce. Journal of Consulting and Clinical Psychology, 68, 843- 856.
+4.4. Tạp chí (bản online):
+Họ, Tên viết tắt., & Họ, Tên viết tắt. (Năm). Tiêu đề bài báo. Tên tạp chí, Volume (Issue), trang xxx-xxx. doi:10…..
+Họ, Tên viết tắt., & Họ, Tên viết tắt. (Năm). Tiêu đề bài báo. Tên tạp chí, Volume (Issue), trang xxx-xxx. Retrieved from http://www… or Retrieved from the website: (name of the database)
+Lưu ý: Tên tạp chí và tập phát hành (volume) được in nghiêng, sau đó là số phát hành (issue) trong dấu ngoặc đơn (không in nghiêng).
+Ví dụ:
++ Senior, B., & Swailes, S. (2007). Inside management teams: Developing a teamwork survey instrument. British Journal of Management, 18, 138-153. doi: 10.1111/j.1467-51.2006.00507.x
++ Lodewijkx, H. F. M. (2001). Individual-group continuity in cooperation and competition under varying communication conditions. Current Issues in Social Psychology, 6(12), 166-182. Retrieved from http://www.uiowa.edu/asd/crisp.htm
+5. Đánh số bảng, đồ thị, hình, sơ đồ
+Các bảng dữ liệu trình bày trong khóa luận/báo cáo được ghi thống nhất là Bảng. Các bảng dữ liệu phải là định dạng bảng (table) trong phần mềm Microsoft Word. Các đồ thị, biểu đồ, sơ đồ trong bài được ghi thống nhất là Hình. Các bảng và hình trong bài viết phải được đánh số riêng biệt và theo thứ tự liên tục, số thứ tự được đặt sau từ “Bảng” hoặc “Hình” (ví dụ: Bảng 1.1, Bảng 2.1, Hình 1.1, Hình 2.1). Mỗi bảng/hình cần phải có tên tương ứng mô tả chính xác nội dung của bảng/hình. 
+	Số thứ tự và tên bảng được đặt ở vị trí phía trên cùng của bảng đó theo phương chiều ngang, chữ in đậm. 
+Số thứ tự và tên hình được đặt ở vị trí phía dưới cùng của hình đó theo phương chiều ngang, chữ in đậm.
+	Các bảng và hình ảnh trong báo cáo kiến tập phải được viện dẫn nguồn. Nguồn được đặt dưới cùng của bảng/hình, chữ trình bày in nghiêng không in đậm. Các ghi chú cũng cần được đưa vào để giải thích thêm cho bảng/hình trong trường hợp cần thiết. 
+Trong nội dung bài viết, khi tham chiếu đến bảng hay hình, tác giả cần chỉ rõ bảng hay hình cụ thể nào (Ví dụ Bảng 1.1, Hình 1.1..). Cần tránh sử dụng các cụm từ tham chiếu thiếu, cụ thể như: “hình trên” hay “bảng dưới đây”.
+6. Quy chuẩn cách viết cụm từ viết tắt, chữ viết hoa, định dạng ngày tháng, định dạng con số, ghi chú
+- Viết tắt: Từ ngữ, thuật ngữ, tên địa danh tiếng Việt không được phép viết tắt. Ví dụ: phải viết đầy đủ “Thành phố Hồ Chí Minh” chứ không viết “Tp HCM”.
+Từ ngữ, thuật ngữ và tên tổ chức bằng tiếng Anh được phép viết tắt, bao gồm cả tổ chức của Việt Nam có tên tiếng Anh. Các từ viết tắt chỉ được sử dụng sau khi chúng được tác giả giới thiệu sau cụm từ đầy đủ ở lần xuất hiện đầu tiên trong bài viết. Ví dụ: World Bank (WB) hoặc Small and medium-sized enterprises (SMEs), Tổng cục Thống kê (GSO), v.v…
+	Các đơn vị đo lường thông dụng cũng được sử dụng ngay mà không cần giới thiệu. Ví dụ: km, cm, m. Đối với các thuật ngữ hoặc tên tổ chức có từ tiếng Việt tương đương thì có thể dùng từ tiếng Việt ở lần xuất hiện đầu tiên, sau đó chú thích viết tắt. Ví dụ: Ngân hàng Thế giới (WB); Tổng sản phẩm quốc nội (GDP); Vốn đầu tư trực tiếp nước ngoài (FDI); v.v…
+- Chữ viết hoa: Các trường hợp điển hình bao gồm (nhưng không giới hạn): Tên các cơ quan tổ chức; Tên các cá nhân; Tên các tổ chức hay thể chế được dùng trong cụm từ mà nó có vai trò là tính từ bổ nghĩa thì không viết hoa. Ví dụ: Kinh tế nhà nước (ở đây không viết hoa từ “nhà nước”).
+- Định dạng con số trong tiếng Việt: dấu phẩy (,) được biểu trưng cho nhóm dãy số thập phân; dấu chấm (.) biểu trưng cho phân nhóm các dãy số hàng đơn vị, hàng chục hàng trăm hàng nghìn… Ví dụ: 100,234 đồng (được hiểu: 200 phẩy 234 đồng); 100.234 đồng (được hiểu: 100 nghìn 234 đồng).
+- Định dạng con số trong tiếng Anh: ngược lại với tiếng Việt: dấu phẩy (,) được biểu trưng cho phân nhóm các dãy số hàng đơn vị, hàng chục hàng trăn hàng nghìn…; Dấu chấm (.) biểu trưng cho cho nhóm dãy số thập phân. 
+7. Đơn vị đo lường
+Sử dụng hệ metric phổ biến tại Việt Nam. Nếu tác giả sử dụng các đơn vị thuộc hệ khác thì cần quy đổi sang hệ metric. Ví dụ: Đoạn đường này dài 10 dặm (tương đương khoảng 16,1km). 
+8. Tên riêng
+Tên riêng của cá nhân, tổ chức, quốc gia hay địa danh được viết theo chuẩn tiếng Anh, trừ trường hợp tên đó đã có cách phiên âm khác đang được dùng phổ biến.
+	Ví dụ: 
+- Theo chuẩn tiếng Anh: Philippines, Malaysia, Myanmar, v.v…
+- Tên Hán – Việt: Pháp, Mỹ, Hoa Kỳ, Ấn Độ, Luân Đôn, Bắc Kinh, v.v…
+9. Đơn vị tiền tệ
+Viết đầy đủ tên đồng tiền bằng tiếng Việt ở lần xuất hiện đầu tiên, sau đó chú thích và viết tắt 3 chữ cái theo chuẩn quốc tế. Ví dụ: “Đồng Yên của Nhật Bản (JPY) hôm nay tăng giá thêm 10%”, hoặc “Ngân hàng Nhà nước tiếp tục giảm giá đồng Việt Nam (VND) thêm 2,3%”.  

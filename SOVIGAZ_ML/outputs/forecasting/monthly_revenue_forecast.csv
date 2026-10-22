@@ -1,0 +1,6 @@
+﻿Date,Product,Target,Actual,Forecast,Residual,Model,Dataset,Period_Type
+2026-01-01,Total_Company,Revenue,27713426161.0,2.8628535e+10,-915109135.0,XGBoost,Monthly,Complete_Month
+2026-02-01,Total_Company,Revenue,18884051133.0,2.3233384e+10,-4349333315.0,XGBoost,Monthly,Complete_Month
+2026-03-01,Total_Company,Revenue,29231817039.0,2.8054972e+10,1176844623.0,XGBoost,Monthly,Complete_Month
+2026-04-01,Total_Company,Revenue,28038686459.0,2.8346075e+10,-307388677.0,XGBoost,Monthly,Complete_Month
+2026-05-01,Total_Company,Revenue,27447018428.0,2.8640094e+10,-1193075780.0,XGBoost,Monthly,Complete_Month

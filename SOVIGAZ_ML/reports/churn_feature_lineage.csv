@@ -1,0 +1,28 @@
+﻿feature,source_table,source_columns,window,available_at,uses_future_data,transformation,leakage_risk,status
+recency_days,processed_sales,RefDate,"(-inf, T]",T,False,T - max(RefDate),None,PASS
+frequency_30d,processed_sales,RefNo,"(T-30d, T]",T,False,COUNT(DISTINCT RefNo),None,PASS
+frequency_90d,processed_sales,RefNo,"(T-90d, T]",T,False,COUNT(DISTINCT RefNo),None,PASS
+frequency_180d,processed_sales,RefNo,"(T-180d, T]",T,False,COUNT(DISTINCT RefNo),None,PASS
+frequency_365d,processed_sales,RefNo,"(T-365d, T]",T,False,COUNT(DISTINCT RefNo),None,PASS
+monetary_30d,processed_sales,Revenue,"(T-30d, T]",T,False,SUM(Revenue),None,PASS
+monetary_90d,processed_sales,Revenue,"(T-90d, T]",T,False,SUM(Revenue),None,PASS
+monetary_180d,processed_sales,Revenue,"(T-180d, T]",T,False,SUM(Revenue),None,PASS
+monetary_365d,processed_sales,Revenue,"(T-365d, T]",T,False,SUM(Revenue),None,PASS
+active_days_90d,processed_sales,RefDate,"(T-90d, T]",T,False,COUNT(DISTINCT RefDate),None,PASS
+active_days_180d,processed_sales,RefDate,"(T-180d, T]",T,False,COUNT(DISTINCT RefDate),None,PASS
+active_days_365d,processed_sales,RefDate,"(T-365d, T]",T,False,COUNT(DISTINCT RefDate),None,PASS
+distinct_products_90d,processed_sales,InventoryItemCode_New,"(T-90d, T]",T,False,COUNT(DISTINCT Item),None,PASS
+distinct_products_180d,processed_sales,InventoryItemCode_New,"(T-180d, T]",T,False,COUNT(DISTINCT Item),None,PASS
+distinct_products_365d,processed_sales,InventoryItemCode_New,"(T-365d, T]",T,False,COUNT(DISTINCT Item),None,PASS
+avg_order_value_90d,processed_sales,"Revenue, RefNo","(T-90d, T]",T,False,monetary_90d / frequency_90d,None,PASS
+avg_order_value_365d,processed_sales,"Revenue, RefNo","(T-365d, T]",T,False,monetary_365d / frequency_365d,None,PASS
+mean_interpurchase_days,processed_sales,RefDate,"(T-365d, T]",T,False,mean(diff(RefDate)),None,PASS
+median_interpurchase_days,processed_sales,RefDate,"(T-365d, T]",T,False,median(diff(RefDate)),None,PASS
+std_interpurchase_days,processed_sales,RefDate,"(T-365d, T]",T,False,std(diff(RefDate)),None,PASS
+last_interpurchase_days,processed_sales,RefDate,"(T-365d, T]",T,False,last(diff(RefDate)),None,PASS
+revenue_change_30_vs_90,processed_sales,Revenue,"(T-90d, T]",T,False,m30 / (m90/3 + 1),None,PASS
+revenue_change_90_vs_180,processed_sales,Revenue,"(T-180d, T]",T,False,m90 / (m_prior90 + 1),None,PASS
+frequency_change_90_vs_180,processed_sales,RefNo,"(T-180d, T]",T,False,f90 / (f_prior90 + 1),None,PASS
+revenue_momentum_ratio,processed_sales,Revenue,"(T-180d, T]",T,False,m90 / (m180 + 1),None,PASS
+temporal_cluster_id,KMeans_<=T,"R, F, M <= T","(T-365d, T]",T,False,KMeans(K=4) fitted strictly <= T,Causal per snapshot,PASS
+churn_target_90d,processed_sales,RefDate,"(T, T+90d]",T+90d (Target Label),False,1 if purchase_count==0 else 0,Target isolated,PASS

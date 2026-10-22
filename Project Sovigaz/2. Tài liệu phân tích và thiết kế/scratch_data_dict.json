@@ -1,0 +1,1899 @@
+{
+  "tables": [
+    {
+      "stt": 1,
+      "tableName": "DM_RevenueBySaleLedger",
+      "businessName": "Datamart Doanh thu Bán hàng Chi tiết",
+      "tableType": "Fact / Data Mart",
+      "domain": "Bán hàng & Doanh thu",
+      "columnCount": 29,
+      "rowCount": 229099
+    },
+    {
+      "stt": 2,
+      "tableName": "DM_AccountObjectDebt",
+      "businessName": "Datamart Tổng hợp Công nợ Phải thu",
+      "tableType": "Fact / Data Mart",
+      "domain": "Quản lý Công nợ",
+      "columnCount": 8,
+      "rowCount": 1494
+    },
+    {
+      "stt": 3,
+      "tableName": "Fact_AnalyticsDebit",
+      "businessName": "Fact Phân tích Tuổi nợ",
+      "tableType": "Fact / Data Mart",
+      "domain": "Quản lý Công nợ",
+      "columnCount": 6,
+      "rowCount": 1788
+    },
+    {
+      "stt": 4,
+      "tableName": "Fact_ActualProduction",
+      "businessName": "Fact Sản xuất Thực tế",
+      "tableType": "Fact / Data Mart",
+      "domain": "Sản xuất & KPI",
+      "columnCount": 9,
+      "rowCount": 4554
+    },
+    {
+      "stt": 5,
+      "tableName": "Fact_KPI_Month",
+      "businessName": "Fact Kế hoạch KPI Tháng",
+      "tableType": "Fact / Data Mart",
+      "domain": "Sản xuất & KPI",
+      "columnCount": 13,
+      "rowCount": 12150
+    },
+    {
+      "stt": 6,
+      "tableName": "Fact_KPI_Year",
+      "businessName": "Fact Kế hoạch KPI Tổng thể Năm",
+      "tableType": "Fact / Data Mart",
+      "domain": "Sản xuất & KPI",
+      "columnCount": 5,
+      "rowCount": 40
+    },
+    {
+      "stt": 7,
+      "tableName": "Fact_KPI_By_Product",
+      "businessName": "Fact Kế hoạch KPI Sản phẩm theo Năm",
+      "tableType": "Fact / Data Mart",
+      "domain": "Sản xuất & KPI",
+      "columnCount": 12,
+      "rowCount": 1123
+    },
+    {
+      "stt": 8,
+      "tableName": "Dim_Customer",
+      "businessName": "Chiều Khách hàng & Đối tác",
+      "tableType": "Dimension",
+      "domain": "Khách hàng & Đối tác",
+      "columnCount": 19,
+      "rowCount": 6051
+    },
+    {
+      "stt": 9,
+      "tableName": "Dim_Products",
+      "businessName": "Chiều Vật tư, Hàng hóa, Thành phẩm",
+      "tableType": "Dimension",
+      "domain": "Vật tư & Sản phẩm",
+      "columnCount": 63,
+      "rowCount": 8391
+    },
+    {
+      "stt": 10,
+      "tableName": "Dim_ProductCategories",
+      "businessName": "Chiều Nhóm Sản phẩm Chuẩn hóa",
+      "tableType": "Dimension",
+      "domain": "Vật tư & Sản phẩm",
+      "columnCount": 5,
+      "rowCount": 20
+    },
+    {
+      "stt": 11,
+      "tableName": "Dim_Indicator",
+      "businessName": "Chiều Chỉ tiêu Doanh thu",
+      "tableType": "Dimension",
+      "domain": "Vật tư & Sản phẩm",
+      "columnCount": 3,
+      "rowCount": 4
+    },
+    {
+      "stt": 12,
+      "tableName": "Dim_InventoryItemType",
+      "businessName": "Chiều Loại Vật tư Hàng hóa",
+      "tableType": "Dimension",
+      "domain": "Vật tư & Sản phẩm",
+      "columnCount": 7,
+      "rowCount": 4
+    },
+    {
+      "stt": 13,
+      "tableName": "Dim_Unit",
+      "businessName": "Chiều Đơn vị Tính",
+      "tableType": "Dimension",
+      "domain": "Vật tư & Sản phẩm",
+      "columnCount": 13,
+      "rowCount": 122
+    },
+    {
+      "stt": 14,
+      "tableName": "Dim_Stock",
+      "businessName": "Chiều Kho & Xí nghiệp",
+      "tableType": "Dimension",
+      "domain": "Tổ chức & Kho bãi",
+      "columnCount": 8,
+      "rowCount": 10
+    },
+    {
+      "stt": 15,
+      "tableName": "Dim_ParentStock",
+      "businessName": "Chiều Tổng kho / Cấp Quản lý",
+      "tableType": "Dimension",
+      "domain": "Tổ chức & Kho bãi",
+      "columnCount": 2,
+      "rowCount": 8
+    },
+    {
+      "stt": 16,
+      "tableName": "Dim_Account",
+      "businessName": "Chiều Tài khoản Kế toán Công nợ",
+      "tableType": "Dimension",
+      "domain": "Quản lý Công nợ",
+      "columnCount": 2,
+      "rowCount": 21
+    },
+    {
+      "stt": 17,
+      "tableName": "Dim_Date",
+      "businessName": "Chiều Thời gian Ngày",
+      "tableType": "Dimension",
+      "domain": "Tổ chức & Thời gian",
+      "columnCount": 11,
+      "rowCount": 73413
+    },
+    {
+      "stt": 18,
+      "tableName": "Dim_Month",
+      "businessName": "Chiều Thời gian Tháng",
+      "tableType": "Dimension",
+      "domain": "Tổ chức & Thời gian",
+      "columnCount": 10,
+      "rowCount": 204
+    },
+    {
+      "stt": 19,
+      "tableName": "Dim_Year",
+      "businessName": "Chiều Thời gian Năm",
+      "tableType": "Dimension",
+      "domain": "Tổ chức & Thời gian",
+      "columnCount": 2,
+      "rowCount": 31
+    }
+  ],
+  "details": {
+    "DM_RevenueBySaleLedger": {
+      "sheetName": "DM_RevenueBySaleLedger",
+      "title": "BẢNG: DM_RevenueBySaleLedger — DATAMART DOANH THU BÁN HÀNG CHI TIẾT",
+      "metaInfo": "Loại bảng: Fact / Data Mart  |  Phân hệ: Bán hàng & Doanh thu  |  Nguồn: MISA AMIS (Sổ chi tiết bán hàng)  |  Số dòng: 229,099  |  Khóa chính: RefNo, InvNo, AccountObjectCode, InventoryItemCode_New",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "AccountObjectID",
+          "constraint": "Khóa ngoại (FK -> Dim_Customer(CustomerID)), Cho phép NULL",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "ID Khách hàng (GUID): Mã định danh duy nhất của khách hàng trên hệ thống MISA (dạng GUID)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "AccountObjectNameDI",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên đối tượng khách hàng: Tên đầy đủ của khách hàng hoặc đơn vị mua hàng trên hóa đơn chứng từ."
+        },
+        {
+          "stt": 3,
+          "fieldName": "InventoryItemCode",
+          "constraint": "Khóa ngoại (FK -> Dim_Products(InventoryItemCode)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã hàng MISA: Mã vật tư/hàng hóa ban đầu theo danh mục kế toán trên MISA."
+        },
+        {
+          "stt": 4,
+          "fieldName": "InventoryItemName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên mặt hàng bán: Tên mô tả của mặt hàng/vật tư xuất bán trên chứng từ."
+        },
+        {
+          "stt": 5,
+          "fieldName": "Revenue",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Doanh thu thuần (VND): Doanh thu thuần sau chiết khấu và chưa bao gồm thuế GTGT."
+        },
+        {
+          "stt": 6,
+          "fieldName": "SaleAmount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Tiền hàng trước thuế / Số lượng: Tổng giá trị tiền hàng bán trước thuế GTGT (VND) hoặc lượng giao dịch theo ngữ cảnh chứng từ."
+        },
+        {
+          "stt": 7,
+          "fieldName": "RefDate",
+          "constraint": "Khóa ngoại (FK -> Dim_Date(Date)), Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày chứng từ: Ngày lập chứng từ bán hàng trên phần mềm MISA (định dạng YYYY-MM-DD)."
+        },
+        {
+          "stt": 8,
+          "fieldName": "UnitPrice",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Đơn giá bán giao dịch: Đơn giá bán của một đơn vị sản phẩm theo đơn vị tính giao dịch (chưa bao gồm VAT)."
+        },
+        {
+          "stt": 9,
+          "fieldName": "ReceiptAmount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Tổng tiền thanh toán: Tổng số tiền thanh toán của hóa đơn, bao gồm tiền hàng và thuế GTGT (VND). Dùng để tính doanh thu: ReceiptAmount - VATAmount."
+        },
+        {
+          "stt": 10,
+          "fieldName": "VATAmount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Tiền thuế GTGT: Số tiền thuế giá trị gia tăng (VAT) ghi nhận trên hóa đơn (VND)."
+        },
+        {
+          "stt": 11,
+          "fieldName": "RefNo",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Số chứng từ: Số chứng từ bán hàng trên MISA (VD: BD00000277, BH00000409)."
+        },
+        {
+          "stt": 12,
+          "fieldName": "InvNo",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "BIGINT",
+          "description": "Số hóa đơn GTGT: Số hóa đơn tài chính phát hành cho khách hàng (VD: 277, 409). Dùng để đếm số lượng hóa đơn/đơn hàng."
+        },
+        {
+          "stt": 13,
+          "fieldName": "PostedDate",
+          "constraint": "Khóa ngoại (FK -> Dim_Date(Date)), Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày hạch toán: Ngày ghi sổ kế toán tài chính. Trọng yếu dùng làm khóa liên kết với bảng thời gian Dim_Date để cắt số liệu báo cáo."
+        },
+        {
+          "stt": 14,
+          "fieldName": "JournalMemo",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(500)",
+          "description": "Diễn giải chứng từ: Nội dung ghi chú, giải thích chi tiết nghiệp vụ bán hàng."
+        },
+        {
+          "stt": 15,
+          "fieldName": "RefTypeName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Loại chứng từ: Phân loại chứng từ kế toán (VD: Bán hàng hóa trong nước chưa thu tiền, Bán hàng thu tiền ngay)."
+        },
+        {
+          "stt": 16,
+          "fieldName": "IsInvoiceExported",
+          "constraint": "Cho phép NULL",
+          "dataType": "BIT",
+          "description": "Trạng thái xuất HĐ: Cờ xác định hóa đơn đã được xuất/phát hành hay chưa (1: Đã xuất, 0: Chưa xuất)."
+        },
+        {
+          "stt": 17,
+          "fieldName": "IsOutwardExported",
+          "constraint": "Cho phép NULL",
+          "dataType": "BIT",
+          "description": "Trạng thái xuất kho: Cờ xác định phiếu xuất kho đã được lập và ghi sổ (1: Đã xuất kho)."
+        },
+        {
+          "stt": 18,
+          "fieldName": "RefNoFinance",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Số chứng từ tài chính: Mã định danh chứng từ dùng cho mục đích kế toán tài chính."
+        },
+        {
+          "stt": 19,
+          "fieldName": "RefNoManagement",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Số chứng từ quản trị: Mã định danh chứng từ dùng cho mục đích kế toán quản trị nội bộ."
+        },
+        {
+          "stt": 20,
+          "fieldName": "DiscountAmount",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Tiền chiết khấu: Giá trị chiết khấu thương mại hoặc giảm giá bán hàng cho khách hàng (VND)."
+        },
+        {
+          "stt": 21,
+          "fieldName": "BranchID",
+          "constraint": "Khóa ngoại (FK -> Dim_Stock(BranchID))",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Mã chi nhánh (GUID): Mã GUID xác định chi nhánh phát sinh giao dịch bán hàng."
+        },
+        {
+          "stt": 22,
+          "fieldName": "AccountObjectCode",
+          "constraint": "Khóa ngoại (FK -> Dim_Customer(AccountObjectCode)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã khách hàng: Mã đối tượng khách hàng trên MISA. Dùng để nối với Dim_Customer lấy phân loại khách hàng (nội bộ hay bên ngoài)."
+        },
+        {
+          "stt": 23,
+          "fieldName": "MainUnitPrice",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Đơn giá chuẩn hóa (DVC): Đơn giá đã được quy đổi tương ứng với đơn vị tính chuẩn (Đơn vị chính)."
+        },
+        {
+          "stt": 24,
+          "fieldName": "MainConvertRate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(10,4)",
+          "description": "Hệ số quy đổi: Tỷ lệ chuyển đổi từ đơn vị giao dịch sang đơn vị tính chuẩn (VD: 1 bình = 6 m3 thì hệ số là 6)."
+        },
+        {
+          "stt": 25,
+          "fieldName": "MainQuantity",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Số lượng chuẩn hóa (DVC): Khối lượng/sản lượng xuất bán đã quy đổi theo đơn vị tính chính (DVC) phục vụ tổng hợp đồng nhất."
+        },
+        {
+          "stt": 26,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Ngày giờ hệ thống thực hiện trích xuất, chuyển đổi và nạp bản ghi này vào DWH."
+        },
+        {
+          "stt": 27,
+          "fieldName": "DB",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "VARCHAR(50)",
+          "description": "Cơ sở dữ liệu nguồn: Tên cơ sở dữ liệu nguồn nơi bản ghi được trích xuất (VD: SOVIGAZ_2026_Dev)."
+        },
+        {
+          "stt": 28,
+          "fieldName": "UnitID",
+          "constraint": "Khóa ngoại (FK -> Dim_Unit(UnitID)), Bắt buộc (NOT NULL)",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Mã đơn vị tính: Mã GUID đơn vị tính của mặt hàng giao dịch."
+        },
+        {
+          "stt": 29,
+          "fieldName": "InventoryItemCode_New",
+          "constraint": "Khóa ngoại (FK -> Dim_Products(InventoryItemCode_New)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã sản phẩm chuẩn hóa: Mã vật tư/hàng hóa mới đã được chuẩn hóa bởi INDA/Sovigaz để đồng bộ liên kết giữa MISA và File kế hoạch Excel."
+        }
+      ]
+    },
+    "DM_AccountObjectDebt": {
+      "sheetName": "DM_AccountObjectDebt",
+      "title": "BẢNG: DM_AccountObjectDebt — DATAMART TỔNG HỢP CÔNG NỢ PHẢI THU",
+      "metaInfo": "Loại bảng: Fact / Data Mart  |  Phân hệ: Quản lý Công nợ  |  Nguồn: MISA AMIS (Báo cáo tổng hợp công nợ chi tiết)  |  Số dòng: 1,494  |  Khóa chính: AccountObjectCode, ReceivableAccountCode",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "AccountObjectCode",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Customer(AccountObjectCode))",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã khách hàng / đối tác: Mã định danh đối tượng công nợ trên MISA. Nối với Dim_Customer."
+        },
+        {
+          "stt": 2,
+          "fieldName": "AccountObjectName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên khách hàng / đối tác: Tên đầy đủ của khách hàng/đơn vị đang theo dõi công nợ."
+        },
+        {
+          "stt": 3,
+          "fieldName": "ReceiptableDebtAmount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Số nợ còn lại cuối kỳ: Số tiền công nợ còn phải thu tại thời điểm chốt số liệu (VND). Công thức: Dư đầu kỳ + Phát sinh - Đã thanh toán."
+        },
+        {
+          "stt": 4,
+          "fieldName": "PaidAmount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Số tiền đã thanh toán: Tổng số tiền khách hàng đã thanh toán/trả nợ trong kỳ (VND)."
+        },
+        {
+          "stt": 5,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian hệ thống nạp dữ liệu vào bảng."
+        },
+        {
+          "stt": 6,
+          "fieldName": "ReceivableAccountCode",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Account(Account))",
+          "dataType": "NVARCHAR(20)",
+          "description": "Tài khoản công nợ: Số hiệu tài khoản kế toán theo dõi công nợ (131: Phải thu khách hàng, 136/1361: Phải thu nội bộ, 344: Nhận ký quỹ, ký cược...)."
+        },
+        {
+          "stt": 7,
+          "fieldName": "OpeningBalance",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Số dư nợ đầu kỳ: Số tiền nợ còn lại chuyển từ kỳ kế toán trước sang kỳ này (VND)."
+        },
+        {
+          "stt": 8,
+          "fieldName": "PeriodAmount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Số nợ phát sinh trong kỳ: Tổng giá trị tiền nợ mới phát sinh thêm trong kỳ kế toán (VND)."
+        }
+      ]
+    },
+    "Fact_AnalyticsDebit": {
+      "sheetName": "Fact_AnalyticsDebit",
+      "title": "BẢNG: Fact_AnalyticsDebit — FACT PHÂN TÍCH TUỔI NỢ",
+      "metaInfo": "Loại bảng: Fact / Data Mart  |  Phân hệ: Quản lý Công nợ  |  Nguồn: MISA AMIS (Báo cáo phân tích công nợ theo tuổi nợ)  |  Số dòng: 1,788  |  Khóa chính: AccountObjectCode, Account, DebtType",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "DebtType",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "INT",
+          "description": "Mã phân loại tuổi nợ: Mã số định danh nhóm tuổi nợ (1: Nợ trước hạn, 2: Nợ đến hạn, 3: Quá hạn 1-30 ngày, 4: Quá hạn 31-60 ngày, 5: Quá hạn >60 ngày, khó đòi...)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "Amount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Giá trị nợ (VND): Số tiền nợ rơi vào khoảng tuổi nợ tương ứng (VND)."
+        },
+        {
+          "stt": 3,
+          "fieldName": "DebtDescription",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Diễn giải nhóm tuổi nợ: Tên mô tả của nhóm tuổi nợ (VD: 'Nợ trước hạn 0-30 ngày', 'Nợ quá hạn 1-30 ngày', 'Nợ khó đòi'...)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Ngày giờ thực hiện xử lý dữ liệu tuổi nợ."
+        },
+        {
+          "stt": 5,
+          "fieldName": "Account",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Account(Account))",
+          "dataType": "INT",
+          "description": "Tài khoản công nợ: Số hiệu tài khoản công nợ (131, 136, 1361...)."
+        },
+        {
+          "stt": 6,
+          "fieldName": "AccountObjectCode",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Customer(AccountObjectCode))",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã khách hàng: Mã đối tượng khách hàng phát sinh khoản nợ."
+        }
+      ]
+    },
+    "Fact_ActualProduction": {
+      "sheetName": "Fact_ActualProduction",
+      "title": "BẢNG: Fact_ActualProduction — FACT SẢN XUẤT THỰC TẾ",
+      "metaInfo": "Loại bảng: Fact / Data Mart  |  Phân hệ: Sản xuất & KPI  |  Nguồn: File Excel Báo cáo Sản xuất từ các xí nghiệp  |  Số dòng: 4,554  |  Khóa chính: CategoryName, Date, FactoryCode",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "CategoryName",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_ProductCategories(CategoryName))",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã nhóm sản phẩm chuẩn: Mã danh mục nhóm sản phẩm sản xuất (VD: 1_OXY KHÍ, 2_OXY LỎNG, 9.0_QH48...)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "ProductName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên sản phẩm: Tên tiếng Việt của sản phẩm sản xuất (Oxy khí, Oxy lỏng, Que hàn...)."
+        },
+        {
+          "stt": 3,
+          "fieldName": "ProductQuantity",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Sản lượng sản xuất (DVT): Sản lượng tự sản xuất thực tế tính theo đơn vị tính thông thường tại xí nghiệp."
+        },
+        {
+          "stt": 4,
+          "fieldName": "PurchaseQuantity",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Sản lượng mua ngoài: Số lượng mua bổ sung từ nhà cung cấp bên ngoài nhập kho."
+        },
+        {
+          "stt": 5,
+          "fieldName": "ProductQuantityDVC",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Sản lượng sản xuất (DVC): Sản lượng sản xuất quy đổi về đơn vị chuẩn đồng nhất của toàn tổng công ty."
+        },
+        {
+          "stt": 6,
+          "fieldName": "ProductValue",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Giá trị sản xuất thực tế: Tổng giá trị quy tiền của sản lượng sản xuất thực tế đạt được trong tháng (VND)."
+        },
+        {
+          "stt": 7,
+          "fieldName": "Date",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Date(Date))",
+          "dataType": "DATETIME",
+          "description": "Tháng ghi nhận: Ngày đầu của tháng ghi nhận số liệu sản xuất (YYYY-MM-01)."
+        },
+        {
+          "stt": 8,
+          "fieldName": "FactoryCode",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Stock(StockCode))",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã nhà máy / xí nghiệp: Mã viết tắt xí nghiệp thực hiện sản xuất (BD: Bình Dương, BH: Biên Hòa, CT: Cần Thơ, HP: Hải Phòng, KH: Khánh Hội, NT: Nha Trang...)."
+        },
+        {
+          "stt": 9,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian xử lý nạp dữ liệu từ file Excel vào DWH."
+        }
+      ]
+    },
+    "Fact_KPI_Month": {
+      "sheetName": "Fact_KPI_Month",
+      "title": "BẢNG: Fact_KPI_Month — FACT KẾ HOẠCH KPI THÁNG",
+      "metaInfo": "Loại bảng: Fact / Data Mart  |  Phân hệ: Sản xuất & KPI  |  Nguồn: File Excel Kế hoạch A3 Tháng của Sovigaz  |  Số dòng: 12,150  |  Khóa chính: StockCode, InventoryCodePlan, Date",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "Indicator",
+          "constraint": "Khóa ngoại (FK -> Dim_Indicator(Indicator)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã loại chỉ tiêu: Mã chỉ tiêu (SP: Sản phẩm, VT-HH: Vật tư hàng hóa, DV: Dịch vụ)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "StockCode",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Stock(StockCode))",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã chi nhánh / xí nghiệp: Mã xí nghiệp được giao chỉ tiêu kế hoạch (BD, BH, CT, HP...)."
+        },
+        {
+          "stt": 3,
+          "fieldName": "InventoryCodePlan",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_ProductCategories(CategoryName))",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã sản phẩm kế hoạch: Mã dòng sản phẩm theo quy định kế hoạch (VD: 1_OXY KHÍ, 8.1_CO2 KHÍ, 9.2_QH7018...)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "InventoryItemName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên sản phẩm kế hoạch: Tên sản phẩm tương ứng trong bảng kế hoạch tháng."
+        },
+        {
+          "stt": 5,
+          "fieldName": "InventoryItemGroup",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Nhóm sản phẩm: Nhóm ngành hàng (Oxy, Ni tơ, Argon, Que hàn...)."
+        },
+        {
+          "stt": 6,
+          "fieldName": "ProductionValue",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KPI Giá trị sản xuất: Kế hoạch giá trị sản xuất phải đạt được trong tháng (VND)."
+        },
+        {
+          "stt": 7,
+          "fieldName": "ProductUnit",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KPI Sản lượng SX (DVT): Chỉ tiêu sản lượng sản xuất theo đơn vị tính thường."
+        },
+        {
+          "stt": 8,
+          "fieldName": "ProductUnitDVC",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KPI Sản lượng SX (DVC): Chỉ tiêu sản lượng sản xuất quy đổi theo đơn vị chuẩn."
+        },
+        {
+          "stt": 9,
+          "fieldName": "QuantityDVT",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KPI Sản lượng tiêu thụ (DVT): Kế hoạch sản lượng hàng bán ra theo đơn vị tính thường."
+        },
+        {
+          "stt": 10,
+          "fieldName": "QuantityDVC",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KPI Sản lượng tiêu thụ (DVC): Kế hoạch sản lượng hàng bán ra quy đổi theo đơn vị tính chuẩn."
+        },
+        {
+          "stt": 11,
+          "fieldName": "Amount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KPI Doanh thu tháng: Chỉ tiêu doanh thu kế hoạch bán hàng trong tháng (VND)."
+        },
+        {
+          "stt": 12,
+          "fieldName": "Date",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Date(Date))",
+          "dataType": "DATETIME",
+          "description": "Tháng kế hoạch: Ngày đầu của tháng giao KPI (YYYY-MM-01)."
+        },
+        {
+          "stt": 13,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian chạy pipeline xử lý dữ liệu unpivot từ Excel."
+        }
+      ]
+    },
+    "Fact_KPI_Year": {
+      "sheetName": "Fact_KPI_Year",
+      "title": "BẢNG: Fact_KPI_Year — FACT KẾ HOẠCH KPI TỔNG THỂ NĂM",
+      "metaInfo": "Loại bảng: Fact / Data Mart  |  Phân hệ: Sản xuất & KPI  |  Nguồn: File Excel Kế hoạch A3 Năm  |  Số dòng: 40  |  Khóa chính: Parent_Stock, Year",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "Parent_Stock",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_ParentStock(ParentStockCode))",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã tổng kho / xí nghiệp: Mã đơn vị/xí nghiệp cấp quản lý được giao kế hoạch năm."
+        },
+        {
+          "stt": 2,
+          "fieldName": "Production",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Kế hoạch sản xuất năm: Tổng giá trị sản xuất kế hoạch cả năm của đơn vị (VND)."
+        },
+        {
+          "stt": 3,
+          "fieldName": "Amount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Kế hoạch doanh thu năm: Tổng doanh thu kế hoạch cả năm của đơn vị (VND)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "Year",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Year(Value))",
+          "dataType": "INT",
+          "description": "Năm kế hoạch: Năm giao chỉ tiêu kế hoạch (2022, 2023, 2024, 2025, 2026...)."
+        },
+        {
+          "stt": 5,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian xử lý nạp dữ liệu."
+        }
+      ]
+    },
+    "Fact_KPI_By_Product": {
+      "sheetName": "Fact_KPI_By_Product",
+      "title": "BẢNG: Fact_KPI_By_Product — FACT KẾ HOẠCH KPI SẢN PHẨM THEO NĂM",
+      "metaInfo": "Loại bảng: Fact / Data Mart  |  Phân hệ: Sản xuất & KPI  |  Nguồn: File Excel Kế hoạch Sản phẩm A3  |  Số dòng: 1,123  |  Khóa chính: StockCode, CategoryName, Year",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "RevenueCode",
+          "constraint": "Khóa ngoại (FK -> Dim_Indicator(Indicator)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã chỉ tiêu: Mã nhóm chỉ tiêu (SP, VT, HH, DV)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "StockCode",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Stock(StockCode))",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã xí nghiệp: Mã chi nhánh/xí nghiệp áp dụng KPI."
+        },
+        {
+          "stt": 3,
+          "fieldName": "CategoryName",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_ProductCategories(CategoryName))",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã nhóm sản phẩm: Mã nhóm sản phẩm (VD: 1_OXY KHÍ, 9.0_QH48...)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "ProductName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên sản phẩm: Tên gọi sản phẩm."
+        },
+        {
+          "stt": 5,
+          "fieldName": "ProductCategoryName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tên nhóm sản phẩm: Tên phân nhóm mặt hàng (Que hàn, Khí CO2, Dây thép đai...)."
+        },
+        {
+          "stt": 6,
+          "fieldName": "ProductQuantityDVT",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KHSX theo DVT: Kế hoạch sản lượng sản xuất cả năm theo đơn vị tính thường."
+        },
+        {
+          "stt": 7,
+          "fieldName": "ProductQuantityDVC",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KHSX theo DVC: Kế hoạch sản lượng sản xuất cả năm quy đổi đơn vị chuẩn."
+        },
+        {
+          "stt": 8,
+          "fieldName": "ProductQuantityDVT1",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KHTT theo DVT: Kế hoạch sản lượng tiêu thụ cả năm theo đơn vị tính thường."
+        },
+        {
+          "stt": 9,
+          "fieldName": "SaleQuantityDVC",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "KHTT theo DVC: Kế hoạch sản lượng tiêu thụ cả năm quy đổi đơn vị chuẩn."
+        },
+        {
+          "stt": 10,
+          "fieldName": "Amount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Kế hoạch doanh thu năm: Kế hoạch doanh thu bán hàng cả năm của sản phẩm tại chi nhánh (VND)."
+        },
+        {
+          "stt": 11,
+          "fieldName": "Year",
+          "constraint": "Khóa chính & Khóa ngoại (PK, FK -> Dim_Year(Value))",
+          "dataType": "INT",
+          "description": "Năm kế hoạch: Năm áp dụng kế hoạch."
+        },
+        {
+          "stt": 12,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian xử lý dữ liệu."
+        }
+      ]
+    },
+    "Dim_Customer": {
+      "sheetName": "Dim_Customer",
+      "title": "BẢNG: Dim_Customer — CHIỀU KHÁCH HÀNG & ĐỐI TÁC",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Khách hàng & Đối tác  |  Nguồn: MISA AMIS & File Excel phân loại chi nhánh  |  Số dòng: 6,051  |  Khóa chính: AccountObjectCode",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "CustomerID",
+          "constraint": "Cho phép NULL",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "ID khách hàng (GUID): Mã định danh duy nhất của khách hàng trên hệ thống MISA."
+        },
+        {
+          "stt": 2,
+          "fieldName": "CustomerName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên đầy đủ khách hàng: Tên công ty, bệnh viện, cơ sở y tế hoặc cá nhân khách hàng."
+        },
+        {
+          "stt": 3,
+          "fieldName": "AccountObjectCode",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã đối tượng khách hàng: Mã định danh nghiệp vụ kế toán của khách hàng (VD: BDBV78, TKHIEP)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "Address",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(500)",
+          "description": "Địa chỉ trụ sở / giao dịch: Địa chỉ liên hệ hoặc địa chỉ giao hàng của khách hàng."
+        },
+        {
+          "stt": 5,
+          "fieldName": "CompanyTaxCode",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã số thuế doanh nghiệp: Mã số thuế của doanh nghiệp khách hàng."
+        },
+        {
+          "stt": 6,
+          "fieldName": "Tel",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Điện thoại bàn: Số điện thoại cố định của khách hàng."
+        },
+        {
+          "stt": 7,
+          "fieldName": "Mobile",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Điện thoại di động: Số điện thoại liên hệ cá nhân."
+        },
+        {
+          "stt": 8,
+          "fieldName": "Fax",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Số Fax: Số fax doanh nghiệp."
+        },
+        {
+          "stt": 9,
+          "fieldName": "EmailAddress",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(100)",
+          "description": "Địa chỉ Email: Hòm thư điện tử liên hệ nhận hóa đơn điện tử."
+        },
+        {
+          "stt": 10,
+          "fieldName": "Website",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(200)",
+          "description": "Trang web: Trang thông tin điện tử của khách hàng."
+        },
+        {
+          "stt": 11,
+          "fieldName": "AccountObjectGroupListName",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(100)",
+          "description": "Nhóm khách hàng MISA: Phân loại nhóm khách hàng trên phần mềm kế toán (NL, CN, ĐL, BV...)."
+        },
+        {
+          "stt": 12,
+          "fieldName": "Country",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Quốc gia: Quốc gia của khách hàng (mặc định: Việt Nam)."
+        },
+        {
+          "stt": 13,
+          "fieldName": "ProvinceOrCity",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tỉnh / Thành phố: Tỉnh thành nơi khách hàng đăng ký hoạt động."
+        },
+        {
+          "stt": 14,
+          "fieldName": "District",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(100)",
+          "description": "Quận / Huyện: Quận/huyện của khách hàng."
+        },
+        {
+          "stt": 15,
+          "fieldName": "WardOrCommune",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(100)",
+          "description": "Phường / Xã: Phường/xã địa chỉ khách hàng."
+        },
+        {
+          "stt": 16,
+          "fieldName": "BranchID",
+          "constraint": "Khóa ngoại (FK -> Dim_Stock(BranchID))",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Mã chi nhánh quản lý (GUID): Mã GUID chi nhánh phụ trách quản lý khách hàng."
+        },
+        {
+          "stt": 17,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian đồng bộ dữ liệu vào DWH."
+        },
+        {
+          "stt": 18,
+          "fieldName": "Excel_Customer_Category",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Phân loại khách hàng chuẩn hóa: Cột nghiệp vụ then chốt: KHNB (Khách hàng nội bộ), NB (Nội bộ), BV (Bệnh viện), ĐL (Đại lý), NL (Người liên quan/ngoài). Dùng trong logic DAX để tách doanh thu bán ngoài vs LCNB."
+        },
+        {
+          "stt": 19,
+          "fieldName": "StockCode",
+          "constraint": "Khóa ngoại (FK -> Dim_Stock(StockCode)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã xí nghiệp phụ trách: Mã chi nhánh/xí nghiệp chăm sóc khách hàng (BD, BH, CT, HP, KH, NT, TK, VP)."
+        }
+      ]
+    },
+    "Dim_Products": {
+      "sheetName": "Dim_Products",
+      "title": "BẢNG: Dim_Products — CHIỀU VẬT TƯ, HÀNG HÓA, THÀNH PHẨM",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Vật tư & Sản phẩm  |  Nguồn: MISA AMIS & Danh mục chuẩn hóa Sovigaz  |  Số dòng: 8,391  |  Khóa chính: InventoryItemCode_New",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "InventoryItemID",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "ID sản phẩm (GUID): Khóa chính GUID của sản phẩm trên phần mềm MISA."
+        },
+        {
+          "stt": 2,
+          "fieldName": "BranchID",
+          "constraint": "Khóa ngoại (FK -> Dim_Stock(BranchID))",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Chi nhánh quản lý (GUID): Mã chi nhánh quản lý sản phẩm."
+        },
+        {
+          "stt": 3,
+          "fieldName": "BarCode",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã vạch sản phẩm: Mã vạch quản lý hàng hóa."
+        },
+        {
+          "stt": 4,
+          "fieldName": "InventoryItemCode",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã hàng gốc MISA: Mã vật tư/sản phẩm nguyên bản trên CSDL MISA."
+        },
+        {
+          "stt": 5,
+          "fieldName": "InventoryItemName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên vật tư / sản phẩm: Tên mô tả của mặt hàng/vật tư."
+        },
+        {
+          "stt": 6,
+          "fieldName": "InventoryItemType",
+          "constraint": "Khóa ngoại (FK -> Dim_InventoryItemType(InventoryItemTypeValue)), Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Loại vật tư (Mã số): Mã loại vật tư: 0: Vật tư hàng hóa, 1: Thành phẩm, 2: Dịch vụ..."
+        },
+        {
+          "stt": 7,
+          "fieldName": "InventoryItemCategoryList",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(255)",
+          "description": "Danh sách nhóm VT: Danh sách mã GUID nhóm vật tư liên quan."
+        },
+        {
+          "stt": 8,
+          "fieldName": "InventoryItemCategoryCode",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã nhóm ngành MISA: Mã nhóm vật tư trên phần mềm MISA."
+        },
+        {
+          "stt": 9,
+          "fieldName": "Description",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(500)",
+          "description": "Diễn giải chi tiết: Mô tả quy cách, thông số kỹ thuật của sản phẩm."
+        },
+        {
+          "stt": 10,
+          "fieldName": "UnitID",
+          "constraint": "Khóa ngoại (FK -> Dim_Unit(UnitID)), Bắt buộc (NOT NULL)",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Mã đơn vị tính: Mã GUID đơn vị tính chuẩn."
+        },
+        {
+          "stt": 11,
+          "fieldName": "GuarantyPeriod",
+          "constraint": "Cho phép NULL",
+          "dataType": "INT",
+          "description": "Thời gian bảo hành: Thời hạn bảo hành tính theo tháng."
+        },
+        {
+          "stt": 12,
+          "fieldName": "MinimumStock",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Định mức tồn kho tối thiểu: Mức tồn kho an toàn quy định."
+        },
+        {
+          "stt": 13,
+          "fieldName": "InventoryItemSource",
+          "constraint": "Cho phép NULL",
+          "dataType": "INT",
+          "description": "Nguồn gốc sản phẩm: Nguồn gốc xuất xứ hàng hóa."
+        },
+        {
+          "stt": 14,
+          "fieldName": "DefaultStockID",
+          "constraint": "Cho phép NULL",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Kho ngầm định (GUID): Kho lưu trữ mặc định khi xuất nhập vật tư."
+        },
+        {
+          "stt": 15,
+          "fieldName": "InventoryAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK kho kế toán: Tài khoản theo dõi hàng tồn kho (152, 155, 156...)."
+        },
+        {
+          "stt": 16,
+          "fieldName": "COGSAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK giá vốn: Tài khoản giá vốn hàng bán (632)."
+        },
+        {
+          "stt": 17,
+          "fieldName": "SaleAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK doanh thu: Tài khoản ghi nhận doanh thu bán hàng (511)."
+        },
+        {
+          "stt": 18,
+          "fieldName": "PurchaseDiscountRate",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(5,2)",
+          "description": "Tỷ lệ chiết khấu mua: Tỷ lệ chiết khấu khi mua hàng (%)."
+        },
+        {
+          "stt": 19,
+          "fieldName": "UnitPrice",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Đơn giá chuẩn: Đơn giá niêm yết chuẩn."
+        },
+        {
+          "stt": 20,
+          "fieldName": "SalePrice1",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Giá bán 1: Bảng giá bán cấp 1."
+        },
+        {
+          "stt": 21,
+          "fieldName": "SalePrice2",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Giá bán 2: Bảng giá bán cấp 2."
+        },
+        {
+          "stt": 22,
+          "fieldName": "SalePrice3",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Giá bán 3: Bảng giá bán cấp 3."
+        },
+        {
+          "stt": 23,
+          "fieldName": "FixedSalePrice",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Giá bán cố định: Giá bán cố định theo hợp đồng nguyên tắc."
+        },
+        {
+          "stt": 24,
+          "fieldName": "IsUnitPriceAfterTax",
+          "constraint": "Cho phép NULL",
+          "dataType": "BIT",
+          "description": "Giá đã gồm thuế: Cờ xác định đơn giá đã gồm VAT hay chưa."
+        },
+        {
+          "stt": 25,
+          "fieldName": "TaxRate",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(5,2)",
+          "description": "Thuế suất GTGT (%): Mức thuế suất VAT áp dụng cho sản phẩm (0%, 5%, 8%, 10%)."
+        },
+        {
+          "stt": 26,
+          "fieldName": "ImportTaxRate",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(5,2)",
+          "description": "Thuế nhập khẩu (%): Thuế suất nhập khẩu áp dụng."
+        },
+        {
+          "stt": 27,
+          "fieldName": "ExportTaxRate",
+          "constraint": "Cho phép NULL",
+          "dataType": "DECIMAL(5,2)",
+          "description": "Thuế xuất khẩu (%): Thuế suất xuất khẩu áp dụng."
+        },
+        {
+          "stt": 28,
+          "fieldName": "InventoryCategorySpecialTaxID",
+          "constraint": "Cho phép NULL",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Thuế tiêu thụ đặc biệt ID: Mã thuế tiêu thụ đặc biệt nếu có."
+        },
+        {
+          "stt": 29,
+          "fieldName": "IsSystem",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Là dữ liệu hệ thống: Cờ xác định danh mục mặc định của MISA."
+        },
+        {
+          "stt": 30,
+          "fieldName": "Inactive",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Ngừng sử dụng: Cờ xác định mặt hàng còn kinh doanh hay đã ngừng (False: Còn dùng)."
+        },
+        {
+          "stt": 31,
+          "fieldName": "IsSaleDiscount",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Có chiết khấu bán: Cờ xác định mặt hàng có áp dụng chính sách chiết khấu."
+        },
+        {
+          "stt": 32,
+          "fieldName": "DiscountType",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Loại chiết khấu: Loại hình chiết khấu áp dụng."
+        },
+        {
+          "stt": 33,
+          "fieldName": "IsFollowSerialNumber",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Theo dõi Serial/Lô: Theo dõi theo số serial/số lô chai khí."
+        },
+        {
+          "stt": 34,
+          "fieldName": "CostMethod",
+          "constraint": "Cho phép NULL",
+          "dataType": "INT",
+          "description": "Phương pháp tính giá vốn: Phương pháp xuất kho (Bình quân gia quyền, FIFO...)."
+        },
+        {
+          "stt": 35,
+          "fieldName": "CreatedDate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày tạo: Ngày tạo bản ghi trên hệ thống."
+        },
+        {
+          "stt": 36,
+          "fieldName": "CreatedBy",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Người tạo: Tài khoản nhân sự tạo bản ghi."
+        },
+        {
+          "stt": 37,
+          "fieldName": "ModifiedDate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày chỉnh sửa: Ngày chỉnh sửa gần nhất."
+        },
+        {
+          "stt": 38,
+          "fieldName": "ModifiedBy",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Người chỉnh sửa: Tài khoản thực hiện chỉnh sửa."
+        },
+        {
+          "stt": 39,
+          "fieldName": "InventoryItemCategoryName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tên phân nhóm vật tư: Tên nhóm mặt hàng trên MISA (Phụ tùng, Khí hóa lỏng, Que hàn...)."
+        },
+        {
+          "stt": 40,
+          "fieldName": "Specificity",
+          "constraint": "Cho phép NULL",
+          "dataType": "INT",
+          "description": "Quy cách đặc thù: Thông số kỹ thuật đặc thù."
+        },
+        {
+          "stt": 41,
+          "fieldName": "PurchaseDescription",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(500)",
+          "description": "Mô tả mua hàng: Mô tả chi tiết khi lập đơn mua hàng."
+        },
+        {
+          "stt": 42,
+          "fieldName": "SaleDescription",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(500)",
+          "description": "Mô tả bán hàng: Mô tả chi tiết khi lập đơn bán hàng."
+        },
+        {
+          "stt": 43,
+          "fieldName": "TACareerGroupID",
+          "constraint": "Cho phép NULL",
+          "dataType": "BIGINT",
+          "description": "Mã nhóm ngành thuế: Mã ngành nghề tính thuế theo quy định nhà nước."
+        },
+        {
+          "stt": 44,
+          "fieldName": "FixedUnitPrice",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DECIMAL(18,2)",
+          "description": "Đơn giá cố định: Đơn giá cố định theo biểu giá."
+        },
+        {
+          "stt": 45,
+          "fieldName": "FrontEndFormula",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(200)",
+          "description": "Công thức Front-End: Công thức tính toán giao diện."
+        },
+        {
+          "stt": 46,
+          "fieldName": "BackEndFormula",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(200)",
+          "description": "Công thức Back-End: Công thức tính toán tầng CSDL."
+        },
+        {
+          "stt": 47,
+          "fieldName": "BaseOnFormula",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(200)",
+          "description": "Dựa trên công thức: Căn cứ công thức tính giá."
+        },
+        {
+          "stt": 48,
+          "fieldName": "IsDeleted",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Đã xóa: Cờ đánh dấu xóa mềm."
+        },
+        {
+          "stt": 49,
+          "fieldName": "ServerRowVersion",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIGINT",
+          "description": "Phiên bản hàng: Phiên bản dữ liệu đồng bộ server."
+        },
+        {
+          "stt": 50,
+          "fieldName": "UploadState",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Trạng thái tải lên: Trạng thái upload dữ liệu."
+        },
+        {
+          "stt": 51,
+          "fieldName": "IsCRM",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Đồng bộ CRM: Cờ cho phép đồng bộ sang phần mềm CRM."
+        },
+        {
+          "stt": 52,
+          "fieldName": "NotAllowSyncToCRM",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Chặn đồng bộ CRM: Cờ ngăn chặn đồng bộ sang CRM."
+        },
+        {
+          "stt": 53,
+          "fieldName": "InventoryItemCategoryIDList",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(500)",
+          "description": "Chuỗi ID danh mục: Chuỗi chứa các ID nhóm vật tư phân cấp."
+        },
+        {
+          "stt": 54,
+          "fieldName": "DiscountAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK chiết khấu: Tài khoản kế toán hạch toán chiết khấu (5211)."
+        },
+        {
+          "stt": 55,
+          "fieldName": "SaleOffAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK giảm giá: Tài khoản kế toán giảm giá hàng bán (5213)."
+        },
+        {
+          "stt": 56,
+          "fieldName": "ReturnAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK trả lại hàng: Tài khoản hàng bán bị trả lại (5212)."
+        },
+        {
+          "stt": 57,
+          "fieldName": "ReplaceInventoryItemID",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "ID mặt hàng thay thế: Mã hàng thay thế khi hết hàng."
+        },
+        {
+          "stt": 58,
+          "fieldName": "ReplaceInventoryItemName",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên hàng thay thế: Tên mặt hàng thay thế."
+        },
+        {
+          "stt": 59,
+          "fieldName": "ProcessAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK gia công: Tài khoản chi phí gia công chế biến."
+        },
+        {
+          "stt": 60,
+          "fieldName": "Excel_Product_Name",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(255)",
+          "description": "Tên SP theo Excel: Tên sản phẩm tương ứng trong file Excel của Sovigaz."
+        },
+        {
+          "stt": 61,
+          "fieldName": "Excel_Category_Name",
+          "constraint": "Khóa ngoại (FK -> Dim_ProductCategories(CategoryName)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Nhóm SP theo Excel: Tên nhóm sản phẩm chuẩn hóa dùng liên kết với Dim_ProductCategories (VD: 1_OXY KHÍ, VT, HH, DV...)."
+        },
+        {
+          "stt": 62,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian nạp dữ liệu vào DWH."
+        },
+        {
+          "stt": 63,
+          "fieldName": "InventoryItemCode_New",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã sản phẩm chuẩn hóa mới: Khóa chính nghiệp vụ chuẩn hóa mới do dự án thiết kế, đảm bảo liên kết toàn vẹn với bảng Fact Bán hàng và Kế hoạch KPI."
+        }
+      ]
+    },
+    "Dim_ProductCategories": {
+      "sheetName": "Dim_ProductCategories",
+      "title": "BẢNG: Dim_ProductCategories — CHIỀU NHÓM SẢN PHẨM CHUẨN HÓA",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Vật tư & Sản phẩm  |  Nguồn: Quy định phân loại sản phẩm của Sovigaz  |  Số dòng: 20  |  Khóa chính: CategoryName",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "Indicator",
+          "constraint": "Khóa ngoại (FK -> Dim_Indicator(Indicator)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã chỉ tiêu: Mã phân loại chỉ tiêu lớn (SP: Sản phẩm, VT, HH: Vật tư hàng hóa, DV: Dịch vụ, DTTC + DT KHÁC)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "CategoryName",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Mã danh mục chuẩn: Mã phân nhóm sản phẩm chuẩn (VD: 1_OXY KHÍ, 2_OXY LỎNG, 3_NITO KHÍ, 8.1_CO2 KHÍ, 9.0_QH48...)."
+        },
+        {
+          "stt": 3,
+          "fieldName": "Name",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tên sản phẩm chuẩn: Tên gọi chuẩn tiếng Việt (Oxy khí, Oxy lỏng, Ni tơ khí, Que hàn N48...)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "Group",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Nhóm ngành khí / vật tư: Tên phân nhóm cấp cao (Oxy, Ni tơ, Argon, Que hàn, CO2 Khí, VT,HH, Dịch vụ...)."
+        },
+        {
+          "stt": 5,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian cập nhật danh mục."
+        }
+      ]
+    },
+    "Dim_Indicator": {
+      "sheetName": "Dim_Indicator",
+      "title": "BẢNG: Dim_Indicator — CHIỀU CHỈ TIÊU DOANH THU",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Vật tư & Sản phẩm  |  Nguồn: Hệ thống quản lý chỉ tiêu Sovigaz  |  Số dòng: 4  |  Khóa chính: Indicator",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "Indicator",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã chỉ tiêu: Mã viết tắt chỉ tiêu: SP, VT, HH, DV, DTTC + DT KHÁC."
+        },
+        {
+          "stt": 2,
+          "fieldName": "Name",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tên chỉ tiêu kinh doanh: Diễn giải đầy đủ: Doanh thu từ sản phẩm, Doanh thu vật tư hàng hóa, Doanh thu dịch vụ, Doanh thu tài chính và khác."
+        },
+        {
+          "stt": 3,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian nạp danh mục."
+        }
+      ]
+    },
+    "Dim_InventoryItemType": {
+      "sheetName": "Dim_InventoryItemType",
+      "title": "BẢNG: Dim_InventoryItemType — CHIỀU LOẠI VẬT TƯ HÀNG HÓA",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Vật tư & Sản phẩm  |  Nguồn: Phần mềm kế toán MISA  |  Số dòng: 4  |  Khóa chính: InventoryItemTypeValue",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "InventoryItemTypeValue",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "INT",
+          "description": "Mã loại vật tư (Số): Giá trị số phân loại (0, 1, 2...)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "InventoryItemTypeName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Tên loại vật tư: Tên bản chất mặt hàng: Vật tư hàng hóa, Thành phẩm, Dịch vụ."
+        },
+        {
+          "stt": 3,
+          "fieldName": "CreatedBy",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Người tạo: Tài khoản người tạo."
+        },
+        {
+          "stt": 4,
+          "fieldName": "CreatedDate",
+          "constraint": "Cho phép NULL",
+          "dataType": "DATETIME",
+          "description": "Ngày tạo: Ngày tạo bản ghi."
+        },
+        {
+          "stt": 5,
+          "fieldName": "ModifiedBy",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Người sửa: Người chỉnh sửa gần nhất."
+        },
+        {
+          "stt": 6,
+          "fieldName": "ModifiedDate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày sửa: Ngày sửa gần nhất."
+        },
+        {
+          "stt": 7,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian nạp dữ liệu."
+        }
+      ]
+    },
+    "Dim_Unit": {
+      "sheetName": "Dim_Unit",
+      "title": "BẢNG: Dim_Unit — CHIỀU ĐƠN VỊ TÍNH",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Vật tư & Sản phẩm  |  Nguồn: Phần mềm MISA AMIS  |  Số dòng: 122  |  Khóa chính: UnitID",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "UnitID",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Mã đơn vị tính (GUID): Khóa chính GUID của đơn vị tính trên MISA."
+        },
+        {
+          "stt": 2,
+          "fieldName": "UnitName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(50)",
+          "description": "Tên đơn vị tính: Tên đơn vị đo lường: chai, m3, kg, cặp, bình, lít..."
+        },
+        {
+          "stt": 3,
+          "fieldName": "Description",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(255)",
+          "description": "Diễn giải chi tiết: Ghi chú quy cách hoặc dịch vụ liên quan."
+        },
+        {
+          "stt": 4,
+          "fieldName": "Inactive",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Ngừng sử dụng: Cờ xác định đơn vị tính còn hiệu lực hay đã ngừng dùng."
+        },
+        {
+          "stt": 5,
+          "fieldName": "IsDeleted",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Đã xóa: Cờ đánh dấu xóa mềm."
+        },
+        {
+          "stt": 6,
+          "fieldName": "CreatedBy",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Người tạo: Tài khoản tạo bản ghi."
+        },
+        {
+          "stt": 7,
+          "fieldName": "CreatedDate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày tạo: Thời điểm tạo bản ghi."
+        },
+        {
+          "stt": 8,
+          "fieldName": "ModifiedBy",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(50)",
+          "description": "Người sửa: Tài khoản sửa đổi."
+        },
+        {
+          "stt": 9,
+          "fieldName": "ModifiedDate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày sửa: Thời điểm sửa đổi."
+        },
+        {
+          "stt": 10,
+          "fieldName": "RowVersion",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIGINT",
+          "description": "Phiên bản dòng: Phiên bản dữ liệu nội bộ."
+        },
+        {
+          "stt": 11,
+          "fieldName": "ServerRowVersion",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIGINT",
+          "description": "Phiên bản server: Phiên bản server."
+        },
+        {
+          "stt": 12,
+          "fieldName": "UploadState",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Trạng thái tải lên: Trạng thái upload."
+        },
+        {
+          "stt": 13,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian nạp dữ liệu vào DWH."
+        }
+      ]
+    },
+    "Dim_Stock": {
+      "sheetName": "Dim_Stock",
+      "title": "BẢNG: Dim_Stock — CHIỀU KHO & XÍ NGHIỆP",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Tổ chức & Kho bãi  |  Nguồn: Hệ thống quản trị tổ chức Sovigaz  |  Số dòng: 10  |  Khóa chính: StockCode",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "StockID",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "ID kho (GUID): Khóa GUID định danh kho trên hệ thống CSDL."
+        },
+        {
+          "stt": 2,
+          "fieldName": "BranchID",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "UNIQUEIDENTIFIER",
+          "description": "Mã chi nhánh (GUID): Mã GUID chi nhánh phụ trách kho."
+        },
+        {
+          "stt": 3,
+          "fieldName": "StockCode",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã xí nghiệp / kho: Mã viết tắt chính thức của xí nghiệp (BD, BH, CT, HP, KH, NT, PR, TK, VP, ZC)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "StockName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tên xí nghiệp / chi nhánh: Tên đầy đủ của đơn vị (Xí nghiệp Bình Dương, Biên Hòa, Cần Thơ, Hải Phòng, Văn phòng công ty...)."
+        },
+        {
+          "stt": 5,
+          "fieldName": "Description",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(500)",
+          "description": "Địa chỉ chi nhánh: Địa chỉ địa lý nơi đặt trụ sở nhà máy/chi nhánh."
+        },
+        {
+          "stt": 6,
+          "fieldName": "InventoryAccount",
+          "constraint": "Cho phép NULL",
+          "dataType": "NVARCHAR(20)",
+          "description": "TK kho phụ trách: Tài khoản kế toán kho tương ứng."
+        },
+        {
+          "stt": 7,
+          "fieldName": "ETL_DATE",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Thời điểm ETL: Thời gian đồng bộ danh mục kho."
+        },
+        {
+          "stt": 8,
+          "fieldName": "ParentStockCode",
+          "constraint": "Khóa ngoại (FK -> Dim_ParentStock(ParentStockCode)), Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã tổng kho quản lý: Mã đơn vị cấp tổng kho quản lý trực tiếp xí nghiệp này."
+        }
+      ]
+    },
+    "Dim_ParentStock": {
+      "sheetName": "Dim_ParentStock",
+      "title": "BẢNG: Dim_ParentStock — CHIỀU TỔNG KHO / CẤP QUẢN LÝ",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Tổ chức & Kho bãi  |  Nguồn: Cơ cấu tổ chức công ty  |  Số dòng: 8  |  Khóa chính: ParentStockCode",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "ParentStockCode",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Mã tổng kho quản lý: Mã viết tắt của đơn vị cấp trên quản lý (BD, BH, CT, HP, KH, NT, TK, VP)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "ParentStockName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tên tổng kho / xí nghiệp quản lý: Tên gọi chính thức của đơn vị cấp trên (2. XN Bình Dương, 3. XN Hơi Biên Hòa, 4. XN Hơi Cần Thơ...)."
+        }
+      ]
+    },
+    "Dim_Account": {
+      "sheetName": "Dim_Account",
+      "title": "BẢNG: Dim_Account — CHIỀU TÀI KHOẢN KẾ TOÁN CÔNG NỢ",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Quản lý Công nợ  |  Nguồn: Hệ thống tài khoản kế toán doanh nghiệp  |  Số dòng: 21  |  Khóa chính: Account",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "Account",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Số hiệu tài khoản: Số hiệu tài khoản kế toán theo Thông tư 200 (131, 136, 1361, 344...)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "Description",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(100)",
+          "description": "Tên gọi tài khoản: Tên đầy đủ của tài khoản (Phải thu khách hàng, Phải thu nội bộ, Nhận ký quỹ ký cược...)."
+        }
+      ]
+    },
+    "Dim_Date": {
+      "sheetName": "Dim_Date",
+      "title": "BẢNG: Dim_Date — CHIỀU THỜI GIAN NGÀY",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Tổ chức & Thời gian  |  Nguồn: Bảng sinh tự động lịch chuẩn (Calendar Dimension)  |  Số dòng: 73,413  |  Khóa chính: DateKey, Date",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "DateKey",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "INT",
+          "description": "Mã khóa ngày (Số): Khóa ngày dạng số nguyên YYYYMMDD (VD: 20240112)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "Date",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "DATETIME",
+          "description": "Ngày lịch: Giá trị ngày tháng năm đầy đủ (YYYY-MM-DD 00:00:00)."
+        },
+        {
+          "stt": 3,
+          "fieldName": "Day",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Ngày trong tháng: Số thứ tự ngày trong tháng (1 - 31)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "Month",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Tháng: Tháng trong năm (1 - 12)."
+        },
+        {
+          "stt": 5,
+          "fieldName": "Year",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Năm: Năm dương lịch (2022, 2024, 2026...)."
+        },
+        {
+          "stt": 6,
+          "fieldName": "Quarter",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Quý: Quý trong năm (1, 2, 3, 4)."
+        },
+        {
+          "stt": 7,
+          "fieldName": "Week",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Tuần trong năm: Tuần thứ mấy trong năm (1 - 53)."
+        },
+        {
+          "stt": 8,
+          "fieldName": "DayOfWeek",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Thứ trong tuần: Thứ trong tuần (1: Chủ nhật, 2: Thứ hai ... 7: Thứ bảy)."
+        },
+        {
+          "stt": 9,
+          "fieldName": "MonthName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "VARCHAR(20)",
+          "description": "Tên tháng tiếng Anh: Tên tiếng Anh của tháng (January, February...)."
+        },
+        {
+          "stt": 10,
+          "fieldName": "YearMonth",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "VARCHAR(7)",
+          "description": "Chuỗi Năm-Tháng: Định dạng YYYY-MM dùng hiển thị trục thời gian (VD: 2024-01)."
+        },
+        {
+          "stt": 11,
+          "fieldName": "IsWeekend",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Là cuối tuần: Cờ xác định ngày Thứ bảy hoặc Chủ nhật (True/False)."
+        }
+      ]
+    },
+    "Dim_Month": {
+      "sheetName": "Dim_Month",
+      "title": "BẢNG: Dim_Month — CHIỀU THỜI GIAN THÁNG",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Tổ chức & Thời gian  |  Nguồn: Lịch tháng chuẩn hóa  |  Số dòng: 204  |  Khóa chính: MonthKey, YearMonth",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "MonthKey",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "INT",
+          "description": "Mã khóa tháng (Số): Khóa tháng dạng số nguyên YYYYMM (VD: 202605)."
+        },
+        {
+          "stt": 2,
+          "fieldName": "Year",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Năm: Năm dương lịch."
+        },
+        {
+          "stt": 3,
+          "fieldName": "Month",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Tháng: Chỉ số tháng (1 - 12)."
+        },
+        {
+          "stt": 4,
+          "fieldName": "MonthName",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "VARCHAR(20)",
+          "description": "Tên tháng tiếng Anh: Tên tiếng Anh của tháng (May, June...)."
+        },
+        {
+          "stt": 5,
+          "fieldName": "Quarter",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "INT",
+          "description": "Quý: Quý trong năm (1 - 4)."
+        },
+        {
+          "stt": 6,
+          "fieldName": "YearMonth",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "VARCHAR(7)",
+          "description": "Chuỗi Năm-Tháng: Định dạng chuỗi YYYY-MM (VD: 2026-05)."
+        },
+        {
+          "stt": 7,
+          "fieldName": "StartDate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày đầu tháng: Ngày bắt đầu của tháng (YYYY-MM-01)."
+        },
+        {
+          "stt": 8,
+          "fieldName": "EndDate",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "DATETIME",
+          "description": "Ngày cuối tháng: Ngày kết thúc của tháng (YYYY-MM-28/29/30/31)."
+        },
+        {
+          "stt": 9,
+          "fieldName": "IsCurrent",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "BIT",
+          "description": "Là tháng hiện tại: Cờ đánh dấu tháng hiện tại đang xử lý số liệu."
+        },
+        {
+          "stt": 10,
+          "fieldName": "MonthVietnamese",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "NVARCHAR(20)",
+          "description": "Tên tháng tiếng Việt: Tên hiển thị tiếng Việt (Tháng 1, Tháng 2, ..., Tháng 12)."
+        }
+      ]
+    },
+    "Dim_Year": {
+      "sheetName": "Dim_Year",
+      "title": "BẢNG: Dim_Year — CHIỀU THỜI GIAN NĂM",
+      "metaInfo": "Loại bảng: Dimension  |  Phân hệ: Tổ chức & Thời gian  |  Nguồn: Lịch năm chuẩn hóa  |  Số dòng: 31  |  Khóa chính: Value",
+      "columns": [
+        {
+          "stt": 1,
+          "fieldName": "YearText",
+          "constraint": "Bắt buộc (NOT NULL)",
+          "dataType": "VARCHAR(10)",
+          "description": "Chuỗi năm: Năm dạng chuỗi văn bản (VD: '2026')."
+        },
+        {
+          "stt": 2,
+          "fieldName": "Value",
+          "constraint": "Khóa chính (PK)",
+          "dataType": "INT",
+          "description": "Giá trị năm: Giá trị năm dạng số nguyên (VD: 2026). Dùng làm khóa liên kết với Fact_KPI_Year."
+        }
+      ]
+    }
+  }
+}

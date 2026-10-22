@@ -1,0 +1,17 @@
+﻿feature_name,dataset,source_table,source_column,aggregation,observation_time,prediction_time,allowed_for_forecasting,allowed_for_churn,allowed_for_credit_risk,leakage_status,reason
+calendar_year,sales_daily/weekly/monthly,Dim_Date / RefDate,RefDate,Calendar Extract,T,T + k,YES,NO,NO,SAFE,Exogenous calendar feature known in advance for any horizon.
+calendar_month,sales_daily/weekly/monthly,Dim_Date / RefDate,RefDate,Calendar Extract,T,T + k,YES,NO,NO,SAFE,Deterministic calendar month.
+calendar_day_of_week,sales_daily,Dim_Date / RefDate,RefDate,Calendar Extract,T,T + k,YES,NO,NO,SAFE,"Day of week (0=Mon, 6=Sun) known in advance."
+lag_1,sales_daily/weekly/monthly,DM_RevenueBySaleLedger,Revenue / MainQuantity,shift(1),T - 1,T,YES,NO,NO,SAFE,Preceding period actual value strictly <= T-1.
+lag_7,sales_daily,DM_RevenueBySaleLedger,Revenue / MainQuantity,shift(7),T - 7,T,YES,NO,NO,SAFE,Same day last week actual value strictly <= T-7.
+rolling_mean_7,sales_daily,DM_RevenueBySaleLedger,Revenue / MainQuantity,shift(1).rolling(7).mean(),T - 1,T,YES,NO,NO,SAFE,Strict shift(1) ensures target at T is never included in the 7-day rolling window.
+rolling_std_7,sales_daily,DM_RevenueBySaleLedger,Revenue / MainQuantity,shift(1).rolling(7).std(),T - 1,T,YES,NO,NO,SAFE,Volatility across prior 7 days strictly <= T-1.
+recency,rfm_features / churn_dataset,DM_RevenueBySaleLedger,RefDate,T - max(RefDate),T,T + 90,NO,YES,YES,SAFE,Calculated strictly on transactions where RefDate <= T.
+frequency,rfm_features / churn_dataset,DM_RevenueBySaleLedger,RefDate,"nunique(RefDate) in [T-180, T]",T,T + 90,NO,YES,YES,SAFE,Order frequency in observation window <= T.
+monetary,rfm_features / churn_dataset,DM_RevenueBySaleLedger,Revenue,"sum(Revenue) in [T-180, T]",T,T + 90,NO,YES,YES,SAFE,"Total spending strictly within [T-180, T]."
+avg_order_value,rfm_features / churn_dataset,DM_RevenueBySaleLedger,Revenue / RefDate,monetary / frequency,T,T + 90,NO,YES,YES,SAFE,Average order size in observation window.
+product_diversity,rfm_features / churn_dataset,DM_RevenueBySaleLedger,InventoryItemCode_New,"nunique(ItemCode) in [T-180, T]",T,T + 90,NO,YES,YES,SAFE,Number of distinct SKUs purchased <= T.
+revenue_trend_ratio,churn_dataset,DM_RevenueBySaleLedger,Revenue,"Rev[T-90, T] / Rev[T-180, T]",T,T + 90,NO,YES,YES,SAFE,Internal observation momentum ratio strictly using data <= T.
+churn_target_90d,churn_dataset,DM_RevenueBySaleLedger,"RefDate in [T, T+90]",Binary Flag (No purchases),T + 90,T + 90,NO,TARGET_ONLY,NO,TARGET_ONLY,Ground truth label derived from prediction window. FORBIDDEN AS FEATURE.
+total_overdue_amount,customer_credit_snapshot_20260731,Fact_AnalyticsDebit,Amount,sum(Amount) for overdue categories,2026-07-31,2026-07-31,NO,NO,DESCRIPTIVE_ONLY,DESCRIPTIVE_ONLY,Single snapshot as of 31/07/2026. Cannot be used as future predictive target without temporal history.
+overdue_ratio,customer_credit_snapshot_20260731,Fact_AnalyticsDebit,Amount,Overdue / Total Receivable,2026-07-31,2026-07-31,NO,NO,DESCRIPTIVE_ONLY,DESCRIPTIVE_ONLY,Descriptive risk proportion as of 31/07/2026.

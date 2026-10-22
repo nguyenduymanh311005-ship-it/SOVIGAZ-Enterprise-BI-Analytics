@@ -1,0 +1,79 @@
+=== Found DM_AccountObjectDebt.csv at: .\Project Sovigaz\1. Giới thiệu và khảo sát dự án\Nguồn dữ liệu\Datamart\DM_AccountObjectDebt.csv ===
+Shape: (1494, 8)
+Columns: ['AccountObjectCode', 'AccountObjectName', 'ReceiptableDebtAmount', 'PaidAmount', 'ETL_DATE', 'ReceivableAccountCode', 'OpeningBalance', 'PeriodAmount']
+Date/time columns: ['ETL_DATE', 'PeriodAmount']
+  ETL_DATE: unique=1, min=2026-08-02 12:46:00.733, max=2026-08-02 12:46:00.733, sample=['2026-08-02 12:46:00.733']
+  PeriodAmount: unique=709, min=0, max=35283804282, sample=[np.int64(0), np.int64(6796800), np.int64(30000000), np.int64(20000000), np.int64(46000000)]
+First 2 rows:
+{'AccountObjectCode': 'BDBV105A', 'AccountObjectName': 'Trung Tâm Y Tế Khu Vực Tân Uyên', 'ReceiptableDebtAmount': -45000000, 'PaidAmount': 0, 'ETL_DATE': '2026-08-02 12:46:00.733', 'ReceivableAccountCode': 344.0, 'OpeningBalance': -45000000, 'PeriodAmount': 0}
+{'AccountObjectCode': 'BDBV108', 'AccountObjectName': 'VIỆN TIM TPHCM', 'ReceiptableDebtAmount': -6000000, 'PaidAmount': 0, 'ETL_DATE': '2026-08-02 12:46:00.733', 'ReceivableAccountCode': 344.0, 'OpeningBalance': -6000000, 'PeriodAmount': 0}
+
+============================================================
+
+=== Found Fact_AnalyticsDebit.csv at: .\Project Sovigaz\1. Giới thiệu và khảo sát dự án\Nguồn dữ liệu\Datamart\Fact_AnalyticsDebit.csv ===
+Shape: (1788, 6)
+Columns: ['DebtType', 'Amount', 'DebtDescription', 'ETL_DATE', 'Account', 'AccountObjectCode']
+Date/time columns: ['ETL_DATE']
+  ETL_DATE: unique=1, min=2026-08-02 12:45:46.630, max=2026-08-02 12:45:46.630, sample=['2026-08-02 12:45:46.630']
+First 2 rows:
+{'DebtType': 1, 'Amount': 750600, 'DebtDescription': 'Nợ trước hạn 0-30 ngày', 'ETL_DATE': '2026-08-02 12:45:46.630', 'Account': 131, 'AccountObjectCode': 'BDBV115'}
+{'DebtType': 1, 'Amount': 9664920, 'DebtDescription': 'Nợ trước hạn 0-30 ngày', 'ETL_DATE': '2026-08-02 12:45:46.630', 'Account': 131, 'AccountObjectCode': 'BDBV116'}
+
+============================================================
+
+=== Found DM_AccountObjectDebt.csv at: .\Project Sovigaz\1. Giới thiệu và khảo sát dự án\Nguồn dữ liệu\Datamart-20260918T064758Z-1-001\Datamart\DM_AccountObjectDebt.csv ===
+Shape: (1494, 8)
+Columns: ['AccountObjectCode', 'AccountObjectName', 'ReceiptableDebtAmount', 'PaidAmount', 'ETL_DATE', 'ReceivableAccountCode', 'OpeningBalance', 'PeriodAmount']
+Date/time columns: ['ETL_DATE', 'PeriodAmount']
+  ETL_DATE: unique=1, min=2026-08-02 12:46:00.733, max=2026-08-02 12:46:00.733, sample=['2026-08-02 12:46:00.733']
+  PeriodAmount: unique=709, min=0, max=35283804282, sample=[np.int64(0), np.int64(6796800), np.int64(30000000), np.int64(20000000), np.int64(46000000)]
+First 2 rows:
+{'AccountObjectCode': 'BDBV105A', 'AccountObjectName': 'Trung Tâm Y Tế Khu Vực Tân Uyên', 'ReceiptableDebtAmount': -45000000, 'PaidAmount': 0, 'ETL_DATE': '2026-08-02 12:46:00.733', 'ReceivableAccountCode': 344.0, 'OpeningBalance': -45000000, 'PeriodAmount': 0}
+{'AccountObjectCode': 'BDBV108', 'AccountObjectName': 'VIỆN TIM TPHCM', 'ReceiptableDebtAmount': -6000000, 'PaidAmount': 0, 'ETL_DATE': '2026-08-02 12:46:00.733', 'ReceivableAccountCode': 344.0, 'OpeningBalance': -6000000, 'PeriodAmount': 0}
+
+============================================================
+
+=== Found Fact_AnalyticsDebit.csv at: .\Project Sovigaz\1. Giới thiệu và khảo sát dự án\Nguồn dữ liệu\Datamart-20260918T064758Z-1-001\Datamart\Fact_AnalyticsDebit.csv ===
+Shape: (1788, 6)
+Columns: ['DebtType', 'Amount', 'DebtDescription', 'ETL_DATE', 'Account', 'AccountObjectCode']
+Date/time columns: ['ETL_DATE']
+  ETL_DATE: unique=1, min=2026-08-02 12:45:46.630, max=2026-08-02 12:45:46.630, sample=['2026-08-02 12:45:46.630']
+First 2 rows:
+{'DebtType': 1, 'Amount': 750600, 'DebtDescription': 'Nợ trước hạn 0-30 ngày', 'ETL_DATE': '2026-08-02 12:45:46.630', 'Account': 131, 'AccountObjectCode': 'BDBV115'}
+{'DebtType': 1, 'Amount': 9664920, 'DebtDescription': 'Nợ trước hạn 0-30 ngày', 'ETL_DATE': '2026-08-02 12:45:46.630', 'Account': 131, 'AccountObjectCode': 'BDBV116'}
+
+============================================================
+
+=== Found DM_AccountObjectDebt.csv at: .\Project Sovigaz\3. Phát triển ETL dữ liệu\Data ETL\DM_AccountObjectDebt.csv ===
+Shape: (1494, 8)
+Columns: ['AccountObjectCode', 'AccountObjectName', 'ReceiptableDebtAmount', 'PaidAmount', 'ETL_DATE', 'ReceivableAccountCode', 'OpeningBalance', 'PeriodAmount']
+Date/time columns: ['ETL_DATE', 'PeriodAmount']
+  ETL_DATE: unique=1, min=2026-08-02 12:46:00.733, max=2026-08-02 12:46:00.733, sample=['2026-08-02 12:46:00.733']
+  PeriodAmount: unique=709, min=0, max=35283804282, sample=[np.int64(0), np.int64(6796800), np.int64(30000000), np.int64(20000000), np.int64(46000000)]
+First 2 rows:
+{'AccountObjectCode': 'BDBV105A', 'AccountObjectName': 'Trung Tâm Y Tế Khu Vực Tân Uyên', 'ReceiptableDebtAmount': -45000000, 'PaidAmount': 0, 'ETL_DATE': '2026-08-02 12:46:00.733', 'ReceivableAccountCode': 344.0, 'OpeningBalance': -45000000, 'PeriodAmount': 0}
+{'AccountObjectCode': 'BDBV108', 'AccountObjectName': 'VIỆN TIM TPHCM', 'ReceiptableDebtAmount': -6000000, 'PaidAmount': 0, 'ETL_DATE': '2026-08-02 12:46:00.733', 'ReceivableAccountCode': 344.0, 'OpeningBalance': -6000000, 'PeriodAmount': 0}
+
+============================================================
+
+=== Found Fact_AnalyticsDebit.csv at: .\Project Sovigaz\3. Phát triển ETL dữ liệu\Data ETL\Fact_AnalyticsDebit.csv ===
+Shape: (1788, 6)
+Columns: ['DebtType', 'Amount', 'DebtDescription', 'ETL_DATE', 'Account', 'AccountObjectCode']
+Date/time columns: ['ETL_DATE']
+  ETL_DATE: unique=1, min=2026-08-02 12:45:46.630, max=2026-08-02 12:45:46.630, sample=['2026-08-02 12:45:46.630']
+First 2 rows:
+{'DebtType': 1, 'Amount': 750600, 'DebtDescription': 'Nợ trước hạn 0-30 ngày', 'ETL_DATE': '2026-08-02 12:45:46.630', 'Account': 131, 'AccountObjectCode': 'BDBV115'}
+{'DebtType': 1, 'Amount': 9664920, 'DebtDescription': 'Nợ trước hạn 0-30 ngày', 'ETL_DATE': '2026-08-02 12:45:46.630', 'Account': 131, 'AccountObjectCode': 'BDBV116'}
+
+============================================================
+
+=== Found customer_credit_snapshot_20260731.parquet at: .\SOVIGAZ_ML\data\processed\customer_credit_snapshot_20260731.parquet ===
+Shape: (584, 25)
+Columns: ['AccountObjectCode', 'Không có hạn nợ', 'Nợ quá hạn 1-30 ngày', 'Nợ quá hạn 181-365 ngày', 'Nợ quá hạn 31-90 ngày', 'Nợ quá hạn 366-730 ngày', 'Nợ quá hạn 731-1095 ngày', 'Nợ quá hạn 91-180 ngày', 'Nợ quá hạn trên 1095 ngày', 'Nợ trước hạn 0-30 ngày', 'Nợ trước hạn 31-90 ngày', 'Nợ trước hạn trên 90 ngày', 'total_overdue_amount', 'total_current_amount', 'total_receivable_debt', 'overdue_ratio', 'is_overdue_any', 'is_overdue_gt_30d', 'is_overdue_gt_90d', 'historical_total_revenue', 'historical_order_count', 'historical_first_purchase', 'historical_last_purchase', 'credit_sales_ratio', 'snapshot_date']
+Date/time columns: ['snapshot_date']
+  snapshot_date: unique=1, min=2026-07-31 00:00:00, max=2026-07-31 00:00:00, sample=[Timestamp('2026-07-31 00:00:00')]
+First 2 rows:
+{'AccountObjectCode': 'BDBV105A', 'Không có hạn nợ': 0.0, 'Nợ quá hạn 1-30 ngày': 0.0, 'Nợ quá hạn 181-365 ngày': 29090880.0, 'Nợ quá hạn 31-90 ngày': 0.0, 'Nợ quá hạn 366-730 ngày': 0.0, 'Nợ quá hạn 731-1095 ngày': 0.0, 'Nợ quá hạn 91-180 ngày': 0.0, 'Nợ quá hạn trên 1095 ngày': 0.0, 'Nợ trước hạn 0-30 ngày': 0.0, 'Nợ trước hạn 31-90 ngày': 0.0, 'Nợ trước hạn trên 90 ngày': 0.0, 'total_overdue_amount': 29090880.0, 'total_current_amount': 0.0, 'total_receivable_debt': 29090880.0, 'overdue_ratio': 1.0, 'is_overdue_any': 1, 'is_overdue_gt_30d': 1, 'is_overdue_gt_90d': 1, 'historical_total_revenue': 137800080.0, 'historical_order_count': 9.0, 'historical_first_purchase': Timestamp('2024-10-04 00:00:00'), 'historical_last_purchase': Timestamp('2025-12-16 00:00:00'), 'credit_sales_ratio': 1.0, 'snapshot_date': Timestamp('2026-07-31 00:00:00')}
+{'AccountObjectCode': 'BDBV115', 'Không có hạn nợ': 0.0, 'Nợ quá hạn 1-30 ngày': 0.0, 'Nợ quá hạn 181-365 ngày': 0.0, 'Nợ quá hạn 31-90 ngày': 0.0, 'Nợ quá hạn 366-730 ngày': 0.0, 'Nợ quá hạn 731-1095 ngày': 0.0, 'Nợ quá hạn 91-180 ngày': 0.0, 'Nợ quá hạn trên 1095 ngày': 0.0, 'Nợ trước hạn 0-30 ngày': 750600.0, 'Nợ trước hạn 31-90 ngày': 0.0, 'Nợ trước hạn trên 90 ngày': 0.0, 'total_overdue_amount': 0.0, 'total_current_amount': 750600.0, 'total_receivable_debt': 750600.0, 'overdue_ratio': 0.0, 'is_overdue_any': 0, 'is_overdue_gt_30d': 0, 'is_overdue_gt_90d': 0, 'historical_total_revenue': 837518090.0, 'historical_order_count': 155.0, 'historical_first_purchase': Timestamp('2023-04-28 00:00:00'), 'historical_last_purchase': Timestamp('2026-06-06 00:00:00'), 'credit_sales_ratio': 1.0, 'snapshot_date': Timestamp('2026-07-31 00:00:00')}
+
+============================================================

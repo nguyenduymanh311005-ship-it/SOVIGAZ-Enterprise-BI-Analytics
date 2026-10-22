@@ -1,0 +1,22 @@
+{
+  "algorithm": "K-Means",
+  "K": 4,
+  "n_init": 25,
+  "random_state": 42,
+  "features": [
+    "log_recency",
+    "log_frequency_365d",
+    "log_monetary_365d"
+  ],
+  "transformation": "Log1p(Recency, Frequency, max(0, Monetary))",
+  "scaler": "RobustScaler(quantile_range=(25.0, 75.0))",
+  "selection_rationale": "Balanced cluster distribution (23.5% - 27.2%), near-perfect stability (Mean ARI=0.9978), robust silhouette (0.3080), and clear B2B commercial interpretability across Key Accounts, Regulars, Slipping, and Dormant accounts.",
+  "statistical_metrics": {
+    "inertia": 528.33,
+    "silhouette_score": 0.308,
+    "calinski_harabasz_score": 1078.78,
+    "davies_bouldin_score": 1.1043,
+    "mean_ari": 0.9978,
+    "min_ari": 0.996
+  }
+}

@@ -1,0 +1,13 @@
+﻿algorithm,K,covariance_type,mean_ari,std_ari,min_ari,max_ari,mean_nmi,stability_verdict
+K-Means,2,N/A,1.0,0.0,1.0,1.0,1.0,Very High
+K-Means,3,N/A,0.9969,0.0058,0.9862,1.0,0.9946,Very High
+K-Means,4,N/A,0.9978,0.002,0.996,1.0,0.9964,Very High
+K-Means,5,N/A,0.9138,0.0552,0.8511,0.9837,0.9184,High
+K-Means,6,N/A,0.9373,0.0832,0.7224,0.9965,0.9415,High
+K-Means,7,N/A,0.866,0.0854,0.7243,0.9985,0.8895,High
+K-Means,8,N/A,0.9146,0.1176,0.585,0.9801,0.9278,High
+GMM,2,diag,0.9931,0.0037,0.9912,1.0,0.9839,Very High
+GMM,3,diag,0.9992,0.0016,0.9953,1.0,0.9985,Very High
+GMM,4,diag,0.885,0.1563,0.4545,1.0,0.8934,High
+GMM,5,diag,0.9386,0.0854,0.713,0.995,0.9397,High
+GMM,6,diag,0.6903,0.143,0.5101,0.9915,0.7484,Moderate

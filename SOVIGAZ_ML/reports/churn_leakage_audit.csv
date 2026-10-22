@@ -1,0 +1,6 @@
+﻿audit_check,requirement,verdict,details
+Future Transaction Usage,RefDate <= T for all features,COMPLIANT,All feature sub-queries strictly filtered with RefDate <= T
+Cluster Temporal Independence,Primary Model A excludes cluster_id; Model B fits K-Means strictly <= T,COMPLIANT,No 2025-12-31 cluster model applied across historical snapshots
+Target Window Isolation,"churn_target_90d strictly evaluated on (T, T+90d]",COMPLIANT,Day T is features; Day T+1 to T+90 is label only
+Temporal Split Structure,"Train (2023-2024), Val (2025 H1), Test (2025 H2)",COMPLIANT,"Zero snapshot leakage across train, val, and test folds"
+Preprocessor Scope,Scaler and Imputer fit strictly on Train fold,COMPLIANT,Val and Test transforms use frozen train parameters

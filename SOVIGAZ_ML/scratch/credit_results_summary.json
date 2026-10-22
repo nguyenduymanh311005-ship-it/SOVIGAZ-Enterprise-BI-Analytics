@@ -1,0 +1,379 @@
+{
+  "credit_risk_summary_stats.csv": [
+    {
+      "metric": "outstanding_debt",
+      "count": 584,
+      "total_vnd": 56582422635.0,
+      "mean_vnd": 96887709.99143836,
+      "std_vnd": 269454176.9658334,
+      "median_vnd": 17482365.0,
+      "p25_vnd": 3330364.0,
+      "p75_vnd": 57371499.75,
+      "p90_vnd": 246319958.2000004,
+      "p95_vnd": 493680470.4000005,
+      "p99_vnd": 1289028019.0199945,
+      "max_vnd": 3719393700.0,
+      "skewness": 6.953954480753921,
+      "kurtosis": 69.48010034375561
+    }
+  ],
+  "credit_concentration_hhi.csv": [
+    {
+      "total_receivable_debt_vnd": 56582422635.0,
+      "total_credit_customers": 584,
+      "top_10_debt_vnd": 16631864556.0,
+      "top_10_share_pct": 29.39,
+      "top_20_debt_vnd": 24221015450.0,
+      "top_20_share_pct": 42.81,
+      "top_50_debt_vnd": 37220367134.0,
+      "top_50_share_pct": 65.78,
+      "hhi_decimal": 0.014934,
+      "hhi_points": 149.34,
+      "concentration_level": "Unconcentrated"
+    }
+  ],
+  "credit_segment_crosstab.csv": [
+    {
+      "customer_segment": "Active Regular Buyers (Operational Flow)",
+      "credit_risk_band": "Critical Exposure (Score >= 70)",
+      "customer_count": 1,
+      "total_debt_vnd": 770375443.0,
+      "avg_debt_vnd": 770375443.0,
+      "total_overdue_vnd": 729018920.0,
+      "avg_overdue_ratio": 0.9463,
+      "avg_credit_score": 74.2
+    },
+    {
+      "customer_segment": "Active Regular Buyers (Operational Flow)",
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "customer_count": 5,
+      "total_debt_vnd": 1046514817.0,
+      "avg_debt_vnd": 209302963.0,
+      "total_overdue_vnd": 645134489.0,
+      "avg_overdue_ratio": 0.6211,
+      "avg_credit_score": 55.5
+    },
+    {
+      "customer_segment": "Active Regular Buyers (Operational Flow)",
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "customer_count": 128,
+      "total_debt_vnd": 1251912785.0,
+      "avg_debt_vnd": 9780569.0,
+      "total_overdue_vnd": 233361981.0,
+      "avg_overdue_ratio": 0.1719,
+      "avg_credit_score": 13.9
+    },
+    {
+      "customer_segment": "Active Regular Buyers (Operational Flow)",
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "customer_count": 21,
+      "total_debt_vnd": 1113979434.0,
+      "avg_debt_vnd": 53046640.0,
+      "total_overdue_vnd": 729731841.0,
+      "avg_overdue_ratio": 0.7033,
+      "avg_credit_score": 39.4
+    },
+    {
+      "customer_segment": "Dormant / Low-Engagement Accounts (Triage / Reactivation)",
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "customer_count": 13,
+      "total_debt_vnd": 67605340.0,
+      "avg_debt_vnd": 5200411.0,
+      "total_overdue_vnd": 4920240.0,
+      "avg_overdue_ratio": 0.0935,
+      "avg_credit_score": 17.2
+    },
+    {
+      "customer_segment": "Dormant / Low-Engagement Accounts (Triage / Reactivation)",
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "customer_count": 4,
+      "total_debt_vnd": 410802197.0,
+      "avg_debt_vnd": 102700549.0,
+      "total_overdue_vnd": 11860800.0,
+      "avg_overdue_ratio": 0.6632,
+      "avg_credit_score": 39.0
+    },
+    {
+      "customer_segment": "Dormant / Non-Clustered",
+      "credit_risk_band": "Critical Exposure (Score >= 70)",
+      "customer_count": 16,
+      "total_debt_vnd": 9656812456.0,
+      "avg_debt_vnd": 603550778.0,
+      "total_overdue_vnd": 8781869619.0,
+      "avg_overdue_ratio": 0.9584,
+      "avg_credit_score": 75.5
+    },
+    {
+      "customer_segment": "Dormant / Non-Clustered",
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "customer_count": 43,
+      "total_debt_vnd": 5251263723.0,
+      "avg_debt_vnd": 122122412.0,
+      "total_overdue_vnd": 2229723225.0,
+      "avg_overdue_ratio": 0.9497,
+      "avg_credit_score": 58.5
+    },
+    {
+      "customer_segment": "Dormant / Non-Clustered",
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "customer_count": 62,
+      "total_debt_vnd": 1178961812.0,
+      "avg_debt_vnd": 19015513.0,
+      "total_overdue_vnd": 40637136.0,
+      "avg_overdue_ratio": 0.1055,
+      "avg_credit_score": 18.4
+    },
+    {
+      "customer_segment": "Dormant / Non-Clustered",
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "customer_count": 41,
+      "total_debt_vnd": 2175960236.0,
+      "avg_debt_vnd": 53072201.0,
+      "total_overdue_vnd": 506030401.0,
+      "avg_overdue_ratio": 0.5962,
+      "avg_credit_score": 39.0
+    },
+    {
+      "customer_segment": "Key Industrial Accounts (Bulk & Contract Buyers)",
+      "credit_risk_band": "Critical Exposure (Score >= 70)",
+      "customer_count": 2,
+      "total_debt_vnd": 1410113149.0,
+      "avg_debt_vnd": 705056574.0,
+      "total_overdue_vnd": 1195751149.0,
+      "avg_overdue_ratio": 0.8673,
+      "avg_credit_score": 71.0
+    },
+    {
+      "customer_segment": "Key Industrial Accounts (Bulk & Contract Buyers)",
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "customer_count": 9,
+      "total_debt_vnd": 5063638182.0,
+      "avg_debt_vnd": 562626465.0,
+      "total_overdue_vnd": 2862460310.0,
+      "avg_overdue_ratio": 0.6424,
+      "avg_credit_score": 53.8
+    },
+    {
+      "customer_segment": "Key Industrial Accounts (Bulk & Contract Buyers)",
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "customer_count": 123,
+      "total_debt_vnd": 4887384777.0,
+      "avg_debt_vnd": 39734836.0,
+      "total_overdue_vnd": 389358945.0,
+      "avg_overdue_ratio": 0.114,
+      "avg_credit_score": 17.1
+    },
+    {
+      "customer_segment": "Key Industrial Accounts (Bulk & Contract Buyers)",
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "customer_count": 71,
+      "total_debt_vnd": 21450790175.0,
+      "avg_debt_vnd": 302123805.0,
+      "total_overdue_vnd": 5024590270.0,
+      "avg_overdue_ratio": 0.3798,
+      "avg_credit_score": 38.0
+    },
+    {
+      "customer_segment": "Slipping / Periodic Buyers (Retention Focus)",
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "customer_count": 7,
+      "total_debt_vnd": 274823200.0,
+      "avg_debt_vnd": 39260457.0,
+      "total_overdue_vnd": 192915840.0,
+      "avg_overdue_ratio": 0.8617,
+      "avg_credit_score": 55.9
+    },
+    {
+      "customer_segment": "Slipping / Periodic Buyers (Retention Focus)",
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "customer_count": 32,
+      "total_debt_vnd": 466895920.0,
+      "avg_debt_vnd": 14590498.0,
+      "total_overdue_vnd": 30567452.0,
+      "avg_overdue_ratio": 0.0702,
+      "avg_credit_score": 15.3
+    },
+    {
+      "customer_segment": "Slipping / Periodic Buyers (Retention Focus)",
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "customer_count": 6,
+      "total_debt_vnd": 104588989.0,
+      "avg_debt_vnd": 17431498.0,
+      "total_overdue_vnd": 78976789.0,
+      "avg_overdue_ratio": 0.7862,
+      "avg_credit_score": 39.8
+    }
+  ],
+  "credit_churn_crosstab.csv": [
+    {
+      "credit_risk_band": "Critical Exposure (Score >= 70)",
+      "churn_risk_band": "Low Risk (P < 0.25)",
+      "customer_count": 3,
+      "total_debt_vnd": 2180488592.0,
+      "total_overdue_vnd": 1924770069.0,
+      "avg_credit_score": 72.1
+    },
+    {
+      "credit_risk_band": "Critical Exposure (Score >= 70)",
+      "churn_risk_band": "Not Evaluated in 2025",
+      "customer_count": 16,
+      "total_debt_vnd": 9656812456.0,
+      "total_overdue_vnd": 8781869619.0,
+      "avg_credit_score": 75.5
+    },
+    {
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "churn_risk_band": "Critical Risk (P >= 0.80)",
+      "customer_count": 2,
+      "total_debt_vnd": 561366720.0,
+      "total_overdue_vnd": 62694000.0,
+      "avg_credit_score": 58.5
+    },
+    {
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "churn_risk_band": "High Risk (0.50 <= P < 0.80)",
+      "customer_count": 2,
+      "total_debt_vnd": 460343668.0,
+      "total_overdue_vnd": 143567088.0,
+      "avg_credit_score": 55.2
+    },
+    {
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "churn_risk_band": "Low Risk (P < 0.25)",
+      "customer_count": 10,
+      "total_debt_vnd": 5021101843.0,
+      "total_overdue_vnd": 3214986943.0,
+      "avg_credit_score": 54.4
+    },
+    {
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "churn_risk_band": "Medium Risk (0.25 <= P < 0.50)",
+      "customer_count": 3,
+      "total_debt_vnd": 256365648.0,
+      "total_overdue_vnd": 218457648.0,
+      "avg_credit_score": 54.2
+    },
+    {
+      "credit_risk_band": "High Exposure (50 <= Score < 70)",
+      "churn_risk_band": "Not Evaluated in 2025",
+      "customer_count": 47,
+      "total_debt_vnd": 5337062043.0,
+      "total_overdue_vnd": 2290528185.0,
+      "avg_credit_score": 58.2
+    },
+    {
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "churn_risk_band": "Critical Risk (P >= 0.80)",
+      "customer_count": 4,
+      "total_debt_vnd": 47252381.0,
+      "total_overdue_vnd": 2190240.0,
+      "avg_credit_score": 21.2
+    },
+    {
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "churn_risk_band": "High Risk (0.50 <= P < 0.80)",
+      "customer_count": 15,
+      "total_debt_vnd": 410988934.0,
+      "total_overdue_vnd": 30473052.0,
+      "avg_credit_score": 18.8
+    },
+    {
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "churn_risk_band": "Low Risk (P < 0.25)",
+      "customer_count": 236,
+      "total_debt_vnd": 5909598284.0,
+      "total_overdue_vnd": 614274540.0,
+      "avg_credit_score": 15.4
+    },
+    {
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "churn_risk_band": "Medium Risk (0.25 <= P < 0.50)",
+      "customer_count": 36,
+      "total_debt_vnd": 275980063.0,
+      "total_overdue_vnd": 10390786.0,
+      "avg_credit_score": 14.3
+    },
+    {
+      "credit_risk_band": "Low Exposure (Score < 30)",
+      "churn_risk_band": "Not Evaluated in 2025",
+      "customer_count": 67,
+      "total_debt_vnd": 1208940972.0,
+      "total_overdue_vnd": 41517136.0,
+      "avg_credit_score": 18.2
+    },
+    {
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "churn_risk_band": "Critical Risk (P >= 0.80)",
+      "customer_count": 6,
+      "total_debt_vnd": 462842927.0,
+      "total_overdue_vnd": 67386330.0,
+      "avg_credit_score": 41.7
+    },
+    {
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "churn_risk_band": "High Risk (0.50 <= P < 0.80)",
+      "customer_count": 6,
+      "total_debt_vnd": 451668929.0,
+      "total_overdue_vnd": 243344625.0,
+      "avg_credit_score": 39.9
+    },
+    {
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "churn_risk_band": "Low Risk (P < 0.25)",
+      "customer_count": 78,
+      "total_debt_vnd": 21337689576.0,
+      "total_overdue_vnd": 5098665255.0,
+      "avg_credit_score": 38.1
+    },
+    {
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "churn_risk_band": "Medium Risk (0.25 <= P < 0.50)",
+      "customer_count": 11,
+      "total_debt_vnd": 804631363.0,
+      "total_overdue_vnd": 435763490.0,
+      "avg_credit_score": 38.9
+    },
+    {
+      "credit_risk_band": "Moderate Exposure (30 <= Score < 50)",
+      "churn_risk_band": "Not Evaluated in 2025",
+      "customer_count": 42,
+      "total_debt_vnd": 2199288236.0,
+      "total_overdue_vnd": 506030401.0,
+      "avg_credit_score": 38.9
+    }
+  ],
+  "credit_priority_matrix_summary.csv": [
+    {
+      "credit_priority": "Priority 1: Critical Joint Action (Finance & Sales)",
+      "customer_count": 4,
+      "total_debt_vnd": 1021710388.0,
+      "total_overdue_vnd": 206261088.0,
+      "avg_credit_score": 56.875,
+      "debt_share_pct": 1.81
+    },
+    {
+      "credit_priority": "Priority 2: Credit Terms & Exposure Monitoring",
+      "customer_count": 79,
+      "total_debt_vnd": 22451830582.0,
+      "total_overdue_vnd": 16430612464.0,
+      "avg_credit_score": 61.59367088607595,
+      "debt_share_pct": 39.68
+    },
+    {
+      "credit_priority": "Priority 3: Customer Retention & Re-engagement",
+      "customer_count": 31,
+      "total_debt_vnd": 1372753171.0,
+      "total_overdue_vnd": 343394247.0,
+      "avg_credit_score": 27.61935483870968,
+      "debt_share_pct": 2.43
+    },
+    {
+      "credit_priority": "Priority 4: Standard Commercial Monitoring",
+      "customer_count": 470,
+      "total_debt_vnd": 31736128494.0,
+      "total_overdue_vnd": 6706641608.0,
+      "avg_credit_score": 22.1336170212766,
+      "debt_share_pct": 56.09
+    }
+  ]
+}

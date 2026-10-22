@@ -1,0 +1,3 @@
+﻿dimension,join_key,before_rows,after_rows,unmatched_rows,unmatched_pct,duplicate_dimension_keys,join_explosion_flag
+Dim_Customer,AccountObjectCode,228581,228581,1311,0.57,0,False
+Dim_Products,InventoryItemCode_New,228581,228581,0,0.0,0,False

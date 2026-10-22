@@ -1,0 +1,43 @@
+# ==========================================
+# .gitignore for SOVIGAZ End-to-End Analytics
+# ==========================================
+
+# 1. Big Raw Data Files & Enterprise Sensitive Records (> 20MB)
+**/DM_RevenueBySaleLedger.csv
+**/So_chi_tiet_ban_hang.xlsx
+**/*.zip
+*.zip
+
+# 2. Secrets, API Keys & Environment Variables
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# 3. Node & Web Build Artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.firebase/
+**/.firebase/
+
+# 4. Machine Learning Artifacts & Cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+catboost_info/
+**/catboost_info/
+*.log
+**/logs/*.log
+
+# 5. Office & OS Temporary Files
+.DS_Store
+Thumbs.db
+~$*.xlsx
+~$*.docx
+~$*.pptx
+desktop.ini
